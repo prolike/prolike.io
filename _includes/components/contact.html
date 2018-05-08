@@ -1,0 +1,43 @@
+{% capture sectionid %}
+  {%if include.id%}{{include.id}}{%else%}no-id-given{%endif%}
+{% endcapture %}
+
+{% capture email %}
+  {%if include.email%}{{include.email}}{%else%}your@email.here{%endif%}
+{% endcapture %}
+
+{% capture phone %}
+  {%if include.phone%}{{include.phone}}{%else%}+1 123 456 789{%endif%}
+{% endcapture %}
+
+{% capture title %}
+  {%if include.title%}{{include.title}}{%else%}add "title=your title here" to the include{%endif%}
+{% endcapture %}
+
+{% capture caption %}
+  {%if include.caption%}{{include.caption}}<p>{%else%}add "caption=your caption here" to the include<p>{%endif%}
+{% endcapture %}
+
+<section id="{{sectionid || strip || strip_newlines}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-heading">{{title}}</h2>
+        <hr class="my-4">
+        <p class="mb-5">{{caption}}</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 ml-auto text-center">
+        <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
+        <p> <a href="tel:{{phone}}">{{phone}}</a></p>
+      </div>
+      <div class="col-lg-4 mr-auto text-center">
+        <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+        <p>
+          <a href="mailto:{{email}}">{{email}}</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

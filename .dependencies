@@ -1,0 +1,13 @@
+#!/bin/sh
+
+cd `git rev-parse --show-toplevel`
+
+docker run \
+  -it \
+  --rm \
+  -v $(pwd):/data:rw \
+  digitallyseamless/nodejs-bower-grunt:latest npm install gulp-cli && \
+     #  npm install gulp-sass && \
+     #  npm rebuild node-sass --force && \
+     #  npm install && \
+     gulp default

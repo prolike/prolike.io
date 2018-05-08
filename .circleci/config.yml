@@ -1,0 +1,79 @@
+
+version: 2
+jobs:
+  build:
+    working_directory: /app
+    # The primary container is an instance of the first list image listed. Your build commands run in this container.
+    docker:
+      - image: lakruzz/jekyll-plus:1.0.1
+    steps:
+      - checkout
+      - run:
+          name: Jekyll
+          command: jekyll build
+      - run:
+          name: Log version.txt
+          command: echo "Built with jekyll from $(git rev-parse --short HEAD) of phable/dataintensity.com" > _site/version.txt
+      - save_cache:
+          key: the-site-{{ .Revision }}
+          paths:
+            - _site
+
+  test:
+    working_directory: /app
+    docker:
+      - image: 18fgsa/html-proofer
+    steps:
+      - restore_cache:
+          keys:
+            - the-site-{{ .Revision }}
+      - run:
+          name: Htmlproofer
+          command: htmlproofer --disable-external --allow-hash-href --checks-to-ignore ImageCheck --check-favicon _site
+
+  stage:
+    working_directory: /app/_site
+    docker:
+      - image: lakruzz/jekyll-plus:1.0.1
+    steps:
+      - restore_cache:
+          keys:
+            - the-site-{{ .Revision }}
+      - run:
+          name: Set git user.name
+          command: git config --global user.name "Circle CI by @prolike"
+      - run:
+          name: Set git user.email
+          command: git config --global user.email "github@prolike.io"
+      - run:
+          name: Set git push.default
+          command: git config --global push.default simple
+      - run:
+          command: git init
+      - run:
+          name: Set remote
+          command: git remote add stage https://$(printenv GHTOKEN_PROLIKE)@github.com/prolike/prolike.github.io.git
+      - run:
+          command: git add -A .
+      - run:
+          name: Git commit
+          command: git commit -F version.txt
+      - run:
+          name: Git push
+          command: git push -f stage master
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+      - stage:
+          requires:
+            - build
+            - test
+          filters:
+            branches:
+              only: master

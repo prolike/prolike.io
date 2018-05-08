@@ -1,0 +1,36 @@
+{% capture sectionid %}
+  {%if include.id%}{{include.id}}{%else%}no-id-given{%endif%}
+{% endcapture %}
+
+{% capture btn_href %}
+  {%if include.btn_href%}{{include.btn_href}}{%else%}/{%endif%}
+{% endcapture %}
+
+{% capture btn_txt %}
+  {%if include.btn_txt%}{{include.btn_txt}}{%else%}btn_txt=your-text-here{%endif%}
+{% endcapture %}
+
+{% capture title %}
+  {%if include.title%}{{include.title}}{%else%}add "title=your title here" to the include{%endif%}
+{% endcapture %}
+
+{% capture caption %}
+  {%if include.caption%}{{include.caption}}<p>{%else%}add "caption=your caption here" to the include<p>{%endif%}
+{% endcapture %}
+
+{% comment %}
+  The background image is defined in the _masterhead.scss
+{% endcomment %}
+
+<section class="bg-primary" id="{{sectionid || strip || strip_newlines}}">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+        <h2 class="section-heading text-white">{{title}}</h2>
+        <hr class="light my-4">
+        <p class="text-faded mb-4">{{caption}}</p>
+        <a class="btn btn-light btn-xl js-scroll-trigger" href="{{btn_href}}">{{btn_txt}}</a>
+      </div>
+    </div>
+  </div>
+</section>

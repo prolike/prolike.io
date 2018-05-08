@@ -1,0 +1,36 @@
+{% capture btn_href %}
+  {%if include.btn_href%}{{include.btn_href}}{%else%}/{%endif%}
+{% endcapture %}
+
+{% capture btn_txt %}
+  {%if include.btn_txt%}{{include.btn_txt}}{%else%}btn_txt=your-text-here{%endif%}
+{% endcapture %}
+
+{% capture title %}
+  {%if include.title%}{{include.title}}{%else%}add "title=your title here" to the include{%endif%}
+{% endcapture %}
+
+{% capture caption %}
+  {%if include.caption%}{{include.caption}}<p>{%else%}add "caption=your caption here" to the include<p>{%endif%}
+{% endcapture %}
+
+{% comment %}
+  The background image is defined in the _masterhead.scss
+{% endcomment %}
+
+<header class="masthead text-center text-white d-flex">
+  <div class="container my-auto">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h1 class="text-uppercase">
+          <strong>{{title}}</strong>
+        </h1>
+        <hr>
+      </div>
+      <div class="col-lg-8 mx-auto">
+        <p class="text-faded mb-5">{{caption}}
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{btn_href}}">{{btn_txt}}</a>
+      </div>
+    </div>
+  </div>
+</header>
