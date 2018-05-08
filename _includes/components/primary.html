@@ -29,7 +29,7 @@
         <h2 class="section-heading text-white">{{title}}</h2>
         <hr class="light my-4">
         <p class="text-faded mb-4">{{caption}}</p>
-        <a class="btn btn-light btn-xl js-scroll-trigger" href="{{btn_href}}">{{btn_txt}}</a>
+        <a class="btn btn-light btn-xl js-scroll-trigger" href="{{btn_href || strip || strip_newlines}}">{{btn_txt || strip || strip_newlines}}</a>
       </div>
     </div>
   </div>

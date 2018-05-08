@@ -29,7 +29,7 @@
       </div>
       <div class="col-lg-8 mx-auto">
         <p class="text-faded mb-5">{{caption}}
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{btn_href}}">{{btn_txt}}</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="{{ btn_href || strip || strip_newlines }}">{{ btn_txt || strip || strip_newlines }}</a>
       </div>
     </div>
   </div>
