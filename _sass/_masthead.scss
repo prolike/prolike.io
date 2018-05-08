@@ -4,7 +4,11 @@ header.masthead {
   padding-bottom: calc(10rem - 56px);
   background-image: url('../img/header.jpg');
   background-position: center center;
+  @include sans-serif-font;
   @include background-cover;
+  strong{
+    font-weight: 700;
+  }
   hr {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -15,10 +19,11 @@ header.masthead {
   }
   p {
     font-weight: 300;
+    font-size: 1.15rem;
   }
   @media (min-width: 768px) {
     p {
-      font-size: 1.15rem;
+      font-size: 1.5rem;
     }
   }
   @media (min-width: 992px) {

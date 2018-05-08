@@ -14,9 +14,18 @@
   font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
 }
 @mixin sans-serif-font() {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+@mixin caption-font(){
+  font-family: 'Oswald', sans-serif;
+}
+
+@mixin title-font(){
+  font-family: 'Anton', sans-serif;
 }
 
 @mixin stencil-font(){
-  font-family: 'HVD Peace', Arial;
+  font-family: 'HVD Peace', sans-serif;
 }
