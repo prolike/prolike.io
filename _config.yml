@@ -25,7 +25,7 @@ sass:
 
 highlighter: rouge
 exclude:
-  - README.md
+  - "*README.md"
   - bower_components
   - node_modules
   - gulpfile.js
