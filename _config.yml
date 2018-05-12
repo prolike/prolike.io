@@ -24,11 +24,21 @@ defaults:
       path: "" # any file
     values:
       layout: page
+<<<<<<< HEAD
+=======
+<<<<<<< Updated upstream
+=======
+>>>>>>> 6-add-blueprints
   -
     scope:
       type: blueprints
     values:
+<<<<<<< HEAD
       layout: blueprints
+=======
+      layout: blueprint
+>>>>>>> Stashed changes
+>>>>>>> 6-add-blueprints
 
 sass:
   style: compressed
