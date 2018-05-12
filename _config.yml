@@ -37,6 +37,9 @@ collections:
   blueprints:
     output: true
     permalink: /blueprints/:path/
+  pages:
+    output: true
+    permalink: /:path/
 
 defaults:
   -
@@ -49,6 +52,12 @@ defaults:
       type: blueprints
     values:
       layout: blueprint
+  -
+    scope:
+      type: pages
+    values:
+      layout: page
+
 
 responsive_image:
   # [Required]

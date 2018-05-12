@@ -2,7 +2,7 @@
 title: GDPR File Drop
 ---
 
-The client wants a self-hosted open source system for secure exchange of files with their clients and partners.
+A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server.
 {: .kicker}
 
 ## Problem
