@@ -19,6 +19,14 @@ defaults:
     values:
       image: /images/authors/lakruzz.png
       layout: page
+<<<<<<< Updated upstream
+=======
+  -
+    scope:
+      type: blueprints
+    values:
+      layout: blueprint
+>>>>>>> Stashed changes
 
 sass:
   style: compressed

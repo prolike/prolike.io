@@ -39,10 +39,10 @@
     border-color: transparent;
     background-color: transparent;
     .navbar-brand {
-      color: fade-out($white, .3);
+      color: fade-out($gray-900, .5);
       &:focus,
       &:hover {
-        color: $white;
+        color: $gray-900;
       }
     }
     .navbar-nav > li.nav-item > a.nav-link {
@@ -50,9 +50,9 @@
     }
     .navbar-nav > li.nav-item > a.nav-link,
     .navbar-nav > li.nav-item > a.nav-link:focus {
-      color: fade-out($white, .3);
+      color: fade-out($gray-900, .5);
       &:hover {
-        color: $white;
+        color: $gray-900;
       }
     }
     &.navbar-shrink {
