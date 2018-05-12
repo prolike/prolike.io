@@ -1,7 +1,7 @@
-name: Lakruzz - Personal blog by Lars Kruse
-title: Lakruzz - Personal blog by Lars Kruse
-author: lakruzz
-url: http://www.lakruzz.com
+name: Prolike - where yipees collaborate to create niceness
+title: Prolike - where yipees collaborate to create niceness
+author: Prolike
+url: https://www.prolike.io
 twitter:
   username: lakruzz
 social:
@@ -13,12 +13,22 @@ social:
 
 image: /images/authors/lakruzz.png
 
+collections:
+  blueprints:
+    output: true
+    permalink: /blueprints/:path/
+
 defaults:
-  - scope:
-      path: ""
+  -
+    scope:
+      path: "" # any file
     values:
-      image: /images/authors/lakruzz.png
       layout: page
+  -
+    scope:
+      type: blueprints
+    values:
+      layout: blueprints
 
 sass:
   style: compressed
