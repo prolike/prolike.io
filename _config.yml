@@ -13,24 +13,6 @@ social:
 
 image: /images/authors/lakruzz.png
 
-collections:
-  blueprints:
-    output: true
-    permalink: /blueprints/:path/
-
-
-defaults:
-  -
-    scope:
-      path: "" # any file
-    values:
-      layout: page
-  -
-    scope:
-      type: blueprints
-    values:
-      layout: blueprint
-
 sass:
   style: compressed
 
@@ -51,6 +33,22 @@ plugins:
   - jekyll-seo-tag
   - jekyll-feed
 
+collections:
+  blueprints:
+    output: true
+    permalink: /blueprints/:path/
+
+defaults:
+  -
+    scope:
+      path: "" # any file
+    values:
+      layout: page
+  -
+    scope:
+      type: blueprints
+    values:
+      layout: blueprint
 
 responsive_image:
   # [Required]
