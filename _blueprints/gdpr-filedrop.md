@@ -26,7 +26,7 @@ The client's employee uploads a file through a web interface, the act may potent
 
 The intended reciver will get an automated notification via email, containing a download-link which is only valid for a limited amount of time
 
-### Use case 2 - ekstern partner uploads file to client
+### Use case 2 - external partner uploads file to client
 
 The external partner or client has login-free access to a web interface. The files are dragged and dropped on the interface. In the process the external partner will fill in a few properties like, sender, project, case ID.
 
@@ -43,7 +43,7 @@ The suggested solution is based on the Open Source project [youtransfer.io](http
 
 The first task is to get the YouTransfer system up and running securely and orchestrated in the client's context, the following tasks will be focusing on extending the features to support, notification, properties, time constraints etc.
 
-The project is managed my the client.
+The project is managed by the client.
 
 ## Value
 

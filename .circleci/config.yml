@@ -1,4 +1,3 @@
-
 version: 2
 jobs:
   build:
@@ -19,8 +18,40 @@ jobs:
           paths:
             - _site
 
+  integrate:
+    docker:
+      - image: circleci/node:8.10
+    steps:
+      - checkout
+      - run:
+          name: Environment
+          command: |
+            git --version
+            env | sort | grep "CIRCLE"
+      - run:
+          name: Intro
+          command: ./play --manuscript .circleci/manuscript.yml --part gitintro
+      - run:
+          name: Swap to target branch and test integration
+          command: ./play --manuscript .circleci/manuscript.yml --part integrate
+
+  deliver:
+    docker:
+      - image: circleci/node:8.10
+    steps:
+      - checkout
+      - run:
+          name: Intro
+          command: ./play --manuscript .circleci/manuscript.yml --part gitintro
+      - run:
+          name: integrate
+          command: ./play --manuscript .circleci/manuscript.yml --part integrate
+      - run:
+          name: Deliver
+          command: ./play --manuscript .circleci/manuscript.yml --part deliver
+
   test:
-    working_directory: /app
+    working_directory: /app/_site
     docker:
       - image: 18fgsa/html-proofer
     steps:
@@ -29,9 +60,44 @@ jobs:
             - the-site-{{ .Revision }}
       - run:
           name: Htmlproofer
-          command: htmlproofer --disable-external --allow-hash-href --checks-to-ignore ImageCheck --check-favicon _site
+          command: htmlproofer --disable-external --allow-hash-href --checks-to-ignore ImageCheck .
 
   stage:
+    working_directory: /app/_site
+    docker:
+      - image: lakruzz/jekyll-plus:1.0.1
+    steps:
+      - restore_cache:
+          keys:
+            - the-site-{{ .Revision }}
+      - run:
+          name: Use CNAME.stage
+          command: cp -f CNAME.stage CNAME      
+      - run:
+          name: Set git user.name
+          command: git config --global user.name "Circle CI by @prolike"
+      - run:
+          name: Set git user.email
+          command: git config --global user.email "github@prolike.io"
+      - run:
+          name: Set git push.default
+          command: git config --global push.default simple
+      - run:
+          command: git init
+      - run:
+          name: Set remote
+          command: git remote add stage https://$(printenv GHTOKEN_PROLIKE)@github.com/prolike/stage.prolike.io.git
+      - run:
+          command: git add -A .
+      - run:
+          name: Git commit
+          command: git commit -F version.txt
+      - run:
+          name: Git push
+          command: git push -f stage master
+
+
+  prod:
     working_directory: /app/_site
     docker:
       - image: lakruzz/jekyll-plus:1.0.1
@@ -52,7 +118,7 @@ jobs:
           command: git init
       - run:
           name: Set remote
-          command: git remote add stage https://$(printenv GHTOKEN_PROLIKE)@github.com/prolike/prolike.github.io.git
+          command: git remote add production https://$(printenv GHTOKEN_PROLIKE)@github.com/prolike/www.prolike.io.git
       - run:
           command: git add -A .
       - run:
@@ -60,16 +126,38 @@ jobs:
           command: git commit -F version.txt
       - run:
           name: Git push
-          command: git push -f stage master
+          command: git push -f production master
 
 workflows:
   version: 2
   build_and_test:
     jobs:
-      - build
+      - integrate:
+          filters:
+            branches:
+              only: /ready\/.+/ 
+      - build:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: /.*/
       - test:
           requires:
             - build
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              only: /.*/
+      - deliver:
+          requires:
+            - build
+            - test
+          filters:
+            branches:
+              only:
+                - /ready\/.+/ 
       - stage:
           requires:
             - build
@@ -77,3 +165,12 @@ workflows:
           filters:
             branches:
               only: master
+      - prod:
+          requires:
+            - build
+            - test
+          filters:
+            branches:
+              ignore: /.*/
+            tags:
+              only: /^\d+\.\d+\.\d+$/ # Semantic version number (semver.org), followed by optional .(dot)+string https://regex101.com/r/0h0zLr/1
