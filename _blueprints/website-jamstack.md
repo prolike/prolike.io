@@ -12,7 +12,7 @@ Is web development even to be considered as software development? Quite a few pr
 
 ## Features
 
-We're developing a handful of webs for customers, in collaboration with a professional branding an design bureau, [www.phable.io](https:www.phable.io){: target="_blank"}.
+We're developing a handful of webs for customers, in collaboration with a professional branding an design bureau, [www.phable.io](https://www.phable.io){: target="_blank"}.
 All our web development is done using a [JAM stack](https://www.jamstack.org){: target="_blank"} essentially it allows us to consider everything we do as software, working through a Kanban-like approach we continiously deliver every small change, all the way to production. Developers, designers, customers all have easy access to a production-like environment, that can spin up in seconds and make any of the version controlled commits live - right where you want it.
 
 ## Solution
