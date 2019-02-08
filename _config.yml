@@ -34,9 +34,9 @@ plugins:
   - jekyll-feed
 
 collections:
-  blueprints:
+  gigs:
     output: true
-    permalink: /blueprints/:path/
+    permalink: /gigs/:path/
   pages:
     output: true
     permalink: /:path/
@@ -49,9 +49,9 @@ defaults:
       layout: page
   -
     scope:
-      type: blueprints
+      type: gigs
     values:
-      layout: blueprint
+      layout: gig
   -
     scope:
       type: pages
