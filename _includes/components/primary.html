@@ -18,9 +18,6 @@
   {%if include.caption%}{{include.caption}}<p>{%else%}add "caption=your caption here" to the include<p>{%endif%}
 {% endcapture %}
 
-{% comment %}
-  The background image is defined in the _masthead.scss
-{% endcomment %}
 
 <section class="bg-primary" id="{{sectionid || strip || strip_newlines}}">
   <div class="container">

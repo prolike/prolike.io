@@ -2,185 +2,59 @@
 title: Home
 ---
 
-    {% include components/masthead.html
-      btn_href="#butwhy"
-      btn_txt="But why?"
-      title="Prolike"
-      caption="Where Young Independent Professionals</br>
-        Collaborate to</br>
-        Deliver Quality Features and Implementations</br>
-        </br>
-        <strong>Featuring:</strong></br>
-        Continuous Delivery, Serverless, Programmable and Immutable"
-    %}
+<!-- Home selection -->
 
-    {% include components/primary.html
+<!-- I added home to the navi - Caroline -->
+
+{% include components/primary.html
+  id="home"
+  btn_href="#butwhy"
+  btn_txt="But why?"
+  title="Making Awesome Tailored Solutions"
+  caption=" "
+%}
+
+<!-- Home selection end -->
+
+<!-- But why? selection -->
+
+{% include components/primary.html
       id="butwhy"
-      btn_href="#services"
+      btn_href="#buthow"
       btn_txt="But how?"
-      title="We're reinventing the master/apprentice workplace</br>
-        ...offering  a practicum to Young Independent Professionals"
-      caption="We run a frank and transparent business, teaching the
-        <span title=\"Young Independent Professionals\">yipees*</span> the ins
-        and outs of being a professional consultant, freelancer, innovator or entrepreneur"
+      title="Reinventing Relations"
+      caption="But why text"
     %}
 
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading">How We Work</h2>
-            <hr class="my-4">
-          </div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Creating Value</h3>
-              <p class="text-muted mb-0">We only invoice when we create value. Exploration and experiments are covered internally</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Continuous Delivery</h3>
-              <p class="text-muted mb-0">The digital transformation is real: Our deliveries are programmable and immutable</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Prolike stack</h3>
-              <p class="text-muted mb-0">We provide a collaborative technology stack and work through a simple Kanban approach</p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 text-center">
-            <div class="service-box mt-5 mx-auto">
-              <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
-              <h3 class="mb-3">Technical Excellence</h3>
-              <p class="text-muted mb-0">Elders are constantly backing and mentoring the yipees. Quality is built in, not glued on</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-12 mx-auto text-center" style="padding: 2em 2em;">
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="/#portfolio">But What?</a>
-        </div>
-      </div
-    </section>
+<!-- But why? selection end -->
 
-    <!--section class="p-0" id="portfolio">
-      <div class="container-fluid p-0">
-        <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    GDPR File Drop
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section-->
+<!-- But how? Selection -->
 
-    <section  id="portfolio" class="bg-dark text-white" >
-      <div class="container text-center">
-        <h2 class="mb-4">Se our ongoing projects</h2>
-        <div class="col-lg-10 mx-auto" style="padding-bottom:2em;">
-        <p>All our projects are described in <span style="color:#007bff"> gigs</span>. Are you a yipee waiting to join or a customer
-        waiting to come clean - go and be inspired. Join our tribe</p>
-        </div>
-        <a  class="btn btn-light btn-xl sr-button" href="/gigs/">Gigs</a>
-      </div>
-    </section>
-    
+{% include components/primary.html
+      id="buthow"
+      btn_href="#butwhat"
+      btn_txt="But what?"
+      title="Software's Only Software"
+      caption="But how text"
+    %}
 
-    {% include components/contact.html
+<!-- But how? selection end -->
+
+<!-- But what? selection -->
+
+{% include components/primary.html
+      id="butwhat"
+      btn_href="/gigs/"
+      btn_txt="Show me"
+      title="Show me"
+      caption="But what text"
+    %}
+
+<!-- But what? selection end -->
+
+<!-- Contact selection -->
+
+{% include components/contact.html
       id="contact"
       title="Let's get in touch!"
       caption="Ready to start your next project with us?</br>
@@ -190,3 +64,5 @@ title: Home
       phone="+45 20 87 25 30"
       email="hey@prolike.io"
     %}
+
+<!-- But what selection end -->
