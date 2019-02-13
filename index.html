@@ -2,67 +2,71 @@
 title: Home
 ---
 
-<!-- Home selection -->
-
 <!-- I added home to the navi - Caroline -->
 
-{% include components/primary.html
-  id="home"
-  btn_href="#butwhy"
-  btn_txt="But why?"
-  title="Making Awesome Tailored Solutions"
-  caption=" "
-%}
+<div id="fullpage">
 
-<!-- Home selection end -->
+  <!-- Home section -->
 
-<!-- But why? selection -->
-
-{% include components/primary.html
-      id="butwhy"
-      btn_href="#buthow"
-      btn_txt="But how?"
-      title="Reinventing Relations"
-      caption="But why text"
+  <div class="section">
+    {% include components/primary.html
+    id="home"
+    btn_href="#butwhy"
+    btn_txt="But why?"
+    title="Making Awesome Tailored Solutions"
+    caption=" "
     %}
+  </div>
 
-<!-- But why? selection end -->
+  <!-- But why? section -->
 
-<!-- But how? Selection -->
-
-{% include components/primary.html
-      id="buthow"
-      btn_href="#butwhat"
-      btn_txt="But what?"
-      title="Software's Only Software"
-      caption="But how text"
+  <div class="section">
+    {% include components/primary.html
+    id="butwhy"
+    btn_href="#buthow"
+    btn_txt="But how?"
+    title="Reinventing Relations"
+    caption="But why text"
     %}
+  </div>
 
-<!-- But how? selection end -->
+  <!-- But how? Section -->
 
-<!-- But what? selection -->
-
-{% include components/primary.html
-      id="butwhat"
-      btn_href="/gigs/"
-      btn_txt="Show me"
-      title="Show me"
-      caption="But what text"
+  <div class="section">
+    {% include components/primary.html
+    id="buthow"
+    btn_href="#butwhat"
+    btn_txt="But what?"
+    title="Software's Only Software"
+    caption="But how text"
     %}
+  </div>
 
-<!-- But what? selection end -->
+  <!-- But what? section -->
 
-<!-- Contact selection -->
-
-{% include components/contact.html
-      id="contact"
-      title="Let's get in touch!"
-      caption="Ready to start your next project with us?</br>
-        ...or are you a yipee - who want to get onboard?</br>
-        That's great! Give us a call or send us an email and we will
-        get back to you right away!"
-      phone="+45 20 87 25 30"
-      email="hey@prolike.io"
+  <div class="section">
+    {% include components/primary.html
+    id="butwhat"
+    btn_href="/gigs/"
+    btn_txt="Show me"
+    title="Show me"
+    caption="But what text"
     %}
+  </div>
 
-<!-- But what selection end -->
+  <!-- Contact section -->
+
+  <div class="section">
+    {% include components/contact.html
+    id="contact"
+    title="Let's get in touch!"
+    caption="Ready to start your next project with us?</br>
+    ...or are you a yipee - who want to get onboard?</br>
+    That's great! Give us a call or send us an email and we will
+    get back to you right away!"
+    phone="+45 20 87 25 30"
+    email="hey@prolike.io"
+    %}
+  </div>
+
+</div>
