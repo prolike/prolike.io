@@ -2,71 +2,67 @@
 title: Home
 ---
 
+<!-- Home selection -->
+
 <!-- I added home to the navi - Caroline -->
 
-<div id="fullpage">
+{% include components/primary.html
+  id="home"
+  btn_href="#butwhy"
+  btn_txt="But why?"
+  title="Making Awesome Tailored Solutions"
+  caption=" "
+%}
 
-  <!-- Home section -->
+<!-- Home selection end -->
 
-  <div class="section">
-    {% include components/primary.html
-    id="home"
-    btn_href="#butwhy"
-    btn_txt="But why?"
-    title="Making Awesome Tailored Solutions"
-    caption=" "
+<!-- But why? selection -->
+
+{% include components/primary.html
+      id="butwhy"
+      btn_href="#buthow"
+      btn_txt="But how?"
+      title="Reinventing Relations"
+      caption="But why text"
     %}
-  </div>
 
-  <!-- But why? section -->
+<!-- But why? selection end -->
 
-  <div class="section">
-    {% include components/primary.html
-    id="butwhy"
-    btn_href="#buthow"
-    btn_txt="But how?"
-    title="Reinventing Relations"
-    caption="But why text"
+<!-- But how? Selection -->
+
+{% include components/primary.html
+      id="buthow"
+      btn_href="#butwhat"
+      btn_txt="But what?"
+      title="Software's Only Software"
+      caption="But how text"
     %}
-  </div>
 
-  <!-- But how? Section -->
+<!-- But how? selection end -->
 
-  <div class="section">
-    {% include components/primary.html
-    id="buthow"
-    btn_href="#butwhat"
-    btn_txt="But what?"
-    title="Software's Only Software"
-    caption="But how text"
+<!-- But what? selection -->
+
+{% include components/primary.html
+      id="butwhat"
+      btn_href="/gigs/"
+      btn_txt="Show me"
+      title="Show me"
+      caption="But what text"
     %}
-  </div>
 
-  <!-- But what? section -->
+<!-- But what? selection end -->
 
-  <div class="section">
-    {% include components/primary.html
-    id="butwhat"
-    btn_href="/gigs/"
-    btn_txt="Show me"
-    title="Show me"
-    caption="But what text"
+<!-- Contact selection -->
+
+{% include components/contact.html
+      id="contact"
+      title="Let's get in touch!"
+      caption="Ready to start your next project with us?</br>
+        ...or are you a yipee - who want to get onboard?</br>
+        That's great! Give us a call or send us an email and we will
+        get back to you right away!"
+      phone="+45 20 87 25 30"
+      email="hey@prolike.io"
     %}
-  </div>
 
-  <!-- Contact section -->
-
-  <div class="section">
-    {% include components/contact.html
-    id="contact"
-    title="Let's get in touch!"
-    caption="Ready to start your next project with us?</br>
-    ...or are you a yipee - who want to get onboard?</br>
-    That's great! Give us a call or send us an email and we will
-    get back to you right away!"
-    phone="+45 20 87 25 30"
-    email="hey@prolike.io"
-    %}
-  </div>
-
-</div>
+<!-- But what selection end -->
