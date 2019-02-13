@@ -2,10 +2,9 @@
 title: Home
 ---
 
-<!-- Home selection -->
+<div id="fullpage">
 
-<!-- I added home to the navi - Caroline -->
-
+ <div class="section">
 {% include components/primary.html
   id="home"
   btn_href="#butwhy"
@@ -13,11 +12,12 @@ title: Home
   title="Making Awesome Tailored Solutions"
   caption=" "
 %}
-
+</div>
 <!-- Home selection end -->
 
-<!-- But why? selection -->
 
+<!-- But why? selection -->
+<div class="section">
 {% include components/primary.html
       id="butwhy"
       btn_href="#buthow"
@@ -25,11 +25,11 @@ title: Home
       title="Reinventing Relations"
       caption="But why text"
     %}
-
+</div>
 <!-- But why? selection end -->
 
 <!-- But how? Selection -->
-
+<div class="section">
 {% include components/primary.html
       id="buthow"
       btn_href="#butwhat"
@@ -37,11 +37,11 @@ title: Home
       title="Software's Only Software"
       caption="But how text"
     %}
-
+</div>
 <!-- But how? selection end -->
 
 <!-- But what? selection -->
-
+<div class="section">
 {% include components/primary.html
       id="butwhat"
       btn_href="/gigs/"
@@ -49,11 +49,11 @@ title: Home
       title="Show me"
       caption="But what text"
     %}
-
+</div>
 <!-- But what? selection end -->
 
 <!-- Contact selection -->
-
+<div class="section">
 {% include components/contact.html
       id="contact"
       title="Let's get in touch!"
@@ -64,5 +64,6 @@ title: Home
       phone="+45 20 87 25 30"
       email="hey@prolike.io"
     %}
-
+</div>
 <!-- But what selection end -->
+</div>
