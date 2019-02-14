@@ -1,1 +1,34 @@
 // Sections css
+
+.section {
+    height: 100vh;
+    background: #ffffff;
+}
+
+.bg-primary {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    background-color: inherit !important;
+}
+
+#fullpage h2 {
+    color: $prolikeblue !important;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+#fullpage p {
+    color: inherit;
+    font-size: 25px;
+    max-width: 70%;
+}
+
+.btn {
+    background: $prolikeyellow;
+    border-radius: none;
+    color: $prolikeblue;
+    font-weight: 700;
+    border-radius: 5px;
+    margin-top: 10px;
+}
