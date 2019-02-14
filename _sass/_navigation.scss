@@ -1,2 +1,35 @@
 // Navigation css
 
+
+
+.navbar{
+    background-color: #1A2336 !important;
+    color: #fff;
+    height: 92px; 
+    z-index: 10;
+    padding: 0 75px 0 75px;
+}
+
+.navbar-toggler-icon {
+    border: none;
+    
+}
+
+.navbar-toggler, .navbar-toggler:active, .navbar-toggler:visited, .navbar-toggler:focus {
+    border: none;
+    box-shadow: none;
+    outline: none;
+    height:100% !important;
+    padding: 0;
+    margin: 0;
+    padding: 20px;
+}
+
+button:focus {
+    outline: 1px dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    height:100% !important;
+}
+
+.navbar > div { height:100% !important; }
+
