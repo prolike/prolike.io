@@ -1,0 +1,24 @@
+#contact {
+    background: $prolikeblue;
+    height: 100vh;
+    padding-top: 25vh;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+#contact h1 {
+    color: $prolikeyellow;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#contact a {
+    font-size: 20px;
+    display: block;
+    color: #ffffff;
+}
+
+#contact a:hover {
+    color: $prolikeyellow;
+    text-decoration: none;
+}
