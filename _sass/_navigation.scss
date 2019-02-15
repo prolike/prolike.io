@@ -5,7 +5,7 @@
 .navbar{
     background-color: #1A2336 !important;
     color: #fff;
-    height: 92px; 
+    height: 50 px !important;
     z-index: 10;
     padding: 0 75px 0 75px;
 }
@@ -31,5 +31,60 @@ button:focus {
     height:100% !important;
 }
 
-.navbar > div { height:100% !important; }
+.navbar > div {
+    height:100% !important;
+}
 
+ .modal-dialog-centered , .modal-dialog {
+    height: 90% !important;
+    width: 96% !important;
+    background-color:#1A2336 !important;
+    z-index: 10;
+    max-width: 96%;
+    border-radius: .3rem;
+}
+
+.modal-content {
+    background-color:#1A2336 !important;
+    border: none;
+    text-align: center;
+    
+}
+
+.modal-content ul li {
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.modal-content ul {
+    padding: 0;
+    margin: 0;
+}
+
+.modal-content ul li a {
+    color: white;
+
+}
+
+.modal-content ul li a:hover {
+    color: #ffc400;
+    text-decoration: none;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.closebtn:hover {
+    cursor: pointer !important;
+    z-index: 10;
+}
