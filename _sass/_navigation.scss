@@ -5,9 +5,11 @@
 .navbar{
     background-color: #1A2336 !important;
     color: #fff;
-    height: 50 px !important;
+    max-height: 50px;
     z-index: 10;
-    padding: 0 75px 0 75px;
+    padding: 0 75px;
+    display: flex;
+    align-items: center;
 }
 
 .navbar-toggler-icon {
@@ -22,7 +24,8 @@
     height:100% !important;
     padding: 0;
     margin: 0;
-    padding: 20px;
+    height: inherit;
+    padding: 2px;
 }
 
 button:focus {
