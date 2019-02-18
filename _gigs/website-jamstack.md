@@ -1,6 +1,7 @@
 ---
 title: Web development - we're Jammin'
 date: March 14, 2016
+status: Done
 ---
 
 Web development using a pure JAM stack; JavaScript, APIs and Markdown. It's static, secure, fast,
