@@ -1,5 +1,6 @@
 ---
 title: GDPR File Drop
+date: March 15, 2017
 ---
 
 A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server.
