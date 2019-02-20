@@ -3,9 +3,11 @@ title: Gigs
 layout: gigs_layout
 ---
 
-<div class="col-sm">
-    <h2>Up next</h2>
-    
+
+
+<div class="col-lg-4">
+
+
     {% assign sorted = site.gigs | sort: gig.date | reverse %}
 
 
@@ -15,24 +17,30 @@ layout: gigs_layout
 
     {% if gig.status == 'Next' %}
 
-    <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
-    <h5>Date: {{ gig.date | date: "%d %b, %Y" }}</h5>
+    <div class="gig_box upnext_box">
 
-    <p>{{ gig.excerpt | strip_html | strip_newlines }}... </p>
-    <p><a href="{{ gig.url }}">read more..</a></p>
+        <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
+        <h5>{{ gig.date | date: "%d-%b-%y" }}</h5>
 
+
+        <div class="shadow_p">
+<div class="shadow"></div>
+        <div class="gig_box_body">
+            <p>{{ gig.excerpt | strip_html | strip_newlines }}</p>
+        </div></div>
+       <a class="view_more" href="{{ gig.url }}">read more..</a>
+
+    </div>
     {% endif %}
 
-    {% else %}
-    The collection is empty.
     {% endfor %}
 
 
 </div>
 
-<div class="col-sm">
+<div class="col-lg-4">
 
-    <h2>Working on</h2>
+
 
     {% assign sorted = site.gigs | sort: gig.date | reverse %}
 
@@ -41,43 +49,51 @@ layout: gigs_layout
 
 
 
-    {% if gig.status == 'On' %}
+    {% if gig.status == 'Working' %}
+    <div class="gig_box on_box">
 
-    <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
-    <h5>Date: {{ gig.date | date: "%d %b, %Y" }}</h5>
+        <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
+        <h5>{{ gig.date | date: "%d-%b-%y" }}</h5>
 
-    <p>{{ gig.excerpt | strip_html | strip_newlines }}... </p>
-    <p><a href="{{ gig.url }}">read more..</a></p>
-
+        <div class="shadow_p">
+<div class="shadow"></div>
+        <div class="gig_box_body">
+            <p>{{ gig.excerpt | strip_html | strip_newlines }} </p>
+        </div></div>
+       <a class="view_more" href="{{ gig.url }}">read more..</a>
+    </div>
     {% endif %}
 
-    {% else %}
-    The collection is empty.
+
     {% endfor %}
 
 </div>
 
-<div class="col-sm">
-    <h2>Done</h2>
+<div class="col-lg-4">
+
     {% assign sorted = site.gigs | sort: gig.date | reverse %}
     {% for gig in sorted %}
 
 
 
     {% if gig.status == 'Done' %}
+    <div class="gig_box done_box">
 
-    <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
-    <h5>Date: {{ gig.date | date: "%d %b, %Y" }}</h5>
+        <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
+        <h5>{{ gig.date | date: "%d-%b-%y" }}</h5>
 
-    <p>{{ gig.excerpt | strip_html | strip_newlines }}... </p>
-    <p><a href="{{ gig.url }}">read more..</a></p>
+        <div class="shadow_p">
+<div class="shadow"></div>
+        <div class="gig_box_body"> 
+            <p>{{ gig.excerpt | strip_html | strip_newlines }} </p>
+        </div></div>
 
-    {% endif %}
+        <a class="view_more" href="{{ gig.url }}">read more..</a>
 
-    {% else %}
-    The collection is empty.
+        {% endif %}
 
-    {% endfor %}
 
+        {% endfor %}
+    </div>
 
 </div>

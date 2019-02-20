@@ -1,24 +1,25 @@
 ---
-title: GDPR File Drop
+title: GDPR
 date: March 15, 2017
 status: Next
 ---
 
-A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server.
+A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server. 
 {: .kicker}
 
-## Problem
-
+## Problem 
+ 
 Files that contains sensitive data must be handled in accordance with GDPR compliancy.
 
 The client does not want to handle these file through their ordinay email system. Instead they which to have self-contained, seperate solution for handling files that potentially contains sensitive data.
 
 Files must be handled through a secure protocol.
 
+
 ## Features
 
 The client wants a dropbox-like feature where the up- and download of files to and from clients and partners happens through an easy troubleless interface.
-
+{: .kicker}
 
 The following two use cases are described by the client:
 
