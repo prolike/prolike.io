@@ -5,7 +5,7 @@ status: Done
 ---
 
 Web development using a pure JAM stack; JavaScript, APIs and Markdown. It's static, secure, fast, 
-programmable, immutable, serverless. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Eu scelerisque felis imperdiet proin fermentum leo vel. Bibendum est ultricies integer quis. Viverra suspendisse potenti nullam ac tortor. Ridiculus mus mauris vitae 
+programmable, immutable, serverless.
 {: .kicker}
 
 ## Problem

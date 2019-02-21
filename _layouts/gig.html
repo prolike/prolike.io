@@ -2,25 +2,39 @@
 layout: default
 ---
 
+{% include components/navigation.html %}
 
-    {% include components/navigation.html %}
+<div class="container-fluid gig_container">
+  <div class="row">
 
-    <div class="container my-auto" style="padding-top: 6em;">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h1>
-            {{page.title}}
-          </h1>
-          <h4>{{ page.date | date: "%d %b, %Y" }}</h4>
-        </div>
-        <div class="col-lg-8 mx-auto">
-          {{content}}
-        </div>
-      </div>
-    </div>
+    <div class="col-lg-7 m-auto gig_content">
+      <h1 class="gigs_title hr_big">
+          {{page.title}}<hr />
+        </h1>
+        {{ page.excerpt }}
 
-    {% include scripts/bootstrap.core.html %}
+<p>{{ page.date | date: "%d. %B, %Y" }}</p>
+          
+          
+   
 
-    {% include scripts/plugins.html %}
+            
+               {{ page.content | remove: page.excerpt }}
+              
 
-    {% include scripts/template.custom.html %}
+
+        
+         </div>
+            
+</div>
+        
+  
+
+  
+</div>
+
+{% include scripts/bootstrap.core.html %}
+
+{% include scripts/plugins.html %}
+
+{% include scripts/template.custom.html %}
