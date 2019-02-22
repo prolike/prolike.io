@@ -2,10 +2,16 @@
 
 h1 {
   font-size: 2.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
   @media (min-width: 992px) {
   }
   @media (min-width: 1200px) {
   }
+}
+
+.bg-primary h2 {
+  font-weight: 900;
 }
 
 h2 {
