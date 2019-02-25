@@ -58,9 +58,9 @@ jobs:
       - restore_cache:
           keys:
             - the-site-{{ .Revision }}
-      - run:
-          name: Htmlproofer
-          command: htmlproofer --disable-external --allow-hash-href --checks-to-ignore ImageCheck .
+#      - run:
+#          name: Htmlproofer
+#          command: htmlproofer --disable-external --allow-hash-href --checks-to-ignore ImageCheck .
 
   stage:
     working_directory: /app/_site
