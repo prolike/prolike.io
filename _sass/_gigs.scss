@@ -55,7 +55,7 @@
 .gig_content h3 {
     padding: 10px 0;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 30px !important;
 }
 
 .gig_content a {
@@ -88,9 +88,10 @@
     padding: 20px 0 10px 0;
 }
 
-.gig_title {
+.gigs_title {
     text-transform: uppercase;
     font-weight: 700;
+    font-size: 4em !important;
 }
 
 .swimming h2 {
