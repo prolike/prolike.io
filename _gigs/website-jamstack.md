@@ -1,7 +1,7 @@
 ---
 title: Jammstack
 date: March 14, 2016
-status: Done
+status: Working
 ---
 
 Web development using a pure JAM stack; JavaScript, APIs and Markdown. It's static, secure, fast, 
