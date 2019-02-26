@@ -40,9 +40,6 @@ collections:
   pages:
     output: true
     permalink: /:path/
-  stories:
-    output: true
-    permalink: /stories/:path/
 
 defaults:
   -
@@ -60,11 +57,7 @@ defaults:
       type: pages
     values:
       layout: page
-  -
-    scope:
-      type: stories
-    values:
-      layout: story
+  
 
 
 responsive_image:
