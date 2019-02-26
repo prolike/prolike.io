@@ -3,7 +3,9 @@ $(document).ready(function () {
       navigation: true,
       fadingEffect: true,
       responsive: true,
-      resize: true
+      resize: true,
+      menu: '#menu',
+		  anchors: ['home', 'why', 'how', 'what','contact'],
     });
   });
   

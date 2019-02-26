@@ -18,43 +18,45 @@
 {%if include.caption%}{{include.caption}}<p>{%else%}add "caption=your caption here" to the include<p>{%endif%}
     {% endcapture %}
 
-    <section id="contact">
-      <div class="row">
-        <div class="col">
-          <h1>Navigation</h1>
-          <a href="#">Prolike</a>
-          <a href="#">Why</a>
-          <a href="#">How</a>
-          <a href="#">What</a>
-          <a href="#">Gigs</a>
-          <a href="#">Contact</a>
-        </div>
-        <div class="col">
-          <h1>Our Credo</h1>
-          <a href="#">Lean Software Development</a>
-          <a href="#">Serverless</a>
-          <a href="#">Autonomation</a>
-          <a href="#">Docker</a>
-          <a href="#">Kaizen</a>
-          <a href="#">Talent Development</a>
-        </div>
-        <div class="col">
-          <h1>Services</h1>
-          <a href="#">Garage Projects</a>
-          <a href="#">Open Source Contributions</a>
-          <a href="#">Team Resources</a>
-          <a href="#">Research</a>
-          <a href="#">JAM stack Development</a>
-          <a href="#">Integrations</a>
-        </div>
-        <div class="col">
-          <h1>Contact</h1>
-          <a href="#">hey@prolike.io</a>
-          <a href="#">VAT No.: 39464101</a>
-          <a href="#">intern@prolike.io</a>
-          <a href="#">+45 20 872 530</a>
-          <a href="#">Allerød Stationsvej 4</a>
-          <a href="#">3450 Allerød</a>
+    <section class="bg-primary" id="{{sectionid || strip || strip_newlines}}">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h1>Navigation</h1>
+            <a href="#">Prolike</a>
+            <a href="#">Why</a>
+            <a href="#">How</a>
+            <a href="#">What</a>
+            <a href="#">Gigs</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="col">
+            <h1>Our Credo</h1>
+            <a href="#">Lean Software Development</a>
+            <a href="#">Serverless</a>
+            <a href="#">Autonomation</a>
+            <a href="#">Docker</a>
+            <a href="#">Kaizen</a>
+            <a href="#">Talent Development</a>
+          </div>
+          <div class="col">
+            <h1>Services</h1>
+            <a href="#">Garage Projects</a>
+            <a href="#">Open Source Contributions</a>
+            <a href="#">Team Resources</a>
+            <a href="#">Research</a>
+            <a href="#">JAM stack Development</a>
+            <a href="#">Integrations</a>
+          </div>
+          <div class="col">
+            <h1>Contact</h1>
+            <a href="#">hey@prolike.io</a>
+            <a href="#">VAT No.: 39464101</a>
+            <a href="#">intern@prolike.io</a>
+            <a href="#">+45 20 872 530</a>
+            <a href="#">Allerød Stationsvej 4</a>
+            <a href="#">3450 Allerød</a>
+          </div>
         </div>
       </div>
     </section>
