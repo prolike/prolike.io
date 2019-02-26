@@ -47,7 +47,7 @@ button:focus {
  .modal-dialog-centered , .modal-dialog {
     height: 90% !important;
     width: 96% !important;
-    background-color:#1A2336 !important;
+    background-color: $prolikeblue !important;
     z-index: 10;
     max-width: 96%;
     border-radius: .3rem;
@@ -57,31 +57,32 @@ button:focus {
     background-color:#1A2336 !important;
     border: none;
     text-align: center;
-}
 
-.modal-content ul li a {
-    font-size: 4.5em !important;
-}
+    ul li a {
+        font-size: 4.5em !important;
+    }
+    
+    ul li {
+        text-transform: uppercase;
+        font-weight: bold;
+        list-style-type: none;
+    }
+    
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    ul li a {
+        color: white;
+    
+    }
+    
+    ul li a:hover {
+        color: #ffc400;
+        text-decoration: none;
+    }
 
-.modal-content ul li {
-    text-transform: uppercase;
-    font-weight: bold;
-    list-style-type: none;
-}
-
-.modal-content ul {
-    padding: 0;
-    margin: 0;
-}
-
-.modal-content ul li a {
-    color: white;
-
-}
-
-.modal-content ul li a:hover {
-    color: #ffc400;
-    text-decoration: none;
 }
 
 .closebtn {
@@ -93,9 +94,10 @@ button:focus {
     border: none;
     font-weight: bold;
     font-size: 20px;
-}
 
-.closebtn:hover {
-    cursor: pointer !important;
-    z-index: 10;
+    :hover {
+        cursor: pointer !important;
+        z-index: 10;
+    }
+
 }
