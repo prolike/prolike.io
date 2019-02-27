@@ -1,0 +1,33 @@
+
+/* Mobile styling using plain CSS */
+
+@media (max-width: 768px) {
+    
+    .navbar {
+        padding: 0;
+    }
+
+    .section {
+        padding: 0 !important;
+    }
+
+    #fullpage {
+    
+        h2 {
+            font-size: 1.5em;
+        }
+        
+        p {
+            font-size: 15px;
+        }
+    }
+    
+    .btn {
+        background: $prolikeyellow;
+        color: $prolikeblue;
+        font-weight: 700;
+        border-radius: 0em;
+        margin-top: .5em;
+    }
+
+}
