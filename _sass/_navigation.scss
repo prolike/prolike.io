@@ -44,60 +44,32 @@ button:focus {
     height:100% !important;
 }
 
- .modal-dialog-centered , .modal-dialog {
-    height: 90% !important;
-    width: 96% !important;
-    background-color: $prolikeblue !important;
-    z-index: 10;
-    max-width: 96%;
-    border-radius: .3rem;
-}
-
-.modal-content {
-    background-color:#1A2336 !important;
-    border: none;
+.dropdown {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-
-    ul li a {
-        font-size: 4.5em !important;
-    }
-    
-    ul li {
-        text-transform: uppercase;
-        font-weight: bold;
-        list-style-type: none;
-    }
-    
-    ul {
-        padding: 0;
-        margin: 0;
-    }
-    
-    ul li a {
-        color: white;
-    
-    }
-    
-    ul li a:hover {
-        color: #ffc400;
-        text-decoration: none;
-    }
-
 }
 
-.closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    background-color: transparent;
-    color: white;
-    border: none;
-    font-weight: bold;
-    font-size: 20px;
+.dropdown-menu {
+    background-color: #1A2336;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 90px;
+    text-transform: uppercase;
+    font-weight: 700;
+    float: unset;
+    z-index: 100000;
+}
 
-    :hover {
-        cursor: pointer !important;
-        z-index: 10;
-    }
+.dropdown-menu a {
+    display: block;
+    color: white;
+}
+
+.dropdown-menu a:hover {
+    display: block;
+    color: $prolikeyellow;
 
 }
