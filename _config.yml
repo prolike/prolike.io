@@ -1,17 +1,13 @@
-name: Lakruzz - Personal blog by Lars Kruse
-title: Lakruzz - Personal blog by Lars Kruse
-author: lakruzz
-url: http://www.lakruzz.com
-twitter:
-  username: lakruzz
-social:
-  name: Lars Kruse
-  links:
-    - https://twitter.com/lakruzz
-    - https://github.com/lakruzz
-    - https://www.linkedin.com/in/lakruzz
+title: Prolike.io
+description: 'We run a frank and transparent business, teaching the Yipees the ins and outs of being a professional consultant, freelancer, innovator or entrepreneur'
+author: Prolike
+url: http://www.prolike.io
 
-image: /images/authors/lakruzz.png
+logo: img/prolike-logo.png
+
+social:
+  name: Prolike
+  links: https://www.linkedin.com/company/prolike/
 
 sass:
   style: compressed
