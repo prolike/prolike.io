@@ -10,6 +10,9 @@
     padding: 0 75px;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 .navbar-toggler-icon {
@@ -40,36 +43,97 @@ button:focus {
     height:100% !important;
 }
 
-.navbar > div {
-    height:100% !important;
-}
 
-.dropdown {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+/* Popup container */
+.popup {
+    cursor: pointer;
+    overflow:auto;
+  }
+  
+  /* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    position: absolute;
+  }
 
-.dropdown-menu {
+  .popuptext {
     background-color: #1A2336;
-    border-radius: 10px;
+    height:100vh;
+    width: 100%;
+    left: 0;
+    padding-right: 75px;
+    padding-top: 75px;
+    top: 60px;
     text-align: center;
-    font-size: 90px;
     text-transform: uppercase;
     font-weight: 700;
-    float: unset;
-    z-index: 100000;
-}
+    font-size: 5rem;
+    display: flexbox;
+    align-items: center;
+    justify-items: center;
+  }
 
-.dropdown-menu a {
-    display: block;
-    color: white;
-}
+  .popuptext ul {
+      text-decoration: none;
+      list-style-type: none;
+  }
 
-.dropdown-menu a:hover {
-    display: block;
-    color: $prolikeyellow;
+  .popuptext ul li a {
+      color: white;
+  }
 
-}
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+
+  
+
+  @media only screen and (max-height: 860px) {
+    .popuptext {
+        
+        font-size: 4rem;
+    }
+  }
+
+  @media only screen and (max-height: 757px) {
+    .popuptext {
+        
+        font-size: 3rem;
+    }
+  }
+
+  @media only screen and (max-height: 650px) {
+    .popuptext {
+        
+        font-size: 2rem;
+    }
+  }
+
+  @media only screen and (max-height: 472px) {
+    .popuptext {
+        
+        font-size: 1.3rem;
+    }
+  }
+
+  @media only screen and (max-height: 327px) {
+    .popuptext {
+        
+        font-size: 1rem;
+        padding-top: 25px;
+    }
+  }
