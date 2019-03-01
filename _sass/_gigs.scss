@@ -11,6 +11,7 @@
     -moz-box-shadow: 0px 26px 41px 0px rgba(0,0,0,0.22);
     box-shadow: 0px 26px 41px 0px rgba(0,0,0,0.22);
     border-radius: 5px;
+    margin-bottom: 100px;
 
     h3 {
         font-weight: 700;
@@ -57,6 +58,8 @@
      min-width: 100%;
      border-color: $prolikeyellow;
  }
+
+ 
 
 .gig_content {
     text-align: left;
@@ -126,9 +129,13 @@
 .gig_container {
     text-align: center;
     font-family: 'Montserrat', sans-serif !important;
-    padding-left: 150px;
-    padding-right: 150px;
     margin-top: 75px;
+
+    .col-lg-2 {
+        width: unset;
+        min-width: unset;
+        max-width: unset;
+    }
 }
 
 // --------------Buttons / links-------------- //
