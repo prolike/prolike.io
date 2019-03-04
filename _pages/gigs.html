@@ -3,97 +3,125 @@ title: Gigs
 layout: gigs_layout
 ---
 
+<!-- TO DO -->
 
-
-<div class="col-lg-2">
-
-
-    {% assign sorted = site.gigs | sort: gig.date | reverse %}
-
-
-    {% for gig in sorted %}
-
-
-
-    {% if gig.status == 'Next' %}
-
-    <div class="gig_box upnext_box">
-
-        <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
-        <h5>{{ gig.date | date: "%d-%b-%y" }}</h5>
-
-
-        <div class="shadow_p">
-<div class="shadow"></div>
-        <div class="gig_box_body">
-            <p>{{ gig.excerpt | strip_html | strip_newlines }}</p>
-        </div></div>
-       <a class="view_more" href="{{ gig.url }}">View more</a>
-
-    </div>
-    {% endif %}
-
-    {% endfor %}
-
-
-</div>
-
-<div class="col-lg-2">
-
-
+<div class="col-lg-4 col-md-6 col-sm-12">
+    <section class="swimming">
+        <hr />
+        <H2>
+            To do
+        </H2>
+        <hr />
+    </section>
 
     {% assign sorted = site.gigs | sort: gig.date | reverse %}
-
-
     {% for gig in sorted %}
+    {% if gig.status == 'To do' %}
+    <a href="{{ gig.url }}">
+    <div class="box to_do">
 
+        <h3>
+            {{ gig.title }}
+        </h3>
 
+        <h5>
+            <i class="far fa-calendar-check"></i>
+            {{ gig.date | date: "%d-%b-%y" }}
+        </h5>
 
-    {% if gig.status == 'Working' %}
-    <div class="gig_box on_box">
-
-        <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
-        <h5>{{ gig.date | date: "%d-%b-%y" }}</h5>
-
-        <div class="shadow_p">
-<div class="shadow"></div>
-        <div class="gig_box_body">
-            <p>{{ gig.excerpt | strip_html | strip_newlines }} </p>
-        </div></div>
-       <a class="view_more" href="{{ gig.url }}">View more</a>
+        <div class="p-gigs">
+        <p>
+            {{ gig.excerpt | strip_html | strip_newlines }}
+        </p>
     </div>
-    {% endif %}
+    <div class="button">More</div>
 
+    </div>
+</a>
+    {% endif %}
 
     {% endfor %}
 
 </div>
 
-<!-- <div class="col-lg-4"> -->
+<!-- IN PROGRESS -->
 
-    <!-- {% assign sorted = site.gigs | sort: gig.date | reverse %}
+<div class="col-lg-4 col-md-6 col-sm-12">
+    <section class="swimming">
+        <hr />
+        <H2>
+            In progress
+        </H2>
+        <hr />
+    </section>
+
+    {% assign sorted = site.gigs | sort: gig.date | reverse %}
     {% for gig in sorted %}
+    {% if gig.status == 'In progress' %}
+    <a href="{{ gig.url }}">
+    <div class="box in_progress">
 
+        <h3>
+            {{ gig.title }}
+        </h3>
 
+        <h5>
+            <i class="far fa-calendar-check"></i>
+            {{ gig.date | date: "%d-%b-%y" }}
+        </h5>
 
+        <div class="p-gigs">
+                <p>
+                    {{ gig.excerpt | strip_html | strip_newlines }}
+                </p>
+            </div>
+
+            <div class="button">More</div>
+
+    </div>
+</a>
+    {% endif %}
+
+    {% endfor %}
+
+</div>
+
+<!-- DONE -->
+
+<div class="col-lg-4 col-md-6 col-sm-12">
+    <section class="swimming">
+        <hr />
+        <H2>
+            Done
+        </H2>
+        <hr />
+    </section>
+
+    {% assign sorted = site.gigs | sort: gig.date | reverse %}
+    {% for gig in sorted %}
     {% if gig.status == 'Done' %}
-    <div class="gig_box done_box">
+<a href="{{ gig.url }}">
+    <div class="box done">
 
-        <h3><a href="{{ gig.url }}">{{ gig.title }}</a></h3>
-        <h5>{{ gig.date | date: "%d-%b-%y" }}</h5>
+        <h3>
+            {{ gig.title }}
+        </h3>
 
-        <div class="shadow_p">
-<div class="shadow"></div>
-        <div class="gig_box_body"> 
-            <p>{{ gig.excerpt | strip_html | strip_newlines }} </p>
-        </div></div>
+        <h5>
+            <i class="far fa-calendar-check"></i>
+            {{ gig.date | date: "%d-%b-%y" }}
+        </h5>
 
-        <a class="view_more" href="{{ gig.url }}">View more</a>
+        <div class="p-gigs">
+                <p>
+                    {{ gig.excerpt | strip_html | strip_newlines }}
+                </p>
+            </div>
+            <div class="button">More</div>
+    </div>
+</a>
+    {% endif %}
 
-        {% endif %}
+    {% endfor %}
 
-
-        {% endfor %}
-    </div> -->
-
-<!-- </div> -->
+</div>

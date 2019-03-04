@@ -1,65 +1,10 @@
 
-// --------------The boxes-------------- //
+// INDIVIDUAL GIG SITE
 
-.gig_box {
-    height: 500px;
-    width: 400px;
-    font-family: 'Montserrat', sans-serif !important;
-    padding: 50px 30px 0 30px;
-    position: relative;
-    -webkit-box-shadow: 0px 26px 41px 0px rgba(0,0,0,0.22);
-    -moz-box-shadow: 0px 26px 41px 0px rgba(0,0,0,0.22);
-    box-shadow: 0px 26px 41px 0px rgba(0,0,0,0.22);
-    border-radius: 5px;
-    margin-bottom: 100px;
-
-    h3 {
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 50px;
-    }
-}
-
-.gig_box_body {
-    max-height: 200px;
-    min-height: 100px;
-    overflow: auto !important;
-    margin-bottom: 50px;
-}
-
-
-.center-forcer {
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly; 
-}
-
-// --------------Text/icons/hr/other-------------- //
-
-
-.title-hr hr {
-    display: inline-block;
-    min-width: 20%;
-    margin: 5px 10px;
-    border-top: 3px solid #d6d6d6;
- }
-
- .hr_big hr {
+.hr_big hr {
     min-width: 100% !important;
     border-color: $prolikeyellow;
  }
-
- .gig_container i {
-     color: #9e9e9e;
-     font-size: 20px;
- }
-
- .col-lg-5 hr {
-     min-width: 100%;
-     border-color: $prolikeyellow;
- }
-
- 
 
 .gig_content {
     text-align: left;
@@ -93,39 +38,6 @@
     }
 }
 
-.gig_desc i {
-    font-size: 50px;
-    padding-top: 30px;
-}
-
-.gigs_title {
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 4em !important;
-}
-
-.swimming {
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-
-    h2 {
-        display: inline-block;
-        width: 400px;
-        margin: 0 auto;
-        padding: 40px 0;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-weight: 900;
-    }
-}
-
-.gig_container .row {
-    margin: 25px 0;
-}
-
 .gig_container {
     text-align: center;
     font-family: 'Montserrat', sans-serif !important;
@@ -136,88 +48,175 @@
         min-width: unset;
         max-width: unset;
     }
+    .row {
+        margin: 25px 0;
+    }
+    
 }
+
+
+// GIGS PAGE
+
+// ------- containers --------//
+
+.container-gigs {
+    text-align: center;
+    margin: 100px auto 0 auto;
+
+    .col-lg-4, .col-md-6 {
+        padding: 0 30px;
+    }
+    
+    a:hover {
+        text-decoration: none;
+    }
+}
+
+.section-gigs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+
+// ----- The cats----//
+
+.swimming {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0;
+
+    i {
+        color: #9e9e9e;
+        font-size: 20px;
+    }
+
+    h2 {
+        display: inline-block;
+        min-width: 200px;
+        margin: 0 auto;
+        padding: 30px 0;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-weight: 900;
+    }
+    
+    hr {
+        display: inline-block;
+        width: 40%;
+        margin: 5px 10px;
+        border-top: 3px solid #e5e5e5;
+     }
+}
+
+//--------------- box ------------------------//
+
+.box {
+    height: 290px;
+    width: 100%;
+    background-color: grey;
+    margin: 0 auto 30px auto;
+    padding: 30px 20px;
+    border-radius: 7px;
+    -webkit-box-shadow: 17px 20px 78px -8px rgba(0,0,0,0.46);
+    -moz-box-shadow: 17px 20px 78px -8px rgba(0,0,0,0.46);
+    box-shadow: 17px 20px 78px -8px rgba(0,0,0,0.46);
+
+    h3 {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2em;
+    }
+
+    h5 {
+        padding: 5px 0;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+
+    .p-gigs {
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        position: relative
+    }
+
+    .p-gigs:before {
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        z-index: 100 !important;
+        content: '';
+        top:0;
+        left: 0;
+    }
+
+    .button {
+        padding: 5px 15px;
+        border-radius: 3px;
+        width: 100px;
+        border: none;
+        text-transform: uppercase;
+        margin: 15px auto 0 auto;
+        font-weight: 700;
+    }
+}
+
+//-------- To do -------------//
+
+.to_do {
+    background-color: #1A2336;
+    color: white;
+
+    .p-gigs:before {
+        background-image: linear-gradient(to bottom, transparent, #1A2336);
+    }
+
+    .button {
+        background-color: #4B504C;
+        color: #1A2336;
+    }
+}
+
+//--------- In progress ------------//
+
+.in_progress {
+    background-color: #4B504C;
+    color: white;
+
+    .p-gigs:before {
+        background-image: linear-gradient(to bottom, transparent, #4B504C);
+    }
+
+    .button {
+        background-color: #FFC400;
+        color: #4B504C;
+    }
+}
+
+//--------- Done ------------//
+
+.done {
+    background-color: #FFC400;
+    color: #1A2336;
+
+    .p-gigs:before {
+        background-image: linear-gradient(to bottom, transparent, #FFC400);
+    }
+
+    .button {
+        background-color: #1A2336;
+        color: #FFC400;
+    }
+}
+
 
 // --------------Buttons / links-------------- //
 
-.view_more {
-    padding: 10px;
-    font-weight: bold;
-    text-transform: uppercase;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 5px;
-    transform: translate(-50%, 300%);
-}
-
-.done_box, .done_box a {
-    background-color: $prolikeyellow;
-    color: #1A2336;
-}
-
-.on_box, .on_box a {
-    background-color: #4B504C;
-    color: white;
-}
-
-.upnext_box, .upnext_box a {
-    background-color: #1A2336;
-    color: white;
-}
-
-.done_box .view_more {
-    background-color:  #1A2336;
-    color: $prolikeyellow;
-}
-
-.on_box .view_more {
-    background-color: $prolikeyellow;
-    color:  #4B504C;
-}
-
-.upnext_box .view_more {
-    background-color: #4B504C;
-    color:  #1A2336;
-
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-// --------------Inset shadow-------------- //
-
-.done_box .shadow {
-    -webkit-box-shadow: inset 0px -99px 80px -45px rgba(255,196,0,1) !important;
-    -moz-box-shadow: inset 0px -99px 80px -45px rgba(255,196,0,1) !important;
-    box-shadow: inset 0px -99px 80px -45px rgba(255,196,0,1) !important;
-}
-
-.upnext_box .shadow {
-    -webkit-box-shadow:  inset 0px -99px 80px -45px rgba(26,35,54,1) !important;
-    -moz-box-shadow: inset 0px -99px 80px -45px rgba(26,35,54,1) !important;
-    box-shadow: inset 0px -99px 80px -45px rgba(26,35,54,1) !important;
-}
-
-.on_box .shadow {
-    -webkit-box-shadow: inset 0px -99px 80px -45px rgba(75,80,76,1) !important;
-    -moz-box-shadow: inset 0px -99px 80px -45px rgba(75,80,76,1) !important;
-    box-shadow: inset 0px -99px 80px -45px rgba(75,80,76,1) !important;
-}
-
-.shadow {
-    position: absolute;
-    z-index: 8;
-    width: 350px;
-    height: 110px;
-    bottom: 0;
-    left: 0;
-}
-
-.shadow_p {
-    position: relative;
-}
 
 // --------------Scrollbar-------------- //
 
@@ -265,3 +264,4 @@ a:hover {
 ::-webkit-scrollbar-corner {
   background: transparent;
 }
+

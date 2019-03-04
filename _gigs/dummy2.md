@@ -1,7 +1,7 @@
 ---
-title: Jamstack
+title: Dummy2
 date: March 14, 2016
-status: In progress
+status: To do
 ---
 
 Web development using a pure JAM stack; JavaScript, APIs and Markdown. It's static, secure, fast, 

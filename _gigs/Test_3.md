@@ -1,7 +1,7 @@
 ---
-title: GDPR
-date: March 15, 2017
-status: Done
+title: Test 3
+date: March 25, 2018
+status: In progress
 ---
 
 A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server. 
