@@ -4,11 +4,11 @@ date: March 29, 2017
 status: To do
 ---
 
-A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server. 
+A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server.
 {: .kicker}
 
-## Problem 
- 
+## Problem
+
 Files that contains sensitive data must be handled in accordance with GDPR compliancy.
 
 The client does not want to handle these file through their ordinay email system. Instead they which to have self-contained, seperate solution for handling files that potentially contains sensitive data.
@@ -41,7 +41,7 @@ In any case, the client employee involved in ther partner transaction, will get 
 
 ## Solution
 
-The suggested solution is based on the Open Source project [youtransfer.io](http://www.youtransfer.io/){: target="_blank"} - source code is available from
+The suggested solution is based on the Open Source project [youtransfer.io](https://www.youtransfer.io/){: target="_blank"} - source code is available from
 [`YouTransfer/YouTransfer`](https://github.com/YouTransfer/YouTransfer){: target="_blank"} at GitHub. The project is written in node.js and JavaScript. It will be hosted using a Docker container, either on the clients own premises or in a public cloud (most likely Azure).
 
 The first task is to get the YouTransfer system up and running securely and orchestrated in the client's context, the following tasks will be focusing on extending the features to support, notification, properties, time constraints etc.

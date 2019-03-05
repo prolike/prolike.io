@@ -58,9 +58,9 @@ jobs:
       - restore_cache:
           keys:
             - the-site-{{ .Revision }}
-#      - run:
-#          name: Htmlproofer
-#          command: htmlproofer --disable-external --allow-hash-href --checks-to-ignore ImageCheck .
+      - run:
+          name: Htmlproofer
+          command: htmlproofer --allow-hash-href --enforce-https  --check-favicon --check-opengraph --report-missing-names --report-invalid-tags .
 
   stage:
     working_directory: /app/_site
@@ -72,7 +72,7 @@ jobs:
             - the-site-{{ .Revision }}
       - run:
           name: Use CNAME.stage
-          command: cp -f CNAME.stage CNAME      
+          command: cp -f CNAME.stage CNAME
       - run:
           name: Set git user.name
           command: git config --global user.name "Circle CI by @prolike"
@@ -135,7 +135,7 @@ workflows:
       - integrate:
           filters:
             branches:
-              only: /ready\/.+/ 
+              only: /ready\/.+/
       - build:
           filters:
             tags:
@@ -157,7 +157,7 @@ workflows:
           filters:
             branches:
               only:
-                - /ready\/.+/ 
+                - /ready\/.+/
       - stage:
           requires:
             - build
