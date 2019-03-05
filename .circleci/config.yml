@@ -60,7 +60,7 @@ jobs:
             - the-site-{{ .Revision }}
       - run:
           name: Htmlproofer
-          command: htmlproofer --allow-hash-href --enforce-https  --check-favicon --check-opengraph --report-missing-names --report-invalid-tags .
+          command: htmlproofer --allow-hash-href  --empty-alt-ignore --enforce-https  --check-favicon --check-opengraph --report-missing-names --report-invalid-tags .
 
   stage:
     working_directory: /app/_site
