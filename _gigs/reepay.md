@@ -1,20 +1,15 @@
 ---
-title: Dummy
-date: March 29, 2017
-status: To do
+title: Reepay migration
+date: 2019-01-12
+status: Done
+published: false
 ---
 
-A self-hosted open source system for secure exchange of files with clients and partners in a dropbox-like setup. Preventing GDPR compliant sensitive data to reach the unsecure email server.
-{: .kicker}
+A migration from one online member dtabase to another, while maintaining all online payment features, including credit card information and subscription types{: .kicker}
 
 ## Problem
 
-Files that contains sensitive data must be handled in accordance with GDPR compliancy.
-
-The client does not want to handle these file through their ordinay email system. Instead they which to have self-contained, seperate solution for handling files that potentially contains sensitive data.
-
-Files must be handled through a secure protocol.
-
+A customer used a
 
 ## Features
 

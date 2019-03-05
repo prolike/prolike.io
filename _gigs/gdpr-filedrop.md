@@ -1,6 +1,6 @@
 ---
 title: GDPR
-date: March 15, 2017
+date: 2018-06-01
 status: Done
 ---
 
