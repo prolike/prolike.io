@@ -2,7 +2,10 @@
 
 .section {
     height: 100vh;
-    background: #ffffff;
+    background-image: url(../img/testwallpaper.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .bg-primary {
@@ -13,7 +16,7 @@
 }
 
 #fullpage {
-    
+
     h2 {
         color: $prolikeblue !important;
         font-size: 2.5em;
