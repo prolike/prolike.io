@@ -5,15 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160 }}{% endif %}" />
   <meta name="author" content="Prolike">
+  <meta name="keywords" content="Continuous Delivery, Agile, Docker"
   
-  <link rel="canonical" href="{{ page.url }}">
+  <link rel="canonical" href="{{ site.url}}{{ page.url }}">
   
   <!-- Open Graph tags -->
   
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-  <meta property="og:url" content="{{ page.url }}">
-  <meta property="og:image" content="{{ if page.image }}{{ page.image }}{{ else }}{{ site.logo }}{{ endif }}" />
+  <meta property="og:url" content="{{ site.url}}{{ page.url }}">
+  <meta property="og:image" content="{{ if page.image }}{{ site.url}}{{ page.image }}{{ else }}{{ site.url}}{{ site.image }}{{ endif }}" />
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="article:publisher" content="https://www.linkedin.com/company/prolike/" />
   <meta property="article:author" content="https://www.linkedin.com/company/prolike/" />
@@ -35,6 +36,7 @@
   <!-- Twitter Card tags -->
   
   <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:image" content="{{ if page.image }}{{ site.url }}{{ page.image }}{{ else }}{{ site.url }}{{ site.image }}{{ endif }}"
   <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   
