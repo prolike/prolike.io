@@ -6,7 +6,7 @@
     /* Sections */
 
     .bg-primary {
-        padding: 0 15px;
+        padding: 0;
     }
 
     #fullpage {
@@ -29,7 +29,7 @@
             font-size: 18px;
         }
     }
-    
+
     /* Navigation bar */
 
     .navbar {
@@ -63,6 +63,22 @@
 
     .modal-content ul li a {
         font-size: 2em !important;
+    }
+
+    .col-xs-6 {
+        max-width: 50%;
+        font-size: 14px !important;
+        margin-bottom: 30px;
+
+
+        a {
+            font-size: 14px !important;
+        }
+
+        h1 {
+            font-size: 14px;
+        }
+
     }
 
 }
