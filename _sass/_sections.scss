@@ -1,11 +1,19 @@
 // Sections css
 
+// Images for all of our sections. 
+// We use the :nth-child parameter 
+// to give each section it's own unique image.
+
 .section {
     height: 100vh;
     background-image: url(../img/testwallpaper.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+}
+
+.section:nth-child(2), .section:nth-child(4) {
+  background-image: url(../img/brain_background.jpg);
 }
 
 .bg-primary {
