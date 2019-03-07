@@ -14,7 +14,7 @@
   <meta property="og:locale" content="en_US">
   <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:url" content="{{ site.url}}{{ page.url }}">
-  <meta property="og:image" content="{{ if page.image }}{{ site.url}}{{ page.image }}{{ else }}{{ site.image }}{{ endif }}" />
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.image }}{% endif %}" />
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="article:publisher" content="https://www.linkedin.com/company/prolike/" />
   <meta property="article:author" content="https://www.linkedin.com/company/prolike/" />
@@ -36,7 +36,7 @@
   <!-- Twitter Card tags -->
   
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:image" content="{{ if page.image }}{{ site.url }}{{ page.image }}{{ else }}{{ site.image }}{{ endif }}"
+  <meta name="twitter:image" content="{% if page.image %}{{ site.url }}{{ page.image }}{% else %}{{ site.image }}{% endif %}"
   <meta name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   
