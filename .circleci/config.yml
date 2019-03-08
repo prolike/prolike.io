@@ -50,10 +50,12 @@ jobs:
       - restore_cache:
           keys:
             - the-repo-{{ .Revision }}
+      - run: |
+            export JEKYLL_PARAMS=`printenv CIRCLE_BRANCH | grep -e "^master$ " && echo "--config _config.yml,_stage_config.yml" || echo ""`
+            printenv JEKYLL_PARAMS
       - run:
-            export IS_MASTER=`printenv CIRCLE_BRANCH | grep -e "master" && echo TRUE || echo ""`
-            printenv IS_MASTER
-            [[ -z "$IS_MASTER" ]] && jekyll build || jekyll build --config _config.yml,_stage_config.yml
+          name: Build jekyll
+          command: jekyll build $JEKYLL_PARAMS           
       - run:
           name: Log the version
           command: cp version.txt _site/version.txt
