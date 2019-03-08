@@ -51,7 +51,7 @@ jobs:
           keys:
             - the-repo-{{ .Revision }}
       - run: |
-            export JEKYLL_PARAMS=`printenv CIRCLE_BRANCH | grep -e "^master$ " && echo "--config _config.yml,_stage_config.yml" || echo ""`
+            export JEKYLL_PARAMS=`printenv CIRCLE_BRANCH | grep -e "^master$" && echo "--config _config.yml,_stage_config.yml" || echo ""`
             printenv JEKYLL_PARAMS
       - run:
           name: Build jekyll
