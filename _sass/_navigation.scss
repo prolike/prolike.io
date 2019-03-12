@@ -92,6 +92,7 @@ button:focus {
 
       ul li a {
       color: white;
+      transition: none !important;
   }
       ul li a:hover {
         text-decoration: none;
@@ -116,8 +117,6 @@ button:focus {
     from {opacity: 0;}
     to {opacity:1 ;}
   }
-
-  
 
   @media only screen and (max-height: 860px) {
     .popuptext {
@@ -153,13 +152,4 @@ button:focus {
         font-size: 1rem;
         padding-top: 25px;
     }
-  }
-
-// This little puppy down here defines, that there
-// shouldn't be any delay when the user toggles off
-// the fullscreen navigation menu - a bit of a hack,
-// but it'll have to suffice for now...
-
-  *, .popuptext::after, .popuptext::before {
-    transition: none !important;
   }
