@@ -99,13 +99,11 @@ button:focus {
       }
   }
 
-  
-
   /* Toggle this class when clicking on the popup container (hide and show the popup) */
   .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s
+    animation: fadeIn 1s;
   }
   
   /* Add animation (fade in the popup) */
@@ -155,4 +153,13 @@ button:focus {
         font-size: 1rem;
         padding-top: 25px;
     }
+  }
+
+// This little puppy down here defines, that there
+// shouldn't be any delay when the user toggles off
+// the fullscreen navigation menu - a bit of a hack,
+// but it'll have to suffice for now...
+
+  *, .popuptext::after, .popuptext::before {
+    transition: none !important;
   }
