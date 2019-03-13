@@ -27,7 +27,7 @@ layout: stories_layout
   {% for story in site.stories %}
 
   <div class="col-lg-3 col-md-4 col-sm-12 story-card">
-    <div class="card-img-top" style="background-image: url('../img/stories/{{ story.image }}')"></div>
+    <div class="card-img-top" style="background-image: url('{{ story.image }}')"></div>
     <div class="card-body">
       <p class="tags">{{ story.tags | join: " " | truncatewords: 3, '' }}</p>
       <h5 class="card-title">{{ story.title }}</h5>
