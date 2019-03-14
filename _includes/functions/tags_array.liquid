@@ -1,0 +1,29 @@
+
+
+
+{% assign exclude = include.exclude | split: "," %}
+{% assign obscure_delimiter = ":::" %}
+
+
+{% comment %} compiling the gross list of all tags, duplicates and all {% endcomment %}
+
+{% for story in site.stories %}
+  {% assign tags = tags | concat:story.tags %}
+{% endfor %}
+
+
+{% comment %} There isn't a function that allows me to manipulate an array,
+so I'm casting it to a string (join) which allows me to use the remove filter and
+then casting it back to an array (split) when I'm done {% endcomment %}
+
+{% assign tags_as_str = tags | join:obscure_delimiter %}
+{% for excl in exclude %}
+  {% assign tags_as_str = tags_as_str | remove:excl %}
+{% endfor %}
+{% assign tags = tags_as_str | split:obscure_delimiter%}
+
+
+{% comment %} Getting rid of duplicates (uniq), sorting it and casting to a csv
+string - all in one go {% endcomment %}
+
+{{ tags | uniq | sort | join: "," }}

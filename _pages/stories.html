@@ -7,39 +7,43 @@ layout: stories_layout
   <div class="col-lg-5 m-auto">
 
 
-      <p class="tags">
-
-      {% comment %} compiling the gross list of all tags, duplicates and all {% endcomment %}
-      {% for story in site.stories %}
-        {% assign tags = tags | concat:story.tags %}
-      {% endfor %}
-      {% comment %} Getting rid of duplicates (uniq), sorting it  - all in one go {% endcomment %}
 
 
-      {{ tags | uniq | sort | join: ' ' }}
 
-    </p>
+      
 
+
+
+<!-- here the list of tags is collected and displayed -->
+{% capture all_tags_csv %}
+  {% include functions/tags_array.liquid
+  %}
+{% endcapture %}
+
+{% assign all_tags = all_tags_csv | split: "," %}
+{% for t in all_tags %}
+  <p class="tags"><a href="#">{{ t }}</a></p>
+{% endfor %}
+  
   </div>
 </div>
 
 <div class="row">
   {% for story in site.stories %}
-
+<a href="{{ story.url }}">
   <div class="col-lg-3 col-md-4 col-sm-12 story-card">
     <div class="card-img-top" style="background-image: url('{{ story.image }}')"></div>
     <div class="card-body">
-      <p class="tags">{{ story.tags | join: " " | truncatewords: 3, '' }}</p>
+      {% for tag in story.tags %}
+      <p class="tags"><a href="#">{{ tag | downcase }}</a></p>
+      {% endfor %}
       <h5 class="card-title">{{ story.title }}</h5>
       <p class="card-text">{{ story.description }}</p>
     </div>
   </div>
+</a>
 
-
-  <!-- <div class="col-lg-3 m-auto">
-    <h2>{{ story.title }}</h2>
-    <p>{{ story.description }}</p>
-  </div> -->
+  
 
   {% endfor %}
 

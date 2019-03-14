@@ -1,7 +1,7 @@
 ---
 title: Story2
 author: Caroline
-tags: [benjamin, woop ]
+tags: [benjamin, woop, LEAN]
 image: ../img/stories/kanin1.jpg
 published: true
 description: A short, one line description of your story.
