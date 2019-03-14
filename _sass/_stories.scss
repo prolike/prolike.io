@@ -36,24 +36,34 @@
 
     .tags {
         padding:2px 5px 2px 5px;
-        background-color: #4b504c;
+        background-color: $prolikeyellow;
         color: white;
-        border-radius: 4px;
+        border-radius: 2px;
         display: inline;
         font-size: 11px;
         text-transform: uppercase;
         font-weight: 700;
 
+        a {
+            color: #1a2336;
+            text-decoration: none;
+        }
+
     }
 
     .story-card {
         text-align: left;
+        
+
+        .tags {
+            font-size: 8px;
+        }
 
         .card-body {
             border: 1px solid #bdbdbd;
             border-top: none;
             border-radius: 3px;
-            padding: 5px 15px 5px 15px;
+            padding: 5px 15px 10px 15px;
         }
 
         .card-img-top {
