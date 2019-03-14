@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% include components/navigation.html %}
+
+<div class="container-fluid gig_container">
+  <div class="row">
+
+    <div class="col-lg-7 m-auto gig_content">
+      <h1 class="gigs_title hr_big">
+          {{page.title}}<hr />
+        </h1>
+        {{ page.excerpt }}
+
+<p>{{ page.date | date: "%d. %B, %Y" }}</p>
+          
+          
+   
+
+            
+               {{ page.content | remove: page.excerpt }}
+              
+
+
+        
+         </div>
+            
+</div>
+        
+  
+
+  
+</div>
+
+{% include scripts/bootstrap.core.html %}
+
+{% include scripts/plugins.html %}
+
+{% include scripts/template.custom.html %}

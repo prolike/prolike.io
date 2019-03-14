@@ -63,7 +63,7 @@ defaults:
       layout: page
   -
     scope:
-      type: posts
+      type: stories
     values:
       layout: story
   
