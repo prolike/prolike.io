@@ -63,10 +63,9 @@ button:focus {
     left: 0;
     top: 60px;
     padding: 0 0 120px 0;
-    text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 5rem;
+    font-size: 55px;
     display: flexbox;
     align-items: center;
     justify-items: center;
@@ -136,6 +135,7 @@ button:focus {
     .popuptext {
         
         font-size: 2rem;
+        text-align: left !important;
     }
   }
 
