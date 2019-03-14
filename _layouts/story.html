@@ -4,34 +4,38 @@ layout: default
 
 {% include components/navigation.html %}
 
-<div class="container-fluid gig_container">
-  <div class="row">
+<div class="image-header-bg container" style="background-image: url('../{{ page.image }}') !important;">
 
-    <div class="col-lg-7 m-auto gig_content">
-      <h1 class="gigs_title hr_big">
-          {{page.title}}<hr />
-        </h1>
-        {{ page.excerpt }}
 
+
+</div>
+
+
+
+
+<div class="container story-content">
+
+
+<h1 class="story_title hr_big">
+  {{page.title}}
+  <hr />
+</h1>
 <p>{{ page.date | date: "%d. %B, %Y" }}</p>
-          
-          
-   
 
-            
-               {{ page.content | remove: page.excerpt }}
-              
+{{ page.excerpt }}
 
 
-        
-         </div>
-            
+
+
+
+
+{{ page.content | remove: page.excerpt }}
+
+
 </div>
-        
-  
 
-  
-</div>
+
+
 
 {% include scripts/bootstrap.core.html %}
 
