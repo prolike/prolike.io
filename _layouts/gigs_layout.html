@@ -3,30 +3,30 @@ layout: default
 ---
 
 
-    {% include components/navigation.html %}
+{% include components/navigation.html %}
 
 
-    <div class="container container-gigs">
+<div class="container container-gigs">
 
-      <div class="row justify-content-md-center">
-        <div class="col-lg-5">
-            <h1 class="gigs_title hr_big">
-                {{page.title}}
-                <hr />
-            </h1>
-        </div>
-      </div>
-
-
-        <div class="row justify-content-md-center">
-          {{content}}
-        </div>
-
-
+  <div class="row justify-content-md-center">
+    <div class="col-lg-5">
+      <h1 class="gigs_title hr_big">
+        {{page.title}}
+        <hr />
+      </h1>
     </div>
+  </div>
 
-    {% include scripts/bootstrap.core.html %}
 
-    {% include scripts/plugins.html %}
+  <div class="row justify-content-md-center">
+    {{content}}
+  </div>
 
-    {% include scripts/template.custom.html %}
+
+</div>
+
+{% include scripts/bootstrap.core.html %}
+
+{% include scripts/plugins.html %}
+
+{% include scripts/template.custom.html %}

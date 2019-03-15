@@ -4,28 +4,31 @@
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
+
 @mixin background-cover() {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
 @mixin serif-font() {
   font-family: 'Montserrat', Arial, sans-serif;
 }
+
 @mixin sans-serif-font() {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
 }
 
-@mixin caption-font(){
+@mixin caption-font() {
   font-family: 'Oswald', sans-serif;
 }
 
-@mixin title-font(){
+@mixin title-font() {
   font-family: 'Montserrat', sans-serif;
 }
 
-@mixin stencil-font(){
+@mixin stencil-font() {
   font-family: 'HVD Peace', sans-serif;
 }

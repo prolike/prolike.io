@@ -1,10 +1,9 @@
-
 // INDIVIDUAL GIG SITE
 
 .hr_big hr {
     min-width: 100% !important;
     border-color: $prolikeyellow;
- }
+}
 
 .gig_content {
     text-align: left;
@@ -28,7 +27,7 @@
     }
 
     a {
-        color:  #4B504C;
+        color: #4B504C;
         text-transform: uppercase;
         font-weight: 700;
     }
@@ -48,10 +47,11 @@
         min-width: unset;
         max-width: unset;
     }
+
     .row {
         margin: 25px 0;
     }
-    
+
 }
 
 
@@ -63,10 +63,11 @@
     text-align: center;
     margin: 100px auto 0 auto;
 
-    .col-lg-4, .col-md-6 {
+    .col-lg-4,
+    .col-md-6 {
         padding: 0 30px;
     }
-    
+
     a:hover {
         text-decoration: none;
     }
@@ -104,13 +105,13 @@
         font-size: 20px;
         font-weight: 900;
     }
-    
+
     hr {
         display: inline-block;
         width: 40%;
         margin: 5px 10px;
         border-top: 3px solid #e5e5e5;
-     }
+    }
 }
 
 //--------------- box ------------------------//
@@ -122,9 +123,9 @@
     margin: 0 auto 30px auto;
     padding: 30px 20px;
     border-radius: 7px;
-    -webkit-box-shadow: 17px 20px 78px -8px rgba(0,0,0,0.46);
-    -moz-box-shadow: 17px 20px 78px -8px rgba(0,0,0,0.46);
-    box-shadow: 17px 20px 78px -8px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 17px 20px 78px -8px rgba(0, 0, 0, 0.46);
+    -moz-box-shadow: 17px 20px 78px -8px rgba(0, 0, 0, 0.46);
+    box-shadow: 17px 20px 78px -8px rgba(0, 0, 0, 0.46);
 
     h3 {
         text-transform: uppercase;
@@ -151,7 +152,7 @@
         position: absolute;
         z-index: 10 !important;
         content: '';
-        top:0;
+        top: 0;
         left: 0;
     }
 
@@ -221,47 +222,48 @@
 // --------------Scrollbar-------------- //
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
+    width: 8px;
+    height: 8px;
 }
 
-.done_box ::-webkit-scrollbar-thumb, .done_box ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px;
+}
+
+.done_box ::-webkit-scrollbar-thumb,
+.done_box ::-webkit-scrollbar-thumb:hover {
     background: #1A2336;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e1e1e1;
-  border: 0px none #ffffff;
-  border-radius: 50px;
+    background: #e1e1e1;
+    border: 0px none #ffffff;
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 ::-webkit-scrollbar-thumb:active {
-  background: #ffffff;
+    background: #ffffff;
 }
 
 ::-webkit-scrollbar-track {
-  background: transparent;
-  border: 0px solid #241e1e;
-  border-radius: 50px;
+    background: transparent;
+    border: 0px solid #241e1e;
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track:hover {
-  background: transparent;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-track:active {
-  background: transparent;
+    background: transparent;
 }
 
 ::-webkit-scrollbar-corner {
-  background: transparent;
+    background: transparent;
 }
-
