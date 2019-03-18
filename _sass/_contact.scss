@@ -24,3 +24,12 @@
         font-size: 20px;
     }
 }
+
+.ourfooter {
+    display: flex;
+    justify-content: space-around;
+    
+    .bg-primary {
+        width: 100%;
+    }
+}
