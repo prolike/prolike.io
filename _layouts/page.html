@@ -7,8 +7,22 @@ layout: default
 
     {{content}}
 
+    <div class="ourfooter contact">
+        {% include components/contact.html
+        title="Let's get in touch!"
+        caption="Ready to start your next project with us?</br>
+        ...or are you a yipee - who want to get onboard?</br>
+        That's great! Give us a call or send us an email and we will
+        get back to you right away!"
+        phone="+45 20 87 25 30"
+        email="hey@prolike.io"
+        %}
+      </div>
+
     {% include scripts/bootstrap.core.html %}
 
     {% include scripts/plugins.html %}
+
+
 
 
