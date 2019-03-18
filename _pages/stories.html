@@ -21,7 +21,10 @@ layout: stories_layout
 </div>
 
 <div class="row">
-  {% for story in site.stories %}
+  {% assign sorted = site.stories | sort: story.date | reverse %}
+
+  {% for story in sorted %}
+  
 <a href="{{ story.url }}">
   <div class="col-lg-3 col-md-4 col-sm-12 story-card">
     <div class="card-img-top" style="background-image: url('{{ story.image }}')"></div>
@@ -30,6 +33,7 @@ layout: stories_layout
       <p class="tags"><a href="#">{{ tag | downcase }}</a></p>
       {% endfor %}
       <h5 class="card-title">{{ story.title }}</h5>
+      <p class="author-text">Posted by <span class="author-span">{{ story.author }}</span> on <span class="date-span">{{ story.date | date: "%B %d, %Y" }}</span></p>
       <p class="card-text">{{ story.description }}</p>
     </div>
   </div>

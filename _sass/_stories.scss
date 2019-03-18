@@ -7,15 +7,21 @@
     text-align: center;
     padding: 0 0 30px 0;
 
+    h2 {
+        font-size: 60px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
     .card-title {
-        font-size: 14px;
+        font-size: 15px;
         margin-top: 10px;
-        margin-bottom: 2px;
+        margin-bottom: 0;
         font-weight: 700;
     }
 
     p {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .row {
@@ -57,10 +63,21 @@
 
     .story-card {
         text-align: left;
+
         
+        .author-text {
+            font-size: 11px;
+            margin: 3px 0 8px 0;
+            
+        }
+
+        .author-span, .date-span {
+            font-weight: bold;
+            color: #4b504c;
+        }
 
         .tags {
-            font-size: 8px;
+            font-size: 9px;
         }
 
         .card-body {
