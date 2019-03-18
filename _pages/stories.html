@@ -3,10 +3,10 @@ title: Stories
 layout: stories_layout
 ---
 
-<div class="row">
+<!-- <div class="row">
   <div class="col-lg-5 m-auto">
 
-<!-- here the list of tags is collected and displayed -->
+<!-- here the list of tags is collected and displayed
 {% capture all_tags_csv %}
   {% include functions/tags_array.liquid
   %}
@@ -18,26 +18,26 @@ layout: stories_layout
 {% endfor %}
   
   </div>
-</div>
+</div> -->
 
 <div class="row">
   {% assign sorted = site.stories | sort: story.date | reverse %}
 
   {% for story in sorted %}
   
-<a href="{{ story.url }}">
+
   <div class="col-lg-3 col-md-4 col-sm-12 story-card">
-    <div class="card-img-top" style="background-image: url('{{ story.image }}')"></div>
+    <a href="{{ story.url }}"><div class="card-img-top" style="background-image: url('{{ story.image }}')"></div></a>
     <div class="card-body">
-      {% for tag in story.tags %}
+      <!-- {% for tag in story.tags %}
       <p class="tags"><a href="#">{{ tag | downcase }}</a></p>
-      {% endfor %}
+      {% endfor %} -->
       <h5 class="card-title">{{ story.title }}</h5>
       <p class="author-text">Posted by <span class="author-span">{{ story.author }}</span> on <span class="date-span">{{ story.date | date: "%B %d, %Y" }}</span></p>
       <p class="card-text">{{ story.description }}</p>
     </div>
   </div>
-</a>
+
 
   
 
