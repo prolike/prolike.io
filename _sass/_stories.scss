@@ -105,6 +105,7 @@
 .image-header-bg {
     margin-top: 135px;
     height: 450px;
+    width: 910px;
     background-size: 120%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -113,6 +114,7 @@
 }
 
 .story-content {
+    width: 910px;
     padding: 0;
     margin-top: 75px;
     margin-bottom: 100px;
@@ -155,6 +157,10 @@
 
     h1 {
         text-transform: uppercase;
+    }
+
+    p {
+        font-size: 16px;
     }
 }
 

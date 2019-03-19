@@ -108,4 +108,25 @@
         background-image: none;
     }
 
+
+    // Stories and Gigs
+    
+    // This is most likely not the best way to go about making these
+    // items responsive, but for not, this is our solution.
+    // But don't worry, I'll note this down, and return at a later date.
+
+    .image-header-bg {
+        max-width: 97.5%;
+        margin-top: 60px !important;
+    }
+
+    .story-content {
+        max-width: 100% !important;
+        padding: 0 10px !important; 
+    }
+
+    .gig_container .row {
+        width: 100%;
+    }
+
 }

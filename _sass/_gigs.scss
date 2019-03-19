@@ -43,6 +43,7 @@
     font-family: 'Montserrat', sans-serif !important;
     margin-top: 75px;
 
+
     .col-lg-2 {
         width: unset;
         min-width: unset;
@@ -50,7 +51,8 @@
     }
 
     .row {
-        margin: 25px 0;
+        margin: 0 auto;
+        width: 910px;
     }
 
 }
