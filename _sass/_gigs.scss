@@ -7,6 +7,7 @@
 
 .gig_content {
     text-align: left;
+    padding: 100px 0;
 
     h1 {
         text-transform: uppercase;
@@ -62,6 +63,7 @@
 .container-gigs {
     text-align: center;
     margin: 100px auto 0 auto;
+    padding: 100px 0;
 
     .col-lg-4,
     .col-md-6 {
@@ -123,9 +125,7 @@
     margin: 0 auto 30px auto;
     padding: 30px 20px;
     border-radius: 7px;
-    -webkit-box-shadow: 17px 20px 78px -8px rgba(0, 0, 0, 0.46);
-    -moz-box-shadow: 17px 20px 78px -8px rgba(0, 0, 0, 0.46);
-    box-shadow: 17px 20px 78px -8px rgba(0, 0, 0, 0.46);
+    box-shadow: 0 0px 20px #bdbdbd;
 
     h3 {
         text-transform: uppercase;
