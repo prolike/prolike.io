@@ -2,6 +2,8 @@ title: Prolike.io
 description: 'We run a frank and transparent business, teaching the Yipees the ins and outs of being a professional consultant, freelancer, innovator or entrepreneur'
 author: Prolike
 url: https://stage.prolike.io
+paginate: 24
+paginate_path: "/stories/page:num/"
 
 logo: /img/seo_img.png
 image: /img/seo_img.png
@@ -32,6 +34,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+feed:
+  path: feed.xml
+
 collections:
   gigs:
     output: true
@@ -39,6 +44,9 @@ collections:
   pages:
     output: true
     permalink: /:path/
+  stories:
+    output: true
+    permalink: /stories/:path/
 
 defaults:
   -
@@ -56,6 +64,11 @@ defaults:
       type: pages
     values:
       layout: page
+  -
+    scope:
+      type: stories
+    values:
+      layout: story
   
 
 

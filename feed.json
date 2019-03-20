@@ -1,0 +1,60 @@
+---
+layout: null
+---
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "{{ site.title | xml_escape }}",
+    "home_page_url": "{{ "/" | absolute_url }}",
+    "feed_url": "{{ "/feed.json" | absolute_url }}",
+    "description": {{ site.description | jsonify }},
+    "icon": "{{ "/apple-touch-icon.png" | absolute_url }}",
+    "favicon": "{{ "/favicon.ico" | absolute_url }}",
+    "expired": false,
+    {% if site.author %}
+    "author": {% if site.author.name %} {
+        "name": "{{ site.author.name }}",
+        "url": {% if site.author.url %}"{{ site.author.url }}"{% else %}null{% endif %},
+        "avatar": {% if site.author.avatar %}"{{ site.author.avatar }}"{% else %}null{% endif %}
+    },{% else %}"{{ site.author }}",{% endif %}
+    {% endif %}
+"items": [
+    {% for story in site.stories %}
+        {
+            "id": "{{ story.url | absolute_url | sha1 }}",
+            "title": {{ story.title | jsonify }},
+            "summary": {{ story.seo_description | jsonify }},
+            "content_text": {{ story.content | strip_html | strip_newlines | jsonify }},
+            "content_html": {{ story.content | strip_newlines | jsonify }},
+            "url": "{{ post.url | absolute_url }}",
+            {% if story.image.size > 1 %}"image": {{ story.image | jsonify }},{% endif %}
+            {% if story.link.size > 1 %}"external_url": "{{ story.link }}",{% endif %}
+            {% if story.banner.size > 1 %}"banner_image": "{{ story.banner }}",{% endif %}
+            {% if story.tags.size > 1 %}"tags": {{ story.tags | jsonify }},{% endif %}
+            {% if story.enclosure.size > 1 %}"attachments": [ {
+              "url": "{{ story.enclosure }}",
+              "mime_type": "{{ story.enclosure_type }}",
+              "size_in_bytes": "{{ story.enclosure_length }}"
+            },{% endif %}
+            "date_published": "{{ story.date | date_to_xmlschema }}",
+            "date_modified": "{{ story.date | date_to_xmlschema }}",
+            {% if post.author %}
+                "author": {% if story.author.name %} {
+                "name": "{{ story.author.name }}",
+                "url": {% if story.author.url %}"{{ post.author.url }}"{% else %}null{% endif %},
+                "avatar": {% if story.author.avatar %}"{{ post.author.avatar }}"{% else %}null{% endif %}
+                }
+                {% else %}"{{ post.author }}"{% endif %}
+            {% else %}
+                "author": {% if site.author.name %} {
+                "name": "{{ site.author.name }}",
+                "url": {% if site.author.url %}"{{ site.author.url }}"{% else %}null{% endif %},
+                "avatar": {% if site.author.avatar %}"{{ site.author.avatar }}"{% else %}null{% endif %}
+                }
+                {% else %}
+                "{{ site.author }}"
+                {% endif %}
+            {% endif %}
+        }{% if forloop.last == false %},{% endif %}
+    {% endfor %}
+    ]
+}

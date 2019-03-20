@@ -30,12 +30,9 @@ permalink: /:categories/:title/
 plugins:
   - jekyll-responsive-image
   - jekyll-seo-tag
-  - jekyll-feed
   - jekyll-paginate
   - jekyll-sitemap
 
-feed:
-  path: feed.xml
 
 collections:
   gigs:
