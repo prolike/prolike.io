@@ -34,6 +34,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+feed:
+  path: feed.xml
+
 collections:
   gigs:
     output: true
