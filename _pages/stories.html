@@ -31,7 +31,7 @@ layout: stories_layout
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
     <div class="blog-tag-item" style="display: inline-block" id="{{ t }}-item">
-      <a class="tags" href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
+      <a class="tags" href onclick="filter('{{ t }}'); return false;" data-proofer-ignore>{{ t }}</a>
     </div>
     {% endfor %}
   </div>
