@@ -7,7 +7,7 @@
 
 {% comment %} compiling the gross list of all tags, duplicates and all {% endcomment %}
 
-{% for story in site.story %}
+{% for post in site.posts %}
   {% assign tags = tags | concat:post.tags %}
 {% endfor %}
 

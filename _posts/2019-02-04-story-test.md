@@ -1,9 +1,9 @@
 ---
-title: Story234
+title: Story2
 author: Caroline
-tags: [git, docker, agile ]
-image: ../img/stories/kanin2.jpg
-published: false
+tags: [benjamin, woop, LEAN]
+image: ../img/stories/kanin1.jpg
+published: true
 description: A short, one line description of your story.
 ---
 

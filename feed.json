@@ -31,7 +31,7 @@ layout: null
             {% if story.banner.size > 1 %}"banner_image": "{{ story.banner }}",{% endif %}
             {% if story.tags.size > 1 %}"tags": {{ story.tags | jsonify }},{% endif %}
             {% if story.enclosure.size > 1 %}"attachments": [ {
-              "url": "{{ story.enclosure }}",
+              "url": "{{ story.url }}",
               "mime_type": "{{ story.enclosure_type }}",
               "size_in_bytes": "{{ story.enclosure_length }}"
             },{% endif %}
