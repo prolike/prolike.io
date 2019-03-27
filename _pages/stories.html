@@ -31,17 +31,16 @@ layout: stories_layout
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
     <div class="blog-tag-item" style="display: inline-block" id="{{ t }}-item">
-      <a class="tags" href onclick="filter('{{ t }}'); return false;" data-proofer-ignore>{{ t }}</a>
+      <a class="tags" href="#{{ t }}" onclick="filter('{{ t }}'); " data-proofer-ignore>{{ t }}</a>
+
+      
     </div>
     {% endfor %}
+    <a class="hidden tags" id="showAllBtn" href onclick="showallbtn()">SHOW ALL</a>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-lg-5 m-auto">
-    <a class="hidden" id="showAllBtn" href onclick="showallbtn()">SHOW ALL</a>
-  </div>
-</div>
+
 
 
 
@@ -98,12 +97,21 @@ layout: stories_layout
 
 
 <script>
+
+
+
+
   function filter(tag) {
     setActiveTag(tag);
     showContainer(tag);
     hideAll();
     btnAll();
-  }
+    setHash(tag);
+
+    
+}
+  
+   
 
   function setActiveTag(tag) {
     // loop through all items and remove active class
@@ -135,10 +143,7 @@ layout: stories_layout
     }
   }
 
-  if (window.location.hash) {
-    var tag = window.location.hash.split('#')[1];
-    filter(tag);
-  }
+  
 
   function hideAll() {
     var all_h = document.getElementById('row_all')
@@ -147,7 +152,7 @@ layout: stories_layout
 
   function btnAll() {
     var all_btn = document.getElementById('showAllBtn')
-    all_btn.setAttribute('class', '');
+    all_btn.setAttribute('class', ' tags');
   }
 
   function showallbtn() {
