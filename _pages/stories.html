@@ -36,7 +36,7 @@ layout: stories_layout
       
     </div>
     {% endfor %}
-    <a class="hidden tags" id="showAllBtn" href="#all" onclick="showallRow();" data-proofer-ignore>SHOW ALL</a>
+    <a class="hidden tags" id="showAllBtn" href onclick="showallRow();" data-proofer-ignore>SHOW ALL</a>
   </div>
 </div>
 
@@ -153,7 +153,7 @@ if(window.location.hash) {
 
     var list = document.getElementById(tag + '-container');
     if (list) {
-      list.setAttribute('class', 'blog-list-container row');
+      list.setAttribute('class', 'blog-list-container row active-card');
     }
   }
 
@@ -175,6 +175,8 @@ if(window.location.hash) {
 
     var all_btn = document.getElementById('showAllBtn')
     all_btn.setAttribute('class', ' tags');
+
+  
   }
 
 </script>
