@@ -37,13 +37,13 @@ plugins:
 collections:
   gigs:
     output: true
-    permalink: /gigs/:path/
+    permalink: /gigs/:title/
   pages:
     output: true
-    permalink: /:path/
+    permalink: /:title/
   posts:
     output: true
-    permalink: /posts/:path/
+    permalink: /stories/:title/
 
 defaults:
   -
@@ -66,7 +66,7 @@ defaults:
       type: posts
     values:
       layout: story
-  
+
 
 
 responsive_image:
