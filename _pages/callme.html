@@ -1,0 +1,42 @@
+---
+title: Call me
+layout: page
+---
+<div class="container container-gigs">
+
+    <div class="row justify-content-md-center">
+        <div class="col-lg-5">
+            <h1 class="gigs_title hr_big">
+                {{page.title}}
+                <hr />
+            </h1>
+            <H3>Write us your name, phone number and email and we'll give you a call.</H3>
+        </div>
+    </div>
+
+
+    <div class="row justify-content-md-center">
+
+
+        <form action="https://formspree.io/carolineolivia@prolike.io" method="POST">
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" name="phone" placeholder="Phone number">
+            </div>
+
+            <div class="form-group">
+                <input type="email" name="_replyto" class="form-control" id="exampleInputEmail1"
+                    aria-describedby="emailHelp" placeholder="Email">
+            </div>
+
+
+            <input type="submit" class="btn btn-primary" value="Send">
+        </form>
+    </div>
+
+
+</div>
