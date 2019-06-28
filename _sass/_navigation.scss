@@ -1,7 +1,5 @@
 // Navigation css
 
-
-
 .navbar {
   background-color: #1A2336 !important;
   color: #fff;
@@ -24,7 +22,6 @@
   color: white;
   font-size: 20px;
 }
-
 
 .navbar-toggler,
 .navbar-toggler:active,
@@ -95,6 +92,7 @@ button:focus {
   ul li a {
     color: white;
     transition: none !important;
+    transition: all ease-in-out .2s !important;
   }
 
   ul li a:hover {
