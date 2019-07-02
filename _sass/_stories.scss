@@ -39,7 +39,7 @@
         margin: 100px 0;
     }
 
-    
+
 
     .story-header {
         background-image: url("../img/stories/yellow-header.jpg");
@@ -52,11 +52,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom:  0px;
+        margin-bottom: 0px;
     }
 
     .tags {
-        padding:2px 5px 2px 5px;
+        padding: 2px 5px 2px 5px;
         background-color: $prolikeyellow;
         color: white;
         border-radius: 2px;
@@ -75,14 +75,15 @@
     .story-card {
         text-align: left;
 
-        
+
         .author-text {
             font-size: 11px;
             margin: 3px 0 8px 0;
-            
+
         }
 
-        .author-span, .date-span {
+        .author-span,
+        .date-span {
             font-weight: bold;
             color: #4b504c;
         }
@@ -111,21 +112,20 @@
 }
 
 .hidden {
-    display: none!important;
-    visibility: hidden!important;
-  }
+    display: none !important;
+    visibility: hidden !important;
+}
 
 // individual story site
 
 .image-header-bg {
-    margin-top: 135px;
-    height: 450px;
-    width: 910px;
-    background-size: 120%;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
 
-   
+
 }
 
 .story-content {
@@ -137,7 +137,7 @@
     .hr_big hr {
         min-width: 100% !important;
         border-color: $prolikeyellow;
-     }
+    }
 
     h2 {
         padding-bottom: 0;
@@ -161,7 +161,7 @@
     }
 
     a {
-        color:  #4B504C;
+        color: #4B504C;
         text-transform: uppercase;
         font-weight: 700;
     }
@@ -178,4 +178,3 @@
         font-size: 16px;
     }
 }
-

@@ -22,15 +22,6 @@ hr.light {
   border-color: $white;
 }
 
-a {
-  color: $primary;
-  @include transition-all;
-
-  &:hover {
-    color: darken($primary, .1);
-  }
-}
-
 h1,
 h2,
 h3,
