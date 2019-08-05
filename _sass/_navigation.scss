@@ -1,8 +1,8 @@
 // Navigation css
 
 .navbar {
-  background-color: #1A2336 !important;
-  color: #fff;
+  background-color: $prolikeblue !important;
+  color: #ffffff;
   height: 60px;
   z-index: 100;
   padding: 0 75px;
@@ -15,7 +15,6 @@
 
 .navbar-toggler-icon {
   border: none;
-
 }
 
 .fas {
@@ -57,7 +56,7 @@ button:focus {
 }
 
 .popuptext {
-  background-color: #1A2336;
+  background-color: $prolikeblue;
   height: 100vh;
   width: 100%;
   left: 0;
@@ -95,11 +94,12 @@ button:focus {
 
   ul li a:hover {
     text-decoration: none;
-    color: #ffc400;
+    color: $prolikeyellow;
   }
 }
 
 /* Toggle this class when clicking on the popup container (hide and show the popup) */
+
 .popup .show {
   visibility: visible;
   -webkit-animation: fadeIn .3s;
@@ -107,6 +107,7 @@ button:focus {
 }
 
 /* Add animation (fade in the popup) */
+
 @-webkit-keyframes fadeIn {
   from {
     opacity: 0;

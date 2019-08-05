@@ -1,26 +1,36 @@
-.stdright, .stdleft, .stdcenter, .pic-standard {
-  padding:   5px;
+.stdright,
+.stdleft,
+.stdcenter,
+.pic-standard {
+  padding: 5px;
   font-size: 83%;
-  width:     450px;
+  width: 450px;
 }
+
 .pic-small {
-  padding:   5px;
+  padding: 5px;
   font-size: 83%;
-  width:     250px;
+  width: 250px;
 }
-.stdright, .pic-right {
-  float:        right;
+
+.stdright,
+.pic-right {
+  float: right;
 }
-.stdleft, .pic-left {
-  float:        left;
+
+.stdleft,
+.pic-left {
+  float: left;
   margin-right: 10px;
 }
-.stdcenter, .pic-center {
-  display:       block;
-  margin-left:   auto;
-  margin-right:  auto;
+
+.stdcenter,
+.pic-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 20px;
-  margin-top:    0px;
+  margin-top: 0px;
 }
 
 .pic {
@@ -29,34 +39,42 @@
   padding-left: 0px;
   padding-right: 0px;
   padding-bottom: 5px;
-  font-size: 83%; }
-  
-  .center {
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    clear: both;
-    text-align: center !important;
+  font-size: 83%;
 }
-  .right {
-    float: right;
-    clear: left;
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  clear: both;
+  text-align: center !important;
 }
-  .left { 
-    float: left;
-    margin-right: 10px;
-    padding-left: 0px;
-    clear: right;
+
+.right {
+  float: right;
+  clear: left;
 }
-  .wide {
-    width: 600px;
+
+.left {
+  float: left;
+  margin-right: 10px;
+  padding-left: 0px;
+  clear: right;
 }
-  .medium {
-    width: 450px;
+
+.wide {
+  width: 600px;
 }
-  .small {
-    width: 250px;
+
+.medium {
+  width: 450px;
 }
-  .tiny {
-    width: 140px;} 
+
+.small {
+  width: 250px;
+}
+
+.tiny {
+  width: 140px;
+}

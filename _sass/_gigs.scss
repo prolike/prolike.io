@@ -1,4 +1,4 @@
-// INDIVIDUAL GIG SITE
+// Styling for the individual Gigs site
 
 .hr_big hr {
     min-width: 100% !important;
@@ -58,9 +58,9 @@
 }
 
 
-// GIGS PAGE
+// Styling for the Gigs page
 
-// ------- containers --------//
+// ------- Containers --------//
 
 .row {
     margin: 0;
@@ -89,7 +89,7 @@
 
 
 
-// ----- The cats----//
+// ----- The cats ----//
 
 .swimming {
     height: auto;
@@ -122,7 +122,7 @@
     }
 }
 
-//--------------- box ------------------------//
+//--------------- Box ------------------------//
 
 .box {
     height: 290px;
@@ -176,7 +176,7 @@
 //-------- To do -------------//
 
 .to_do {
-    background-color: #1A2336;
+    background-color: $prolikeblue;
     color: white;
 
     .p-gigs:before {
@@ -185,7 +185,7 @@
 
     .button {
         background-color: #4B504C;
-        color: #1A2336;
+        color: $prolikeblue;
     }
 }
 
@@ -200,7 +200,7 @@
     }
 
     .button {
-        background-color: #FFC400;
+        background-color: $prolikeyellow;
         color: #4B504C;
     }
 }
@@ -208,24 +208,24 @@
 //--------- Done ------------//
 
 .done {
-    background-color: #FFC400;
-    color: #1A2336;
+    background-color: $prolikeyellow;
+    color: $prolikeblue;
 
     .p-gigs:before {
-        background-image: linear-gradient(to bottom, transparent, #FFC400);
+        background-image: linear-gradient(to bottom, transparent, $prolikeyellow);
     }
 
     .button {
-        background-color: #1A2336;
-        color: #FFC400;
+        background-color: $prolikeblue;
+        color: $prolikeyellow;
     }
 }
 
 
-// --------------Buttons / links-------------- //
+// -------------- Buttons / Links-------------- //
 
 
-// --------------Scrollbar-------------- //
+// -------------- Scrollbar -------------- //
 
 ::-webkit-scrollbar {
     width: 8px;
@@ -239,7 +239,7 @@
 
 .done_box ::-webkit-scrollbar-thumb,
 .done_box ::-webkit-scrollbar-thumb:hover {
-    background: #1A2336;
+    background: $prolikeblue;
 }
 
 ::-webkit-scrollbar-thumb {
