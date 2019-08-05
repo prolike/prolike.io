@@ -68,6 +68,8 @@
   cursor: pointer;
   transition: 800ms ease all;
   outline: none;
+  text-transform: uppercase;
+  padding: 10px;
 }
 
 .btn:hover {
@@ -138,4 +140,49 @@
 .call:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+
+/* Small devices (phones, 768px and down) */
+
+@media only screen and (max-width: 768px) {
+
+  .bg-primary {
+    padding: 0 !important;
+  }
+
+  #fullpage {
+
+    h2 {
+      font-size: 22.5px;
+    }
+
+    p {
+      font-size: 16px;
+      max-width: 100%;
+    }
+
+  }
+
+  .section {
+    background-image: url(../img/mb-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .section:nth-child(2) {
+    background-image: url(../img/mb-2.jpg);
+  }
+
+  .section:nth-child(3) {
+    background-image: url(../img/mb-3.jpg);
+  }
+
+  .section:nth-child(4) {
+    background-image: url(../img/mb-1.jpg);
+  }
+
+  .section:nth-child(5) {
+    background-image: none;
+  }
 }

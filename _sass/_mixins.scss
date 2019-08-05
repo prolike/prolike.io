@@ -1,11 +1,8 @@
 // Mixins
 
-@mixin background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+// Fonts
+
+@import url(https://fonts.googleapis.com/css?family=Anton|Montserrat:300,300i,400,400i,700,700i|Oswald);
 
 @mixin serif-font() {
   font-family: 'Montserrat', Arial, sans-serif;
@@ -26,4 +23,30 @@
 
 @mixin stencil-font() {
   font-family: 'HVD Peace', sans-serif;
+}
+
+// Colors
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+$primary: #F05F40 !default;
+$prolikeyellow: #FFC400 !default;
+$prolikeblue: #1A2236 !default;
+
+// Miscellaneous
+
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }

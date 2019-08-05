@@ -177,10 +177,10 @@
 
 .to_do {
     background-color: $prolikeblue;
-    color: white;
+    color: $white;
 
     .p-gigs:before {
-        background-image: linear-gradient(to bottom, transparent, #1A2336);
+        background-image: linear-gradient(to bottom, transparent, $prolikeblue);
     }
 
     .button {
@@ -193,7 +193,7 @@
 
 .in_progress {
     background-color: #4B504C;
-    color: white;
+    color: $white;
 
     .p-gigs:before {
         background-image: linear-gradient(to bottom, transparent, #4B504C);
@@ -244,16 +244,16 @@
 
 ::-webkit-scrollbar-thumb {
     background: #e1e1e1;
-    border: 0px none #ffffff;
+    border: 0px none $white;
     border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #ffffff;
+    background: $white;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #ffffff;
+    background: $white;
 }
 
 ::-webkit-scrollbar-track {
