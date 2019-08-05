@@ -13,35 +13,28 @@ layout: gigs_layout
         </H2>
         <hr />
     </section>
-
     {% assign sorted = site.gigs | sort: gig.date | reverse %}
     {% for gig in sorted %}
     {% if gig.status == 'To do' %}
     <a href="{{ gig.url }}">
-    <div class="box to_do">
-
-        <h3>
-            {{ gig.title }}
-        </h3>
-
-        <h5>
-            <i class="far fa-calendar-check"></i>
-            {{ gig.date | date: "%d-%b-%y" }}
-        </h5>
-
-        <div class="p-gigs">
-        <p>
-            {{ gig.excerpt | strip_html | strip_newlines }}
-        </p>
-    </div>
-    <div class="button">More</div>
-
-    </div>
-</a>
+        <div class="box to_do">
+            <h3>
+                {{ gig.title }}
+            </h3>
+            <h5>
+                <i class="far fa-calendar-check"></i>
+                {{ gig.date | date: "%d-%b-%y" }}
+            </h5>
+            <div class="p-gigs">
+                <p>
+                    {{ gig.excerpt | strip_html | strip_newlines }}
+                </p>
+            </div>
+            <div class="button">More</div>
+        </div>
+    </a>
     {% endif %}
-
     {% endfor %}
-
 </div>
 
 <!-- IN PROGRESS -->
@@ -54,36 +47,28 @@ layout: gigs_layout
         </H2>
         <hr />
     </section>
-
     {% assign sorted = site.gigs | sort: gig.date | reverse %}
     {% for gig in sorted %}
     {% if gig.status == 'In progress' %}
     <a href="{{ gig.url }}">
-    <div class="box in_progress">
-
-        <h3>
-            {{ gig.title }}
-        </h3>
-
-        <h5>
-            <i class="far fa-calendar-check"></i>
-            {{ gig.date | date: "%d-%b-%y" }}
-        </h5>
-
-        <div class="p-gigs">
+        <div class="box in_progress">
+            <h3>
+                {{ gig.title }}
+            </h3>
+            <h5>
+                <i class="far fa-calendar-check"></i>
+                {{ gig.date | date: "%d-%b-%y" }}
+            </h5>
+            <div class="p-gigs">
                 <p>
                     {{ gig.excerpt | strip_html | strip_newlines }}
                 </p>
             </div>
-
             <div class="button">More</div>
-
-    </div>
-</a>
+        </div>
+    </a>
     {% endif %}
-
     {% endfor %}
-
 </div>
 
 <!-- DONE -->
@@ -96,32 +81,26 @@ layout: gigs_layout
         </H2>
         <hr />
     </section>
-
     {% assign sorted = site.gigs | sort: gig.date | reverse %}
     {% for gig in sorted %}
     {% if gig.status == 'Done' %}
-<a href="{{ gig.url }}">
-    <div class="box done">
-
-        <h3>
-            {{ gig.title }}
-        </h3>
-
-        <h5>
-            <i class="far fa-calendar-check"></i>
-            {{ gig.date | date: "%d-%b-%y" }}
-        </h5>
-
-        <div class="p-gigs">
+    <a href="{{ gig.url }}">
+        <div class="box done">
+            <h3>
+                {{ gig.title }}
+            </h3>
+            <h5>
+                <i class="far fa-calendar-check"></i>
+                {{ gig.date | date: "%d-%b-%y" }}
+            </h5>
+            <div class="p-gigs">
                 <p>
                     {{ gig.excerpt | strip_html | strip_newlines }}
                 </p>
             </div>
             <div class="button">More</div>
-    </div>
-</a>
+        </div>
+    </a>
     {% endif %}
-
     {% endfor %}
-
 </div>
