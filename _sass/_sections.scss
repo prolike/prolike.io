@@ -163,6 +163,14 @@
 
   }
 
+
+  .bg-primary {
+    .container-fluid {
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+
   .section {
     background-image: url(../images/backgrounds/mb-1.jpg);
     background-size: cover;
