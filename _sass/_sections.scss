@@ -6,7 +6,7 @@
 
 .section {
   height: 100vh;
-  background-image: url(../img/hand.jpg);
+  background-image: url(../images/backgrounds/hand.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@
 
 .section:nth-child(2),
 .section:nth-child(4) {
-  background-image: url(../img/brain_background.jpg);
+  background-image: url(../images/backgrounds/brain_background.jpg);
 }
 
 .bg-primary {
@@ -164,22 +164,22 @@
   }
 
   .section {
-    background-image: url(../img/mb-1.jpg);
+    background-image: url(../images/backgrounds/mb-1.jpg);
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
   }
 
   .section:nth-child(2) {
-    background-image: url(../img/mb-2.jpg);
+    background-image: url(../images/backgrounds/mb-2.jpg);
   }
 
   .section:nth-child(3) {
-    background-image: url(../img/mb-3.jpg);
+    background-image: url(../images/backgrounds/mb-3.jpg);
   }
 
   .section:nth-child(4) {
-    background-image: url(../img/mb-1.jpg);
+    background-image: url(../images/backgrounds/mb-1.jpg);
   }
 
   .section:nth-child(5) {

@@ -2,7 +2,7 @@
 title: Full Throttle Intern
 author: Benjamin
 tags: [internship, multimedia, rookie]
-image: ../img/stories/intern.jpeg
+image: ../images/stories/intern.jpeg
 published: true
 description: One designer among a pack of software engineers... Yikes!
 ---
@@ -57,9 +57,3 @@ I was lucky enough to be awarded with a student job afterwards, and the effort I
 But getting back to my initial point. I've learned so much during my time here. And to my understanding, I've only learned the very basics in order to be able to take part of the companys pipeline. I've certainly achieved what I set out to, by helping with creating visual identities. And I'm still certain, that being a fullstack developer that masters everything is impossible.
 
 And that's also okay. To me, that just means that I want to become as good as a front-end developer that I can, which for now is enough for me to master.
-
-<!-- {% responsive_image 
-  path: "img/beach.jpg" 
-  alt: "alt text" caption: "caption" class: "center medium" 
-%} -->
-

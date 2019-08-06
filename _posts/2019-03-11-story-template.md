@@ -2,7 +2,7 @@
 title: Story tenplate
 author: Caroline - prolike
 tags: [git, docker, agile]
-image: ../img/stories/kanin4.jpeg
+image: ../images/stories/kanin4.jpeg
 published: false
 description: A short, one line description of your story.
 ---
@@ -18,7 +18,6 @@ Paragraphs
 Picture example:
 
 <!-- {% responsive_image 
-  path: "img/beach.jpg" 
+  path: "images/beach.jpg" 
   alt: "alt text" caption: "caption" class: "center medium" 
 %} -->
-

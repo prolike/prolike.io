@@ -5,8 +5,8 @@ url: https:/www.prolike.io
 paginate: 24
 paginate_path: "/stories/page:num/"
 
-logo: /img/seo_img.png
-image: /img/seo_img.png
+logo: /images/logos/seo_img.png
+image: /images/logos/seo_img.png
 
 social:
   name: Prolike
