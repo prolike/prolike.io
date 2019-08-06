@@ -2,7 +2,7 @@
 title: Full Throttle Intern
 author: Benjamin
 tags: [internship, multimedia, rookie]
-image: ../images/stories/intern.jpeg
+image: /images/stories/intern.jpeg
 published: true
 description: One designer among a pack of software engineers... Yikes!
 ---
