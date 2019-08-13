@@ -22,6 +22,14 @@
 {%if include.title%}{{include.title}}{%else%}add "title=your title here" to the include{%endif%}
 {% endcapture %}
 
+{% capture btn_id %}
+{%if include.btn_id %}{{include.btn_id}}{%endif%}
+{% endcapture %}
+
+{% capture btn_id_call %}
+{%if include.btn_id_call %}{{include.btn_id_call}}{%endif%}
+{% endcapture %}
+
 {% capture caption %}
 {%if include.caption%}{{include.caption}}<p>{%else%}add "caption=your caption here" to the include<p>{%endif%}
     {% endcapture %}
@@ -33,9 +41,9 @@
           <div class="col-lg-8">
             <h2 class="section-heading">{{title}}</h2>
             <p class="text-faded mb-4">{{caption}}</p>
-            <a class="btn btn-light btn-xl js-scroll-trigger btn_i" href="{{btn_href || strip || strip_newlines}}"
+            <a id="{{ btn_id }}" class="btn btn-light btn-xl js-scroll-trigger btn_i" href="{{btn_href || strip || strip_newlines}}"
               data-proofer-ignore>{{btn_txt || strip || strip_newlines}}</a>
-            <a class="btn call btn-light btn-xl js-scroll-trigger btn_i" href="{{btn_href-call || strip || strip_newlines}}"
+            <a id="{{ btn_id_call }}" class="btn call btn-light btn-xl js-scroll-trigger btn_i" href="{{btn_href-call || strip || strip_newlines}}"
               data-proofer-ignore>{{btn_txt-call || strip || strip_newlines}}</a>
           </div>
         </div>
