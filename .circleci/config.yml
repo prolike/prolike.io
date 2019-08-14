@@ -38,7 +38,7 @@ jobs:
           name: Create version.txt
           command: play --manuscript .circleci/play-proflow-cci-gh.yml --part write-version-to-file
       - save_cache:
-          key: the-repo-{{.Revision}}
+          key: the-repo-{{ .Revision }}
           paths:
             - .
 
@@ -50,17 +50,17 @@ jobs:
       - restore_cache:
           keys:
             - the-repo-{{ .Revision }}
-      - run: 
-          name: Build Jekyll
+      - run:
+          name:  Build "stage" or "production".
           command: |
-            export JEKYLL_PARAMS=`printenv CIRCLE_BRANCH | grep -e "^master$" && echo "--config _config.yml,_stage_config.yml" || echo ""`
-            printenv JEKYLL_PARAMS
-            jekyll build $JEKYLL_PARAMS           
+            [[ -z "$CIRCLE_TAG" ]] && export JEKYLL_ENV=stage || export JEKYLL_ENV=production
+            printenv JEKYLL_ENV
+            jekyll build
       - run:
           name: Log the version
           command: cp version.txt _site/version.txt
       - save_cache:
-          key: the-built-repo-{{ .Revision }}
+          key: the-built-repo-{{ .Revision }}{{ .BuildNum }}
           paths:
             - _site
             - .circleci
@@ -72,7 +72,7 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - the-built-repo-{{ .Revision }}
+            - the-built-repo-
       - run:
           name: Htmlproofer
           command: htmlproofer --disable-external --allow-hash-href --checks-to-ignore ImageCheck _site
@@ -84,7 +84,7 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - the-built-repo-{{ .Revision }}
+            - the-built-repo-
       - run:
           name: Htmlproofer
           command: htmlproofer --allow-hash-href  --enforce-https  --check-favicon --check-opengraph --report-missing-names --report-invalid-tags  -- _site
@@ -96,7 +96,7 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - the-repo-{{ .Revision }}
+            - the-repo-
       - run:
           name: Deliver
           command: play --manuscript .circleci/play-proflow-cci-gh.yml --part deliver
@@ -112,7 +112,7 @@ jobs:
     steps:
       - restore_cache:
           keys:
-            - the-built-repo-{{ .Revision }}
+            - the-built-repo-
       - run:
           name: Use CNAME.stage if it exist
           command: '[[ -e CNAME.stage ]] && cp -f CNAME.stage CNAME || echo No CNAME.stage file found'
@@ -121,20 +121,20 @@ jobs:
           command: play --manuscript ../.circleci/play-proflow-cci-gh.yml --part ghpages_deploy
 
   prod-deploy:
-    working_directory: /app/_site
-    docker:
-      - image: lakruzz/play:latest
-        environment:
+   working_directory: /app/_site
+   docker:
+     - image: lakruzz/play:latest
+       environment:
           PLAY_TARGET_GH_REPO:   prolike/www.prolike.io
           PLAY_USER_NAME:        Circle CI by @Prolike
           PLAY_USER_EMAIL:       circleci@prolike.io
-    steps:
-      - restore_cache:
-          keys:
-            - the-built-repo-{{ .Revision }}
-      - run:
-          name: Deploy to GitHub Pages
-          command: play --manuscript ../.circleci/play-proflow-cci-gh.yml --part ghpages_deploy
+   steps:
+     - restore_cache:
+         keys:
+           - the-built-repo-
+     - run:
+         name: Deploy to GitHub Pages
+         command: play --manuscript ../.circleci/play-proflow-cci-gh.yml --part ghpages_deploy
 
 workflows:
   version: 2
