@@ -1,9 +1,10 @@
 title: Prolike.io
 description: 'We run a frank and transparent business, teaching the Yipees the ins and outs of being a professional consultant, freelancer, innovator or entrepreneur'
 author: Prolike
-url: https:/www.prolike.io
 paginate: 24
 paginate_path: "/stories/page:num/"
+stage_site: https://stage.prolike.io
+prod_site: https://www.prolike.io
 
 logo: /images/logos/seo_img.png
 image: /images/logos/seo_img.png
