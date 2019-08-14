@@ -31,7 +31,7 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ page.content | truncate: 160 }}{% endif %}" />
+  <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160 }}{% endif %}" />
   <meta name="author" content="Prolike">
   <meta name="keywords" content="Continuous Delivery, Agile, Docker"
   
@@ -47,7 +47,7 @@
   <meta property="article:publisher" content="https://www.linkedin.com/company/prolike/" />
   <meta property="article:author" content="https://www.linkedin.com/company/prolike/" />
   <meta property="article:published_time" content="{{ page.date }}" />
-  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.content }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   
   <!-- Touch icons -->
   
