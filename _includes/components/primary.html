@@ -43,7 +43,7 @@
             <p class="text-faded mb-4">{{caption}}</p>
             <a id="{{ btn_id_call | strip | strip_newlines }}" class="btn btn-light btn-xl js-scroll-trigger btn_i" href="{{btn_href || strip || strip_newlines}}"
               data-proofer-ignore>{{btn_txt || strip || strip_newlines}}</a>
-            <a id="{{ btn_id_call | strip | strip_newlines }}" class="btn call btn-light btn-xl js-scroll-trigger btn_i" href="{{btn_href-call || strip || strip_newlines}}"
+            <a id="{{ btn_id | strip | strip_newlines }}" class="btn call btn-light btn-xl js-scroll-trigger btn_i" href="{{btn_href-call || strip || strip_newlines}}"
             data-proofer-ignore>{{btn_txt-call || strip || strip_newlines}}</a>
           </div>
         </div>
