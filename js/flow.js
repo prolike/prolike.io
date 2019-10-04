@@ -15,7 +15,7 @@ TweenMax.set("#scroll", {
     y: 70
 })
 
-TweenMax.set(".fas", {
+TweenMax.set(".flowIcon", {
     y: 300
 })
 
