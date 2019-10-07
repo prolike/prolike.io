@@ -39,7 +39,7 @@ TweenMax.set("#workshopInfo", {
     y: 340
 })
 
-var order = new TimelineMax()
+var workshop = new TimelineMax()
 
     .to("#workshop", 1, {
         opacity: 1,
@@ -128,8 +128,9 @@ var fr = new TimelineMax()
         y: 360
     }, 1)
 
-//second release ends
+//first release ends
 
+//second release
 TweenMax.set("#sr", {
     y: 300
 });
@@ -145,6 +146,26 @@ var sr = new TimelineMax()
     }, 1)
 
 //second release ends
+
+// form 
+
+TweenMax.set("#form", {
+    y:300
+});
+TweenMax.set(".formbtn", {
+    y:320
+}) 
+
+var form = new TimelineMax()
+
+    .staggerTo("#form, .formbtn", 1, {
+        opacity: 1,
+         y:320
+        }, .5)
+
+//form ends
+
+//controller
 var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger1"
     })
@@ -157,7 +178,7 @@ var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger2"
     })
     .setTween(workshop)
-    //.addIndicators({name: "workshop"})
+    .addIndicators({name: "workshop"})
     .addTo(controller);
 //order
 var scene = new ScrollMagic.Scene({
@@ -194,6 +215,14 @@ var scene = new ScrollMagic.Scene({
     .setTween(sr)
     //.addIndicators({name: "sr"})
     .addTo(controller);
+//continue
+var scene = new ScrollMagic.Scene({
+        triggerElement: "#trigger8"
+})
+.setTween(form)
+//.addIndicators({name: "form"})
+.addTo(controller);
+
 
 
 // animation ends

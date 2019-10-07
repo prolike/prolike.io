@@ -26,4 +26,15 @@
         text-align: center;
     }
 
+    a {
+        opacity: 0;
+    }
+
+    a p {
+        color: black;
+        opacity: 1;
+        text-align: center;
+        margin-top: 5%;
+    }
+
 }
