@@ -223,9 +223,9 @@ var scene = new ScrollMagic.Scene({
 //.addIndicators({name: "form"})
 .addTo(controller);
 
-
-
 // animation ends
+
+
 
 // scroll lock begins
 
