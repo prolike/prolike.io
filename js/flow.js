@@ -178,7 +178,7 @@ var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger2"
     })
     .setTween(workshop)
-    .addIndicators({name: "workshop"})
+    //.addIndicators({name: "workshop"})
     .addTo(controller);
 //order
 var scene = new ScrollMagic.Scene({
