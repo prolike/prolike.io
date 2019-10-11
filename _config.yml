@@ -36,9 +36,6 @@ plugins:
 
 
 collections:
-  gigs:
-    output: true
-    permalink: /gigs/:title/
   pages:
     output: true
     permalink: /:title/
@@ -52,11 +49,6 @@ defaults:
       path: "" # any file
     values:
       layout: page
-  -
-    scope:
-      type: gigs
-    values:
-      layout: gig
   -
     scope:
       type: pages
