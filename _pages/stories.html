@@ -3,25 +3,6 @@ title: Stories
 layout: stories_layout
 ---
 
-<!-- <div class="row">
-  <div class="col-lg-5 m-auto"> -->
-
-<!-- here the list of tags is collected and displayed --->
-<!-- {% capture all_tags_csv %}
-  {% include functions/tags_array.liquid
-  %}
-{% endcapture %}
-
-{% assign all_tags = all_tags_csv | split: "," %}
-{% for t in all_tags %}
-<li class="blog-tag-item" id="{{ t }}-item">
-  <a href onclick="filter('{{ t }}'); return false;">{{ t }}</a>
-</li>
-{% endfor %}
-  
-  </div>
-</div>  -->
-
 <div class="blog-tags-list row">
   <div class="col-lg-5 m-auto">
     {% assign sorted_tags = site.tags | sort %}

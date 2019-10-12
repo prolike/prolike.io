@@ -1,6 +1,6 @@
 .navbar {
   background-color: $prolikeblue !important;
-  color: #ffffff;
+  color: $white;
   height: 60px;
   z-index: 100;
   padding: 0 75px;
@@ -16,7 +16,7 @@
 }
 
 .fa-bars:before  {
-  color: white;
+  color: $white;
   font-size: 20px;
 }
 

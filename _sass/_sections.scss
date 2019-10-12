@@ -1,45 +1,9 @@
-// Sections css
-
-// Images for all of our sections. 
-// We use the :nth-child parameter 
-// to give each section it's own unique image.
-
 .section {
   height: 100vh;
   background-image: url(../images/backgrounds/hand.jpg);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
-
-.section:nth-child(2),
-.section:nth-child(4) {
-  background-image: url(../images/backgrounds/brain_background.jpg);
-}
-
-.bg-primary {
-  display: flex;
-  align-items: center;
-  justify-content: left;
-  background-color: inherit !important;
-
-  .container-fluid {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-
-    .row {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-
-    .col-lg-8 {
-      padding-left: 0 !important;
-      padding-right: 0 !important;
-    }
-  }
-}
-
-#fullpage {
 
   h2 {
     color: $prolikeblue !important;
@@ -52,94 +16,103 @@
     font-size: 1.5em;
     max-width: 70%;
   }
+
+  .btn {
+    background: $prolikeyellow;
+    color: $prolikeblue;
+    font-weight: 700;
+    border-radius: 0em;
+    margin-top: .5em;
+    border: none;
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    text-transform: uppercase;
+    padding: 10px;
+  }
+
+  .btn:hover {
+    background: $white;
+  }
+
+  .btn:before,
+  .btn:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 4px;
+    width: 0;
+    background: $prolikeyellow;
+    transition: 400ms ease all;
+  }
+
+  .btn:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+
+  .btn:hover:before,
+  .btn:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+
+  .call {
+    background: $prolikeblue;
+    color: $white;
+    font-weight: 700;
+    border-radius: 0em;
+    margin-top: .5em;
+    text-transform: uppercase;
+    margin-left: 10px;
+  }
+
+  .call:hover {
+    background: $white;
+  }
+
+  .call:before,
+  .call:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 4px;
+    width: 0;
+    background: $prolikeblue;
+    transition: 400ms ease all;
+  }
+
+  .call:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+  }
+
+  .call:hover:before,
+  .call:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+  }
+
 }
 
-/* Page buttons */
-
-.btn {
-  background: $prolikeyellow;
-  color: $prolikeblue;
-  font-weight: 700;
-  border-radius: 0em;
-  margin-top: .5em;
-  border: none;
-  position: relative;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 800ms ease all;
-  outline: none;
-  text-transform: uppercase;
-  padding: 10px;
+.section:nth-child(2),
+.section:nth-child(4) {
+  background-image: url(../images/backgrounds/brain_background.jpg);
 }
 
-.btn:hover {
-  background: #fff;
-}
-
-.btn:before,
-.btn:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 4px;
-  width: 0;
-  background: $prolikeyellow;
-  transition: 400ms ease all;
-}
-
-.btn:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-.btn:hover:before,
-.btn:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
-}
-
-/* Call knap */
-
-.call {
-  background: $prolikeblue;
-  color: #ffffff;
-  font-weight: 700;
-  border-radius: 0em;
-  margin-top: .5em;
-  text-transform: uppercase;
-  margin-left: 10px;
-}
-
-.call:hover {
-  background: #fff;
-}
-
-.call:before,
-.call:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 4px;
-  width: 0;
-  background: $prolikeblue;
-  transition: 400ms ease all;
-}
-
-.call:after {
-  right: inherit;
-  top: inherit;
-  left: 0;
-  bottom: 0;
-}
-
-.call:hover:before,
-.call:hover:after {
-  width: 100%;
-  transition: 800ms ease all;
+.bg-primary {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: inherit !important;
 }
 
 /* Small devices (phones, 768px and down) */
@@ -150,7 +123,12 @@
     padding: 0 !important;
   }
 
-  #fullpage {
+  .section {
+    background-image: url(../images/backgrounds/mb-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 0 15px;
 
     h2 {
       font-size: 22.5px;
@@ -160,22 +138,6 @@
       font-size: 16px;
       max-width: 100%;
     }
-
-  }
-
-
-  .bg-primary {
-    .container-fluid {
-      padding-left: 15px !important;
-      padding-right: 15px !important;
-    }
-  }
-
-  .section {
-    background-image: url(../images/backgrounds/mb-1.jpg);
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
   }
 
   .section:nth-child(2) {
@@ -193,4 +155,5 @@
   .section:nth-child(5) {
     background-image: none;
   }
+
 }

@@ -13,8 +13,24 @@
 
     a {
         font-size: 70px;
-        color: #ffffff;
+        color: $white;
         transition: all ease-in-out .2s;
         text-decoration: none;
     }
 }
+
+/* Small devices (phones, 768px and down) */
+
+@media only screen and (max-width: 768px) {
+
+    .infographics {
+
+        padding: 0 15px;
+        text-align: center;
+
+        a {
+            font-size: 40px;
+        }
+    }
+
+  }
