@@ -3,165 +3,119 @@
 //intro
 var controller = new ScrollMagic.Controller();
 
-TweenMax.set(".slide1", {
-    y: 270
-})
+
 TweenMax.set("#workflow, #you", {
-    opacity: 0,
-    y: 70
+    opacity: 1,
 })
 TweenMax.set("#scroll", {
-    opacity: 0,
-    y: 70
+    opacity: 1,
 })
 
 TweenMax.set(".flowIcon", {
-    y: 300
 })
 
 var intro = new TimelineMax()
 
-    .staggerTo("#workflow, #you", .8, {
-        opacity: 1,
-        y: 70
+    .staggerFrom("#workflow, #you", .8, {
+        opacity: 0
     }, 1.5)
-    .to("#scroll", 1, {
-        opacity: 1
+    .from("#scroll", 1, {
+        opacity: 0,
     }, "+=.5");
 
 //intro ends
 
 //workshop
-TweenMax.set("#workshop", {
-    y: 300
-})
-TweenMax.set("#workshopInfo", {
-    y: 340
-})
 
 var workshop = new TimelineMax()
 
-    .to("#workshop", 1, {
-        opacity: 1,
-        y: 350
+    .from("#workshop", 1, {
+        opacity: 0,
+        y: -10
     })
-    .to("#workshopInfo", 1, {
-        opacity: 1,
-        y: 350
+    .from("#workshopInfo", 1, {
+        opacity: 0,
+        y: -10
     }, "-=.1")
 
 //workshop ends
 
 //order
-TweenMax.set("#order", {
-    y: 300
-})
-TweenMax.set("#orderInfo", {
-    y: 340
-})
 
 var order = new TimelineMax()
 
-    .to("#order", 1, {
-        opacity: 1,
-        y: 350
+    .from("#order", 1, {
+        opacity: 0,
+        y: -10
     })
-    .to("#orderInfo", 1, {
-        opacity: 1,
-        y: 350
+    .from("#orderInfo", 1, {
+        opacity: 0,
+        y: -10
     }, "-=.1")
 
 //order ends
 
 //agreement
-TweenMax.set("#agreement", {
-    y: 300
-})
-TweenMax.set("#agreementInfo", {
-    y: 340
-})
 
 var agreement = new TimelineMax()
 
-    .to("#agreement", 1, {
-        opacity: 1,
-        y: 350
+    .from("#agreement", 1, {
+        opacity: 0,
+        y: -10
     })
-    .to("#agreementInfo", 1, {
-        opacity: 1,
-        y: 350
+    .from("#agreementInfo", 1, {
+        opacity: 0,
+        y: -10
     }, "-=.1")
 
 //agreement ends
 
 //mvp
 
-TweenMax.set("#mvp", {
-    y: 290
-});
-TweenMax.set("#min, #txt, #txt2", {
-    y: 350
-});
-
 var mvp = new TimelineMax()
 
-
-    .staggerTo("#mvp, #min, #txt, #txt2", 1, {
-        opacity: 1,
-        y: 350
-    }, .6)
+    .staggerFrom("#mvp, #min, #txt, #txt2", 1, {
+        opacity: 0,
+        y: -10
+    }, .8)
 
 //mvp ends
 
 //first release
-TweenMax.set("#fr", {
-    y: 300
-});
-TweenMax.set("#frTxt", {
-    y: 350
-});
 
 var fr = new TimelineMax()
 
-    .staggerTo("#fr, #frTxt", 1, {
-        opacity: 1,
-        y: 360
+    .staggerFrom("#fr, #frTxt", 1, {
+        opacity: 0,
+        y: -10
     }, 1)
 
 //first release ends
 
 //second release
-TweenMax.set("#sr", {
-    y: 300
-});
-TweenMax.set("#srTxt", {
-    y: 350
-});
 
 var sr = new TimelineMax()
 
-    .staggerTo("#sr, #srTxt", 1, {
-        opacity: 1,
-        y: 360
+    .staggerFrom("#sr, #srTxt", 1, {
+        opacity: 0,
+        y: -10
     }, 1)
 
 //second release ends
 
 // form 
 
-TweenMax.set("#form", {
-    y:300
-});
-TweenMax.set(".formbtn", {
-    y:320
-}) 
-
 var form = new TimelineMax()
 
-    .staggerTo("#form, .formbtn", 1, {
-        opacity: 1,
-         y:320
-        }, .5)
+    .from("#form", 1, {
+        opacity: 0,
+        y: -10,
+        })
+    .from(".formbtn", 1, {
+        opacity: 0,
+        y: -10,
+     }, "-=.5")
+
 
 //form ends
 
