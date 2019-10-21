@@ -132,6 +132,14 @@
     margin-top: 75px;
     margin-bottom: 100px;
 
+    img {
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: contain;
+        display: block;
+        border-radius: 10px;
+    }
+
     .hr_big hr {
         min-width: 100% !important;
         border-color: $prolikeyellow;
