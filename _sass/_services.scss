@@ -1,15 +1,12 @@
+
 .services {
-    width: 1260px;
-    margin: 60px auto 0 auto;
+    margin: 25% auto 0 auto;
     text-align: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
+    height: auto;
+    width: auto;
     align-items: center;
-    flex-direction: column;
 
     .service-heading {
-        display: block;
         margin-left: auto;
         margin-right: auto;
         padding-top: 0;
@@ -24,39 +21,30 @@
     }
 
 .service-boxes {
-    width: 100%;
-    display: flex;
     padding: 50px;
-    justify-content: center;
     align-items: center;
-    justify-items: center;
 
 
     .service-box {
-        color: white;
-    justify-content: center;
+    color: white;
     align-items: center;
     background-color: $prolikeblue;
-    display: flex;
-    margin: 0 30px;
+    margin: 30px;
     width: 300px;
     height: 200px;
     border-radius: 5px;
 
     .post-link, .post-link:hover {
         color: white;
-
         text-decoration: none;
         height: 100%;
         width: 100%;
         justify-content: center;
         align-items: center;
-        display: flex;
-        flex-direction: column;
 
         .service-icon {
             font-size: 60px;
-            margin-bottom: 25px;
+            margin: 20px 25px;
             color: $prolikeyellow;
         }
 
@@ -76,4 +64,12 @@
 }
 
 }
-
+@media only screen and (min-width: 600px) {
+    .services {
+        margin: 10% auto 0 auto;
+        text-align: center;
+        height: 100vh;
+        width: auto;
+        align-items: center;
+    }
+}
