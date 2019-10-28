@@ -1,4 +1,5 @@
-.section {
+
+.front {
   height: 100vh;
   background-image: url(../images/backgrounds/hand.jpg);
   background-size: cover;
@@ -19,8 +20,8 @@
 
 }
 
-.section:nth-child(2),
-.section:nth-child(4) {
+.front:nth-child(2),
+.front:nth-child(4) {
   background-image: url(../images/backgrounds/brain_background.jpg);
 }
 
@@ -39,7 +40,7 @@
     padding: 0 !important;
   }
 
-  .section {
+  .front {
     background-image: url(../images/backgrounds/mb-1.jpg);
     background-size: cover;
     background-position: center center;
@@ -56,19 +57,19 @@
     }
   }
 
-  .section:nth-child(2) {
+  .front:nth-child(2) {
     background-image: url(../images/backgrounds/mb-2.jpg);
   }
 
-  .section:nth-child(3) {
+  .front:nth-child(3) {
     background-image: url(../images/backgrounds/mb-3.jpg);
   }
 
-  .section:nth-child(4) {
+  .front:nth-child(4) {
     background-image: url(../images/backgrounds/mb-1.jpg);
   }
 
-  .section:nth-child(5) {
+  .front:nth-child(5) {
     background-image: none;
   }
 

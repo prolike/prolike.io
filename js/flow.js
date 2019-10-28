@@ -1,29 +1,30 @@
 // animation begins
 
+
 //intro
-var controller = new ScrollMagic.Controller();
-
-
-TweenMax.set("#workflow, #you", {
-    opacity: 1,
-})
-TweenMax.set("#scroll", {
-    opacity: 1,
-})
-
-TweenMax.set(".flowIcon", {
-})
 
 var intro = new TimelineMax()
 
-    .staggerFrom("#workflow, #you", .8, {
-        opacity: 0
-    }, 1.5)
-    .from("#scroll", 1, {
-        opacity: 0,
-    }, "+=.5");
+intro.set("#workflow, #you", {
+    opacity: 1,
+})
+intro.set("#scroll", {
+    opacity: 1,
+})
+
+intro.set(".flowIcon", {})
+
+
+intro.staggerFrom("#workflow, #you", .8, {
+    opacity: 0
+}, 1.5)
+intro.from("#scroll", 1, {
+    opacity: 0,
+}, "+=.5");
 
 //intro ends
+
+var controller = new ScrollMagic.Controller();
 
 //workshop
 
@@ -110,23 +111,25 @@ var form = new TimelineMax()
     .from("#form", 1, {
         opacity: 0,
         y: -10,
-        })
+    })
     .from(".formbtn", 1, {
         opacity: 0,
         y: -10,
-     }, "-=.5")
+    }, "-=.5")
 
 
 //form ends
 
 //controller
-var scene = new ScrollMagic.Scene({
-        triggerElement: "#trigger1"
-    })
-    //intro
-    .setTween(intro)
-    //.addIndicators({name: "intro"})
-    .addTo(controller);
+// var scene = new ScrollMagic.Scene({
+//         triggerElement: "#trigger1"
+//     })
+//     //intro
+//     .setTween(intro)
+//     .addIndicators({
+//         name: "intro"
+//     })
+//     .addTo(controller);
 //workshop
 var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger2"
@@ -172,17 +175,17 @@ var scene = new ScrollMagic.Scene({
 //continue
 var scene = new ScrollMagic.Scene({
         triggerElement: "#trigger8"
-})
-.setTween(form)
-//.addIndicators({name: "form"})
-.addTo(controller);
+    })
+    .setTween(form)
+    //.addIndicators({name: "form"})
+    .addTo(controller);
 
 // animation ends
 
 
 
 // scroll lock begins
-
+/*
 $(window).on('load', gsapScrollPanel);
 
 
@@ -315,3 +318,5 @@ function gsapScrollPanel() {
     }
 
 }
+
+*/
