@@ -261,6 +261,7 @@ cutContrubutors.forEach(contributor => {
     cont_login_box.innerHTML = contributor.login;
 
     cont_pic.src = contributor.avatar_url;
+    cont_pic.setAttribute("alt", contributor.login)
 
 
 
@@ -320,7 +321,7 @@ var issueStorypoints = [];
 
 
                      var todo_issue = document.createElement("DIV");
-                     var todo_text = "<h3>#" + issue.issue_number + " - " + issueName + " <span class='estimate-icon'>" + issue.estimate.value + "</span></h3>";
+                     var todo_text = "<h3>#" + issue.issue_number + " - " + issueName + "</span></h3>";
                      todo_issue.innerHTML = todo_text;
                      document.querySelector(".todo-list").append(todo_issue);
                  })
