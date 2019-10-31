@@ -27,7 +27,7 @@ exclude:
   - package-lock.json
 timezone: Europe/Copenhagen
 markdown: kramdown
-permalink: /:categories/:title/
+permalink: /:title/
 plugins:
   - jekyll-responsive-image
   - jekyll-seo-tag
@@ -42,6 +42,10 @@ collections:
   posts:
     output: true
     permalink: /stories/:title/
+  customers:
+    output: true
+    permalink: /boards/:title/
+
 
 defaults:
   -
@@ -59,6 +63,11 @@ defaults:
       type: posts
     values:
       layout: story
+  -
+    scope:
+      type: customers
+    values:
+      layout: customer
 
 
 
