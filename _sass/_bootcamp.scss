@@ -1,135 +1,271 @@
-.intro {
-    height: 90vh;
-    padding: 0 12.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    p {
-        font-size: 20px;
-        line-height: 35px;
-        width: 75%;
-        padding: 2vh 0;
-    }
-}
+.bootcamp {
+    background: #F8F4F4;
 
-.course-fundementals {
-    height: 60vh;
-    width: 100%;
-    background: $prolikeyellow;
-    display: flex;
-    align-items: center;
-
-    span {
-        width: 70%;
+    .intro {
+        height: 95vh;
+        padding: 0 12.5%;
         display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-    }
-
-    .fundementals-block {
-        height: 25vh;
-        width: 30vh;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
         text-align: center;
-        user-select: none;
 
         h1 {
-            font-size: 65px;
+            font-size: 82px;
+            line-height: 90px;
             font-weight: 700;
-            line-height: 65px;
-        }
-
-        h2 {
-            font-size: 35px;
-            font-weight: 700;
-            padding: 2vh 0;
+            text-transform: initial;
         }
 
         p {
             font-size: 20px;
             line-height: 35px;
+            width: 50%;
+            padding: 5vh 0;
+            margin: 0 auto;
+        }
+
+        .intro-buttons {
+            height: 63px;
+            width: 250px;
+            background: $prolikeyellow;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 2vh;
+            font-size: 20px;
+            line-height: 23px;
+            font-weight: 700;
+            color: $black;
+            border: 1px solid rgba(138, 138, 138, .05);
+        }
+
+        .intro-buttons:hover {
+            text-decoration: none;
+        }
+
+        .intro-buttons:nth-of-type(2) {
+            background: $white;
+            border-color: rgba(0, 0, 0, .1);
         }
     }
+
+    .course-fundementals {
+        height: 60vh;
+        width: 100%;
+        background: $prolikeyellow;
+        display: flex;
+        align-items: center;
+
+        span {
+            width: 70%;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+        .fundementals-block {
+            height: 25vh;
+            width: 30vh;
+            text-align: center;
+            user-select: none;
+
+            h1 {
+                font-size: 65px;
+                font-weight: 700;
+                line-height: 65px;
+            }
+
+            h2 {
+                font-size: 35px;
+                font-weight: 700;
+                padding: 2vh 0;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 35px;
+            }
+        }
+    }
+
+    .teachers {
+        height: 90vh;
+        padding: 0 12.5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        h1 {
+            width: 75%;
+            font-size: 50px;
+            line-height: 65px;
+            text-transform: initial;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 35px;
+            width: 75%;
+            padding: 2vh 0;
+        }
+
+        a {
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .teachers-image {
+            height: 65vh;
+            width: 85vh;
+            background-image: url(/images/placeholder-teachers.png);
+            background-size: contain;
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .course-overview {
+        height: auto;
+        padding: 15vh 12.5%;
+
+        span {
+
+            h1 {
+                font-size: 50px;
+                line-height: 65px;
+                text-transform: initial;
+                width: 50%;
+            }
+
+            h3 {
+                padding: 15px;
+                font-weight: 400;
+                opacity: .5;
+                padding: 0;
+                padding: 2vh 0;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 35px;
+                width: 55%;
+                font-weight: 400;
+            }
+
+        }
+
+    }
+
+    iframe {
+        width: 75%;
+        height: 85vh;
+        right: 0;
+        display: block;
+        padding: 10vh 0;
+    }
+
+    .register {
+        height: 60vh;
+        background: $prolikeyellow;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 50px;
+            line-height: 65px;
+            text-transform: initial;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 35px;
+            text-align: center;
+            width: 40%;
+            padding: 2vh 0;
+            font-weight: 400;
+        }
+
+        .register-button {
+            height: 63px;
+            width: 250px;
+            background: $white;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 2vh;
+            font-size: 20px;
+            line-height: 23px;
+            font-weight: 700;
+            color: $black;
+            border: 1px solid rgba(138, 138, 138, .05);
+        }
+
+        .register-button:hover {
+            text-decoration: none;
+        }
+
+    }
+
 }
 
-.teachers {
-    height: 90vh;
-    padding: 0 12.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Small devices (phones, 768px and down) */
 
-    h1 {
-        width: 75%;
-        font-size: 50px;
-        line-height: 65px;
-        text-transform: initial;
+@media (max-width: 768px) {
+
+
+    .bootcamp {
+
+        .intro {
+            background: red;
+            height: 100vh;
+            height: auto;
+            padding: 0;
+            padding-top: 10vh;
+
+            span {
+                padding: 0;
+                width: 100%;
+            }
+
+            h1 {
+                font-size: 55px;
+                line-height: 65px;
+                padding-top: 5vh;
+            }
+
+            p {
+                width: 100%;
+                padding: 2.5vh 2.5vh 5vh 2.5vh;
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            .intro-buttons {
+                height: 50px;
+                width: 200px;
+            }
+
+            .intro-buttons::nth-of-type(1) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .course-fundementals {
+            display: none;
+        }
+
+        .course-over {
+            span {
+                h1 {
+                    font-size: 20px;
+                }
+            }
+        }
     }
 
-    p {
-        font-size: 20px;
-        line-height: 35px;
-        width: 75%;
-        padding: 2vh 0;
-    }
-
-    a {
-        font-size: 20px;
-        font-weight: 700;
-        text-decoration: underline;
-        color: #000;
-    }
-
-    .teachers-image {
-        height: 65vh;
-        width: 85vh;
-        background-image: url(/images/placeholder-teachers.png);
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
-    }
-}
-
-.user-reviews {
-    height: 60vh;
-    background: $prolikeyellow;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0 30%;
-
-    p {
-        font-size: 45px;
-        line-height: 65px;
-        font-weight: 500;
-    }
-}
-
-.register {
-    height: 90vh;
-    padding: 0 12.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    h1 {
-        width: 75%;
-        font-size: 50px;
-        line-height: 65px;
-        text-transform: initial;
-    }
-
-    p {
-        font-size: 20px;
-        line-height: 35px;
-        width: 75%;
-        padding: 2vh 0;
-    }
-
-    a {
-        font-size: 20px;
-        font-weight: 700;
-        text-decoration: underline;
-        color: #000;
-    }
 }
