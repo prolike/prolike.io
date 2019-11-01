@@ -22,6 +22,7 @@ intro.from("#scroll", 1, {
     opacity: 0,
 }, "+=.5");
 
+
 //intro ends
 
 var controller = new ScrollMagic.Controller();
