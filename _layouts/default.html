@@ -11,7 +11,14 @@
 {% include head.html %}
 
 <body id="page-top">
-
+    {% if jekyll.environment == "production" %}
+    {% assign envi = "prod" %}
+{% elsif jekyll.environment == "stage"} 
+{% assign envi = "stage" %}
+  {% else %}
+    {% assign envi = "local" %}
+  {% endif %}
+<span style="display:none" class="env">{{ envi }}</span>
   <!-- Google Tag Manager (noscript) -->
 
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NSLZT72" height="0" width="0"

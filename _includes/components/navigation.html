@@ -1,4 +1,12 @@
 <!-- Navigation -->
+{% if jekyll.environment == "production" %}
+{% assign enviclient = "e0f6efcea962b1fd7d27" %}
+{% elsif jekyll.environment == "stage"} 
+{% assign enviclient = "4ea04d5b07580f9ac8e0" %}
+{% else %}
+{% assign enviclient = "44203f7dbb6402bb922b" %}
+{% endif %}
+
 <div class="pos-f-t">
   <nav class="navbar navbar-dark bg-dark"><a class="navbar-brand" href="/"><img class="col-sm-4"
         alt="Prolike" src="/images/logos/prolike-logo.png"></a>
@@ -14,7 +22,7 @@
           <li> <a href="/anything/" data-proofer-ignore>Anything</a></li>
           <li> <a href="/flow/" data-proofer-ignore>Infographics</a></li>
 <!--           <li> <a href="/bootcamp/" data-proofer-ignore>Bootcamp</a></li> -->
-          <li> <a href="https://github.com/login/oauth/authorize?client_id=44203f7dbb6402bb922b&redirect_uri=http://dockerhost/login/&scope=user%20repo" data-proofer-ignore>Log in</a></li>
+          <li> <a href="https://github.com/login/oauth/authorize?client_id={{ enviclient }}&redirect_uri=http://dockerhost/login/&scope=user%20repo" data-proofer-ignore>Log in</a></li>
           
         </ul>
       </span>

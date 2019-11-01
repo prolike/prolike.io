@@ -13,10 +13,26 @@ if (ghCode == null) {
 
 else {
 
+  var env = document.querySelector(".env").innerHTML
 
-  var clientID = "44203f7dbb6402bb922b"
-  var clientSecret = "8f820f0af6d38f1a6945bafa6184b3e3d6ede080"
-  var siteurl = "http://dockerhost"
+  if (env == "prod") {
+    var clientID = "e0f6efcea962b1fd7d27"
+    var clientSecret = "93c8a991d9fec3d2a66d2b0466db70b728376e0b"
+    var siteurl = "https://www.prolike.io"
+  }
+
+  if (env == "stage") {
+    var clientID = "4ea04d5b07580f9ac8e0"
+    var clientSecret = "daf26bafa5ace6dbfff1076cb59f9f573c5d9c32"
+    var siteurl = "https://stage.prolike.io"
+  }
+
+  if (env == "local") {
+    var clientID = "44203f7dbb6402bb922b"
+    var clientSecret = "8f820f0af6d38f1a6945bafa6184b3e3d6ede080"
+    var siteurl = "http://dockerhost"
+  }
+
   var redirect_url = siteurl + "/login/"
 
   var data;
