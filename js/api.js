@@ -16,7 +16,7 @@ else {
 
   var clientID = "44203f7dbb6402bb922b"
   var clientSecret = "8f820f0af6d38f1a6945bafa6184b3e3d6ede080"
-  var siteurl = "http://192.168.99.100"
+  var siteurl = "http://dockerhost"
   var redirect_url = siteurl + "/login/"
 
   var data;
