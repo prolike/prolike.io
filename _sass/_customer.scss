@@ -29,12 +29,14 @@ a:hover {
     color: black;
 }
 
+.box-title {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 
 // message board
-.cost-name {
-    font-weight: bold;
-    font-size: 24px;
-}
+
 
 // profile
 
@@ -51,10 +53,7 @@ a:hover {
     .profile p {
         line-height: 5px;
     }
-    
-    .profile-name {
-        font-weight: bold;
-    }
+
 
     .profile-picture {
         width: 50%;
@@ -62,4 +61,15 @@ a:hover {
         border-radius: 50%;
     }
 
+}
+
+// last opened issue
+
+.newIssue {
+
+    .ni-number {
+        font-weight: bold;
+        color: #8fd0a0;
+    }
+    
 }

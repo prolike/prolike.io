@@ -7,8 +7,8 @@ layout: page
     <div class="row">
         <div class="col-lg-8 col-xs-12 msgBoard">
             <div class="col-12">
-                <p>Message board</p>
-                <p class="cost-name">{{ page.name }}</p>
+                <p>Message board:</p>
+                <p class="cost-name box-title">{{ page.name }}</p>
                 <p>{{ content }}</p>
             </div>
         </div>
@@ -17,12 +17,12 @@ layout: page
             <div class="col-12">
                 <div class="row justify-content-center">
                     <div class="col-10">
-                        <p>you are singed in as</p>
+                        <p>you are singed in as:</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-10">
-                        <p class="profile-name">*name*</p>
+                        <p class="profile-name box-title">*name*</p>
                     </div>
                 </div>
                 <div class="row justify-content-center">
@@ -41,13 +41,11 @@ layout: page
 
         <div class="col-lg-4 col-xs-12 newIssue">
             <div class="col-12">
-                <div class="new-issue-box">
                     <p>Last opened issue:</p>
                     <h2 class="ni-number">#</h2>
-                    <h3 class="ni-title"></h3>
+                    <h3 class="ni-title box-title"></h3>
                     <p>Created on <span class="ni-time"></span> by <span class="ni-cont"></span></p>
                     <a target="_blank" class="ni-link" href="#">View on Github</a>
-                </div>
             </div>
         </div>
 
@@ -60,7 +58,9 @@ layout: page
                     <h2 class="ci-number">#</h2>
                     <h3 class="ci-title"></h3>
                     <p>Created on <span class="ci-time"></span> by <span class="ci-cont"></span></p>
-                    <a target="_blank" class="ci-link" href="#">View on Github</a>
+                    <div class="link">
+                        <a target="_blank" class="ci-link" href="#">View on Github</a>
+                    </div>
                 </div>
             </div>
         </div>

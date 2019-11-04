@@ -77,9 +77,9 @@ getOrg.onload = function () {
 
 getOrg.send()
 
-if (org_array.indexOf("Prolike-io") !== -1) {
-  sessionStorage.setItem("user_t", token);
-  sessionStorage.setItem("user", "user");
+// if (org_array.indexOf("Prolike-io") !== -1) {
+sessionStorage.setItem("user_t", token);
+sessionStorage.setItem("user", "user");
 
   if (token == null) {
     window.location.replace("/");
@@ -87,9 +87,9 @@ if (org_array.indexOf("Prolike-io") !== -1) {
 
     window.location.replace("/boards/");
   }
-} else {
-  window.location.replace("/noaccess/");
-}
+// } else {
+//   window.location.replace("/noaccess/");
+// }
 
 
 
