@@ -9,7 +9,13 @@
 
 .col-12 {
     min-height: 300px;
+    padding: 15px;
     box-shadow: 0px 0px 12px -1px rgba(0,0,0,0.75);
+}
+
+.cost-name {
+    font-weight: bold;
+    font-size: 24px;
 }
 
 @media (max-width: 768px) {

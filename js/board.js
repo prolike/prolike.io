@@ -29,7 +29,7 @@ getSRepos.setRequestHeader("Authorization", " token " + token)
 getSRepos.onload = function () {
     var data = JSON.parse(this.response)
     if (getSRepos.status >= 200 && getSRepos.status < 400) {
-        document.querySelector(".board-heading").innerHTML = data.name;
+      
         repo_id = data.id;
     }
 
