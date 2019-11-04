@@ -1,15 +1,15 @@
 ---
 layout: page
 ---
-
+<!--THIS IS JUST FOR STYLING CAUSE API CALL LIMIT-->
 <div class="container">
 
     <div class="row">
         <div class="col-lg-8 col-xs-12 msgBoard">
             <div class="col-12">
                 <p>Message board:</p>
-                <p class="cost-name box-title">{{ page.name }}</p>
-                <p>{{ content }}</p>
+                <p class="cost-name box-title"></p>
+                <p></p>
             </div>
         </div>
 
@@ -64,12 +64,16 @@ layout: page
 
         <div class="col-lg-4 col-xs-12">
             <div class="col-12 zenhub">
-                <div class="row">
-                    <div class="offset-1 col-10 justify-content-center">
-                        <p class="box-title">Zenhub</p>
-                        <a href="#">View Zenhub Board</a>
+                    <p class="box-title">Zenhub</p>
+                    <a href="#">View Zenhub Board</a>
+                <!-- <div class="row">
+                    <div class="offset-1 col-10">
+                        <div class="align-middle" style="">
+                            <p class="box-title">Zenhub</p>
+                            <a href="#">View Zenhub Board</a>
+                        </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -109,10 +113,3 @@ layout: page
 
     </div>
 </div>
-
-
-
-
-
-{% include scripts/plugins.html %}
-<script src="/js/board.js"></script>

@@ -84,3 +84,25 @@ a:hover {
     }
 
 }
+
+
+// zenhub
+
+.zenhub {
+    background-color: #5b5db5;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+        font-size: 35px;
+    }
+
+    p, a {
+        color: white;
+        align-content: center;
+    }
+
+
+}
