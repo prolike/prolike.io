@@ -256,6 +256,7 @@ var cutContrubutors = getMostconstributes.slice(0, 3);
 cutContrubutors.forEach(contributor => {
     var contributorbox = document.createElement("DIV")
     var cont_pic = document.createElement("IMG");
+    cont_pic.setAttribute("class", "img-fluid")
     var cont_login_box = document.createElement("H3");
 
     cont_login_box.innerHTML = contributor.login;

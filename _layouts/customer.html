@@ -1,42 +1,95 @@
 ---
 layout: page
 ---
-<h1 class="board-heading"></h1>
-<h2 class="cost-name">{{ page.name }}</h2>
 
-{{ content }}
+<div class="container">
 
-<img class="profile-picture" alt="profile-picture" src="#">
-<div class="new-issue-box">
-        <p>Last opened issue:</p>
-        <h2 class="ni-number">#</h2>
-        <h3 class="ni-title"></h3>
-        <p>Created on <span class="ni-time"></span> by <span class="ni-cont"></span></p>
-        <a target="_blank" class="ni-link" href="#">View on Github</a>
+    <div class="row">
+        <div class="col-lg-8 col-xs-12 msgBoard">
+            <div class="col-12">
+                <p class="board-heading"></p>
+                <p class="cost-name">{{ page.name }}</p>
+                {{ content }}
+            </div>
+        </div>
+        <div class="col-lg-4 col-xs-12 profile">
+            <div class="col-12">
+                <img class="profile-picture img-fluid" alt="profile-picture" src="#">
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-xs-12 newIssue">
+            <div class="col-12">
+                <div class="new-issue-box">
+                    <p>Last opened issue:</p>
+                    <h2 class="ni-number">#</h2>
+                    <h3 class="ni-title"></h3>
+                    <p>Created on <span class="ni-time"></span> by <span class="ni-cont"></span></p>
+                    <a target="_blank" class="ni-link" href="#">View on Github</a>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-4 col-xs-12 closedIssue">
+            <div class="col-12">
+                <div class="closed-issue-box">
+                    <p>Last closed issue:</p>
+                    <h2 class="ci-number">#</h2>
+                    <h3 class="ci-title"></h3>
+                    <p>Created on <span class="ci-time"></span> by <span class="ci-cont"></span></p>
+                    <a target="_blank" class="ci-link" href="#">View on Github</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-xs-12">
+            <div class="col-12">
+                <div class="zenhub">zenhub</div>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-8 col-xs-12 pipeline">
+            <div class="col-12">
+                <div class="pipeline-box"></div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-xs-12 storypoint">
+            <div class="col-12">
+                <div class="storypoints">
+                    <h3 class="storypoint-number"></h3>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-lg-6 col-xs-12 todo">
+            <div class="col-12">
+                <div class="todo-list">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-xs-12 cont">
+            <div class="col-12">
+                <div class="contributors">
+
+                </div>
+            </div>
+        </div>
+
     </div>
-
-<div class="closed-issue-box">
-        <p>Last closed issue:</p>
-        <h2 class="ci-number">#</h2>
-        <h3 class="ci-title"></h3>
-        <p>Created on <span class="ci-time"></span> by <span class="ci-cont"></span></p>
-        <a target="_blank" class="ci-link" href="#">View on Github</a>
-    </div>
-
-<div class="pipeline-box"></div>
-
-<div class="contributors">
-    
 </div>
 
-<div class="storypoints">
 
-    <h3 class="storypoint-number"></h3>
-</div>
 
-<div class="todo-list">
-    
-</div>
 
 
 {% include scripts/plugins.html %}
