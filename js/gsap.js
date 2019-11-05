@@ -1,4 +1,4 @@
-// animation begins
+// animation  begins
 
 var controller = new ScrollMagic.Controller();
 //intro
