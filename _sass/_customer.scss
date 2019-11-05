@@ -122,3 +122,24 @@ a:hover {
 .issue-number, .issue-name, .todo-list {
     font-weight: bold;
 }
+
+// storypoints 
+
+.storypoints {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $prolikeblue;
+
+    h3 {
+        font-size: 10em;
+        color: $prolikeyellow
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 2em;
+        color: white;
+    }
+}
