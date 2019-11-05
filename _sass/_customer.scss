@@ -1,6 +1,7 @@
 .container {
     margin-top: 75px;
     width: 75%;
+
 }
 
 .row>* {
@@ -8,25 +9,16 @@
 }
 
 .col-12 {
-    min-height: 300px;
+    height: 300px;
     padding: 15px;
     box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
+    overflow-y: auto;
 }
 
 @media (max-width: 768px) {
     .container {
         width: 100% !important;
     }
-}
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-a:hover {
-    text-decoration: none;
-    color: black;
 }
 
 .box-title {
@@ -61,6 +53,11 @@ a:hover {
         border-radius: 50%;
     }
 
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
 }
 
 // last opened issue
@@ -71,13 +68,13 @@ a:hover {
         font-weight: bold;
         color: #8fd0a0;
     }
-    
+
 }
 
 // last closed issue
 
 .closedIssue {
-    
+
     .ci-number {
         font-weight: bold;
         color: #e59198;
@@ -85,6 +82,18 @@ a:hover {
 
 }
 
+// ni & ci links
+
+.ni-link,
+.ci-link {
+
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    text-decoration: none;
+    color: black;
+
+}
 
 // zenhub
 
@@ -99,9 +108,15 @@ a:hover {
         font-size: 35px;
     }
 
-    p, a {
+    p,
+    a {
         color: white;
         align-content: center;
+    }
+
+    a:hover {
+        text-decoration: none;
+        color: white;
     }
 
 
@@ -109,17 +124,23 @@ a:hover {
 
 // to do list & pipeline
 
-.todo-list > *, .pipeline-box > * {
+.todo-list>*,
+.pipeline-box>*,
+.contributer-box {
     padding-top: 5px;
     vertical-align: middle;
     border-top: 1px solid #00000063;
 }
 
-.todo-list >*:last-child, .pipeline-box >*:last-child {
+.todo-list>*:last-child,
+.pipeline-box>*:last-child,
+.contributer-box:last-child {
     border-bottom: 1px solid #00000063;
 }
 
-.issue-number, .issue-name, .todo-list {
+.issue-number,
+.issue-name,
+.todo-list {
     font-weight: bold;
 }
 
@@ -134,12 +155,34 @@ a:hover {
 
     h3 {
         font-size: 10em;
-        color: $prolikeyellow
+        color: $prolikeyellow;
+        font-weight: bold;
+        line-height: 1;
     }
 
     p {
         font-weight: bold;
         font-size: 2em;
         color: white;
+    }
+}
+
+// contributors
+
+.contributors {
+
+
+    h3 {
+        display: inline;
+        padding-left: 5px;
+    }
+
+    img {
+        width: auto;
+        height: 4vh;
+    }
+
+    .contributer-box {
+        padding-bottom: 5px;
     }
 }
