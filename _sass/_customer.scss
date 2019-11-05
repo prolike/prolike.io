@@ -106,3 +106,15 @@ a:hover {
 
 
 }
+
+// to do list
+
+.todo-list > * {
+    padding-top: 5px;
+    vertical-align: middle;
+    border-top: 1px solid #00000063;
+}
+
+.todo-list >*:last-child {
+    border-bottom: 1px solid #00000063;
+}
