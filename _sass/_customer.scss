@@ -107,14 +107,18 @@ a:hover {
 
 }
 
-// to do list
+// to do list & pipeline
 
-.todo-list > * {
+.todo-list > *, .pipeline-box > * {
     padding-top: 5px;
     vertical-align: middle;
     border-top: 1px solid #00000063;
 }
 
-.todo-list >*:last-child {
+.todo-list >*:last-child, .pipeline-box >*:last-child {
     border-bottom: 1px solid #00000063;
+}
+
+.issue-number, .issue-name, .todo-list {
+    font-weight: bold;
 }

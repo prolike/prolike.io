@@ -115,7 +115,7 @@ function getWorkspace(value) {
 
 
 
-                var text = '<h3>' + pipeline.name + " " + pipeline.issues.length + ' Estimates: ' + summedEstimates + '</h3>';
+                var text = '<p><span class="issue-number">' + pipeline.issues.length + '</span> issues in <span class="issue-name">' + pipeline.name + ' - ' + summedEstimates + '</span> Story Points</p>';
                 pipelineItem.innerHTML = text;
 
                 pipelineItem.setAttribute('class', "pipeline")
@@ -323,7 +323,7 @@ var issueStorypoints = [];
 
 
                      var todo_issue = document.createElement("DIV");
-                     var todo_text = "<h3>#" + issue.issue_number + " - " + issueName + "</span></h3>";
+                     var todo_text = "<p>#" + issue.issue_number + " - " + issueName + "</span></p>";
                      todo_issue.innerHTML = todo_text;
                      document.querySelector(".todo-list").append(todo_issue);
                  })
