@@ -1,0 +1,116 @@
+---
+subpage: things
+layout: page
+---
+
+
+<div id="fullpage" class="container-fluid slide-container">
+
+   
+    {% for section in page.sections %}
+    <section class="slide section">
+            <div class="trigger" id="trigger{{ forloop.index0 }}"></div>
+         <div class="row justify-content-center">
+            <div class="col-lg-8 col-xs-8 slide1">
+                    <i class="{{ section.icon }} fa-5x flowIcon"></i>
+                    
+                <div class="headings{{ forloop.index0 }}">
+                    {% for heading in section.headings %}<h1>{{ heading }}</h1>{% endfor %}</div>
+                <div class="texts{{ forloop.index0 }}">{% for text in section.texts %}<p>{{ text }}</p>{% endfor %}
+                    {% if forloop.last %}
+                    <p><a class="back-things" href="/things/"><i class="fas fa-arrow-left"></i> Back to things</a>
+                    {% endif %}</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    {% endfor %}
+
+    
+   <!--  <section class="slide section">
+        <div id="trigger2"></div><div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-8 slide2">
+                <i class="fas fa-hammer fa-5x flowIcon"></i>
+                <h1 id="workshop">Workshops</h1>
+                <p id="workshopInfo">Let's sit down and talk about what you need and how your app should look</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="slide section">
+         <div id="trigger3"></div><div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-8 slide3">
+                <i class="fas fa-envelope-open-text fa-5x flowIcon"></i>
+                <h1 id="order">Offer</h1>
+                <p id="orderInfo">We'll send you an offer,
+                    <br>based on what we learned at the workshop</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="slide section">
+        <div id="trigger4"></div><div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-8 slide4">
+                <i class="fas fa-handshake fa-5x flowIcon"></i>
+                <h1 id="agreement">Agreement</h1>
+                <p id="agreementInfo">Deal! Now we can start working on your product</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="slide section">
+        <div id="trigger5"></div><div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-8 slide5">
+                <i class="fas fa-birthday-cake fa-5x flowIcon"></i>
+                <h1 id="mvp">MVP</h1>
+                <p id="min">Minimum Viable Product</p>
+                <p id="txt">Instead of building your entire product in one go we start with the fundementals and add
+                    features in following releases</p>
+                <p id="txt2">This ensures that you get up an running as quick as possible</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="slide section">
+        <div id="trigger6"></div><div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-8 slide6">
+                <i class="fas fa-glass-cheers fa-5x flowIcon"></i>
+                <h1 id="fr">First release</h1>
+                <p id="frTxt">Our first release! Packed with extra features bringing your product to the next level</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="slide section">
+        <div id="trigger7"></div><div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-8 slide7">
+                <i class="fas fa-infinity fa-5x flowIcon"></i>
+                <h1 id="sr">Second release</h1>
+                <p id="srTxt">Our second release! Don't worry this doesnt have to be the end.<br> We will continue
+                    delivering releases til we have all the freatures you want</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="slide section">
+        <div id="trigger8"></div><div class="row justify-content-center">
+            <div class="col-lg-6 col-xs-8 slide8">
+                <i class="fas fa-infinity fa-5x flowIcon"></i>
+                <h1 id="form">Continue</h1>
+                <a href="/form/" class="btn formbtn">
+                    <p>Continue to our form</p>
+                </a>
+            </div>
+        </div>
+    </section> -->
+    
+</div>

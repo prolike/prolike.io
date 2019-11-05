@@ -1,0 +1,23 @@
+---
+layout: page
+---
+
+<div class="things">
+
+    <div class="intro"><h2>{{ page.title }}</h2>
+        {{ page.content }}</div>
+
+    <div class="con-row">
+
+    {% for thing in site.things %}
+
+    <div class="box-outer">
+        <a href="{{ thing.url }}">
+                <div class="box-inner">
+            <h3>{{ thing.title }}</h3>
+                </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+</div>

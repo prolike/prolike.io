@@ -50,13 +50,12 @@
         text-align: center;
     }
 
-    a {
+    a, a:hover {
         text-decoration: none;
+        color: $prolikeyellow;
     }
 
-    a p {
-        color: black;
-        text-align: center;
-        margin-top: 5%;
-    }
+
+    
+ 
 }

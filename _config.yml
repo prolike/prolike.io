@@ -41,10 +41,13 @@ collections:
     permalink: /:title/
   posts:
     output: true
-    permalink: /stories/:title/
+    permalink: /anything/:title/
   customers:
     output: true
     permalink: /boards/:title/
+  things:
+    output: true
+    permalink: /things/:title/
 
 
 defaults:
@@ -62,12 +65,17 @@ defaults:
     scope:
       type: posts
     values:
-      layout: story
+      layout: anything
   -
     scope:
       type: customers
     values:
       layout: customer
+  -
+    scope:
+      type: things
+    values:
+      layout: thing
 
 
 
