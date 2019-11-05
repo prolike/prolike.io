@@ -11,7 +11,7 @@ for(var i = 0; i < slideArray.length; i++){
 var flow = new TimelineMax()
 
 
-flow.from(".headings" + i, .8, {
+flow.from(".headings" + i, .8, { 
     opacity: 0
 })
 flow.from(".texts" + i, .9, {
