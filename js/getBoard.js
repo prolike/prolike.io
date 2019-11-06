@@ -69,7 +69,8 @@ function getRepos(value, index, array) {
             btn2.innerHTML = data.name;
             
             btn2.setAttribute('onclick', "showBoard('" + data.name + "')")
-            document.body.appendChild(btn2);
+            btn2.setAttribute('class', 'col-lg-3')
+            document.querySelector('.button').appendChild(btn2);
 
         }
 

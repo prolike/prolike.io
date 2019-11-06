@@ -1,0 +1,39 @@
+.boards {
+    margin-top: 75px;
+    margin-bottom: 75px;
+    
+
+.userlogin {
+
+    h3 {
+        text-align: center;
+    }
+
+    h3 > span {
+        font-weight: bold;
+    }
+}
+
+
+.button {
+    align-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: $prolikeblue;
+    color: $prolikeyellow;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 20px;
+    margin: 10px;
+    border: none;
+}
+
+button:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+}
