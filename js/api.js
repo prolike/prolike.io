@@ -45,12 +45,14 @@ else {
 
     var data = JSON.parse(this.response)
     if (requestToken.status >= 200 && requestToken.status < 400) {
-
-    } else {
+      token = data.access_token;
+    }
+    
+    else {
       window.location.replace("/");
     }
 
-    token = data.access_token;
+    
   }
 
   requestToken.send()
@@ -63,7 +65,9 @@ getOrg.open('GET', proxyurl + "https://api.github.com/user/orgs", false)
 getOrg.setRequestHeader("Authorization", " token " + token)
 var org_array = [];
 getOrg.onload = function () {
-
+  if (getOrg.status == 429) {
+    alert("Too many requests!")
+  }
   var data = JSON.parse(this.response)
 
   data.forEach(org => {
@@ -77,14 +81,17 @@ getOrg.onload = function () {
 
 getOrg.send()
 
+
+
+
 // if (org_array.indexOf("Prolike-io") !== -1) {
-sessionStorage.setItem("user_t", token);
-sessionStorage.setItem("user", "user");
+
 
   if (token == null) {
     window.location.replace("/");
   } else {
-
+    sessionStorage.setItem("user_t", token);
+    sessionStorage.setItem("user", "user");
     window.location.replace("/boards/");
   }
 // } else {

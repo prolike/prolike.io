@@ -4,6 +4,10 @@
 <div class="pos-f-t">
   <nav class="navbar navbar-dark bg-dark"><a class="navbar-brand" href="/"><img class="col-sm-4"
         alt="Prolike" src="/images/logos/prolike-logo.png"></a>
+        
+        <div class="navigation-right">
+            <a href="/boards/" class="boards-button nav-btn" style="display: none;">My boards</a>
+            <a class="logout-button nav-btn">Log in</a>
     <div class="popup" onclick="myFunction()"> <i class="fas fa-bars"></i>
       <span class="popuptext" id="myPopup">
         <ul>
@@ -19,9 +23,11 @@
 
           {% endif %}
           {% endfor %}
-          
+          <li class="boards-popup"> <a href="/boards/" data-proofer-ignore>My boards</a></li>
+          <li class="logout-popup"> <a class="logout-popup-link" data-proofer-ignore>Log in</a></li>
         </ul>
       </span>
     </div>
+  </div>
   </nav>
 </div>

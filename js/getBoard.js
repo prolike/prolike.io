@@ -1,6 +1,6 @@
 'use strict';
 if (sessionStorage.getItem("user") == null) {
-    window.location.replace("/");
+    
 }
 
 var token = sessionStorage.getItem("user_t");
