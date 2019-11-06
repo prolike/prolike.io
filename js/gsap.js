@@ -1,7 +1,5 @@
-// animation  begins
-
+// flow
 var controller = new ScrollMagic.Controller();
-//intro
 
 
 var slideArray = document.getElementsByClassName("trigger");
@@ -29,7 +27,7 @@ var scene = new ScrollMagic.Scene({
         .addTo(controller);
 
 }
-//intro ends
+//flow ends ends
 
 
 
@@ -58,4 +56,17 @@ var scene = new ScrollMagic.Scene({
     .addTo(controller);
 
       
-     
+//bootcamp ends
+
+//boards begins 
+
+
+//out-commented till the board loads quicker of we come up with a way to pause the animation untill everything is loaded
+
+// var boards = new TimelineMax()
+
+
+//     boards.staggerFrom(".zenbox, .msgBoard, .profile, .newIssue, .closedIssue, .storypoints, .todo, .pipeline, .cont",
+//     .6, {x:300, scale: 0.2, opacity:0, rotation: 5, ease: Back.easeOut.config(.8), x: -100}, .1);
+
+
