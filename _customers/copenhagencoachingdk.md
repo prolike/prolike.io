@@ -1,5 +1,8 @@
 ---
 name: copenhagencoaching.dk
 title: Copenhagen Coaching Center
+published: true
 ---
-Hej
+**6. Nov 2019**
+
+Alt er godt!
