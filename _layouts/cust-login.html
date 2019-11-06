@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+{% if jekyll.environment == "production" %}
+{% assign enviclient = "e0f6efcea962b1fd7d27" %}
+{% elsif jekyll.environment == "stage" %} 
+{% assign enviclient = "4ea04d5b07580f9ac8e0" %}
+{% else %}
+{% assign enviclient = "44203f7dbb6402bb922b" %}
+{% endif %}
+
+{{ content }}
+
+{% include scripts/plugins.html %}
+
+<span class="hello">https://github.com/login/oauth/authorize?client_id={{ enviclient }}&scope=user%20repo</span>
+<script>
+   var env_app = document.querySelector(".hello").innerHTML;
+
+window.location.replace(env_app);
+</script>

@@ -45,9 +45,9 @@ collections:
   customers:
     output: true
     permalink: /boards/:title/
-  things:
+  stories:
     output: true
-    permalink: /things/:title/
+    permalink: /stories/:title/
 
 
 defaults:
@@ -73,9 +73,9 @@ defaults:
       layout: customer
   -
     scope:
-      type: things
+      type: stories
     values:
-      layout: thing
+      layout: story
 
 
 

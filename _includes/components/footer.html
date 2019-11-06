@@ -27,8 +27,14 @@
             <a href="/#why" data-proofer-ignore>Why</a>
             <a href="/#how" data-proofer-ignore>How</a>
             <a href="/#what" data-proofer-ignore>What</a>
-            <a href="/anything/" data-proofer-ignore>Anything</a>
-            <a href="/stories/" data-proofer-ignore>Stories</a>
+            {% assign sorted_navi = site.pages | sort: 'order' %}
+            {% for page in sorted_navi %}
+            {% if page.navigation == true %}
+  
+            <a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a>
+  
+            {% endif %}
+            {% endfor %}
           </div>
           <div class="col-lg col-xs-6">
             <h1>Our Credo</h1>

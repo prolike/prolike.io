@@ -1,11 +1,5 @@
 <!-- Navigation -->
-{% if jekyll.environment == "production" %}
-{% assign enviclient = "e0f6efcea962b1fd7d27" %}
-{% elsif jekyll.environment == "stage" %} 
-{% assign enviclient = "4ea04d5b07580f9ac8e0" %}
-{% else %}
-{% assign enviclient = "44203f7dbb6402bb922b" %}
-{% endif %}
+
 
 <div class="pos-f-t">
   <nav class="navbar navbar-dark bg-dark"><a class="navbar-brand" href="/"><img class="col-sm-4"
@@ -17,12 +11,14 @@
           <li><a href="/#why" data-proofer-ignore>Why</a></li>
           <li> <a href="/#how" data-proofer-ignore>How</a></li>
           <li> <a href="/#what" data-proofer-ignore>What</a></li>
-          <!-- <li> <a href="/stories/" data-proofer-ignore>Stories</a></li> -->
-          <li> <a href="/bootcamp/" data-proofer-ignore>Bootcamp</a></li>
-          <li> <a href="/anything/" data-proofer-ignore>Anything</a></li>
-          <li> <a href="/things/" data-proofer-ignore>Things</a></li>
-<!--           <li> <a href="/bootcamp/" data-proofer-ignore>Bootcamp</a></li> -->
-          <li> <a href="https://github.com/login/oauth/authorize?client_id={{ enviclient }}&scope=user%20repo" data-proofer-ignore>Log in</a></li>
+          {% assign sorted_navi = site.pages | sort: 'order' %}
+          {% for page in sorted_navi %}
+          {% if page.navigation == true %}
+
+          <li> <a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a></li>
+
+          {% endif %}
+          {% endfor %}
           
         </ul>
       </span>
