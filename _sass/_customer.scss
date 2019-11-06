@@ -1,194 +1,213 @@
 .project {
 
     margin-top: 75px;
+    margin-bottom: 20px;
 
-.container {
-
-    width: 75%;
-
-}
-
-.row>* {
-    padding: 15px !important;
-}
-
-.col-12 {
-    height: 300px;
-    padding: 15px;
-    box-shadow: 0px 0px 12px -1px rgba(0, 0, 0, 0.75);
-    overflow-y: auto;
-}
-
-@media (max-width: 768px) {
     .container {
-        width: 100% !important;
-    }
-}
 
-.box-title {
-    font-weight: bold;
-    font-size: 20px;
-}
+        width: 75%;
 
-
-// message board
-
-
-// profile
-
-.profile {
-    align-content: center;
-    text-align: center;
-    padding: 0px;
-
-
-    .col-10 {
-        padding: 0px !important;
-    }
-
-    .profile p {
-        line-height: 5px;
-    }
-
-
-    .profile-picture {
-        width: 50%;
-        height: auto;
-        border-radius: 50%;
     }
 
     a {
         color: black;
         text-decoration: none;
+        font-weight: 500;
     }
-
-}
-
-// last opened issue
-
-.newIssue {
-
-    .ni-number {
-        font-weight: bold;
-        color: #8fd0a0;
-    }
-
-}
-
-// last closed issue
-
-.closedIssue {
-
-    .ci-number {
-        font-weight: bold;
-        color: #e59198;
-    }
-
-}
-
-// ni & ci links
-
-.ni-link,
-.ci-link {
-
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    text-decoration: none;
-    color: black;
-
-}
-
-// zenhub
-
-.zenhub {
-    background-color: #5b5db5;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
     p {
-        font-size: 35px;
+        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
-    p,
-    a {
-        color: white;
+    .row>* {
+        padding: 15px !important;
+    }
+
+    .col-12 {
+        height: 300px;
+        padding: 15px;
+        box-shadow: 0px 4px 11px -3px rgba(0,0,0,0.75);
+        overflow-y: auto;
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            width: 100% !important;
+        }
+    }
+
+    .box-title {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    // message board
+
+    .msgBoard > .col-12 > .row > div {
+        padding: 0 0 0 10px !important;
+
+        p {
+            padding: 0 !important;
+            font-size: auto;
+        }
+
+        .col-6 {
+            align-content: center;
+            text-align: center;
+        }
+    }
+
+    // profile
+
+    .profile {
         align-content: center;
+        text-align: center;
+        padding: 0px;
+
+
+        .col-10 {
+            padding: 0px !important;
+        }
+
+        .profile p {
+            line-height: 5px;
+        }
+
+
+        .profile-picture {
+            width: 50%;
+            height: auto;
+            border-radius: 50%;
+        }
+
     }
 
-    a:hover {
-        text-decoration: none;
-        color: white;
+    // last opened issue
+
+    .newIssue {
+
+        .ni-number {
+            font-weight: bold;
+            color: #8fd0a0;
+        }
+
     }
 
+    // last closed issue
 
-}
+    .closedIssue {
 
-// to do list & pipeline
+        .ci-number {
+            font-weight: bold;
+            color: #e59198;
+        }
 
-.todo-list>*,
-.pipeline-box>*,
-.contributer-box {
-    padding-top: 5px;
-    vertical-align: middle;
-    border-top: 1px solid #00000063;
-}
-
-.todo-list>*:last-child,
-.pipeline-box>*:last-child,
-.contributer-box:last-child {
-    border-bottom: 1px solid #00000063;
-}
-
-.issue-number,
-.issue-name,
-.todo-list {
-    font-weight: bold;
-}
-
-// storypoints 
-
-.storypoints {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $prolikeblue;
-
-    h3 {
-        font-size: 10em;
-        color: $prolikeyellow;
-        font-weight: bold;
-        line-height: 1;
     }
 
-    p {
-        font-weight: bold;
-        font-size: 2em;
-        color: white;
-    }
-}
+    // ni & ci links
 
-// contributors
+    .ni-link,
+    .ci-link {
 
-.contributors {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
 
-
-    h3 {
-        display: inline;
-        padding-left: 5px;
     }
 
-    img {
-        width: auto;
-        height: 4vh;
+    // zenhub
+
+    .zenhub {
+        background-color: #5b5db5;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        p {
+            font-size: 35px;
+        }
+
+        p,
+        a {
+            color: white;
+            align-content: center;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: white;
+        }
+
+
     }
 
+    // to do list & pipeline
+
+    .todo-list>*,
+    .pipeline-box>*,
     .contributer-box {
-        padding-bottom: 5px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        vertical-align: middle;
+        border-top: 1px solid #00000063;
     }
-}
+
+    .todo-list>*:last-child,
+    .pipeline-box>*:last-child,
+    .contributer-box:last-child {
+        border-bottom: 1px solid #00000063;
+    }
+
+    .issue-number,
+    .issue-name,
+    .todo-list {
+        font-weight: bold;
+    }
+
+    // storypoints 
+
+    .storypoints {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: $prolikeblue;
+
+        h3 {
+            font-size: 10em;
+            color: $prolikeyellow;
+            font-weight: bold;
+            line-height: 1;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 2em;
+            color: white;
+        }
+    }
+
+    // contributors
+
+    .contributors {
+
+
+        h3 {
+            display: inline;
+            padding-left: 5px;
+        }
+
+        img {
+            width: auto;
+            height: 4vh;
+        }
+
+        .contributer-box {
+            padding-bottom: 5px;
+        }
+    }
 
 }

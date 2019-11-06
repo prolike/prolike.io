@@ -7,7 +7,14 @@ layout: page
     <div class="row">
         <div class="col-lg-8 col-xs-12 msgBoard">
             <div class="col-12">
-                <p>Message board:</p>
+                <div class="row">
+                    <div class="col-6">
+                        <p>Message board:</p>
+                    </div>
+                    <div class="col-6 offset-lg-3 col-lg-3">
+                        <a href="/boards"><p>Back to the board</p></a>
+                    </div>
+                </div>
                 <p class="cost-name box-title">{{ page.name }}</p>
                 <p>{{ content }}</p>
             </div>
@@ -41,11 +48,11 @@ layout: page
 
         <div class="col-lg-4 col-xs-12 newIssue">
             <div class="col-12">
-                    <p>Last opened issue:</p>
-                    <h2 class="ni-number">#</h2>
-                    <h3 class="ni-title box-title"></h3>
-                    <p>Created on <span class="ni-time"></span> <br> by <span class="ni-cont"></span></p>
-                    <a target="_blank" class="ni-link" href="#">View on Github</a>
+                <p>Last opened issue:</p>
+                <h2 class="ni-number">#</h2>
+                <h3 class="ni-title box-title"></h3>
+                <p>Created on <span class="ni-time"></span> <br> by <span class="ni-cont"></span></p>
+                <a target="_blank" class="ni-link" href="#">View on Github</a>
             </div>
         </div>
 
@@ -53,47 +60,47 @@ layout: page
 
         <div class="col-lg-4 col-xs-12 closedIssue">
             <div class="col-12">
-                    <p>Last closed issue:</p>
-                    <h2 class="ci-number">#</h2>
-                    <h3 class="ci-title box-title"></h3>
-                    <p>Created on <span class="ci-time"></span> by <span class="ci-cont"></span></p>
-                    <a target="_blank" class="ci-link" href="#">View on Github</a>
- 
+                <p>Last closed issue:</p>
+                <h2 class="ci-number">#</h2>
+                <h3 class="ci-title box-title"></h3>
+                <p>Created on <span class="ci-time"></span> <br> by <span class="ci-cont"></span></p>
+                <a target="_blank" class="ci-link" href="#">View on Github</a>
+
             </div>
         </div>
 
 
         <div class="col-lg-4 col-xs-12">
-                <div class="col-12 zenhub">
-                        <p class="box-title">Zenhub</p>
-                        <a href="#">View Zenhub Board</a>
-                </div>
+            <div class="col-12 zenhub">
+                <p class="box-title">Zenhub</p>
+                <a href="#">View Zenhub Board</a>
             </div>
+        </div>
 
         <div class="col-lg-8 col-xs-12 todo">
-                <div class="col-12">
-                        <p>All issues in To Do:</p>
-                    <div class="todo-list">
-    
-                    </div>
+            <div class="col-12">
+                <p>All issues in To Do:</p>
+                <div class="todo-list">
+
                 </div>
             </div>
+        </div>
 
         <div class="col-lg-4 col-xs-12 storypoint">
             <div class="col-12 storypoints">
-                        <h3 class="storypoint-number"></h3>
-                        <p>story points left</p>
-                    </div>
+                <h3 class="storypoint-number"></h3>
+                <p>story points left</p>
             </div>
-        
+        </div>
+
 
 
         <div class="col-lg-6 col-xs-12 pipeline">
-                <div class="col-12">
-                    <p>Pipeline:</p>
-                    <div class="pipeline-box"></div>
-                </div>
+            <div class="col-12">
+                <p>Pipeline:</p>
+                <div class="pipeline-box"></div>
             </div>
+        </div>
 
 
 
