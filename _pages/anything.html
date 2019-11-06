@@ -26,11 +26,13 @@ order: 2
       <div class="card-img-top" style="background-image: url('{{ post.image }}')"></div>
     </a>
     <div class="card-body">
+      <div class="posts-tags">
       {% for tag in post.tags %}
       <div class="blog-tag-item" style="display: inline-block" id="{{ t }}-item">
         <a class="tags" href="#{{ tag }}" onclick="filter('{{ tag }}'); " data-proofer-ignore>{{ tag }}</a>
       </div>
       {% endfor %}
+    </div>
       <a href="{{ post.url }}">
         <h5 class="card-title">{{ post.title }}</h5>
       </a>

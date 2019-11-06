@@ -1,7 +1,7 @@
 ---
 title: Login
 layout: cust-login
-navigation: true
+navigation: false
 order: 4
 ---
 

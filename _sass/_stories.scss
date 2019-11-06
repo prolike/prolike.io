@@ -87,14 +87,18 @@
             color: #4b504c;
         }
 
+        .posts-tags {
+            min-height: 50px;
         .tags {
             font-size: 9px;
-        }
 
+        }
+    }
         .card-body {
             border: 1px solid #bdbdbd;
             border-top: none;
             padding: 5px 15px 10px 15px;
+            min-height: 180px;
         }
 
         .card-img-top {
