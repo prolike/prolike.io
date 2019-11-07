@@ -57,7 +57,39 @@ getTeams.send()
 
 console.log(teamArray)
 
-teamArray.forEach(getRepos);
+if (teamArray.length == 1) {
+    teamArray.forEach(redirectToBoard)
+
+    function redirectToBoard(team_one, index, array) {
+        var one_name = team_one.replace(/[^\w\s]/gi, '')
+        alert(one_name)
+        window.location.replace("/boards/" + one_name + "/");
+    }
+        
+    
+
+}
+
+if (teamArray.length == 0) {
+    var no_teams_message = document.createElement("h3");
+    no_teams_message.innerHTML = "No boards"
+    document.querySelector('.button').appendChild(no_teams_message);
+}
+
+else {
+    teamArray.forEach(getAllBoards)
+
+    function getAllBoards(repoName, index, array) {
+        var btn2 = document.createElement("BUTTON");
+        btn2.innerHTML = repoName;
+        var compressedRepoName = repoName.replace(/[^\w\s]/gi, '')
+        btn2.setAttribute('onclick', "showBoard('" + compressedRepoName + "')")
+        btn2.setAttribute('class', 'col-lg-3')
+        document.querySelector('.button').appendChild(btn2);
+    }
+}
+
+/* teamArray.forEach(getRepos);
 
 
 function getRepos(value, index, array) {
@@ -86,7 +118,7 @@ function getRepos(value, index, array) {
     }
 
     getSRepos.send()
-}
+} */
 
 
 function showBoard(repo_name) {
