@@ -28,10 +28,35 @@
       color: $white;
     }
     .nav-btn:hover {
-      color: $white;
+      color: $prolikeyellow;
       text-decoration: none;
+      transition: 400ms;
       cursor: pointer;
     }
+
+    
+    // .nav-btn:after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   height: 4px;
+    //   width: 0;
+    //   background: $prolikeyellow;
+    //   transition: 400ms ease all;
+    // }
+    
+    // .nav-btn:after {
+    //   right: inherit;
+    //   top: inherit;
+    //   left: 85%;
+    //   bottom: 0;
+    // }
+
+    // .nav-btn:hover:after {
+    //   width: 100%;
+    //   transition: 800ms ease all;
+    // }
 
   }
 }
