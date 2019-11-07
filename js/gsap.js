@@ -58,15 +58,23 @@ var scene = new ScrollMagic.Scene({
 
 //bootcamp ends
 
-//boards begins 
+//boards begins
+
+var board = new TimelineMax()
+
+    board.fromTo("button", .3, {scaleY: 0, scaleX: .05, }, {scaleY: 1, transformOrigin: "left top", ease: Back.easeOut}, "=+.5")
+        .to("button", .8, {scaleX: 1, ease: Power4.easeInOut}, "=+.05")
 
 
-//out-commented till the board loads quicker of we come up with a way to pause the animation untill everything is loaded
-
-// var boards = new TimelineMax()
 
 
-// boards.staggerFrom(".zenbox, .msgBoard, .profile, .newIssue, .closedIssue, .storypoints, .todo, .pipeline, .cont",
+
+//out-commented till the board loads quicker or we come up with a way to pause the animation untill everything is loaded
+
+// var project = new TimelineMax()
+
+
+// project.staggerFrom(".zenbox, .msgBoard, .profile, .newIssue, .closedIssue, .storypoints, .todo, .pipeline, .cont",
 //     .6, {
 //         x: 300,
 //         scale: 0.2,
