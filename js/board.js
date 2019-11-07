@@ -21,7 +21,7 @@ var zenhub_token = "aa02c7e3618a31f77e2b94998cd87805b65258aac1542e1e97ae700a2e39
 
 var userlogin = sessionStorage.getItem("user");
 document.querySelector(".profile-name").innerHTML = userlogin;
-document.querySelector(".zenhub-link").setAttribute("href", "https://github.com/prolike/" + repo_name + "#zenhub");
+
 
 // Get repo id
 var getSRepos = new XMLHttpRequest()
@@ -81,6 +81,10 @@ var allIssuesInToDo = []
 workspaceArray.forEach(getWorkspace);
 
 function getWorkspace(value) {
+
+    var linktoworkspace = "https://app.zenhub.com/workspaces/" + repo_name + "-" + value + "/board?repos=" + repo_id;
+    document.querySelector(".zenhub-link").href = linktoworkspace;
+
     var getPipeline = new XMLHttpRequest()
     getPipeline.open('GET', proxyurl + 'https://api.zenhub.io/p2/workspaces/' + value + '/repositories/' + repo_id + '/board', false)
     getPipeline.setRequestHeader("X-Authentication-Token", zenhub_token)
