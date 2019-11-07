@@ -40,6 +40,7 @@ getTeams.onload = function () {
 
     var data = JSON.parse(this.response)
     if (getTeams.status >= 200 && getTeams.status < 400) {
+        console.log(data);
         data.forEach(team => {
 
             teamArray.push(team.name);
@@ -53,6 +54,8 @@ getTeams.onload = function () {
 }
 
 getTeams.send()
+
+console.log(teamArray)
 
 teamArray.forEach(getRepos);
 

@@ -31,7 +31,7 @@ getSRepos.setRequestHeader("Authorization", " token " + token)
 getSRepos.onload = function () {
     var data = JSON.parse(this.response)
     if (getSRepos.status >= 200 && getSRepos.status < 400) {
-      
+
         repo_id = data.id;
     }
 
@@ -130,19 +130,19 @@ function getWorkspace(value) {
                 var pipelinenametoLower = pipelinename.toLowerCase();
 
 
-                if ( pipelinenametoLower == "to do" || pipelinenametoLower == "up next") {
+                if (pipelinenametoLower == "to do" || pipelinenametoLower == "up next") {
                     pipeline.issues.forEach(issue => {
                         allIssuesInTodoandUpnext.push(issue);
                     })
                 }
 
-                if (pipelinenametoLower == "to do") {
+                if (pipelinenametoLower == "to do" || pipelinenametoLower == "up next") {
                     pipeline.issues.forEach(issue => {
                         allIssuesInToDo.push(issue);
                     })
                 }
 
-                
+
             })
         }
 
@@ -285,50 +285,59 @@ cutContrubutors.forEach(contributor => {
 console.log(allIssuesInTodoandUpnext)
 
 var issueStorypoints = [];
-                allIssuesInTodoandUpnext.forEach(issue => {
-                    if (issue.estimate != undefined) {
-                        issueStorypoints.push(issue.estimate.value);
-                    }
+allIssuesInTodoandUpnext.forEach(issue => {
+    if (issue.estimate != undefined) {
+        issueStorypoints.push(issue.estimate.value);
+    }
 
-                })
+})
 
-                var summedStorypoints = sum(issueStorypoints);
+var summedStorypoints = sum(issueStorypoints);
 
-                function sum(obj) {
-                    var sum = 0;
-                    for (var el in obj) {
-                        if (obj.hasOwnProperty(el)) {
-                            sum += parseFloat(obj[el]);
-                        }
-                    }
-                    return sum;
-                }
-
-
-                console.log(summedStorypoints)
-
-                document.querySelector(".storypoint-number").innerHTML += summedStorypoints.toString();
-
-                // Get all issues in todo
-
-                var cuttedallIssuesInToDo = allIssuesInToDo.slice(0,4);
-
-                 cuttedallIssuesInToDo.forEach(issue => {
-
-                    var getIssueName = new XMLHttpRequest;
-                    getIssueName.open("GET", proxyurl + "https://api.github.com/repos/prolike/" + repo_name + "/issues/" + issue.issue_number, false)
-                    getIssueName.setRequestHeader("Authorization", " token " + token)
-                    var issueName;
-                    getIssueName.onload = function() {
-                        var data = JSON.parse(this.response)
-                        issueName = data.title;
-                    }
-
-                    getIssueName.send()
+function sum(obj) {
+    var sum = 0;
+    for (var el in obj) {
+        if (obj.hasOwnProperty(el)) {
+            sum += parseFloat(obj[el]);
+        }
+    }
+    return sum;
+}
 
 
-                     var todo_issue = document.createElement("DIV");
-                     var todo_text = "<p>#" + issue.issue_number + " - " + issueName + "</span></p>";
-                     todo_issue.innerHTML = todo_text;
-                     document.querySelector(".todo-list").append(todo_issue);
-                 })
+console.log(summedStorypoints)
+
+document.querySelector(".storypoint-number").innerHTML += summedStorypoints.toString();
+
+// Get all issues in todo & upnext
+
+if (allIssuesInToDo.length != 0) {
+    
+
+    allIssuesInToDo.forEach(issue => {
+
+        var getIssueName = new XMLHttpRequest;
+        getIssueName.open("GET", proxyurl + "https://api.github.com/repos/prolike/" + repo_name + "/issues/" + issue.issue_number, false)
+        getIssueName.setRequestHeader("Authorization", " token " + token)
+        var issueName;
+        getIssueName.onload = function () {
+            var data = JSON.parse(this.response)
+            issueName = data.title;
+        }
+
+        getIssueName.send()
+
+
+        var todo_issue = document.createElement("DIV");
+        var todo_text = "<p>#" + issue.issue_number + " - " + issueName + "</span></p>";
+        todo_issue.innerHTML = todo_text;
+        document.querySelector(".todo-list").append(todo_issue);
+    })
+}
+
+else {
+    var no_todo_issue = document.createElement("DIV");
+    var no_todo_text = "No issues in To Do"
+    no_todo_issue.innerHTML = no_todo_text;
+    document.querySelector(".todo-list").innerHTML = "No issues in todo"
+}
