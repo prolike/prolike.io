@@ -10,7 +10,8 @@
   width: 100%;
   top: 0;
 
-  .boards-popup, .logout-popup {
+  .boards-popup,
+  .logout-popup {
     display: none;
   }
 
@@ -24,9 +25,10 @@
       margin: 0 20px 0 0;
       font-size: 1em;
       font-weight: bold;
-      padding:0px 5px 4px 0px;
+      padding: 0px 5px 4px 0px;
       color: $white;
     }
+
     .nav-btn:hover {
       color: $prolikeyellow;
       text-decoration: none;
@@ -34,7 +36,7 @@
       cursor: pointer;
     }
 
-    
+
     // .nav-btn:after {
     //   content: '';
     //   position: absolute;
@@ -45,7 +47,7 @@
     //   background: $prolikeyellow;
     //   transition: 400ms ease all;
     // }
-    
+
     // .nav-btn:after {
     //   right: inherit;
     //   top: inherit;
@@ -65,7 +67,7 @@
   border: none;
 }
 
-.fa-bars:before  {
+.fa-bars:before {
   color: $white;
   font-size: 20px;
 }
@@ -206,7 +208,7 @@ button:focus {
     font-size: 1.3rem;
   }
 
-  
+
 }
 
 @media only screen and (max-height: 327px) {
@@ -232,19 +234,15 @@ button:focus {
   .navbar {
     padding: 0 15px;
 
-    .logout-button, .boards-button {
+    .logout-button,
+    .boards-button {
       display: none !important;
     }
-  
-    .boards-popup, .logout-popup {
+
+    .boards-popup,
+    .logout-popup {
       display: block;
     }
-  }
-
-  .col-sm-4 {
-    height: 20px;
-    width: auto;
-    padding: 0;
   }
 
   #fp-nav.fp-right {
@@ -284,5 +282,13 @@ button:focus {
       font-size: 15px;
     }
 
+  }
+}
+
+@media (max-width: 600px) {
+  .Plogo {
+    width: 100px;
+    height: auto;
+    padding: 0;
   }
 }
