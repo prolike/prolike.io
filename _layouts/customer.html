@@ -2,119 +2,116 @@
 layout: page
 ---
 <div class="projects">
-<div class="container project">
+    <div class="container project">
 
-    <div class="row">
-        <div class="col-lg-8 col-xs-12 msgBoard">
-            <div class="col-12">
-                <p>Project status:</p>
-                <p class="cost-name box-title">{{ page.name }}</p>
-                <p>{{ content }}</p>
+        <div class="row">
+            <div class="col-lg-8 col-xs-12 msgBoard">
+                <div class="col-12">
+                    <p>Project status:</p>
+                    <p class="cost-name box-title">{{ page.name }}</p>
+                    <p>{{ content }}</p>
+                </div>
             </div>
-        </div>
 
-        <div class="col-lg-4 col-xs-12 profile">
-            <div class="col-12">
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <p>you are singed in as:</p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <p class="profile-name box-title"></p>
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <img class="profile-picture img-fluid" alt="profile-picture" src="#">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <a target="_blank" href="https://github.com/settings/profile">Edit your profile</a>
+            <div class="col-lg-4 col-xs-12 profile">
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-md-10">
+                            <p>you are singed in as:</p>
+                        </div>
+
+                        <div class="col-lg-10 col-md-10">
+                            <p class="profile-name box-title"></p>
+                        </div>
+
+                        <div class="col-lg-10 col-md-10 profile-img-box">
+                            <img class="profile-picture img-fluid" alt="profile-picture" src="#">
+                        </div>
+
+                        <div class="col-10">
+                            <a target="_blank" href="https://github.com/settings/profile">Edit your profile</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
-        <div class="col-lg-4 col-xs-12 newIssue">
-            <div class="col-12">
-                <p>Last opened issue:</p>
-                <a target="_blank" class="ni-link" href="#">
-                    <h2 class="ni-number">#</h2>
+            <div class="col-lg-4 col-xs-12 newIssue">
+                <div class="col-12">
+                    <p>Last opened issue:</p>
+                    <a target="_blank" class="ni-link" href="#">
+                        <h2 class="ni-number">#</h2>
+                    </a>
+                    <h3 class="ni-title box-title"></h3>
+                    <p>Created on <span class="ni-time"></span> <br> by <span class="ni-cont"></span></p>
+                    <a target="_blank" class="ni-link down" href="#">View on Github</a>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-4 col-xs-12 closedIssue">
+                <div class="col-12">
+                    <p>Last closed issue:</p>
+                    <a target="_blank" class="ci-link" href="#">
+                        <h2 class="ci-number">#</h2>
+                    </a>
+                    <h3 class="ci-title box-title"></h3>
+                    <p>Created on <span class="ci-time"></span> <br> by <span class="ci-cont"></span></p>
+                    <a target="_blank" class="ci-link down" href="#">View on Github</a>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-xs-12 zenbox">
+                <a target="_blank" class="zenhub-link" href="#">
+                    <div class="col-12 zenhub">
+                        <p class="box-title">Zenhub</p>
+                        <p>View Zenhub Board</p>
+                    </div>
                 </a>
-                <h3 class="ni-title box-title"></h3>
-                <p>Created on <span class="ni-time"></span> <br> by <span class="ni-cont"></span></p>
-                <a target="_blank" class="ni-link down" href="#">View on Github</a>
             </div>
-        </div>
 
+            <div class="col-lg-8 col-xs-12 todo">
+                <div class="col-12">
+                    <p>All issues in To Do & Up Next:</p>
+                    <div class="todo-list">
 
-
-        <div class="col-lg-4 col-xs-12 closedIssue">
-            <div class="col-12">
-                <p>Last closed issue:</p>
-                <a target="_blank" class="ci-link" href="#">
-                    <h2 class="ci-number">#</h2>
-                </a>
-                <h3 class="ci-title box-title"></h3>
-                <p>Created on <span class="ci-time"></span> <br> by <span class="ci-cont"></span></p>
-                <a target="_blank" class="ci-link down" href="#">View on Github</a>
-
-            </div>
-        </div>
-
-
-        <div class="col-lg-4 col-xs-12 zenbox">
-            <a target="_blank" class="zenhub-link" href="#">
-                <div class="col-12 zenhub">
-                    <p class="box-title">Zenhub</p>
-                    <p>View Zenhub Board</p>
-                </div>
-            </a>
-        </div>
-
-        <div class="col-lg-8 col-xs-12 todo">
-            <div class="col-12">
-                <p>All issues in To Do & Up Next:</p>
-                <div class="todo-list">
-
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-4 col-xs-12 storypoint">
-            <div class="col-12 storypoints">
-                <h3 class="storypoint-number"></h3>
-                <p>story points left</p>
-                <p class="subtext">in To Do & Up Next</p>
-            </div>
-        </div>
-
-
-
-        <div class="col-lg-6 col-xs-12 pipeline">
-            <div class="col-12">
-                <p>Pipeline:</p>
-                <div class="pipeline-box"></div>
-            </div>
-        </div>
-
-
-
-        <div class="col-lg-6 col-xs-12 cont">
-            <div class="col-12">
-                <p>contributors:</p>
-                <div class="contributors">
-
+            <div class="col-lg-4 col-xs-12 storypoint">
+                <div class="col-12 storypoints">
+                    <h3 class="storypoint-number"></h3>
+                    <p>story points left</p>
+                    <p class="subtext">in To Do & Up Next</p>
                 </div>
             </div>
-        </div>
 
+
+
+            <div class="col-lg-6 col-xs-12 pipeline">
+                <div class="col-12">
+                    <p>Pipeline:</p>
+                    <div class="pipeline-box"></div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-6 col-xs-12 cont">
+                <div class="col-12">
+                    <p>contributors:</p>
+                    <div class="contributors">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
 
 
 

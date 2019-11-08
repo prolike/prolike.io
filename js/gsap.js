@@ -62,8 +62,18 @@ var scene = new ScrollMagic.Scene({
 
 var board = new TimelineMax()
 
-    board.fromTo("button", .3, {scaleY: 0, scaleX: .05, }, {scaleY: 1, transformOrigin: "left top", ease: Back.easeOut}, "=+.5")
-        .to("button", .8, {scaleX: 1, ease: Power4.easeInOut}, "=+.05")
+board.fromTo("button", .3, {
+        scaleY: 0,
+        scaleX: .05,
+    }, {
+        scaleY: 1,
+        transformOrigin: "left top",
+        ease: Back.easeOut
+    }, "=+.5")
+    .to("button", .8, {
+        scaleX: 1,
+        ease: Power4.easeInOut
+    }, "=+.05")
 
 
 
@@ -79,10 +89,12 @@ var board = new TimelineMax()
 //         x: 300,
 //         scale: 0.2,
 //         opacity: 0,
-//         rotation: 5,
+//         rotation: -10,
+//         transformOrigin: "left top",
 //         ease: Back.easeOut.config(.8),
 //         x: -100
-//     }, .1);
+//     }, .1,
+//     "=+.25");
 
 
 // boards ends
