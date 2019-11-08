@@ -2,15 +2,19 @@
 layout: page
 ---
 <div class="projects">
-    <div class="container project">
+<div class="container project">
 
-        <div class="row">
-            <div class="col-lg-8 col-xs-12 msgBoard">
-                <div class="col-12">
-                    <p>Project status:</p>
-                    <p class="cost-name box-title">{{ page.name }}</p>
-                    <p>{{ content }}</p>
-                </div>
+    <div class="row">
+        <div class="col-lg-8 col-xs-12 msgBoard">
+            <div class="col-12 project-status">
+                <div class="project-status-box">
+                <p>Project status:</p>
+                <p class="cost-name box-title">{{ page.name }}</p></div>
+                <div class="accordion" id="status-messages">
+
+   
+                    
+                  </div>
             </div>
 
             <div class="col-lg-4 col-xs-12 profile">
@@ -118,3 +122,4 @@ layout: page
 
 </div>
 <script src="/js/board.js"></script>
+

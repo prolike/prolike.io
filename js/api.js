@@ -5,7 +5,7 @@ var token;
 var githubCode = window.location.href;
 var urlCode = new URL(githubCode)
 var ghCode = urlCode.searchParams.get("code");
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
+const proxyurl = "";
 
 if (ghCode == null) {
   window.location.replace("/");
@@ -40,6 +40,7 @@ else {
   var requestToken = new XMLHttpRequest()
   requestToken.open('POST', proxyurl + 'https://github.com/login/oauth/access_token?client_id=' + clientID + '&client_secret=' + clientSecret + '&code=' + ghCode + '&redirect_uri=' + redirect_url, false)
   requestToken.setRequestHeader("Accept", "application/json")
+  requestToken.setRequestHeader('Access-Control-Allow-Headers', '*')
   var token;
   requestToken.onload = function () {
 
@@ -63,6 +64,7 @@ else {
 var getOrg = new XMLHttpRequest()
 getOrg.open('GET', proxyurl + "https://api.github.com/user/orgs", false)
 getOrg.setRequestHeader("Authorization", " token " + token)
+getOrg.setRequestHeader('Access-Control-Allow-Headers', '*')
 var org_array = [];
 getOrg.onload = function () {
   if (getOrg.status == 429) {

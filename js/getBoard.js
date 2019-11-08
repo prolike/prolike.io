@@ -5,7 +5,7 @@ if (sessionStorage.getItem("user") == null) {
 
 var token = sessionStorage.getItem("user_t");
 
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
+const proxyurl = "";
 
 var zenhub_token = "aa02c7e3618a31f77e2b94998cd87805b65258aac1542e1e97ae700a2e399b9b98ff80603b690bd7";
 
@@ -14,6 +14,7 @@ var zenhub_token = "aa02c7e3618a31f77e2b94998cd87805b65258aac1542e1e97ae700a2e39
 var getUser = new XMLHttpRequest()
 getUser.open('GET', proxyurl + 'https://api.github.com/user', true)
 getUser.setRequestHeader("Authorization", " token " + token)
+getUser.setRequestHeader('Access-Control-Allow-Headers', '*')
 getUser.onload = function () {
 
     var data = JSON.parse(this.response)
@@ -35,6 +36,7 @@ getTeams.open('GET', proxyurl + 'https://api.github.com/user/teams', false)
 getTeams.setRequestHeader("Authorization", " token " + token)
 getTeams.setRequestHeader("X-OAuth-Scopes", "user")
 getTeams.setRequestHeader("X-Accepted-OAuth-Scopes", "user")
+getTeams.setRequestHeader('Access-Control-Allow-Headers', '*')
 var teamArray = [];
 getTeams.onload = function () {
 

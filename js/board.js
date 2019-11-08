@@ -15,7 +15,7 @@ document.querySelector(".profile-picture").src = sessionStorage.getItem('user-im
 var token = sessionStorage.getItem("user_t");
 var repo_name = document.querySelector(".cost-name").innerHTML;
 
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
+const proxyurl = "";
 
 var zenhub_token = "aa02c7e3618a31f77e2b94998cd87805b65258aac1542e1e97ae700a2e399b9b98ff80603b690bd7";
 
@@ -28,6 +28,7 @@ var getSRepos = new XMLHttpRequest()
 var repo_id;
 getSRepos.open('GET', proxyurl + 'https://api.github.com/repos/prolike/' + repo_name, false)
 getSRepos.setRequestHeader("Authorization", " token " + token)
+getSRepos.setRequestHeader('Access-Control-Allow-Headers', '*')
 getSRepos.onload = function () {
     var data = JSON.parse(this.response)
     if (getSRepos.status >= 200 && getSRepos.status < 400) {
@@ -50,7 +51,7 @@ getSRepos.send()
 var getWorkspaces = new XMLHttpRequest()
 getWorkspaces.open('GET', proxyurl + 'https://api.zenhub.io/p2/repositories/' + repo_id + '/workspaces', false)
 getWorkspaces.setRequestHeader("X-Authentication-Token", zenhub_token)
-
+getWorkspaces.setRequestHeader('Access-Control-Allow-Headers', '*')
 var workspaceArray = [];
 var repoArray = [];
 
@@ -88,6 +89,7 @@ function getWorkspace(value) {
     var getPipeline = new XMLHttpRequest()
     getPipeline.open('GET', proxyurl + 'https://api.zenhub.io/p2/workspaces/' + value + '/repositories/' + repo_id + '/board', false)
     getPipeline.setRequestHeader("X-Authentication-Token", zenhub_token)
+    getPipeline.setRequestHeader('Access-Control-Allow-Headers', '*')
 
     getPipeline.onload = function () {
         var data = JSON.parse(this.response)
@@ -158,31 +160,53 @@ function getWorkspace(value) {
 
 
 
-// Get newest open issue
+// Get all open issues, sort out the statuses and push them to own array, and the rest to another array
 
 var newestIssues = new XMLHttpRequest()
 newestIssues.open('GET', proxyurl + 'https://api.github.com/repos/prolike/' + repo_name + '/issues?sort=created', false)
 newestIssues.setRequestHeader("Authorization", " token " + token)
-
+newestIssues.setRequestHeader('Access-Control-Allow-Headers', '*')
+var allissuesArray = [];
 var newissueDate;
-
+var statuses = [];
 newestIssues.onload = function () {
     var data = JSON.parse(this.response)
     if (newestIssues.status >= 200 && newestIssues.status < 400) {
 
-        document.querySelector(".ni-number").innerHTML += data[0].number;
-        document.querySelector(".ni-title").innerHTML = data[0].title;
-        newissueDate = data[0].created_at;
+        data.forEach(issue => {
 
 
-        document.querySelector(".ni-cont").innerHTML = data[0].user.login;
-        document.querySelector(".ni-link").href = data[0].html_url;
+            issue.labels.forEach(label => {
+                var labelName = label.name.toLowerCase()
+                if (labelName == "status") {
+                    statuses.push(issue);
+                }
+                else {
+                    allissuesArray.push(issue)
+                }
+            })
+
+        })
+
+
+
+
     }
     else {
     }
 }
 
 newestIssues.send()
+
+document.querySelector(".ni-number").innerHTML += allissuesArray[0].number;
+document.querySelector(".ni-title").innerHTML = allissuesArray[0].title;
+newissueDate = allissuesArray[0].created_at;
+
+
+document.querySelector(".ni-cont").innerHTML = allissuesArray[0].user.login;
+document.querySelector(".ni-link").href = allissuesArray[0].html_url;
+
+console.log(statuses)
 
 var dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
 
@@ -198,26 +222,42 @@ document.querySelector(".ni-time").innerHTML = formatedNewissueDate;
 var newestClosedIssue = new XMLHttpRequest()
 newestClosedIssue.open('GET', proxyurl + 'https://api.github.com/repos/prolike/' + repo_name + '/issues?state=closed&sort=updated', false)
 newestClosedIssue.setRequestHeader("Authorization", " token " + token)
+newestClosedIssue.setRequestHeader('Access-Control-Allow-Headers', '*')
 
 var newestClosedIssueDate;
-
+var allclosedIssues = [];
 newestClosedIssue.onload = function () {
     var data = JSON.parse(this.response)
     if (newestClosedIssue.status >= 200 && newestClosedIssue.status < 400) {
 
-        document.querySelector(".ci-number").innerHTML += data[0].number;
-        document.querySelector(".ci-title").innerHTML = data[0].title;
-        newestClosedIssueDate = data[0].created_at;
+        data.forEach(issue => {
 
 
-        document.querySelector(".ci-cont").innerHTML = data[0].user.login;
-        document.querySelector(".ci-link").href = data[0].html_url;
+            issue.labels.forEach(label => {
+                var labelName = label.name.toLowerCase()
+                if (labelName != "status") {
+                    allclosedIssues.push(issue)
+                }
+
+            })
+
+        })
+
+
     }
     else {
     }
 }
 
 newestClosedIssue.send()
+
+document.querySelector(".ci-number").innerHTML += allclosedIssues[0].number;
+document.querySelector(".ci-title").innerHTML = allclosedIssues[0].title;
+newestClosedIssueDate = allclosedIssues[0].created_at;
+
+
+document.querySelector(".ci-cont").innerHTML = allclosedIssues[0].user.login;
+document.querySelector(".ci-link").href = allclosedIssues[0].html_url;
 
 var dateOptions = { year: 'numeric', month: 'short', day: 'numeric' };
 
@@ -233,6 +273,7 @@ document.querySelector(".ci-time").innerHTML = formatedNewissueDate;
 var getContributors = new XMLHttpRequest()
 getContributors.open('GET', proxyurl + 'https://api.github.com/repos/prolike/' + repo_name + '/contributors', false)
 getContributors.setRequestHeader("Authorization", " token " + token)
+getContributors.setRequestHeader('Access-Control-Allow-Headers', '*')
 
 var getMostconstributes = [];
 
@@ -282,7 +323,6 @@ cutContrubutors.forEach(contributor => {
 })
 
 //Get all todo and upnext storypoints
-console.log(allIssuesInTodoandUpnext)
 
 var issueStorypoints = [];
 allIssuesInTodoandUpnext.forEach(issue => {
@@ -305,20 +345,20 @@ function sum(obj) {
 }
 
 
-console.log(summedStorypoints)
 
 document.querySelector(".storypoint-number").innerHTML += summedStorypoints.toString();
 
 // Get all issues in todo & upnext
 
 if (allIssuesInToDo.length != 0) {
-    
+
 
     allIssuesInToDo.forEach(issue => {
 
         var getIssueName = new XMLHttpRequest;
         getIssueName.open("GET", proxyurl + "https://api.github.com/repos/prolike/" + repo_name + "/issues/" + issue.issue_number, false)
         getIssueName.setRequestHeader("Authorization", " token " + token)
+        getIssueName.setRequestHeader('Access-Control-Allow-Headers', '*')
         var issueName;
         getIssueName.onload = function () {
             var data = JSON.parse(this.response)
@@ -340,4 +380,67 @@ else {
     var no_todo_text = "No issues in To Do"
     no_todo_issue.innerHTML = no_todo_text;
     document.querySelector(".todo-list").innerHTML = "No issues in todo"
+}
+
+// Place Statuses
+
+for (var i = 0; i < statuses.length; i++) { // For every issue marked with status labeled in statuses array
+
+    var card = document.createElement("DIV");
+    card.setAttribute("class", "card");
+
+    var card_header = document.createElement("DIV");
+    card_header.setAttribute("class", "card-header");
+    card_header.setAttribute("id", "heading" + i);
+
+    var button = document.createElement("BUTTON");
+    button.setAttribute("class", "status-link")
+    button.setAttribute("type", "button")
+    button.setAttribute("data-toggle", "collapse")
+    button.setAttribute("data-target", "#collapse" + i)
+    button.setAttribute("aria-expanded", "true")
+    button.setAttribute("aria-controls", "collapse" + i)
+
+    const monthNames = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"
+];
+
+
+    var issue_date = new Date(statuses[i].created_at)
+    var date = issue_date.getDate();
+    var month = monthNames[issue_date.getMonth()];
+    var year = issue_date.getFullYear();
+
+    var formatedIssueDate = date + ". " + month + " " + year;
+
+    button.innerHTML = formatedIssueDate + " - " + statuses[i].title;
+
+    card_header.appendChild(button);
+
+    var collapse = document.createElement("DIV");
+    collapse.setAttribute("id", "collapse" + i);
+    collapse.setAttribute("class", "collapse")
+
+    if (i == 0) {
+        collapse.setAttribute("class", "collapse show")
+    }
+
+    collapse.setAttribute("aria-labelledby", "heading" + i)
+    collapse.setAttribute("data-parent", "#status-messages")
+
+
+    var card_body = document.createElement("DIV")
+    card_body.setAttribute("class", "card-body");
+    card_body.innerHTML = statuses[i].body;
+
+
+    collapse.appendChild(card_body)
+
+    card.appendChild(card_header);
+    card.appendChild(collapse);
+
+    document.querySelector("#status-messages").appendChild(card);
+
+
+
 }
