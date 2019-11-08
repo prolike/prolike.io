@@ -27,10 +27,30 @@
 
 .ourfooter {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .bg-primary {
         width: 100%;
+        position: relative;
+    }
+}
+
+.social-media-links {
+    color: $white;
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    font-size: 20px;
+    display: inherit;
+
+    .fab {
+        padding: 0 10px;
+    }
+
+    .social-media-links:hover {
+        color: $prolikeyellow;
     }
 }
 

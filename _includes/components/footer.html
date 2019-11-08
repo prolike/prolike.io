@@ -30,9 +30,9 @@
             {% assign sorted_navi = site.pages | sort: 'order' %}
             {% for page in sorted_navi %}
             {% if page.navigation == true %}
-  
+
             <a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a>
-  
+
             {% endif %}
             {% endfor %}
           </div>
@@ -66,5 +66,11 @@
             3450 Allerød
           </div>
         </div>
+      </div>
+      <div class="social-media-links">
+        <a href="https://www.instagram.com/prolike_io/" target="_blank" title="Find us on Instagram!" data-proofer-ignore><i class="fab fa-instagram"></i></a>
+        <a href="https://twitter.com/prolike5" target="_blank" title="Find us on Twitter!" data-proofer-ignore><i class="fab fa-twitter"></i></a>
+        <a href="https://github.com/prolike" target="_blank" title="Find us on Github!" data-proofer-ignore><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/company/prolike/" target="_blank" title="Find us on LinkedIn!" data-proofer-ignore><i class="fab fa-linkedin-in"></i></a>
       </div>
     </section>
