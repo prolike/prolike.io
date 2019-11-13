@@ -1,32 +1,33 @@
 // flow
-var controller = new ScrollMagic.Controller();
+
+// var controller = new ScrollMagic.Controller();
 
 
-var slideArray = document.getElementsByClassName("trigger");
+// var slideArray = document.getElementsByClassName("trigger");
 
-for (var i = 0; i < slideArray.length; i++) {
+// for (var i = 0; i < slideArray.length; i++) {
 
-    var flow = new TimelineMax()
-
-
-    flow.from(".headings" + i, .8, {
-        opacity: 0
-    })
-    flow.from(".texts" + i, .9, {
-        opacity: 0,
-    }, "-=.5");
+//     var flow = new TimelineMax()
 
 
-    var trig = slideArray[i];
-    console.log(trig.id)
-    var scene = new ScrollMagic.Scene({
-            triggerElement: trig
-        })
-        .setTween(flow)
-        /*         .addIndicators({name: "flow" + i}) */
-        .addTo(controller);
+//     flow.from(".headings" + i, .8, {
+//         opacity: 0
+//     })
+//     flow.from(".texts" + i, .9, {
+//         opacity: 0,
+//     }, "-=.5");
 
-}
+
+//     var trig = slideArray[i];
+//     console.log(trig.id)
+//     var scene = new ScrollMagic.Scene({
+//             triggerElement: trig
+//         })
+//         .setTween(flow)
+//         /*         .addIndicators({name: "flow" + i}) */
+//         .addTo(controller);
+
+// }
 //flow ends ends
 
 
