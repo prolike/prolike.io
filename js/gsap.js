@@ -14,7 +14,7 @@ for (var i = 0; i < slideArray.length; i++) {
     })
     flow.from(".texts" + i, .9, {
         opacity: 0,
-    }, "+=.5");
+    }, "-=.5");
 
 
     var trig = slideArray[i];
