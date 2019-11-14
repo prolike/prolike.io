@@ -22,7 +22,7 @@ slideHeading = slides[i].innerText.toLowerCase();
 
 slideHeadings.push(slideHeading.replace(/\s/g, ''));
 
-
+}
 
 $(document).ready(function () {
   $('#storyfullpage').fullpage({
