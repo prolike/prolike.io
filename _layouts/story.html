@@ -4,7 +4,7 @@ layout: page
 ---
 
 
-<div id="fullpage" class="container-fluid slide-container">
+<div id="storyfullpage" class="container-fluid slide-container">
 
    
     {% for section in page.sections %} 
@@ -14,7 +14,7 @@ layout: page
             <div class="col-lg-8 col-xs-8 slide1">
                     <i class="{{ section.icon }} fa-5x flowIcon"></i>
                     
-                <div class="headings{{ forloop.index0 }}">
+                <div class="headings{{ forloop.index0 }} story-heading">
                     {% for heading in section.headings %}<h1>{{ heading }}</h1>{% endfor %}</div>
                 <div class="texts{{ forloop.index0 }}">{% for text in section.texts %}<p>{{ text }}</p>{% endfor %}
                     {% if forloop.last %}
