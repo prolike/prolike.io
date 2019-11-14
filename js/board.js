@@ -15,7 +15,7 @@ document.querySelector(".profile-picture").src = sessionStorage.getItem('user-im
 var token = sessionStorage.getItem("user_t");
 var repo_name = document.querySelector(".cost-name").innerHTML;
 
-const proxyurl = "";
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
 var zenhub_token = "aa02c7e3618a31f77e2b94998cd87805b65258aac1542e1e97ae700a2e399b9b98ff80603b690bd7";
 
