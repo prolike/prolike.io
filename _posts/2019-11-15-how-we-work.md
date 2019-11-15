@@ -5,7 +5,7 @@ tags:
   - software
   - products
   - howwework
-image: /images/stories/propay.jpg
+image: /images/stories/howwework.jpg
 description: How We Work!
 ---
 # How We Work!
