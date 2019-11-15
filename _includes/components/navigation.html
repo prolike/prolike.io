@@ -8,8 +8,6 @@
     </a>
 
     <div class="navigation-right">
-      <a href="/boards/" class="boards-button nav-btn" style="display: none;">My boards</a>
-      <a class="logout-button nav-btn">Log in</a>
       <div class="popup" onclick="myFunction()"> <i class="fas fa-bars"></i>
         <span class="popuptext" id="myPopup">
           <ul>
@@ -25,8 +23,8 @@
 
             {% endif %}
             {% endfor %}
-            <li class="boards-popup"> <a href="/boards/" data-proofer-ignore>My boards</a></li>
-            <li class="logout-popup"> <a class="logout-popup-link" data-proofer-ignore>Log in</a></li>
+            <li> <a href="/boards/" class="boards-button nav-btn">boards</a> </li>
+            <li> <a class="logout-button nav-btn">Log in</a> </li>
           </ul>
         </span>
       </div>

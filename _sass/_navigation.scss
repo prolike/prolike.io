@@ -10,58 +10,15 @@
   width: 100%;
   top: 0;
 
-  .boards-popup,
-  .logout-popup {
-    display: none;
-  }
-
   .navigation-right {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-between;
 
-    .nav-btn {
-      margin: 0 20px 0 0;
-      font-size: 1em;
-      font-weight: bold;
-      padding: 0px 5px 4px 0px;
-      color: $white;
     }
-
-    .nav-btn:hover {
-      color: $prolikeyellow;
-      text-decoration: none;
-      transition: 400ms;
-      cursor: pointer;
-    }
-
-
-    // .nav-btn:after {
-    //   content: '';
-    //   position: absolute;
-    //   top: 0;
-    //   right: 0;
-    //   height: 4px;
-    //   width: 0;
-    //   background: $prolikeyellow;
-    //   transition: 400ms ease all;
-    // }
-
-    // .nav-btn:after {
-    //   right: inherit;
-    //   top: inherit;
-    //   left: 85%;
-    //   bottom: 0;
-    // }
-
-    // .nav-btn:hover:after {
-    //   width: 100%;
-    //   transition: 800ms ease all;
-    // }
 
   }
-}
 
 .navbar-toggler-icon {
   border: none;
@@ -233,16 +190,6 @@ button:focus {
 
   .navbar {
     padding: 0 15px;
-
-    .logout-button,
-    .boards-button {
-      display: none !important;
-    }
-
-    .boards-popup,
-    .logout-popup {
-      display: block;
-    }
   }
 
   #fp-nav.fp-right {

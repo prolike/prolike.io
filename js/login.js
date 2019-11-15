@@ -9,6 +9,7 @@ if (sessionStorage.getItem("user") != null ) {
 
 else {
     document.querySelector(".logout-button").setAttribute("href", "/customer-login/")
+    document.querySelector(".boards-button").setAttribute("style", "display: none;")
     document.querySelector(".boards-popup").setAttribute("style", "display: none;")
     document.querySelector(".logout-popup-link").setAttribute("href", "/customer-login/")
 }
