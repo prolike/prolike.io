@@ -5,4 +5,4 @@ navigation: true
 order: 3
 ---
 
-Here you can read storries about prolike.
+Here you can read all of our stories about Prolike

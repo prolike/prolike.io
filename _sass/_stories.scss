@@ -22,6 +22,9 @@
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 1px;
+        text-align: center;
+        width: 50%;
+        margin: 0 auto;
     }
 
     .card-title {
@@ -40,12 +43,8 @@
     }
 
     .story-header {
-        background-image: url("../images/stories/yellow-header.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
         width: 100%;
-        height: 500px;
+        padding: 100px 0 50px 0;
         text-align: left;
         display: flex;
         justify-content: center;
@@ -224,15 +223,24 @@
 
     .stories_container {
         h2 {
-            font-size: 4em !important;
+            font-size: 3em !important;
         }
 
         h3 {
-            font-size: 25px;
+            font-size: 22.5px;
+            width: 100%;
         }
     }
 
     .gig_container .row {
         width: 100%;
+    }
+
+    .stories_container .row {
+        margin: 0;
+    }
+
+    .tags-row {
+        display: none;
     }
 }

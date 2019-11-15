@@ -40,3 +40,13 @@
         }
     }
 }
+
+/* Small devices (phones, 768px and down) */
+
+@media only screen and (max-width: 768px) {
+
+    .things {
+        width: 100%;
+    }
+
+}
