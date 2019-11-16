@@ -1,24 +1,36 @@
 .navbar {
   background-color: $prolikeblue !important;
   color: $white;
-  height: 60px;
+  height: 65px;
+  width: 100%;
   z-index: 100;
-  padding: 0 75px;
+  padding: 0 100px;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
-  width: 100%;
   top: 0;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
+
+  .navbar-brand {
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    .logo {
+      height: 25px;
+    }
+
+  }
 
   .navigation-right {
     display: flex;
     align-items: center;
     align-content: center;
     justify-content: space-between;
-
-    }
-
   }
+
+}
 
 .navbar-toggler-icon {
   border: none;
@@ -55,6 +67,9 @@ button:focus {
 .popup {
   cursor: pointer;
   overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* The actual popup (appears on top) */
