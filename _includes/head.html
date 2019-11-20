@@ -33,7 +33,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160 }}{% endif %}" />
   <meta name="author" content="Prolike">
-  <meta name="keywords" content="Continuous Delivery, Agile, Docker"
+  <meta name="keywords" content="Continuous Delivery, Agile, Docker">
   <link data-proofer-ignore rel="canonical" href="{{ site_prefix }}{{ page.url }}">
 
 <!-- Open Graph tags -->
@@ -63,7 +63,7 @@
 <!-- Twitter Card tags -->
 
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta data-proofer-ignore name="twitter:image" content="{% if page.image %}{{ site_prefix }}{{ page.image | remove: '..' }}{% else %}{{ site_prefix }}{{ site.image }}{% endif %}"
+  <meta data-proofer-ignore name="twitter:image" content="{% if page.image %}{{ site_prefix }}{{ page.image | remove: '..' }}{% else %}{{ site_prefix }}{{ site.image }}{% endif %}">
   <meta data-proofer-ignore name="twitter:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
   <meta data-proofer-ignore name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
@@ -105,7 +105,7 @@
 
   <!-- Feed -->
 
-  <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" prepend: site.url }}" />
+  <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ '/feed.json' prepend: site.url }}" />
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 

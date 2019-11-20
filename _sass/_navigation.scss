@@ -88,7 +88,7 @@ button:focus {
   padding: 0 0 120px 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 45px;
+  font-size: 3.5rem;
   display: flexbox;
   align-items: center;
   justify-items: center;
@@ -155,14 +155,14 @@ button:focus {
 @media only screen and (max-height: 860px) {
   .popuptext {
 
-    font-size: 4rem;
+    font-size: 3.0rem;
   }
 }
 
 @media only screen and (max-height: 757px) {
   .popuptext {
 
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -177,7 +177,7 @@ button:focus {
 @media only screen and (max-height: 472px) {
   .popuptext {
 
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
 
@@ -191,13 +191,13 @@ button:focus {
   }
 }
 
-@media only screen and (max-width: 500px) {
+/* @media only screen and (max-height: 500px) {
   .popuptext {
 
     font-size: 2.5rem;
     padding-top: 25px;
   }
-}
+} */
 
 /* Small devices (phones, 768px and down) */
 

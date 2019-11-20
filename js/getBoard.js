@@ -87,9 +87,12 @@ else {
         var compressedRepoName = repoName.replace(/[^\w\s]/gi, '')
         btn2.setAttribute('onclick', "showBoard('" + compressedRepoName + "')")
         btn2.setAttribute('class', 'col-lg-3')
+        
         document.querySelector('.button').appendChild(btn2);
     }
 }
+
+
 
 /* teamArray.forEach(getRepos);
 
@@ -127,7 +130,6 @@ function showBoard(repo_name) {
    
     var name = repo_name.replace(/[^\w\s]/gi, '')
     window.location.replace("/boards/" + name + "/");
-
     
 }
 
