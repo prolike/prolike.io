@@ -19,8 +19,10 @@
     {% endcapture %}
 
     <footer id="{{sectionid || strip || strip_newlines}}">
+      <img class="footer-logo" src="/images/logos/prolike-logo.png" alt="prolike footer logo" draggable="false">
+      <div class="footer-items">
         <div class="row">
-          <div class="col-lg col-sm-12 col-xs-12">
+          <div class="footer-list">
             <h1>Navigation</h1>
             <a href="/#home" data-proofer-ignore>Prolike</a>
             <a href="/#why" data-proofer-ignore>Why</a>
@@ -33,25 +35,25 @@
             {% endif %}
             {% endfor %}
           </div>
-          <div class="col-lg col-sm-12 col-xs-12">
+          <div class="footer-list">
             <h1>Our Credo</h1>
-            <a href="/_posts/2019-11-15-how-we-work.md" data-proofer-ignore>How We Work</a>
+            <a href="/anything/how-we-work/" data-proofer-ignore>How We Work</a>
             <p>Serverless</p>
             <p>Autonomation</p>
             <p>Talent Development</p>
             <p>Docker</p>
             <p>Kaizen</p>
           </div>
-          <div class="col-lg col-sm-12 col-xs-12">
+          <div class="footer-list">
             <h1>Services</h1>
-            <a href="/_posts/2019-10-21-website.md" data-proofer-ignore>Websites</a>
-            <a href="/_posts/2019-10-21-software.md" data-proofer-ignore>Software</a>
-            <a href="/_posts/2019-11-06-propay.md" data-proofer-ignore>Propay</a>
+            <a href="http://localhost/anything/website/" data-proofer-ignore>Websites</a>
+            <a href="http://localhost/anything/software/" data-proofer-ignore>Software</a>
+            <a href="http://localhost/anything/propay/" data-proofer-ignore>Propay</a>
             <p>Garage Projects</p>
             <p>Team Resources</p>
             <p>Research</p>
           </div>
-          <div class="col-lg col-sm-12 col-xs-12">
+          <div class="footer-list">
             <h1>Contact</h1>
             <a href="mailto:hey@prolike.io?Subject=Hello%20again" target="_blank">hey@prolike.io</a>
             <a href="https://datacvr.virk.dk/data/visenhed?enhedstype=virksomhed&id=39464101&soeg=prolike&type=undefined&language=us">VAT No.: 39464101</a>
@@ -59,13 +61,16 @@
             <a href="https://goo.gl/maps/Esji6p1mx7x">Allerød Stationsvej 4</a>
             <p>3450 Allerød</p>
           </div>
-          <div class="col-lg col-sm-12 col-xs-12">
-              <h1>Follow us</h1>
-              <a href="#" target="_blank" title="Facebook!" data-proofer-ignore>Facebook</a>
-              <a href="https://www.instagram.com/prolike_io/" target="_blank" title="Find us on Instagram!" data-proofer-ignore>Instagram</a>
-              <a href="https://twitter.com/prolike5" target="_blank" title="Find us on Twitter!" data-proofer-ignore>Twitter</a>
-              <a href="https://github.com/prolike" target="_blank" title="Find us on Github!" data-proofer-ignore>Github</a>
-              <a href="https://www.linkedin.com/company/prolike/" target="_blank" title="Find us on LinkedIn!" data-proofer-ignore>Linkedin</a>
-          </div>
         </div>
+      </div>
+      <div class="bottom-bar">
+        <span>© 2019 Prolike</span>
+        <span>
+          <a href="https://twitter.com/prolike5" target="_blank" data-proofer-ignore><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank" data-proofer-ignore><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/prolike_io/" target="_blank" data-proofer-ignore><i class="fab fa-instagram"></i></a>
+          <a href="https://github.com/prolike" target="_blank" data-proofer-ignore><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/company/prolike/" target="_blank" data-proofer-ignore><i class="fab fa-linkedin-in"></i></a>
+        </span>
+      </div>
     </footer>
