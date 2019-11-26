@@ -129,7 +129,8 @@ function getRepos(value, index, array) {
 function showBoard(repo_name) {
    
     var name = repo_name.replace(/[^\w\s]/gi, '')
-    window.location.replace("/boards/" + name + "/");
+
+    window.location.replace("/boards/" + name.toLowerCase() + "/");
     
 }
 
