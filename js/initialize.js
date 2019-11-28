@@ -1,14 +1,13 @@
-$(document).ready(function () {
-  $('#fullpage').fullpage({
+$(document).ready(function() {
+  $("#fullpage").fullpage({
     navigation: true,
     fadingEffect: true,
     responsive: true,
     resize: true,
-    menu: '#menu',
-    anchors: ['home', 'why', 'how', 'what', 'footer'],
+    menu: "#menu",
+    anchors: ["home", "why", "how", "what", "footer"]
   });
 });
-
 
 // get all the slides and their names to insert in anchor line
 
@@ -17,30 +16,26 @@ var slides = document.getElementsByClassName("story-heading");
 var slideHeadings = [];
 
 for (var i = 0; i < slides.length; i++) {
+  slideHeading = slides[i].innerText.toLowerCase();
 
-slideHeading = slides[i].innerText.toLowerCase();
-
-slideHeadings.push(slideHeading.replace(/\s/g, ''));
-
+  slideHeadings.push(slideHeading.replace(/\s/g, ""));
 }
 
-$(document).ready(function () {
-  $('#storyfullpage').fullpage({
+$(document).ready(function() {
+  $("#storyfullpage").fullpage({
     navigation: true,
     fadingEffect: true,
     responsive: true,
     resize: true,
-    menu: '#menu',
-    anchors: [
-      ...slideHeadings
-    ],
+    menu: "#menu",
+    anchors: [...slideHeadings]
   });
 });
 // Allows for the use to go back to the site from whence they came when pressing on the back button, instead of going back and forth between our front page slides.
 
-$(window).on('click', 'a', function (e) {
-  var href = $(e.target).attr('href');
-  if (href && href[0] === '#') {
+$(window).on("click", "a", function(e) {
+  var href = $(e.target).attr("href");
+  if (href && href[0] === "#") {
     window.location.replace(e.target.href);
     return false;
   }
