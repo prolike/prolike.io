@@ -1,112 +1,65 @@
-.stories_container {
-    margin-top: 60px;
-    text-align: center;
-    padding: 0 0 30px 0;
+.posts-container {
+    height: auto;
+    width: 100%;
+    padding: 16.5vh 20vh 10vh 20vh;
+    background: url(/images/backgrounds/stories-wallpaper.png);
+    background-attachment: fixed;
 
-    a {
-        color: $prolikeblue;
-        text-decoration: none;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 5vh;
+        grid-row-gap: 5vh;
     }
 
-    h2 {
-        font-size: 75px;
-        text-transform: uppercase;
-        font-weight: 900;
+    .story-card:hover {
+        h5 {
+            color: $prolikeyellow;
+        }
     }
 
-    h3 {
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        text-align: center;
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    .card-title {
-        font-size: 15px;
-        margin-top: 10px;
-        margin-bottom: 0;
-        font-weight: 700;
-        text-transform: capitalize;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    .row {
-        margin: 100px 0;
-    }
-
-    .story-header {
+    .card-img-top {
+        height: 45vh;
         width: 100%;
-        padding: 100px 0 50px 0;
-        text-align: left;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 0px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
-    .tags {
-        padding: 2px 5px 2px 5px;
-        background-color: $prolikeyellow;
-        color: $white;
-        border-radius: 2px;
-        display: inline;
-        font-size: 11px;
-        text-transform: uppercase;
-        font-weight: 700;
+    .card-body {
+        padding: 20px 0;
 
         a {
-            color: $prolikeblue;
-            text-decoration: none;
-            
+            text-decoration: none !important;
+            color: red;
         }
 
-    }
-
-    .story-card {
-        text-align: left;
-
-
-        .author-text {
-            font-size: 11px;
-            margin: 3px 0 8px 0;
-
+        h5 {
+            font-size: 40px;
+            line-height: 55px;
+            color: $black;
+            padding: 20px 0 5px 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Oswald', sans-serif;
+            transition: .15s all ease-in-out;
         }
 
-        .author-span,
-        .date-span {
-            font-weight: bold;
-            color: #4b504c;
-        }
-
-        .posts-tags {
-            min-height: 50px;
         .tags {
-            font-size: 9px;
-
-        }
-    }
-        .card-body {
-            border: 1px solid #bdbdbd;
-            border-top: none;
-            padding: 5px 15px 10px 15px;
-            min-height: 180px;
+            color: $prolikeyellow;
+            font-size: 25px;
+            text-transform: uppercase;
+            font-family: 'Oswald', sans-serif;
+            text-decoration: none;
+            margin-right: 10px;
         }
 
-        .card-img-top {
-            width: 100% !important;
-            height: 150px;
-            margin-top: 25px;
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            border: 1px solid #bdbdbd;
-            border-bottom: none;
+        p {
+            font-size: 20px;
+            user-select: none;
+            max-width: 90%;
         }
+
     }
 }
 
@@ -117,19 +70,9 @@
 
 // individual story site
 
-.image-header-bg {
-    height: 500px;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-
-
-}
-
 .story-content {
     width: 910px;
-    padding: 0;
+    padding: 7.5vh 0 10vh 0;
     margin-top: 75px;
     margin-bottom: 100px;
 
@@ -138,20 +81,18 @@
         margin-right: auto;
         object-fit: contain;
         display: block;
-        border-radius: 10px;
-    }
-
-    .hr_big hr {
-        min-width: 100% !important;
-        border-color: $prolikeyellow;
+        margin: 25px 0;
     }
 
     h1 {
         padding-bottom: 0;
         text-transform: uppercase;
-        font-size: 25px;
-        font-weight: 600;
-        padding: 20px 0 10px 0;
+        font-size: 48px;
+        line-height: 60px;
+        font-weight: 700;
+        padding: 10px 0;
+        margin: 0;
+        font-family: 'Oswald', sans-serif;
     }
 
     h2 {
@@ -162,10 +103,11 @@
     }
 
     h3 {
-        padding: 20px 0 10px 0;
-        font-weight: bold;
+        padding: 25px 0 0 0;
+        font-weight: 700;
         text-transform: uppercase;
-        font-size: 17px !important;
+        font-size: 25px !important;
+        font-family: 'Oswald', sans-serif;
     }
 
     h4 {
@@ -173,6 +115,11 @@
         font-weight: bold;
         font-size: 15px !important;
         text-transform: uppercase;
+    }
+
+    hr {
+        min-width: 100% !important;
+        opacity: .5;
     }
 
     a {
@@ -191,16 +138,50 @@
 
     p {
         font-size: 16px;
+        line-height: 24px;
+        margin: 0;
     }
+}
+
+.image-header-bg {
+    height: 500px;
+    width: 100%;
+    margin: 35px 0 50px 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 /* Small devices (phones, 768px and down) */
 
 @media only screen and (max-width: 768px) {
 
-    // This is most likely not the best way to go about making these
-    // items responsive, but for not, this is our solution.
-    // But don't worry, I'll note this down, and return at a later date.
+    .posts-container {
+        padding: 7.5vh 2vh;
+
+        .wrapper {
+            grid-template-columns: 1fr;
+        }
+
+        .card-body {
+            padding: 20px 0 10px 0;
+
+            h5 {
+                font-size: 30px;
+                line-height: 35px;
+                padding: 20px 0 5px 0;
+            }
+
+            .tags {
+                font-size: 15px;
+
+                p {
+                    max-width: 100%;
+                }
+
+            }
+        }
+    }
 
     .image-header-bg {
         max-width: 100%;
@@ -210,23 +191,13 @@
     .story-content {
         max-width: 95% !important;
         padding: 0 10px !important;
+        padding-top: 15vh !important;
     }
 
     .story-card {
         padding: 0;
         margin: 0;
         margin-bottom: 20px;
-    }
-
-    .stories_container {
-        h2 {
-            font-size: 3em !important;
-        }
-
-        h3 {
-            font-size: 22.5px;
-            width: 100%;
-        }
     }
 
     .gig_container .row {

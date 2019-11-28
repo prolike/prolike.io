@@ -5,7 +5,7 @@ navigation: true
 order: 2
 ---
 
-<div class="blog-tags-list row">
+<!-- <div class="blog-tags-list row">
   <div class="tags-row col-lg-5 m-auto">
     {% assign sorted_tags = site.tags | sort %}
     {% for tag in sorted_tags %}
@@ -17,11 +17,11 @@ order: 2
     {% endfor %}
     <a class="hidden tags" id="showAllBtn" href onclick="showallRow();" data-proofer-ignore>SHOW ALL</a>
   </div>
-</div>
+</div> -->
 
-<div class="row" id="row_all">
+<div class="wrapper">
   {% for post in site.posts %}
-  <div class="col-lg-3 col-md-4 col-sm-12 story-card">
+  <div class="story-card">
     <a href="{{ post.url }}">
       <div class="card-img-top" style="background-image: url('{{ post.image }}')"></div>
     </a>
@@ -34,10 +34,9 @@ order: 2
         {% endfor %}
       </div>
       <a href="{{ post.url }}">
-        <h5 class="card-title">{{ post.title }}</h5>
+        <h5>{{ post.title }}</h5>
       </a>
-      <p class="author-text">Posted by <span class="author-span">{{ post.author }}</span> on <span
-          class="date-span">{{ post.date | date: "%B %d, %Y" }}</span></p>
+      <p class="author-text"><span class="date-span">{{ post.date | date: "%B %d, %Y" }}</span></p>
       <p class="card-text">{{ post.description }}</p>
     </div>
   </div>

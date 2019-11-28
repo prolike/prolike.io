@@ -3,15 +3,12 @@ subpage: stories
 layout: page
 ---
 
-<div class="image-header-bg container col-12" style="background-image: url('{{ page.image }}') !important;">
-</div>
-
 <div class="container story-content">
-  <h1 class="story_title hr_big">
-    {{page.title}}
-    <hr />
-  </h1>
-  <p>{{ page.date | date: "%d. %B, %Y" }}</p>
-  {{ page.excerpt }}
-  {{ page.content | remove: page.excerpt }}
+  <span>
+    <p>{{ page.date | date: "%d. %B, %Y" }}</p>
+    <h1>{{page.title}}</h1>
+    <p>By {{ page.author }}</p>
+  </span>
+  <div class="image-header-bg" style="background-image: url('{{ page.image }}') !important;"></div>
+  {{ page.content }}
 </div>
