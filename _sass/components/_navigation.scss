@@ -1,10 +1,10 @@
 .navbar {
   background-color: $prolikeblue !important;
   color: $white;
-  height: 65px;
+  height: 6.5vh;
   width: 100%;
   z-index: 100;
-  padding: 0 100px;
+  @include page-side-padding;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -18,7 +18,7 @@
     padding: 0;
 
     .logo {
-      height: 25px;
+      height: 2.5vh;
     }
 
   }

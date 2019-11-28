@@ -1,20 +1,30 @@
 ---
 ---
 @charset "utf-8";
-@import "mixins.scss";
-@import "global.scss";
-@import "headers.scss";
-@import "bootstrap-overrides.scss";
-@import "sections.scss";
-@import "navigation.scss";
-@import "footer.scss";
-@import "things.scss";
-@import "stories.scss";
-@import "picture.scss";
-@import "connect.scss";
-@import "flow.scss";
-@import "services.scss";
-@import "forms.scss";
-@import "bootcamp.scss";
-@import "customer.scss";
-@import "boards.scss";
+
+// Abstracts: The helpfull stuff, like variables and mixins
+
+@import "abstracts/mixins.scss";
+@import "abstracts/variables.scss";
+
+// Components: Styling for all of the components we include
+
+@import "components/navigation.scss";
+@import "components/footer.scss";
+
+// Pages: All of our styling for our individual pages
+
+@import "pages/anything.scss";
+@import "pages/bootcamp.scss";
+@import "pages/connect.scss";
+@import "pages/flow.scss";
+@import "pages/services.scss";
+@import "pages/stories.scss";
+
+// Miscellaneous: All the stuff we can't define just yet
+
+@import "miscellaneous/global.scss";
+@import "miscellaneous/sections.scss";
+@import "miscellaneous/forms.scss";
+@import "miscellaneous/customer.scss";
+@import "miscellaneous/boards.scss";

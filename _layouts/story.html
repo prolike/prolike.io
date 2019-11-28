@@ -2,35 +2,26 @@
 subpage: things
 layout: page
 ---
-
-
 <div id="storyfullpage" class="container-fluid slide-container">
-
-   
-    {% for section in page.sections %} 
+    {% for section in page.sections %}
     <section class="slide section">
-            <div class="trigger" id="trigger{{ forloop.index0 }}"></div>
-         <div class="row justify-content-center">
+        <div class="trigger" id="trigger{{ forloop.index0 }}"></div>
+        <div class="row justify-content-center">
             <div class="col-lg-8 col-xs-8 slide1">
-                    <i class="{{ section.icon }} fa-5x flowIcon"></i>
-                    
+                <i class="{{ section.icon }} fa-5x flowIcon"></i>
                 <div class="headings{{ forloop.index0 }} story-heading">
                     {% for heading in section.headings %}<h1>{{ heading }}</h1>{% endfor %}</div>
                 <div class="texts{{ forloop.index0 }}">{% for text in section.texts %}<p>{{ text }}</p>{% endfor %}
                     {% if forloop.last %}
                     <p><a class="back-things" href="/stories/"><i class="fas fa-arrow-left"></i> Back to things</a>
-                    {% endif %}</p>
+                        {% endif %}</p>
                 </div>
-
             </div>
-
         </div>
     </section>
-
     {% endfor %}
 
-    
-   <!--  <section class="slide section">
+    <!--  <section class="slide section">
         <div id="trigger2"></div><div class="row justify-content-center">
             <div class="col-lg-6 col-xs-8 slide2">
                 <i class="fas fa-hammer fa-5x flowIcon"></i>
@@ -112,5 +103,5 @@ layout: page
             </div>
         </div>
     </section> -->
-    
+
 </div>

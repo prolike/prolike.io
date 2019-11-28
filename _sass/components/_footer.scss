@@ -8,7 +8,7 @@ footer {
 
     .footer-logo {
         height: 30px;
-        margin-left: 100px;
+        margin-left: 20vh;
         user-select: none;
     }
 
@@ -18,7 +18,7 @@ footer {
             padding: 0;
             display: flex;
             justify-content: space-between;
-            margin-right: 100px;
+            margin-right: 20vh;
 
             .col-lg,
             .col-sm-12,
@@ -64,7 +64,7 @@ footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 100px;
+        @include page-side-padding;
 
         span {
             color: $white;

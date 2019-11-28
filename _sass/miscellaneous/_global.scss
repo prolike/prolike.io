@@ -15,7 +15,11 @@ hr {
 }
 
 .front {
-  padding: 0 100px;
+  @include page-side-padding;
+
+  h2 {
+    font-weight: 700;
+  }
 }
 
 .section-heading {
@@ -104,6 +108,11 @@ hr {
 .call:hover:after {
   width: 100%;
   transition: 800ms ease all;
+}
+
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 /* Small devices (phones, 768px and down) */
