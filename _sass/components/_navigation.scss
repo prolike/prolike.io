@@ -61,6 +61,54 @@ button:focus {
   height: 100% !important;
 }
 
+/* Small devices (phones, 768px and down) */
+
+@media (max-width: 768px) {
+
+  .navbar {
+    padding: 0 15px;
+    height: 9vh;
+  }
+
+  #fp-nav.fp-right {
+    display: none;
+  }
+
+  .contact {
+
+    h1 {
+      font-size: 18px;
+    }
+
+    a {
+      font-size: 18px;
+    }
+
+    .row .col {
+      margin-bottom: 50px;
+    }
+  }
+
+  .modal-content ul li a {
+    font-size: 2em !important;
+  }
+
+  .col-xs-6 {
+    max-width: 50%;
+    font-size: 15px !important;
+    margin-bottom: 30px;
+
+
+    a {
+      font-size: 15px !important;
+    }
+
+    h1 {
+      font-size: 15px;
+    }
+
+  }
+}
 
 /* Popup container */
 
@@ -160,6 +208,10 @@ button:focus {
 }
 
 @media only screen and (max-height: 757px) {
+  .navbar {
+    background: red;
+  }
+
   .popuptext {
 
     font-size: 2.5rem;
@@ -188,69 +240,5 @@ button:focus {
 
     font-size: 1rem;
     padding-top: 25px;
-  }
-}
-
-/* @media only screen and (max-height: 500px) {
-  .popuptext {
-
-    font-size: 2.5rem;
-    padding-top: 25px;
-  }
-} */
-
-/* Small devices (phones, 768px and down) */
-
-@media (max-width: 768px) {
-
-  .navbar {
-    padding: 0 15px;
-  }
-
-  #fp-nav.fp-right {
-    display: none;
-  }
-
-  .contact {
-
-    h1 {
-      font-size: 18px;
-    }
-
-    a {
-      font-size: 18px;
-    }
-
-    .row .col {
-      margin-bottom: 50px;
-    }
-  }
-
-  .modal-content ul li a {
-    font-size: 2em !important;
-  }
-
-  .col-xs-6 {
-    max-width: 50%;
-    font-size: 15px !important;
-    margin-bottom: 30px;
-
-
-    a {
-      font-size: 15px !important;
-    }
-
-    h1 {
-      font-size: 15px;
-    }
-
-  }
-}
-
-@media (max-width: 600px) {
-  .Plogo {
-    width: 100px;
-    height: auto;
-    padding: 0;
   }
 }
