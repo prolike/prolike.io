@@ -8,18 +8,17 @@ footer {
 
     .footer-logo {
         height: 30px;
-        margin-left: 100px; // fix this at some point
+        margin-left: 100px;
         user-select: none;
     }
 
     .footer-items {
-
         .row {
             width: 850px;
             padding: 0;
             display: flex;
             justify-content: space-between;
-            margin-right: 100px; // fix this at some point
+            margin-right: 100px;
 
             .col-lg,
             .col-sm-12,
@@ -85,29 +84,43 @@ footer {
 @media (max-width: 768px) {
 
     footer {
-        height: auto;
+        height: 100vh;
         flex-direction: column;
         padding: 0 15px;
-
+        padding-top: 50px;
+        justify-content: center;
+        position: relative;
 
         .footer-logo {
-            width: 45%;
-            margin-left: 2.5px;
-            margin: 100px 0;
+            display: none;
         }
 
         .footer-items {
+            margin-top: -15px;
 
             .row {
                 width: 100%;
-                padding-right: 20px; // fix this at some point
+                padding-right: 20px;
                 margin-left: 2.5px;
+
+                h1 {
+                    font-size: 16px;
+                }
+
+                a,
+                p {
+                    margin-bottom: 16px;
+                    font-size: 14px;
+                }
             }
         }
 
         .bottom-bar {
-            position: inherit;
-            padding: 0 2.5px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            padding: 0 15px;
+            height: 60px;
         }
     }
 }
