@@ -2,8 +2,6 @@
     height: auto;
     width: 100%;
     padding: 16.5vh 20vh 10vh 20vh;
-    background: url(/images/backgrounds/stories-wallpaper.png);
-    background-attachment: fixed;
 
     .wrapper {
         display: grid;
@@ -157,10 +155,14 @@
 @media only screen and (max-width: 768px) {
 
     .posts-container {
-        padding: 7.5vh 2vh;
+        padding: 15vh 2vh 10vh 2vh;
 
         .wrapper {
             grid-template-columns: 1fr;
+        }
+
+        .card-img-top {
+            height: 35vh;
         }
 
         .card-body {
