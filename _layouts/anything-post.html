@@ -1,0 +1,15 @@
+---
+subpage: stories
+layout: page
+---
+
+<div class="container story-content">
+  <span>
+    <p>{{ page.date | date: "%d. %B, %Y" }}</p>
+    <h1>{{page.title}}</h1>
+    <p>By {{ page.author }}</p>
+  </span>
+  <div class="image-header-bg" style="background-image: url('{{ page.image }}') !important;"></div>
+  {{ page.content }}
+  {% include components/signup.html %}
+</div>

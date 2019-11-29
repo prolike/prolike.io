@@ -65,7 +65,7 @@ defaults:
     scope:
       type: posts
     values:
-      layout: anything
+      layout: anything-post
   -
     scope:
       type: customers
