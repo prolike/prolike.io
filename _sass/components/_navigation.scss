@@ -1,244 +1,198 @@
-.navbar {
-  background-color: $prolikeblue !important;
-  color: $white;
-  height: 6.5vh;
+nav {
+  height: 65px;
   width: 100%;
-  z-index: 100;
-  @include page-side-padding;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
+  background: $prolikeblue;
+  box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
-
-  .navbar-brand {
-    width: auto;
-    margin: 0;
-    padding: 0;
-
-    .logo {
-      height: 2.5vh;
-    }
-
-  }
-
-  .navigation-right {
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-  }
-
+  position: fixed;
+  z-index: 1;
 }
 
-.navbar-toggler-icon {
-  border: none;
-}
-
-.fa-bars:before {
-  color: $white;
-  font-size: 20px;
-}
-
-.navbar-toggler,
-.navbar-toggler:active,
-.navbar-toggler:visited,
-.navbar-toggler:focus {
-  border: none;
-  box-shadow: none;
-  outline: none;
-  height: 100% !important;
-  padding: 0;
-  margin: 0;
-  height: inherit;
-  padding: 2px;
-}
-
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-  height: 100% !important;
-}
-
-/* Small devices (phones, 768px and down) */
-
-@media (max-width: 768px) {
-
-  .navbar {
-    padding: 0 15px;
-    height: 9vh;
-  }
-
-  #fp-nav.fp-right {
-    display: none;
-  }
-
-  .contact {
-
-    h1 {
-      font-size: 18px;
-    }
-
-    a {
-      font-size: 18px;
-    }
-
-    .row .col {
-      margin-bottom: 50px;
-    }
-  }
-
-  .modal-content ul li a {
-    font-size: 2em !important;
-  }
-
-  .col-xs-6 {
-    max-width: 50%;
-    font-size: 15px !important;
-    margin-bottom: 30px;
-
-
-    a {
-      font-size: 15px !important;
-    }
-
-    h1 {
-      font-size: 15px;
-    }
-
-  }
-}
-
-/* Popup container */
-
-.popup {
-  cursor: pointer;
-  overflow: auto;
+.logo {
+  height: 65px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* The actual popup (appears on top) */
-
-.popuptext {
-  visibility: hidden;
+.logo img {
+  height: 24px;
   position: absolute;
+  z-index: 5;
+  left: 20vh;
 }
 
-.popuptext {
-  background-color: $prolikeblue;
-  height: 100vh;
-  width: 100%;
+.menu-wrap {
+  top: 0;
   left: 0;
-  top: 6.5vh;
-  padding: 0 0 120px 0;
+  z-index: 1;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 10px;
+  right: 20vh;
+  z-index: 2;
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 10px;
+  right: 20vh;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .hamburger>div {
+  position: relative;
+  width: 50%;
+  height: 3px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger>div:before,
+.menu-wrap .hamburger>div:after {
+  content: '';
+  position: absolute;
+  top: -7.5px;
+  width: 100%;
+  height: 3px;
+  background: inherit;
+}
+
+.menu-wrap .hamburger>div:after {
+  top: 7.5px;
+}
+
+.menu-wrap .toggler:checked+.hamburger>div {
+  transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked+.hamburger>div:before,
+.menu-wrap .toggler:checked+.hamburger>div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+.menu-wrap .toggler:checked~.menu {
+  visibility: visible;
+}
+
+.menu-wrap .toggler:checked~.menu>div {
+  transform: scale(1);
+  transition-duration: .5s;
+}
+
+.menu-wrap .toggler:checked~.menu>div>div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu>div {
+  background: $prolikeblue;
+  width: 250vw;
+  height: 250vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transform-origin: top;
+  transition: all .5s ease;
+}
+
+.menu-wrap .menu>div>div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 90vh;
+  opacity: 0;
+  transition: opacity 4s ease;
+}
+
+.menu-wrap .menu>div>div>ul>li {
+  list-style: none;
+  color: $white;
+  font-size: 50px;
+  padding: 0;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 3.5rem;
-  display: flexbox;
-  align-items: center;
-  justify-items: center;
-  margin: 0;
+}
+
+.menu-wrap .menu>div>div>ul>li>a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu-wrap .menu>div>div>ul>li:hover {
+  color: $prolikeyellow;
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 0;
+
+    .logo img {
+      left: 2.5vh;
+    }
+  }
+
+  .menu-wrap .toggler {
+    right: 1vh;
+  }
+
+  .menu-wrap .hamburger {
+    right: 1vh;
+  }
+
+  .menu-wrap .menu>div>div>ul>li {
+    font-size: 30px;
+  }
+
+  .menu-wrap .menu>div {
+    width: 2500vw;
+  }
 
   ul {
-    text-decoration: none;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    height: 100%;
     padding: 0;
-    margin: 0;
   }
 
-  ul li {
-    display: inline-block;
-  }
-
-  ul li a {
-    color: white;
-  }
-
-  ul li a:hover {
-    text-decoration: none;
-    color: $prolikeyellow;
-  }
-}
-
-/* Toggle this class when clicking on the popup container (hide and show the popup) */
-
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn .3s;
-  animation: fadeIn .3s;
-}
-
-/* Add animation (fade in the popup) */
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@media only screen and (max-height: 860px) {
-  .popuptext {
-
-    font-size: 3.0rem;
-  }
-}
-
-@media only screen and (max-height: 757px) {
-  .navbar {
-    background: red;
-  }
-
-  .popuptext {
-
-    font-size: 2.5rem;
-  }
-}
-
-@media only screen and (max-height: 650px) {
-  .popuptext {
-
-    font-size: 2rem;
-    text-align: left !important;
-  }
-}
-
-@media only screen and (max-height: 472px) {
-  .popuptext {
-
-    font-size: 1.5rem;
+  .menu-wrap .menu>div {
+    transition: 0s;
   }
 
 
-}
-
-@media only screen and (max-height: 327px) {
-  .popuptext {
-
-    font-size: 1rem;
-    padding-top: 25px;
+  .menu-wrap .toggler:checked~.menu>div {
+    transition-duration: 0s;
   }
+
+  .menu-wrap .toggler:checked~.menu>div>div {
+    transition: opacity .5s;
+  }
+
 }
