@@ -187,26 +187,12 @@
 
     .image-header-bg {
         max-width: 100%;
-        height: 350px !important;
+        height: 325px !important;
     }
 
     .story-content {
         max-width: 95% !important;
-        padding: 0 10px !important;
+        margin: 0 auto;
         padding-top: 15vh !important;
-    }
-
-    .story-card {
-        padding: 0;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-
-    .stories_container .row {
-        margin: 0;
-    }
-
-    .tags-row {
-        display: none;
     }
 }

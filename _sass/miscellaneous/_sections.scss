@@ -49,6 +49,7 @@
 
     h2 {
       font-size: 22.5px;
+      width: 85%;
     }
 
     p {
@@ -71,6 +72,10 @@
 
   .front:nth-child(5) {
     background-image: none;
+  }
+
+  #fp-nav ul, .fp-slidesNav ul {
+    display: none;
   }
 
 }
