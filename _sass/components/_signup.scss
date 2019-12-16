@@ -71,8 +71,21 @@
 }
 
 .events {
-    padding: 20vh 0 5vh 0;
     background: #F8F7FA;
+    padding-top: 10vh;
+    text-align: center;
+
+    h1 {
+        font-weight: bolder;
+    }
+    
+    p {
+        font-weight: 500;
+    }
+}
+
+#eventbrite-widget-container-84246797439 {
+    padding: 7vh 0 5vh 0;
 }
 
 
