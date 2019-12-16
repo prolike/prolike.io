@@ -40,20 +40,20 @@
 
         &:hover {
             background: $prolikeyellow;
-            color: $black;
+            color: white;
             border: 1px solid $prolikeyellow;
         }
     }
 
     .eventbrite {
-        background: $prolikeyellow;
-        margin-left: 7.5px;
+        border: 1px solid $black;
+        margin-right: 7.5px;
         color: $black;
 
         &:hover {
-            background: transparent;
-            color: $black;
-            border: 1px solid $black;
+            background: $prolikeyellow;
+            color: white;
+            border: 1px solid $prolikeyellow;
         }
     }
 
