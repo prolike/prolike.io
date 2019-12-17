@@ -5,7 +5,7 @@ image: /images/stories/bobmarley.jpg
 place: Copenhagen
 event-id: 84246797439
 published: true
-description: Beskrivelse
+description: Grab a chair, drink some coffe and let us enlighten you about the future of websites
 time: 09:00 - 11:30
 ---
 
