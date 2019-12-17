@@ -1,7 +1,7 @@
 ---
 title: We're jammin'
 author: Lakruzz
-image: /images/stories/lamp.png
+image: /images/stories/bobmarley.jpg
 tags:
   - jamstack
   - website
