@@ -80,6 +80,14 @@ board
     "=+.05"
   );
 
+  $("button").mouseenter(function(){
+    TweenLite.to(this, .5, {css:{color: "white"}})
+  })
+  
+  $("button").mouseleave(function(){
+    TweenLite.to(this, .5, {css:{color: "#FFC400"}})
+  })
+
 //out-commented till the board loads quicker or we come up with a way to pause the animation untill everything is loaded
 
 // var project = new TimelineMax()

@@ -39,14 +39,8 @@ strict_front_matter: true
 
 # How much to render? These all default to false
 show_drafts: false
-<<<<<<< Updated upstream
-future: true
-unpublished: true
-
-=======
 
 unpublished: false
->>>>>>> Stashed changes
 
 # Make the machine talk to you
 verbose: false
