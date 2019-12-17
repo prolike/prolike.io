@@ -37,10 +37,10 @@ incremental: false
 # Fail if front matter misbehaves
 strict_front_matter: true
 
-# How much to render? These all default to false
+# How much to render?
 show_drafts: false
 future: false
-unpublished: false
+unpublished: true
 
 
 # Make the machine talk to you
