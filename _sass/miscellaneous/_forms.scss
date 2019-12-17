@@ -5,3 +5,25 @@
 .ourGoogleForm {
     width: 100%;
 }
+
+.mc {
+    h2 {
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-size: 3.5vh;
+        line-height: 5.5vh;
+        color: $black;
+        padding: 0 0 .5vh 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Oswald', sans-serif;
+        transition: .15s all ease-in-out;
+    }
+
+    img {
+        margin: 5vh auto 3vh auto;
+        display: block;
+
+    }
+}

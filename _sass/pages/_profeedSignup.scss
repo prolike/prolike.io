@@ -66,13 +66,13 @@
         display: grid;
         grid-column-gap: 20px;
         grid-template:
-            'firstname'
-            'lastname'
-            'email'
-            'phonenumber'
-            'options'
-            'submit';
-        grid-template-columns: 1fr;
+            'firstname firstname firstname firstname'
+            'lastname lastname lastname lastname'
+            'email email email email'
+            'phonenumber phonenumber phonenumber phonenumber'
+            'options options options options'
+            '. submit submit .';
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     .firstname {
@@ -103,12 +103,18 @@
     .submit {
         grid-area: submit;
         justify-content: center;
-        margin-top: 20px;
+
+        font-family: 'Oswald', sans-serif;
+        transition: .15s all ease-in-out;
     }
 
     .submit input {
         background: $prolikeyellow;
         color: $prolikeblue;
+        font-size: 3vh;
+        text-transform: uppercase;
+        font-weight: 600;
+        text-transform: uppercase;
     }
 
     @media only screen and (min-width: 1200px){
@@ -161,12 +167,12 @@
         }
 
         .submit input {
-            background-color: #E0E0E0;
+            background-color: $prolikeyellow;
         }
     
         .submit input:hover {
-            background: $prolikeyellow;
-            color: $prolikeblue;
+            background: $prolikeblue;
+            color: $prolikeyellow;
             transition: 400ms ease all;
         }
     }
