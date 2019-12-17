@@ -1,0 +1,20 @@
+---
+layout: page
+---
+
+<div class="events-container">
+    <div class="wrapper">
+
+        {% for event in site.events %}
+
+        <div class="events-boks">
+<img class="events-image" src="{{ event.image }}">
+<h3 class="events-date">{{ event.date | date: "%d %B %Y" }}</h3>
+
+<h2 class="events-heading">{{ event.title }}</h2>
+
+        </div>
+
+        {% endfor %}
+    </div>
+</div>

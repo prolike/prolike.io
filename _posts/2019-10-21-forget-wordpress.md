@@ -1,5 +1,5 @@
 ---
-title: Get a JAM-stack website
+title: Forget Wordpress, the future is now
 author: Carolineolivia
 tags: [products, services, jekyll]
 image: /images/stories/website.jpg

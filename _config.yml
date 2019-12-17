@@ -48,6 +48,9 @@ collections:
   stories:
     output: true
     permalink: /stories/:title/
+  events:
+    output: true
+    permalink: /events/:title/
 
 
 defaults:
@@ -76,6 +79,11 @@ defaults:
       type: stories
     values:
       layout: story
+  -
+    scope:
+      type: events
+    values:
+      layout: event
 
 
 
