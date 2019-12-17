@@ -1,21 +1,22 @@
-.events-container {
+.event-container {
     height: auto;
     width: 100%;
-    padding: 16.5vh 20vh 10vh 20vh;
+    padding: 16.5vh 30vh 10vh 30vh;
 
 .wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 5vh;
-    grid-row-gap: 5vh;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.5vh;
+    grid-row-gap: 0.5vh;
 
-    .events-image {
-        height: 25vh;
+    .event-image {
+        height: 40vh;
         object-fit: cover;
         width: 100%;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        object-position: top;
     }
 
     h2 {
@@ -40,22 +41,24 @@
         transition: .15s all ease-in-out;
     }
 
-    a, a:hover {
-        text-decoration: none;
+    .event-frame {
+        padding: 0 !important;
     }
 }
 }
 
+
+
 @media only screen and (max-width: 1200px) {
 
-    .events-container {
+    .event-container {
         padding: 15vh 10vh 10vh 10vh;
 
         .wrapper {
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr;
         }
 
-        .events-image {
+        .event-image {
             height: 30vh;
         }
 
@@ -67,15 +70,15 @@
 
 @media only screen and (max-width: 768px) {
 
-    .events-container {
-        padding: 15vh 2vh 10vh 2vh;
+    .event-container {
+        padding: 15vh 2vh 10vh 2vh !important;
 
         .wrapper {
             grid-template-columns: 1fr;
         }
 
-        .events-image {
-            height: 35vh;
+        .event-image {
+            height: 20vh !important;
         }
 
 
