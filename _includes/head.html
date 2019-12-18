@@ -27,6 +27,12 @@
   {% assign site_prefix = site.stage_site %}
   {% endif %}
 
+  <script>
+    function resizeIframe(obj) {
+      obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+    }
+  </script>
+
   <!-- Meta -->
 
   <meta charset="utf-8">
