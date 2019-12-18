@@ -169,6 +169,16 @@
 
 @media only screen and (max-width: 1200px) {
 
+    .story-content {
+        width: 910px;
+        padding: 15vh 0 10vh 0;
+        margin-bottom: 100px;
+
+        ul {
+            padding: 1vh 0 1vh 5vh;
+        }
+    }
+
     .posts-container {
 
         .wrapper {
