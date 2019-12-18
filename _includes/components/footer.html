@@ -47,10 +47,12 @@
           </div>
           <div class="footer-list">
             <h1>Services</h1>
-            <a href="http://localhost/anything/website/" data-proofer-ignore>Websites</a>
-            <a href="http://localhost/anything/software/" data-proofer-ignore>Software</a>
-            <a href="http://localhost/anything/propay/" data-proofer-ignore>Propay</a>
-            <p>Garage Projects</p>
+            {% for post in site.posts %}
+            {% if post.service %}
+            <a href="{{ post.url}}">{{ post.service }}</a>
+            {% endif %}
+            {% endfor %}
+            <a href="/profeed/" data-proofer-ignore>Profeed</a>
             <p>Team Resources</p>
             <p>Research</p>
           </div>
