@@ -9,7 +9,7 @@ layout: page
            
 
            
-<img class="event-image" src="{{ page.image }}" alt="{{ page.title }}">
+<img class="event-image {{ page.image-position }}" src="{{ page.image }}" alt="{{ page.title }}">
 
     <h3><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h3>
     <h4><i class="far fa-clock"></i> {{ page.time }}  <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h4>

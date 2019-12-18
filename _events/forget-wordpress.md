@@ -7,6 +7,7 @@ event-id: 84246797439
 published: true
 description: Grab a chair, drink some coffe and let us enlighten you about the future of websites
 time: 09:00 - 11:30
+image-position: top
 ---
 
 Welcome to the Tech-fast.

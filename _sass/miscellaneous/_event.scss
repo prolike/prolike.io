@@ -16,6 +16,13 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+    }
+
+    .event-image.bottom {
+        object-position: bottom;
+    }
+
+    .event-image.top {
         object-position: top;
     }
 
