@@ -6,6 +6,7 @@
     align-items: center;
     border-top: 1px solid rgba(0, 0, 0, 0.25);
     border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+    text-align: center;
 
     h1 {
         margin: 0;
@@ -91,6 +92,19 @@
 
 @media (max-width: 768px) {
 
+    .signup {
+        h1 {
+            font-size: 7vh !important;
+        }
+
+        .mailchimp,
+    .eventbrite {
+        margin-bottom: 2vh;
+        background-color: $prolikeyellow;
+        border-color: $prolikeyellow;
+
+    }
+    }
     #mc_embed_signup {
         width: 100%;
     }
