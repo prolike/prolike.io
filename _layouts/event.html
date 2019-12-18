@@ -2,6 +2,16 @@
 layout: page
 ---
 
+{% capture nowunix %}
+{{ 'now' | date: '%s' | plus: 0 }}
+{% endcapture %}
+{% capture posttime %}
+{{ page.date | date: '%s' | plus: 86400 }}
+{% endcapture %}
+{% capture datepassed %}
+{{ page.date | date: '%s' | plus: 172800 }}
+{% endcapture %}
+
 <div class="event-container">
     <div class="wrapper">
 
@@ -15,7 +25,7 @@ layout: page
     <h4><i class="far fa-clock"></i> {{ page.time }}  <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h4>
     
 
-<h2 class="event-heading">{{ page.title }}</h2>
+<h2 class="event-heading">{% if posttime < nowunix %}Past: {% endif %}{{ page.title }}</h2>
 
 {{ page.content }}
 
@@ -23,14 +33,20 @@ layout: page
 
         <span class="event-id" style="display: none;">{{ page.event-id }}</span>
 
-        <h3 class="event-heading">Buy a ticket</h3>
-<div class="event-frame" id="eventbrite-widget-container-{{ page.event-id }}"></div>
+
+      {% if posttime > nowunix %}
+      <h3 class="event-heading">Buy a ticket</h3>
+
+      <iframe src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0" border="none" height="300" width="100%" height="100%" vspace="0" hspace="0" marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
+
+      {% endif %}
+        <!-- <div class="event-frame" id="eventbrite-widget-container-{{ page.event-id }}"></div> -->
     </div>
 </div>
 
 
 
-<script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
+<!-- <script src="https://www.eventbrite.com/static/widgets/eb_widgets.js"></script>
 
 
 <script type="text/javascript">
@@ -53,3 +69,4 @@ var eventID = document.querySelector(".event-id").innerHTML;
     });
 </script>
 
+ -->
