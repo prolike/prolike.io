@@ -72,6 +72,27 @@
     width: 910px;
     padding: 15vh 0 10vh 0;
     margin-bottom: 100px;
+    
+
+
+    .share-icons {
+        width: auto;
+        margin: 0;
+        padding: 0;
+      
+        .fab {
+          color: black;
+          opacity: 0.5;
+          padding-right: 10px;
+          font-size: 15px;
+        }
+      
+        .fab:hover {
+          color: $prolikeyellow;
+        }
+      }
+
+
 
     img {
         margin-left: auto;

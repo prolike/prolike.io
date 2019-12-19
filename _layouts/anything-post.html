@@ -2,6 +2,12 @@
 subpage: Anything
 layout: page
 ---
+{% if jekyll.environment == "production" %}
+{% assign site_prefix = site.prod_site %}
+{% else %}
+{% assign site_prefix = site.stage_site %}
+{% endif %}
+
 
 <div class="container story-content">
   <span>
@@ -10,6 +16,12 @@ layout: page
     <p>By {{ page.author }}</p>
   </span>
   <div class="image-header-bg" style="background-image: url('{{ page.image }}') !important;"></div>
+  <div class="share-icons">
+    <a target="_blank" id="ga-facebook-share-{{ page.title | url_encode }}" href="https://www.facebook.com/sharer.php?u={{ page.url | prepend: site_prefix }}"><i class="fab fa-facebook-f" title="Del på Facebook"></i></a>
+    <a target="_blank" id="ga-twitter-share-{{ page.title | url_encode }}" href="https://twitter.com/share?ref_src=twsrc%5Etfw"><i class="fab fa-twitter" title="Del på Twitter"></i></a>
+    <a target="_blank" id="ga-linkedin-share-{{ page.title | url_encode }}" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | prepend: site_prefix }}"><i class="fab fa-linkedin-in" title="Del på LinkedIn"></i></a>
+</div>
+
   {{ page.content }}
   <section class="signup">
     <h1>While we have your attention</h1>
