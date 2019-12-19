@@ -7,9 +7,10 @@ tags:
   - website
   - workflow
 description: Let's talk about why your website should run on JAM rather than LAMP
+published: true
 ---
 
-Wordpress, Drupal, Joomla are all CMS that are running on _a LAMP stack_ The technology saw the light 25 years ago, created to support an internet with at completely different set of charatistices than what we see now. Todays modern stack is called _a JAM stack_ and it's different in every possibly thinkable way. Stay tuned to learn the difference between _LAMP_ and _JAM_ and then consider if you want to take a step into the future.
+Wordpress, Drupal, Joomla are all CMS that are running on _a LAMP stack_ The technology saw the light 25 years ago, created to support an internet with at completely different set of charatistices than what we see now. Today's modern stack is called _a JAM stack_ and it's different in every possibly thinkable way. Stay tuned to learn the difference between _LAMP_ and _JAM_ and then consider if you want to take a step into the future.
 {:.kicker}
 
 <br>
@@ -20,7 +21,7 @@ _Quote: Bob Marley_
 
 <br>
 
-This blog is for you, who owns a website - or are about to get one - and who thinks that perhaps, the maintenance and development of it is a bit expensive, or error prune, or overly complex. The thing is, that most likely your website _stack[^stack]_ is a thing of the past. You need to stay tuned here and lean the differences between a classical LAMP stack and and contemporary JAM stack. This learning might prove valuable to you. Enabling you to be strategic about your choices in the future.
+This blog is for you, who owns a website - or are about to get one - and who thinks that perhaps, the maintenance and development of it is a bit expensive, or error prone, or overly complex. The thing is, that most likely your website _stack[^stack]_ is a thing of the past. You need to stay tuned here and lean the differences between a classical LAMP stack and and contemporary JAM stack. This learning might prove valuable to you. Enabling you to be strategic about your choices in the future.
 
 <br>
 
