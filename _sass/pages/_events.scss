@@ -29,7 +29,7 @@
         font-size: 3.5vh;
         line-height: 5.5vh;
         color: $black;
-        padding: 0 0 .5vh 0;
+        padding: 0 0 0vh 0;
         text-transform: uppercase;
         font-weight: 700;
         font-family: 'Oswald', sans-serif;
@@ -45,6 +45,16 @@
         color: $prolikeyellow;
         font-family: 'Oswald', sans-serif;
         transition: .15s all ease-in-out;
+    }
+
+    p {
+        color: black;
+        display: inline;
+    }
+
+    p:last-child {
+        color: $prolikeyellow;
+        font-weight: bold;
     }
 
     a, a:hover {
