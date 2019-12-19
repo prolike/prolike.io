@@ -1,7 +1,7 @@
 .event-container {
     height: auto;
     width: 100%;
-    padding: 16.5vh 40vh 10vh 40vh;
+    padding: 16.5vh 10vh 10vh 10vh;
 
 .wrapper {
     display: grid;
@@ -92,25 +92,6 @@
 
 
 
-@media only screen and (max-width: 1200px) {
-
-    .event-container {
-        padding: 15vh 10vh 10vh 10vh;
-
-        .wrapper {
-            grid-template-columns: 1fr;
-        }
-
-        .event-image {
-            height: 30vh;
-        }
-
-
-    }
-
-   
-}
-
 @media only screen and (max-width: 768px) {
 
     .event-container {
@@ -127,5 +108,56 @@
 
     }
 
+    .test {
+        margin: auto;
+        justify-content: center;
+        height: 310px;
+        width: 90%;
+    }
+
    
+}
+
+@media only screen and (max-width: 1024px) {
+    .test {
+        margin: auto;
+        justify-content: center;
+        height: 320px;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    .event-container {
+        padding: 15vh 20vh 10vh 20vh;
+
+        .wrapper {
+            grid-template-columns: 1fr;
+
+        }
+
+        .event-image {
+            height: 30vh;
+        }
+        
+    }
+
+    .test {
+        margin: auto;
+        justify-content: center;
+        height: 270px;
+        width: 70%;
+    }
+
+   
+}
+
+@media only screen and (max-width: 480px) {
+    .test {
+        margin: auto;
+        justify-content: center;
+        height: 360px;
+        width: 90%;
+    }
 }

@@ -52,11 +52,6 @@
         display: inline;
     }
 
-    p:last-child {
-        color: $prolikeyellow;
-        font-weight: bold;
-    }
-
     a, a:hover {
         text-decoration: none;
     }
@@ -70,6 +65,7 @@
 
         .wrapper {
             grid-template-columns: 1fr 1fr;
+            
         }
 
         .events-image {
@@ -79,6 +75,7 @@
 
     }
 
+    
    
 }
 

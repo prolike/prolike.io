@@ -37,12 +37,21 @@ layout: page
 
 
         {% if posttime > nowunix %}
+
         <h3 class="event-heading">Buy a ticket</h3>
-<div class="iframe-container">
-        <iframe src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" allowfullscreen></iframe>
-</div>
+
+        <iframe class="test" src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
+            marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
+
+        <!-- <iframe src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
+            scrolling="no"></iframe> -->
+
+        <!-- <iframe onload="resizeIframe(this)"
+            src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
+            width="100%" scrolling="no" vspace="0" hspace="0" marginheight="0" marginwidth="0"
+            allowtransparency="true"></iframe> -->
+
         {% endif %}
 
     </div>
 </div>
-
