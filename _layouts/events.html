@@ -6,6 +6,7 @@ layout: page
   <div class="wrapper">
 
     {% for event in site.events %}
+    {% if event.lang == "eng" %}
     <a href="{{ event.url }}">
       <div class="events-boks">
         <img class="events-image {{ event.image-position }}" src="{{ event.image }}" alt="{{ event.title }}">
@@ -28,10 +29,10 @@ layout: page
 
         </h2>
         <p>{{ event.description }}.</p>
-        <h3>Læs mere</h3>
+        <h3>Read more</h3>
       </div>
     </a>
-
+    {% endif %}
     {% endfor %}
   </div>
 </div>
