@@ -1,12 +1,14 @@
 ---
-title: Fremtiden er serverless og den er her nu
+title: Fremtiden er nu og den er serverless
 date: 15. Januar 2020
 image: /images/stories/bobmarley.jpg
 place: København
 event-id: 84246797439
 published: true
-description: Grab a chair, drink some coffe and let us enlighten you about the future of websites
-time: 09:00 - 11:30
+description: >-
+  Grab a chair, drink some coffe and let us enlighten you about the future of
+  websites
+time: '09:00 - 11:30'
 image-position: top
 lang-id: '1'
 lang: da
