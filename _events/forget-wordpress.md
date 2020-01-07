@@ -1,12 +1,14 @@
 ---
-title: The future is serverless - and it's here
+title: The future is now and it's serverless
 date: 15. January 2020
 image: /images/stories/bobmarley.jpg
 place: Copenhagen
 event-id: 84246797439
 published: true
-description: Grab a chair, drink some coffe and let us enlighten you about the future of websites
-time: 09:00 - 11:30
+description: >-
+  Grab a chair, drink some coffe and let us enlighten you about the future of
+  websites
+time: '09:00 - 11:30'
 image-position: top
 lang-id: '1'
 lang: eng
