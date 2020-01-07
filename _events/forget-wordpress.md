@@ -1,6 +1,6 @@
 ---
-title: Forget Wordpress - we're jammin!
-date: 9. January 2020
+title: The future is serverless - and it's here
+date: 15. January 2020
 image: /images/stories/bobmarley.jpg
 place: Copenhagen
 event-id: 84246797439
