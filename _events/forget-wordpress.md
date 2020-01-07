@@ -3,7 +3,7 @@ title: The future is now and it's serverless
 date: 15. January 2020
 image: /images/stories/bobmarley.jpg
 place: Copenhagen
-event-id: 84246797439
+event-id: 88667925151
 published: true
 description: >-
   Grab a chair, drink some coffe and let us enlighten you about the future of
