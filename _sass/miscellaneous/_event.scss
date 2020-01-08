@@ -3,18 +3,6 @@
     width: 100%;
     padding: 16.5vh 10vh 10vh 10vh;
 
-<<<<<<< Updated upstream
-    .wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-column-gap: 0.5vh;
-        grid-row-gap: 0.5vh;
-
-        .event-banner-img {
-            width: 75%;
-            margin-left: 15%;
-        }
-=======
 .wrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -39,7 +27,6 @@
         background-position: center;
         background-repeat: no-repeat;
     }
->>>>>>> Stashed changes
 
         .event-image {
             object-fit: cover;
@@ -94,24 +81,6 @@
 
 
 
-<<<<<<< Updated upstream
-        .iframe-container iframe {
-            height: 100%;
-            width: 100%;
-        }
-
-
-
-        /* 4x3 Aspect Ratio */
-        .iframe-container-4x3 {
-            padding-top: 75%;
-        }
-
-        .event-frame {
-            padding: 0 !important;
-        }
-=======
->>>>>>> Stashed changes
 
         a {
             color: black;
