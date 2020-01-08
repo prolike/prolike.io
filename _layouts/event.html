@@ -17,16 +17,18 @@ layout: page
 
         <div class="event-boks">
 
-            {% assign switchlang = page.lang-id %}
-                {% for event in site.events %}
-                    {% if page.title != event.title %}
-                        {% if event.lang-id == switchlang %}
-                            <a href="{{ event.url }}" style="float: right;">{{ event.lang }}</a>
-                        {% endif %}
-                    {% endif%}
-                {% endfor %}
-
-            <img class="event-image {{ page.image-position }}" src="{{ page.image }}" alt="{{ page.title }}">
+            <div class="event-banner-img">
+                {% assign switchlang = page.lang-id %}
+                    {% for event in site.events %}
+                        {% if page.title != event.title %}
+                            {% if event.lang-id == switchlang %}
+                                <a href="{{ event.url }}" style="float: right">{{ event.lang }}</a>
+                            {% endif %}
+                        {% endif%}
+                    {% endfor %}
+    
+                <img class="event-image {{ page.image-position }}" src="{{ page.image }}" alt="{{ page.title }}">
+            </div>
 
             <h3><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h3>
             <h4><i class="far fa-clock"></i> {{ page.time }} <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h4>

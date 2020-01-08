@@ -3,52 +3,57 @@
     width: 100%;
     padding: 16.5vh 10vh 10vh 10vh;
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 0.5vh;
-    grid-row-gap: 0.5vh;
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0.5vh;
+        grid-row-gap: 0.5vh;
 
-    .event-image {
-        height: 40vh;
-        object-fit: cover;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
+        .event-banner-img {
+            width: 75%;
+            margin-left: 15%;
+        }
 
-    .event-image.bottom {
-        object-position: bottom;
-    }
+        .event-image {
+            object-fit: cover;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
-    .event-image.top {
-        object-position: top;
-    }
+        .event-image.bottom {
+            object-position: bottom;
+        }
 
-    h2 {
-        font-size: 4vh;
-        line-height: 5.5vh;
-        color: $black;
-        padding: 0 0 .5vh 0;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-family: 'Oswald', sans-serif;
-        transition: .15s all ease-in-out;
-    }
-    h3 {
-        font-size: 2.5vh;
-        padding: 0;
-        margin: 1.5vh 0 0 0;
-        text-transform: uppercase;
-        font-weight: 600;
-        color: $prolikeyellow;
-        font-family: 'Oswald', sans-serif;
-        transition: .15s all ease-in-out;
-    }
+        .event-image.top {
+            object-position: top;
+        }
 
-   
-    
+        h2 {
+            font-size: 4vh;
+            line-height: 5.5vh;
+            color: $black;
+            padding: 0 0 .5vh 0;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-family: 'Oswald', sans-serif;
+            transition: .15s all ease-in-out;
+        }
+
+        h3 {
+            font-size: 2.5vh;
+            padding: 0;
+            margin: 1.5vh 0 0 0;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $prolikeyellow;
+            font-family: 'Oswald', sans-serif;
+            transition: .15s all ease-in-out;
+        }
+
+
+
         h4 {
             font-size: 2vh;
             opacity: 0.5;
@@ -59,35 +64,36 @@
             font-family: 'Oswald', sans-serif;
             transition: .15s all ease-in-out;
         }
-    
-    
+
+
 
         .iframe-container iframe {
             height: 100%;
             width: 100%;
-          }
-           
-         
-           
-          /* 4x3 Aspect Ratio */
-          .iframe-container-4x3 {
+        }
+
+
+
+        /* 4x3 Aspect Ratio */
+        .iframe-container-4x3 {
             padding-top: 75%;
-          }
+        }
 
-    .event-frame {
-        padding: 0 !important;
-    }
+        .event-frame {
+            padding: 0 !important;
+        }
 
-    a {
-        color: black;
-        font-weight: 500;
-        text-transform: uppercase;
+        a {
+            color: black;
+            font-weight: 500;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: $prolikeyellow;
+            text-decoration: none;
+        }
     }
-    a:hover {
-        color: $prolikeyellow;
-        text-decoration: none;
-    }
-}
 }
 
 
@@ -101,11 +107,6 @@
             grid-template-columns: 1fr;
         }
 
-        .event-image {
-            height: 20vh !important;
-        }
-
-
     }
 
     .ebframe {
@@ -115,10 +116,22 @@
         width: 90%;
     }
 
-   
+
 }
 
 @media only screen and (max-width: 1024px) {
+
+    .event-container {
+
+        .wrapper {
+
+            .event-banner-img {
+                width: 100%;
+                margin-left: 0%;
+            }
+        }
+    }
+
     .ebframe {
         margin: auto;
         justify-content: center;
@@ -137,10 +150,6 @@
 
         }
 
-        .event-image {
-            height: 30vh;
-        }
-        
     }
 
     .ebframe {
@@ -150,7 +159,7 @@
         width: 70%;
     }
 
-   
+
 }
 
 @media only screen and (max-width: 480px) {
