@@ -3,11 +3,18 @@
     width: 100%;
     padding: 16.5vh 10vh 10vh 10vh;
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-column-gap: 0.5vh;
-    grid-row-gap: 0.5vh;
+    .wrapper {
+        display: grid;
+        margin: auto;
+        width: 75%;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0.5vh;
+        grid-row-gap: 0.5vh;
+
+        .event-banner-img {
+            margin-bottom: 40px;
+
+        }
 
 
     
@@ -20,7 +27,6 @@
     }
 
     .event-image {
-        height: 40vh;
         object-fit: cover;
         width: 100%;
         background-size: cover;
@@ -28,43 +34,35 @@
         background-repeat: no-repeat;
     }
 
-        .event-image {
-            object-fit: cover;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
+    .event-image.bottom {
+        object-position: bottom;
+    }
 
-        .event-image.bottom {
-            object-position: bottom;
-        }
+    .event-image.top {
+        object-position: top;
+    }
 
-        .event-image.top {
-            object-position: top;
-        }
+    h2 {
+        font-size: 4vh;
+        line-height: 5.5vh;
+        color: $black;
+        padding: 0 0 .5vh 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-family: 'Oswald', sans-serif;
+        transition: .15s all ease-in-out;
+    }
 
-        h2 {
-            font-size: 4vh;
-            line-height: 5.5vh;
-            color: $black;
-            padding: 0 0 .5vh 0;
-            text-transform: uppercase;
-            font-weight: 700;
-            font-family: 'Oswald', sans-serif;
-            transition: .15s all ease-in-out;
-        }
-
-        h3 {
-            font-size: 2.5vh;
-            padding: 0;
-            margin: 1.5vh 0 0 0;
-            text-transform: uppercase;
-            font-weight: 600;
-            color: $prolikeyellow;
-            font-family: 'Oswald', sans-serif;
-            transition: .15s all ease-in-out;
-        }
+    h3 {
+        font-size: 2.5vh;
+        padding: 0;
+        margin: 1.5vh 0 0 0;
+        text-transform: uppercase;
+        font-weight: 600;
+        color: $prolikeyellow;
+        font-family: 'Oswald', sans-serif;
+        transition: .15s all ease-in-out;
+    }
 
 
 
@@ -146,6 +144,22 @@
 
         .wrapper {
             grid-template-columns: 1fr;
+
+        }
+
+    }
+
+   
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .event-container {
+      
+        .wrapper {
+         width: 100%;
 
         }
 
