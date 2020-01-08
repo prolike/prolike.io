@@ -10,13 +10,8 @@
     grid-row-gap: 5vh;
 
     .events-image {
-        height: 30vh;
-        object-fit: cover;
-        object-position: left;
+
         width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
     }
     .events-image.bottom {
         object-position: bottom;
