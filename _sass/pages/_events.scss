@@ -79,7 +79,7 @@
    
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
     .events-container {
         padding: 15vh 2vh 10vh 2vh;
@@ -89,7 +89,7 @@
         }
 
         .events-image {
-            height: 35vh;
+            height: 100% !important;
         }
 
 
