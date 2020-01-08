@@ -15,7 +15,7 @@ layout: page
 <div class="event-container">
     <div class="wrapper">
 
-        <div class="event-boks">
+        <div class="event-boks event-brite">
 
             <div class="event-banner-img">
                 {% assign switchlang = page.lang-id %}
@@ -49,18 +49,13 @@ layout: page
 
         <h3 class="event-heading">Buy a ticket</h3>
 
-        <iframe class="ebframe" src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
+       
+        <div class="resp-container">
+        <iframe class="ebframe resp-iframe event-frame" src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
             marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
-
-        <!-- <iframe src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
-            scrolling="no"></iframe> -->
-
-        <!-- <iframe onload="resizeIframe(this)"
-            src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
-            width="100%" scrolling="no" vspace="0" hspace="0" marginheight="0" marginwidth="0"
-            allowtransparency="true"></iframe> -->
-
-        {% endif %}
+</div>
+             {% endif %}
 
     </div>
 </div>
+

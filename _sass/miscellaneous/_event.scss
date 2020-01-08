@@ -3,6 +3,7 @@
     width: 100%;
     padding: 16.5vh 10vh 10vh 10vh;
 
+<<<<<<< Updated upstream
     .wrapper {
         display: grid;
         grid-template-columns: 1fr;
@@ -13,6 +14,32 @@
             width: 75%;
             margin-left: 15%;
         }
+=======
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0.5vh;
+    grid-row-gap: 0.5vh;
+
+
+    
+    .resp-iframe {
+
+        height: 45vh;
+        width: 100%;
+
+       
+    }
+
+    .event-image {
+        height: 40vh;
+        object-fit: cover;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+>>>>>>> Stashed changes
 
         .event-image {
             object-fit: cover;
@@ -67,6 +94,7 @@
 
 
 
+<<<<<<< Updated upstream
         .iframe-container iframe {
             height: 100%;
             width: 100%;
@@ -82,6 +110,8 @@
         .event-frame {
             padding: 0 !important;
         }
+=======
+>>>>>>> Stashed changes
 
         a {
             color: black;
@@ -152,21 +182,22 @@
 
     }
 
-    .ebframe {
-        margin: auto;
-        justify-content: center;
-        height: 270px;
-        width: 70%;
-    }
+   
 
 
 }
 
-@media only screen and (max-width: 480px) {
-    .ebframe {
-        margin: auto;
-        justify-content: center;
-        height: 360px;
-        width: 90%;
+
+
+@media only screen and (max-width: 650px) {
+    .resp-iframe {
+
+        height:50vh !important;
+        width: 100%;
     }
+
+}
+
+.js-d-track-event-links {
+    background-color: white;
 }
