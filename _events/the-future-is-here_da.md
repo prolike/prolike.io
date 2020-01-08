@@ -1,7 +1,7 @@
 ---
 title: Fremtiden er ankommet - og den er serverløs
 date: 15. Januar 2020
-image: /images/events/fuck-wordpress.jpeg
+image: /images/events/ForgetWordpress.jpg
 place: København, Gastronomisk Innovation, Frederiksborggade 1B
 event-id: 88667925151
 published: true

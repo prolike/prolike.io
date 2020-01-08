@@ -1,7 +1,7 @@
 ---
 title: The future is here - and it's serverless
 date: 15. January 2020
-image: /images/events/fuck-wordpress.jpeg
+image: /images/events/ForgetWordpress.jpg
 place: Copenhagen, Gastronomisk Innovation, Frederiksborggade 1B
 event-id: 88667925151
 published: true
