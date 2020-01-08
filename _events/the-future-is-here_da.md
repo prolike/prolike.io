@@ -11,7 +11,7 @@ description: >-
 time: '09:00 - 11:30'
 image-position: top
 lang-id: '1'
-lang: da
+lang: dk
 ---
 
 ### Deltag i vores techfast - tech til morgenmaden - og få et indblik i (frem)tidens trend indenfor udvikling af websites og applikationer

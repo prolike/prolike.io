@@ -11,7 +11,7 @@ description: >-
 time: '09:00 - 11:30'
 image-position: top
 lang-id: '1'
-lang: eng
+lang: gb
 ---
 
 ### Join our techfast - tech for breakfast - and get a glimpse into the future trends of website and application development
