@@ -18,6 +18,10 @@
         text-align: center;
     }
 
+}
+
+.ga-buttons {
+
     .mailchimp,
     .eventbrite {
         height: 50px;
@@ -41,7 +45,7 @@
 
         &:hover {
             background: $prolikeyellow;
-            color: white;
+            color: white !important;
             border: 1px solid $prolikeyellow;
         }
     }
@@ -53,7 +57,7 @@
 
         &:hover {
             background: $prolikeyellow;
-            color: white;
+            color: white !important;
             border: 1px solid $prolikeyellow;
         }
     }
@@ -79,7 +83,7 @@
     h1 {
         font-weight: bolder;
     }
-    
+
     p {
         font-weight: 500;
     }
@@ -96,15 +100,16 @@
         h1 {
             font-size: 7vh !important;
         }
+    }
 
-        .mailchimp,
+    .mailchimp,
     .eventbrite {
         margin-bottom: 2vh;
         background-color: $prolikeyellow;
         border-color: $prolikeyellow;
 
     }
-    }
+
     #mc_embed_signup {
         width: 100%;
     }

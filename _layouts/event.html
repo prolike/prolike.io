@@ -19,13 +19,14 @@ layout: page
 
             <div class="event-banner-img">
                 {% assign switchlang = page.lang-id %}
-                    {% for event in site.events %}
-                        {% if page.title != event.title %}
-                            {% if event.lang-id == switchlang %}
-                                <a href="{{ event.url }}" style="float: right"><span class="flag-icon flag-icon-{{ event.lang }} flag-icon-squared"></span></a>
-                            {% endif %}
-                        {% endif%}
-                    {% endfor %}
+                {% for event in site.events %}
+                {% if page.title != event.title %}
+                {% if event.lang-id == switchlang %}
+                <a href="{{ event.url }}" style="float: right"><span
+                        class="flag-icon flag-icon-{{ event.lang }} flag-icon-squared"></span></a>
+                {% endif %}
+                {% endif%}
+                {% endfor %}
 
                 <img class="event-image {{ page.image-position }}" src="{{ page.image }}" alt="{{ page.title }}">
             </div>
@@ -44,18 +45,18 @@ layout: page
 
         <span class="event-id" style="display: none;">{{ page.event-id }}</span>
 
-
+        {% include components/buttons.html %}
         {% if posttime > nowunix %}
 
         <h3 class="event-heading">Buy a ticket</h3>
 
-       
+
         <div class="resp-container">
-        <iframe class="ebframe resp-iframe event-frame" src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
-            marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
-</div>
-             {% endif %}
+            <iframe class="ebframe resp-iframe event-frame"
+                src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
+                marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
+        </div>
+        {% endif %}
 
     </div>
 </div>
-
