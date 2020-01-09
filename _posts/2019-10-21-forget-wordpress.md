@@ -5,18 +5,20 @@ tags:
   - products
   - services
   - jekyll
+  - website
 image: /images/stories/website.jpg
 published: true
-description: The future of website is here!
+description: The future of websites is here!
 icon: fas fa-hashtag
-service: Website
+service: Websites
 ---
 
 Do you already have a website or do you want one?
 
 ### Welcome to the future of websites!
 
-When we make a website we use a so called JAM-stack. If you wanna know why you should use a JAM-stack instead of everything else, click [here](/anything/we-re-jammin/).
+When we make a website we use a so called JAM-stack. 
+#### If you don't know what a jam-stack, you probably wanna take a look at this [article](/anything/we-re-jammin/) first.
 
 
 ---
