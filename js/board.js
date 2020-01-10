@@ -15,7 +15,7 @@ document.querySelector(".profile-picture").src = sessionStorage.getItem(
 var token = sessionStorage.getItem("user_t");
 var repo_name = document.querySelector(".cost-name").innerHTML;
 
-const proxyurl = "https://cors-anywhere.herokuapp.com/";
+const proxyurl = "";
 
 var zenhub_token =
   "aa02c7e3618a31f77e2b94998cd87805b65258aac1542e1e97ae700a2e399b9b98ff80603b690bd7";
@@ -32,7 +32,6 @@ getSRepos.open(
   false
 );
 getSRepos.setRequestHeader("Authorization", " token " + token);
-getSRepos.setRequestHeader("Access-Control-Allow-Headers", "*");
 getSRepos.onload = function() {
   var data = JSON.parse(this.response);
   if (getSRepos.status >= 200 && getSRepos.status < 400) {
@@ -52,7 +51,6 @@ getWorkspaces.open(
   false
 );
 getWorkspaces.setRequestHeader("X-Authentication-Token", zenhub_token);
-getWorkspaces.setRequestHeader("Access-Control-Allow-Headers", "*");
 var workspaceArray = [];
 var repoArray = [];
 
@@ -101,7 +99,6 @@ function getWorkspace(value) {
     false
   );
   getPipeline.setRequestHeader("X-Authentication-Token", zenhub_token);
-  getPipeline.setRequestHeader("Access-Control-Allow-Headers", "*");
 
   getPipeline.onload = function() {
     var data = JSON.parse(this.response);
@@ -183,7 +180,6 @@ newestIssues.open(
   false
 );
 newestIssues.setRequestHeader("Authorization", " token " + token);
-newestIssues.setRequestHeader("Access-Control-Allow-Headers", "*");
 var allissuesArray = [];
 var newissueDate;
 var statuses = [];
@@ -235,7 +231,6 @@ newestClosedIssue.open(
   false
 );
 newestClosedIssue.setRequestHeader("Authorization", " token " + token);
-newestClosedIssue.setRequestHeader("Access-Control-Allow-Headers", "*");
 
 var newestClosedIssueDate;
 var allclosedIssues = [];
@@ -361,7 +356,6 @@ if (allIssuesInToDo.length != 0) {
       false
     );
     getIssueName.setRequestHeader("Authorization", " token " + token);
-    getIssueName.setRequestHeader("Access-Control-Allow-Headers", "*");
     var issueName;
     getIssueName.onload = function() {
       var data = JSON.parse(this.response);
