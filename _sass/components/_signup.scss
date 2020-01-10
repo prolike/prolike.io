@@ -20,7 +20,21 @@
 
 }
 
+.wrapper {
+    .ga-buttons {
+        padding-top: 5vh;
+
+    .mailchimp,
+    .eventbrite {
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    }
+}
+
 .ga-buttons {
+    align-items: center;
+    text-align: center;
 
     .mailchimp,
     .eventbrite {
