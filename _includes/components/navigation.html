@@ -1,7 +1,7 @@
 <nav>
   <a class="logo" href="/"><img src="/images/logos/prolike-logo.png" alt="Prolike website logo"></a>
   <div class="menu-wrap">
-    <input type="checkbox" class="toggler">
+    <input type="checkbox" class="toggler" name="toggler">
     <div class="hamburger">
       <div></div>
     </div>
@@ -9,10 +9,10 @@
       <div>
         <div>
           <ul>
-            <li><a href="/#home" data-proofer-ignore>Home</a></li>
-            <li><a href="/#why" data-proofer-ignore>Why</a></li>
-            <li><a href="/#how" data-proofer-ignore>How</a></li>
-            <li><a href="/#what" data-proofer-ignore>What</a></li>
+            <li><a class="navigation-link" href="/#home" data-proofer-ignore>Home</a></li>
+            <li><a class="navigation-link" href="/#why" data-proofer-ignore>Why</a></li>
+            <li><a class="navigation-link" href="/#how" data-proofer-ignore>How</a></li>
+            <li><a class="navigation-link" href="/#what" data-proofer-ignore>What</a></li>
             {% assign sorted_navi = site.pages | sort: 'order' %}
             {% for page in sorted_navi %}
             {% if page.navigation == true %}
