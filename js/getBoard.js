@@ -77,36 +77,7 @@ if (teamArray.length == 0) {
   }
 }
 
-/* teamArray.forEach(getRepos);
 
-
-function getRepos(value, index, array) {
-    var getSRepos = new XMLHttpRequest()
-    getSRepos.open('GET', proxyurl + 'https://api.github.com/repos/prolike/' + value, false)
-    getSRepos.setRequestHeader("Authorization", " token " + token)
-    var repo_name; 
-    getSRepos.onload = function () {
-        var data = JSON.parse(this.response)
-        if (getSRepos.status >= 200 && getSRepos.status < 400) {
-            var btn2 = document.createElement("BUTTON");
-            btn2.innerHTML = data.name;
-            
-            btn2.setAttribute('onclick', "showBoard('" + data.name + "')")
-            btn2.setAttribute('class', 'col-lg-3')
-            document.querySelector('.button').appendChild(btn2);
-
-        }
-
-
-
-        else {
-
-
-        }
-    }
-
-    getSRepos.send()
-} */
 
 function showBoard(repo_name) {
   var name = repo_name.replace(/[^\w\s]/gi, "");
@@ -114,65 +85,3 @@ function showBoard(repo_name) {
   window.location.replace("/boards/" + name.toLowerCase() + "/");
 }
 
-/*
-var requestRepos = new XMLHttpRequest()
-requestRepos.open('GET', proxyurl + 'https://api.github.com/user/repos', false)
-requestRepos.setRequestHeader("Authorization", " token " + token)
-var repoArray = [];
-requestRepos.onload = function () {
-
-    var data = JSON.parse(this.response)
-    if (requestRepos.status >= 200 && requestRepos.status < 400) {
-
-
-        data.forEach(repo => {
-
-            repoArray.push(repo.id);
-
-        })
-
-
-    } else {
-        const errorMessage = document.createElement('marquee')
-        errorMessage.textContent = `Gah, it's not working!`
-        app.appendChild(errorMessage)
-    }
-}
-
-requestRepos.send()
-
-console.log(repoArray) */
-
-/* for(var i in repoArray) { */
-/* var requestBoard = new XMLHttpRequest()
-console.log(i.valueOf);
-requestBoard.open('GET', proxyurl + 'https://api.zenhub.io/p2/repositories/' + i.valueOf + '/workspaces', true)
-requestBoard.setRequestHeader("X-Authentication-Token", zenhub_token)
-requestBoard.onload = function () {
-    var data = JSON.parse(this.response)
-    if (requestBoard.status >= 200 && requestBoard.status < 400) {
-        console.log(data);
-
-        data.forEach(board => {
-            console.log(board.name);
-            var btn2 = document.createElement("BUTTON");
-            btn2.innerHTML = board.name;
-            document.body.appendChild(btn2);
-        })
-    }
-
-
-
-    else {
-        var btn2 = document.createElement("BUTTON");
-        btn2.innerHTML = "no board";
-        document.body.appendChild(btn2);
-        const errorMessage = document.createElement('marquee')
-        errorMessage.textContent = `Gah, it's not working!`
-        app.appendChild(errorMessage)
-
-    }
-}
-
-requestBoard.send() */
-/* } */
