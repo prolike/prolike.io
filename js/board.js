@@ -81,7 +81,7 @@ all_issues.forEach(issue => {
 
   if (issue.labels.length == 0) {
     allNonStatusIssues.push(issue)
-    console.log(issue.title);
+    
   }
 
   issue.labels.forEach(label => {
@@ -105,9 +105,10 @@ all_issues.forEach(issue => {
 });
 
 
+
 // Create status dropdowns
 
-for (var i = 0; i < statusIssues.length; i++) {
+/* for (var i = 0; i < statusIssues.length; i++) {
   // For every issue marked with status labeled in statuses array
 
   var card = document.createElement("DIV");
@@ -151,34 +152,171 @@ for (var i = 0; i < statusIssues.length; i++) {
   card.appendChild(collapse);
 
   document.querySelector("#status-messages").appendChild(card);
-}
+} */
 
 var newissueDate;
 
 
 // spit out newest issue
+if (allNonStatusIssues != 0) {
+  document.querySelector(".ni-number").innerHTML += allNonStatusIssues[0].number;
+  document.querySelector(".ni-title").innerHTML = allNonStatusIssues[0].title;
+  newissueDate = allNonStatusIssues[0].created_at;
+  
+  document.querySelector(".ni-cont").innerHTML = allNonStatusIssues[0].user.login;
+  document.querySelector(".ni-link").href = allNonStatusIssues[0].html_url;
+  
+  var dateOptions = { year: "numeric", month: "short", day: "numeric" };
+  
+  var newdate = new Date(newissueDate);
+  
+  var formatedNewissueDate = newdate.toLocaleDateString("en-GB", +dateOptions);
+  
+  document.querySelector(".ni-time").innerHTML = formatedNewissueDate;
+}
+else {
+  document.querySelector(".newIssue").innerHTML = "<div class='col-12'><p>Ingen issues nye åbne issues</p></div>";
+}
 
-document.querySelector(".ni-number").innerHTML += allNonStatusIssues[0].number;
-document.querySelector(".ni-title").innerHTML = allNonStatusIssues[0].title;
-newissueDate = allNonStatusIssues[0].created_at;
 
-document.querySelector(".ni-cont").innerHTML = allNonStatusIssues[0].user.login;
-document.querySelector(".ni-link").href = allNonStatusIssues[0].html_url;
 
-var dateOptions = { year: "numeric", month: "short", day: "numeric" };
 
-var newdate = new Date(newissueDate);
+// get workspaces
+var workspaceId;
+var repos = [];
 
-var formatedNewissueDate = newdate.toLocaleDateString("en-GB", +dateOptions);
+var getWorkspaces = new XMLHttpRequest();
+getWorkspaces.open(
+  "GET",
+  proxyurl + "https://api.zenhub.io/p2/repositories/" + repo_id + "/workspaces",
+  false
+);
 
-document.querySelector(".ni-time").innerHTML = formatedNewissueDate;
+getWorkspaces.setRequestHeader("X-Authentication-Token", zenhub_token);
+
+getWorkspaces.onload = function () {
+  var data = JSON.parse(this.response);
+ workspaceId = data[0].id;
+}
+
+getWorkspaces.send();
 
 
 // get all pipelines
 
+var toDoAndUpNext = [];
+var allPipelines = [];
+
+var getPipelines = new XMLHttpRequest();
+
+getPipelines.open(
+  "GET",
+  proxyurl +
+  "https://api.zenhub.io/p2/workspaces/" +
+  workspaceId +
+  "/repositories/" +
+  repo_id +
+  "/board",
+  false
+)
+getPipelines.setRequestHeader("X-Authentication-Token", zenhub_token);
+
+getPipelines.onload = function () {
+  var data = JSON.parse(this.response);
+   data.pipelines.forEach(pipeline => {
+
+    allPipelines.push(pipeline);
+  }
+    ) 
+}
+getPipelines.send();
+
+var allSortedPipelines = [];
 
 
-/* 
+
+allPipelines.forEach(pipeline => {
+  var pipelinename = pipeline.name;
+var pipelinenametoLower = pipelinename.toLowerCase();
+if(pipelinenametoLower == "to do" ||
+pipelinenametoLower == "up next" ) {
+  toDoAndUpNext.push(pipeline.issues);
+  allSortedPipelines.push(pipeline);
+}
+else if (pipelinenametoLower != "epics" || pipelinenametoLower != "new issues") {
+ allSortedPipelines.push(pipeline);
+}
+
+})
+
+allSortedPipelines.forEach(pipeline => {
+  var issueEstimates = [];
+  pipeline.issues.forEach(issue => {
+    if (issue.estimate != undefined) {
+      issueEstimates.push(issue.estimate.value);
+    }
+  });
+
+  var summedEstimates = sum(issueEstimates);
+
+  function sum(obj) {
+    var sum = 0;
+    for (var el in obj) {
+      if (obj.hasOwnProperty(el)) {
+        sum += parseFloat(obj[el]);
+      }
+    }
+    return sum;
+  }
+
+  var pipelineItem = document.createElement("DIV");
+
+  var text =
+    '<p><span class="issue-number">' +
+    pipeline.issues.length +
+    '</span> issues in <span class="issue-name">' +
+    pipeline.name +
+    " - " +
+    summedEstimates +
+    "</span> Story Points</p>";
+  pipelineItem.innerHTML = text;
+
+  pipelineItem.setAttribute("class", "pipeline");
+  document.querySelector(".pipeline-box").appendChild(pipelineItem);
+})
+
+
+
+var issueStorypoints = [];
+
+console.log(toDoAndUpNext)
+toDoAndUpNext.forEach( pipeline => {
+  pipeline.forEach(issue => {
+
+    if (issue.estimate != undefined) {
+      issueStorypoints.push(issue.estimate.value);
+    }
+  } )
+  
+});
+
+var summedStorypoints = sum(issueStorypoints);
+
+function sum(obj) {
+  var sum = 0;
+  for (var el in obj) {
+    if (obj.hasOwnProperty(el)) {
+      sum += parseFloat(obj[el]);
+    }
+  }
+  return sum;
+}
+
+document.querySelector(
+  ".storypoint-number"
+).innerHTML += summedStorypoints.toString();
+
+/*
 
 
 // get the workspaces related to the selected repo.

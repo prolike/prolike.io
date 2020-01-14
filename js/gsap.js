@@ -53,7 +53,7 @@ var scene = new ScrollMagic.Scene({
 
 //boards begins
 
-var board = new TimelineMax();
+/* var board = new TimelineMax();
 
 board
   .fromTo(
@@ -87,7 +87,7 @@ board
   $("button").mouseleave(function(){
     TweenLite.to(this, .5, {css:{color: "#FFC400"}})
   })
-
+ */
 //out-commented till the board loads quicker or we come up with a way to pause the animation untill everything is loaded
 
 // var project = new TimelineMax()

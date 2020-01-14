@@ -3,5 +3,4 @@ title: Wteam
 name: wteam
 sitemap: false
 ---
-
-Hejjo
+*Ingen status pt*
