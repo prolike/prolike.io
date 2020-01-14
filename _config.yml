@@ -160,3 +160,154 @@ responsive_image:
     - assets/foo/bar.png
     - assets/bgs/*.png
     - assets/avatars/*.{jpeg,jpg}
+
+
+prose:
+  rooturl: ''
+  siteurl: 'www.prolike.io'
+  relativeLinks: ''
+  media: 'img/blog'
+  ignore:
+    - htmlproofer.sh
+    - index.html
+    - robots.txt
+    - favicon.ico
+    - README.md
+    - _dev_config.yml
+    - _stage_config.yml
+    - CNAME
+    - CNAME.stage
+    - devserve.sh
+    - .gitignore
+    - .circleci
+    - /_layouts
+    - /_pages
+    - /_sass
+    - /css
+    - /images
+    - /js
+    - .dependencies
+    - .gitmodules
+    - LICENSE
+    - feed.json
+    - .pli
+
+  metadata:
+    _customers:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+    _partners:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Billed"
+      - name: "url"
+        field:
+          element: "text"
+          label: "Url"
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Billed"
+      - name: "description"
+        field:
+          element: "text"
+          label: "Kort beskrivelse"
+          help: "Max 45 anslag"
+      - name: "service"
+        field:
+          element: "text"
+          label: "Er det en service?"
+          help: "Skal den ligge under service listen i footeren? I så fald hvad skal linket hedde? Hvis ikke så lad feltet være tomt."
+      - name: "author"
+        field:
+          element: "select"
+          label: "Vælg forfatter"
+          placeholder: "Forfatter"
+          options:
+            - name: "Lars Kruse"
+              value: "Lars Kruse"
+            - name: "Caroline Olivia"
+              value: "Caroline Olivia"
+            - name: "Louise Nielsen"
+              value: "Louise Nielsen"
+            - name: "Benjamin Treadwell"
+              value: "Benjamin Treadwell"
+            - name: "Andreas Golles"
+              value: "Andreas Golles"
+            - name: "Anders Larsen"
+              value: "Anders Larsen"
+            - name: "Andreas Styltsvig"
+              value: "Andreas Styltsvig"
+            - name: "David Carl"
+              value: "David Carl"
+            - name: "Rasmus Høeberg"
+              value: "Rasmus Høeberg"
+            - name: "Tjalfe Møller"
+              value: "Tjalfe Møller"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Tilføj tags"
+          placeholder: "Tag"
+          alterable: true
+          options:
+            - name: "Products"
+              value: "products"
+            - name: "Services"
+              value: "services"
+            - name: "Jekyll"
+              value: "jekyll"
+            - name: "Website"
+              value: "website"
+    _events:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "date"
+        field:
+          element: "text"
+          label: "Event dato"
+      - name: "image"
+        field:
+          element: "text"
+          label: "Header billed"
+      - name: "event-id"
+        field:
+          element: "text"
+          label: "Eventbrite ID"
+      - name: "time"
+        field:
+          element: "text"
+          label: "Tid"
+      - name: "image-position"
+        field:
+          element: "text"
+          label: "Header billed position"
+      - name: "lang-id"
+        field:
+          element: "text"
+          label: "Event ID"
+          help: "Unikt id som eventet skal have på alle sprog"
+      - name: "lang"
+        field:
+          element: "select"
+          label: "Vælg sprog"
+          placeholder: "Sprog"
+          options:
+            - name: "Engelsk"
+              value: "gb"
+            - name: "Dansk"
+              value: "da"

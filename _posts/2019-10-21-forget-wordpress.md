@@ -9,7 +9,6 @@ tags:
 image: /images/stories/website.jpg
 published: true
 description: The future of websites is here!
-icon: fas fa-hashtag
 service: Websites
 ---
 
