@@ -53,6 +53,9 @@ collections:
   events:
     output: true
     permalink: /events/:title/
+  partners:
+    output: true
+    permalink: partners/:title/
 
 
 defaults:
@@ -86,6 +89,11 @@ defaults:
       type: events
     values:
       layout: event
+  -
+    scope:
+      type: partners
+    values:
+      layout: partner
 
 
 
