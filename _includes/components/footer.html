@@ -24,15 +24,6 @@
       <div class="footer-row">
 
         <div class="footer-list">
-          <h1>Partners</h1>
-          {% for partner in site.partners %}
-            {% if partner.show == true %}
-              <img src="{{ partner.image }}" alt="{{ partner.title }}">
-            {% endif %}
-          {% endfor %}
-        </div>
-
-        <div class="footer-list">
           <h1>Navigation</h1>
           <a href="/#home" data-proofer-ignore>Prolike</a>
           <a href="/#why" data-proofer-ignore>Why</a>
@@ -47,13 +38,14 @@
         </div>
 
         <div class="footer-list">
-          <h1>Our Credo</h1>
-          <a href="/anything/how-we-work/" data-proofer-ignore>How We Work</a>
-          <p>Serverless</p>
-          <p>Autonomation</p>
-          <p>Talent Development</p>
-          <p>Docker</p>
-          <p>Kaizen</p>
+          <h1>Partners</h1>
+          {% for partner in site.partners %}
+            {% if partner.show == true %}
+            <a href="{{ partner.partner-url }}" data-proofer-ignore>
+              <img src="{{ partner.image }}" alt="{{ partner.title }}">
+            </a>
+            {% endif %}
+          {% endfor %}
         </div>
 
         <div class="footer-list">
