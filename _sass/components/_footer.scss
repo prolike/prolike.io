@@ -18,6 +18,10 @@ footer {
         grid-row-gap: 0;
         @include page-side-padding;
 
+        .footer-logo {
+            height: 30px;
+            user-select: none;
+        }
 
         .col-lg,
         .col-sm-12,
@@ -57,13 +61,6 @@ footer {
             height: auto;
             user-select: none;
         }
-    }
-
-    .footer-logo {
-        height: 30px;
-        user-select: none;
-        margin-left: 20vh;
-        margin-bottom: 5vh;
     }
 
 
