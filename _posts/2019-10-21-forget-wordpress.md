@@ -28,7 +28,7 @@ Well, let me take you through a journy of how our websites are made.
 
 ---
 
-We'll be making the website with [Jekyll](https://jekyllrb.com). Jekyll is a simple, expandable, static site generator. We use [Markdown](https://www.markdownguide.org/){: data-proofer-ignore} to write all text material for your website. Then Jekyll will proceed to render your text in to a beautiful website. Throughout this process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and much much more.
+We'll be making [the website with Jekyll](https://jekyllrb.com). Jekyll is a simple, expandable, static site generator. We use [Markdown](https://www.markdownguide.org/){: data-proofer-ignore} to write all text material for your website. Then Jekyll will proceed to render your text in to a beautiful website. Throughout this process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and much much more.
 
 ![Website](/images/stories/jekyll-og.png "Jekyll"){:.img-fluid}
 
