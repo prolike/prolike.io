@@ -19,38 +19,43 @@ title: Services
     <div class="service-boxes row justify-content-center">
 
         {% for service in site.services %}
+        {% if service.operational == true %}
         <div class="col-lg-3 col-md-4 col-12">
             <div class="service-box">
                 <a class="post-link" href="#">
                     <i class="{{ service.icon }} service-icon"></i>
-                <h4>{{ service.title }}</h4></a>
+                    <h4>{{ service.title }}</h4>
+                </a>
             </div>
         </div>
+        {% endif %}
         {% endfor %}
 
     </div>
 
     <div class="row justify-content-center">
         {% for service in site.services %}
-            <div class="service-info col-lg-8 col-11">
-                <div class="row justify-content-center">
-                    <div class="col-12">
-                        <h2>{{ service.title }}</h2>
-                    </div>
-                    <div class="col-12">
-                        <p>{{ service.content }}</p>
-                    </div>
-                    <div class="col-12">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-3 col-md-3 col-6">
-                                <a href="#" class="btn call btn-light btn-xl">
-                                    {{ service.button }}
-                                </a>
-                            </div>
+        {% if service.operational == true %}
+        <div class="service-info col-lg-8 col-11">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <h2>{{ service.title }}</h2>
+                </div>
+                <div class="col-12">
+                    <p>{{ service.content }}</p>
+                </div>
+                <div class="col-12">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-3 col-6">
+                            <a href="{{ service.url }}" class="btn call btn-light btn-xl">
+                                {{ service.button }}
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+        {% endif %}
         {% endfor %}
     </div>
 
