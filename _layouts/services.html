@@ -22,7 +22,7 @@ layout: page
         {% if service.operational == true %}
         <div class="col-lg-3 col-md-4 col-12">
             <div class="service-box">
-                <a class="post-link" href="#">
+                <a class="post-link" href="#{{ service.title }}">
                     <i class="{{ service.icon }} service-icon"></i>
                     <h4>{{ service.title }}</h4>
                 </a>
@@ -33,10 +33,11 @@ layout: page
 
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="position: relative;">
         {% for service in site.services %}
         {% if service.operational == true %}
         <div class="service-info col-lg-8 col-11">
+            <div id="{{ service.title }}" class="idk"></div>
             <div class="row justify-content-center">
                 <div class="col-12">
                     <h2>{{ service.title }}</h2>
