@@ -1,9 +1,7 @@
 ---
 title: Chat system
 icon: fab fa-rocketchat
-layout: default
 button: placeholder
-service-url: /website-form/
 operational: true
 ---
 

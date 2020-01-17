@@ -102,6 +102,11 @@ defaults:
       type: services
     values:
       layout: service
+  -
+    scope:
+      type: services
+    values:
+      layout: services-post
 
 
 

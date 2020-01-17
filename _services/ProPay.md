@@ -1,9 +1,7 @@
 ---
 title: ProPay
 icon: fas fa-money-bill-alt
-layout: default
 button: placeholder
-service-url: /website-form/
 operational: true
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Other software
 icon: fas fa-mobile-alt
-layout: default
 button: Contact us
 service-url: /callme/
 operational: true

@@ -1,9 +1,7 @@
 ---
 title: websites
 icon: far fa-file-code
-layout: default
 button: Get a website
-url: /website-form/
 operational: true
 form: https://docs.google.com/forms/d/e/1FAIpQLSeF7TVK_AC1eqKwHEieoPgVGhOTeu8Qrm0lD1bYHZq5nTiNvA/viewform?embedded=true
 form-height: 3000
