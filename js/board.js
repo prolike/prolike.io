@@ -1,4 +1,4 @@
-"use strict";
+
 
 // Check if there is a user logged in
 
@@ -108,7 +108,7 @@ all_issues.forEach(issue => {
 
 // Create status dropdowns
 
-/* for (var i = 0; i < statusIssues.length; i++) {
+for (var i = 0; i < statusIssues.length; i++) {
   // For every issue marked with status labeled in statuses array
 
   var card = document.createElement("DIV");
@@ -144,7 +144,8 @@ all_issues.forEach(issue => {
 
   var card_body = document.createElement("DIV");
   card_body.setAttribute("class", "card-body");
-  card_body.innerHTML = statusIssues[i].body;
+  
+  card_body.innerHTML = statusIssues[i].body.replace(/\n/g, '<br>');
 
   collapse.appendChild(card_body);
 
@@ -152,7 +153,7 @@ all_issues.forEach(issue => {
   card.appendChild(collapse);
 
   document.querySelector("#status-messages").appendChild(card);
-} */
+}
 
 var newissueDate;
 
