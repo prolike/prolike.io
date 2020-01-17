@@ -2,29 +2,31 @@
 layout: page
 title: Services
 ---
-<div class="services container">
-    <div class="row justify-content-center">
+<div class="service">
+
+    <div class="row">
         <div class="col-lg-6 col-8">
-                <h2 class="service-heading">What are you looking for?</h2>
+            <h1 class="service-heading">Our services</h1>
         </div>
     </div>
-<div class="row justify-content-center">
-    <div class="col-lg-6 col-10 info">
-        <p>In Prolike we offer services made with the concept of lean, wether we create websites or software</p>
+
+    <div class="row">
+        <div class="col-lg-10 col-10 info">
+            <p>In Prolike we offer services made with the concept of lean, wether we create websites or software</p>
+        </div>
     </div>
-</div>
 
-<div class="service-boxes row justify-content-center">
+    <div class="service-boxes row justify-content-center">
 
-    {% for post in site.posts %}
-    {% if post.tags contains "services" %}
-    <div class="service-box col-lg-3 col-12">
-        <a class="post-link" href="{{ post.url }}">
-            <i class="{{ post.icon }} service-icon"></i>
-        <h3>{{ post.title }}</h3></a>
+        {% for service in site.services %}
+        <div class="col-lg-3 col-12">
+            <div class="service-box">
+                <a class="post-link" href="#">
+                    <i class="{{ service.icon }} service-icon"></i>
+                <h4>{{ service.title }}</h4></a>
+            </div>
+        </div>
+        {% endfor %}
+
     </div>
-    {% endif %}
-    {% endfor %}
-
-</div>
 </div>
