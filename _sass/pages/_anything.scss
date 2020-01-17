@@ -1,19 +1,14 @@
 .posts-container {
     height: auto;
     width: 100%;
-    padding: 16.5vh 20vh 10vh 20vh;
+    padding: 18vh 20vh 10vh 20vh;
+    background: $prolikeblue;
 
     .wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-column-gap: 5vh;
+        grid-column-gap: 4vh;
         grid-row-gap: 5vh;
-    }
-
-    .story-card:hover {
-        h5 {
-            color: $prolikeyellow;
-        }
     }
 
     .card-img-top {
@@ -29,14 +24,13 @@
 
         a {
             text-decoration: none !important;
-            color: red;
+            color: #a3b4cc;
         }
 
         h5 {
-            font-size: 4vh;
+            font-size: 3vh;
             line-height: 5.5vh;
-            color: $black;
-            padding: 2vh 0 .5vh 0;
+            color: $white;
             text-transform: uppercase;
             font-weight: 700;
             font-family: 'Oswald', sans-serif;
@@ -45,7 +39,7 @@
 
         .tags {
             color: $prolikeyellow;
-            font-size: 2.5vh;
+            font-size: 15px;
             text-transform: uppercase;
             font-family: 'Oswald', sans-serif;
             text-decoration: none;
@@ -53,9 +47,9 @@
         }
 
         p {
-            font-size: 2vh;
-            user-select: none;
-            max-width: 90%;
+            font-size: 16px;
+            color: $white;
+            line-height: 1.5;
         }
 
     }
@@ -72,8 +66,6 @@
     width: 910px;
     padding: 15vh 0 10vh 0;
     margin-bottom: 100px;
-    
-
 
     .share-icons {
         width: auto;
@@ -83,17 +75,17 @@
         a {
             margin-right: 15px;
         }
-      
+
         .fab {
-          color: black;
-          opacity: 0.5;
-          font-size: 25px;
+            color: black;
+            opacity: 0.5;
+            font-size: 25px;
         }
-      
+
         .fab:hover {
-          color: $prolikeyellow;
+            color: $prolikeyellow;
         }
-      }
+    }
 
 
 
@@ -149,10 +141,6 @@
         font-weight: 700;
     }
 
-    a:hover {
-        color: $prolikeyellow;
-    }
-
     h1 {
         text-transform: uppercase;
     }
@@ -188,7 +176,7 @@
 
     }
 
-   
+
 }
 
 @media only screen and (max-width: 1200px) {
@@ -216,7 +204,7 @@
 
     }
 
-   
+
 }
 
 /* Small devices (phones, 768px and down) */
@@ -265,5 +253,3 @@
         padding-top: 15vh !important;
     }
 }
-
-

@@ -1,6 +1,7 @@
 ---
 published: true
 author: Louise Nielsen
+author-github: https://github.com/LouBNielsen
 tags:
   - software
   - products

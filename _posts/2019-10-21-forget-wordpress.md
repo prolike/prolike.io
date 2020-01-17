@@ -1,6 +1,7 @@
 ---
-title: 'Forget Wordpress, the future is now'
-author: Carolineolivia
+title: 'Forget Wordpress'
+author: Caroline Olivia
+author-github: https://github.com/carolineolivia
 tags:
   - products
   - services
@@ -8,7 +9,7 @@ tags:
   - website
 image: /images/stories/website.jpg
 published: true
-description: The future of websites is here!
+description: The future is now, old man; the future of websites, and boy, is it looking good
 service: Websites
 ---
 

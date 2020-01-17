@@ -1,6 +1,7 @@
 ---
 title: We're jammin'
-author: Lakruzz
+author: Lars Kruse
+author-github: https://github.com/lakruzz
 image: /images/stories/bobmarley.jpg
 tags:
   - jamstack

@@ -9,11 +9,6 @@ body {
   @include serif-font;
 }
 
-hr {
-  max-width: 50px;
-  border-width: 3px;
-}
-
 .front {
   @include page-side-padding;
 

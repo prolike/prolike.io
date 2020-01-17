@@ -1,6 +1,7 @@
 ---
 title: Full Throttle Intern
-author: Benjamin
+author: Benjamin Treadwell
+author-github: https://github.com/bentreadwell
 tags: [internship, multimedia, blog]
 image: /images/stories/intern.jpeg
 published: true
