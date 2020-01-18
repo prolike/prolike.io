@@ -4,10 +4,6 @@ footer {
     width: 100%;
     padding-top: 35vh;
 
-
-
-
-
     .footer-row {
 
         margin: 0 auto 20vh auto;
@@ -63,7 +59,6 @@ footer {
         }
     }
 
-
     .bottom-bar {
         height: 70px;
         width: 100%;
@@ -110,8 +105,6 @@ footer {
             grid-row-gap: 3vh;
             width: 90%;
             padding: 0 2vh;
-
-
         }
 
         .bottom-bar {
@@ -134,11 +127,9 @@ footer {
             grid-template-columns: 1fr 1fr !important;
             grid-column-gap: 1vh;
             grid-row-gap: 3vh;
-            width: 90%;
+            width: 100%;
             padding: 0 2vh;
             margin-bottom: 10vh;
-
-
         }
 
         .bottom-bar {

@@ -25,10 +25,7 @@
 
         <div class="footer-list">
           <h1>Navigation</h1>
-          <a href="/#home" data-proofer-ignore>Prolike</a>
-          <a href="/#why" data-proofer-ignore>Why</a>
-          <a href="/#how" data-proofer-ignore>How</a>
-          <a href="/#what" data-proofer-ignore>What</a>
+          <a href="/#home" data-proofer-ignore>Home</a>
           {% assign sorted_navi = site.pages | sort: 'order' %}
           {% for page in sorted_navi %}
           {% if page.navigation == true %}
@@ -56,7 +53,6 @@
           {% endif %}
           {% endfor %}
           <a href="/profeed/" data-proofer-ignore>Profeed</a>
-          <p>Team Resources</p>
           <p>Research</p>
         </div>
 

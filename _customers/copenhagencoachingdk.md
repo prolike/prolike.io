@@ -26,5 +26,3 @@ Siden sidste status har vi:
 
 I har nu også mulighed for at redigere i mange flere tekster og sider på websitet via prose.io
 Vi har gjort det tilgængeligt at kunne redigere på forside teksterne via /_texts/ og de fleste og teksterne i header segmentet på de fleste sider via /_pages/
-
-

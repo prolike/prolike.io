@@ -3,7 +3,7 @@ title: Full Throttle Intern
 author: Benjamin Treadwell
 author-github: https://github.com/bentreadwell
 tags: [internship, multimedia, blog]
-image: /images/stories/intern.jpeg
+image: /images/anything/intern.jpeg
 published: true
 description: One designer among a pack of software engineers... Yikes!
 ---

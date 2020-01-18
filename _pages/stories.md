@@ -1,7 +1,7 @@
 ---
 title: Stories
 layout: stories
-navigation: true
+navigation: false
 order: 3
 ---
 

@@ -7,7 +7,7 @@ tags:
   - services
   - jekyll
   - website
-image: /images/stories/website.jpg
+image: /images/anything/website.jpg
 published: true
 description: The future is now, old man; the future of websites, and boy, is it looking good
 service: Websites
@@ -31,7 +31,7 @@ Well, let me take you through a journy of how our websites are made.
 
 We'll be making [the website with Jekyll](https://jekyllrb.com). Jekyll is a simple, expandable, static site generator. We use [Markdown](https://www.markdownguide.org/){: data-proofer-ignore} to write all text material for your website. Then Jekyll will proceed to render your text in to a beautiful website. Throughout this process you can tweak how you want the site URLs to look, what data gets displayed in the layout, and much much more.
 
-![Website](/images/stories/jekyll-og.png "Jekyll"){:.img-fluid}
+![Website](/images/anything/jekyll-og.png "Jekyll"){:.img-fluid}
 
 ### No database = unhackable
 
@@ -51,7 +51,7 @@ Use Prose.io! A user friendly interface for editing your content (Markdown files
 
 When it comes to design - we'll make it easy for you. A thousand of templates is lying, ready on the web for you to choose one. See some of the templates [here](https://jekyllthemes.io/).
 
-![Website](/images/stories/info-graphic-website.png "Our website flow"){:.img-fluid}
+![Website](/images/anything/info-graphic-website.png "Our website flow"){:.img-fluid}
 
 
 ### Hosting - Github pages
@@ -60,7 +60,7 @@ When it comes to design - we'll make it easy for you. A thousand of templates is
 
 With Jekyll and Github pages you don't even need a server to host your website, or a traditional web hotel. You just let us host your website on our Github **FOR FREE!** No monthly payment for some big corporation to let you have your site on some server.
 
-![Website](/images/stories/jekyll_ghpages.png "Jekyll + GHpages"){:.img-fluid}
+![Website](/images/anything/jekyll_ghpages.png "Jekyll + GHpages"){:.img-fluid}
 
 ### "Okay, that's fine, but i want a big, goldplated website!" - You might say!
 

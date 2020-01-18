@@ -3,8 +3,45 @@ layout: page
 ---
 
 <div class="posts-container">
+
+  <div class="anything-overview">
+    <h1>Latest posts</h1>
+    <hr>
+  </div>
+
   <div class="wrapper">
     {% for post in site.posts %}
+    <div class="story-card">
+      <a href="{{ post.url }}">
+        <div class="card-img-top" style="background-image: url('{{ post.image }}')"></div>
+      </a>
+
+      <div class="card-body">
+        <!-- <div class="posts-tags">
+              {% for tag in post.tags %}
+              <div class="blog-tag-item" style="display: inline-block" >
+                <span class="tags">{{ tag }}</span>
+              </div>
+              {% endfor %}
+            </div> -->
+        <a href="{{ post.url }}">
+          <h5>{{ post.title }}</h5>
+        </a>
+        <p class="card-text">{{ post.description }}</p>
+        <p class="author-text"><span class="date-span">By <a href="{{ post.author-github }}"
+              target="_blank">{{ post.author }}</a></span></p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="anything-overview">
+    <h1>Infographics</h1>
+    <hr>
+  </div>
+
+  <div class="wrapper">
+    {% for post in site.stories %}
     <div class="story-card">
       <a href="{{ post.url }}">
         <div class="card-img-top" style="background-image: url('{{ post.image }}')"></div>

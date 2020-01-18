@@ -1,5 +1,11 @@
 ---
-title: flow
+title: Our workflow with you
+author: Anders Larsen
+author-github: https://github.com/sygdrome
+image: /images/infographics/flow.jpeg
+published: true
+tags: [workflow, services]
+description: Take a guided tour with us, diving into our workflow with you, from start to finish
 sections:
 - headings: Our workflow with you
   texts: Scroll down to begin
@@ -31,4 +37,3 @@ sections:
   - Our second release! Don't worry this doesnt have to be the end.
   - After that we will continue delivering releases til we have all the freatures you want
 ---
-

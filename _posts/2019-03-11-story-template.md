@@ -2,7 +2,7 @@
 title: Story template
 author: Caroline - prolike
 tags: [git, docker, agile]
-image: /images/stories/intern.jpeg
+image: /images/anything/intern.jpeg
 published: false
 description: A short, one line description of your story.
 ---

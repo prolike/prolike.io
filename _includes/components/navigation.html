@@ -10,9 +10,6 @@
         <div>
           <ul>
             <li><a class="navigation-link" href="/#home" data-proofer-ignore>Home</a></li>
-            <li><a class="navigation-link" href="/#why" data-proofer-ignore>Why</a></li>
-            <li><a class="navigation-link" href="/#how" data-proofer-ignore>How</a></li>
-            <li><a class="navigation-link" href="/#what" data-proofer-ignore>What</a></li>
             {% assign sorted_navi = site.pages | sort: 'order' %}
             {% for page in sorted_navi %}
             {% if page.navigation == true %}

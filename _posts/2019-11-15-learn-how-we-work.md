@@ -6,7 +6,7 @@ tags:
   - software
   - products
   - workflow
-image: /images/stories/howwework.jpg
+image: /images/anything/howwework.jpg
 description: Discover how we operate, and how we orchestrate our workflow on a daily basis
 ---
 

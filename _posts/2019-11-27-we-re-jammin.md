@@ -2,7 +2,7 @@
 title: We're jammin'
 author: Lars Kruse
 author-github: https://github.com/lakruzz
-image: /images/stories/bobmarley.jpg
+image: /images/anything/bobmarley.jpg
 tags:
   - jamstack
   - website
@@ -50,7 +50,7 @@ LAMP is a contraction of the first letters of the names in one of the most popul
 - **MySql** _Relational database_
 - **PHP** _Domain specific programming language, designed specifically for server side scripting of web sites_
 
-![Stage](/images/stories/lamp-server.png "Stage"){:.img-fluid}
+![Stage](/images/anything/lamp-server.png "Stage"){:.img-fluid}
 
 We owe this stack a lot. There's almost nothing that you can not do on this stack. It's like a Swiss army knife. I has been the pet stack since what seems to be _forever (roughly 1995)[^forever]_.
 
@@ -167,7 +167,7 @@ The infrastructure is programmable and serverless.
 There are quite many [different JAM stacks](https://jamstack.org/examples/){: target="_blank"}
 
 
-![JAM](/images/stories/JAM.png "JAM"){:.img-fluid}
+![JAM](/images/anything/JAM.png "JAM"){:.img-fluid}
 
 ### OK, so why do I care if it's one or the other?
 
@@ -219,7 +219,7 @@ Looking at what's novel and desirable in general in the current world of Softwar
 
 All of these highly desirable and contemporary principles are available almost out of the box using a JAM stack.
 
-![Stage](/images/stories/stage.png "Stage"){:.img-fluid}
+![Stage](/images/anything/stage.png "Stage"){:.img-fluid}
 
 ### Let's walk through this webpage as an example
 
