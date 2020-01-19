@@ -1,0 +1,91 @@
+.contact {
+    background: $prolikeblue;
+    width: 100%;
+    padding: 16.5vh 20vh 10vh 20vh;
+    color: white;
+
+    h1 {
+        font-size: 5vh;
+        color: white;
+        font-family: 'Bebas Neue', cursive;
+        margin: 0;
+        margin-bottom: 5vh;
+    }
+
+    p {
+        font-size: 2vh;
+        margin-bottom: 7.5vh;
+        width: 35%;
+    }
+
+    form {
+
+        input {
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+            width: 27.5%;
+            margin-bottom: 50px;
+            margin-right: 40px;
+            color: white;
+            font-size: 2vh;
+        }
+
+        :focus {
+            background: transparent;
+            border-bottom: 2px solid #ffc400;
+            outline: none;
+        }
+
+        input[type=text] {
+            color: white;
+            font-size: 2vh;
+        }
+
+        ::placeholder {
+            color: white;
+            opacity: .5;
+            padding-left: 0;
+            font-size: 2vh;
+        }
+
+        input[type=submit] {
+            background: transparent;
+            width: auto;
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            border: none;
+            font-size: 4vh;
+            margin: 0;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+}
+
+/* Small devices (phones, 768px and down) */
+
+@media only screen and (max-width: 768px) {
+
+    .contact {
+        padding: 20vh 2vh 10vh 2vh;
+
+        p {
+            width: 100%;
+        }
+
+        form {
+
+            input {
+                width: 95%;
+            }
+
+            .form-group {
+                flex-direction: column;
+            }
+        }
+    }
+}

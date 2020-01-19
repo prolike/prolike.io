@@ -80,38 +80,6 @@
     }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (max-width: 1500px) {
-
-    .posts-container {
-
-        .wrapper {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .events-image {
-            height: 30vh;
-        }
-    }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-
-@media only screen and (max-width: 1200px) {
-
-    .posts-container {
-
-        .wrapper {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .events-image {
-            height: 30vh;
-        }
-    }
-}
-
 /* Small devices (phones, 768px and down) */
 
 @media only screen and (max-width: 768px) {
@@ -152,6 +120,38 @@
                 }
 
             }
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 1200px) {
+
+    .posts-container {
+
+        .wrapper {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .events-image {
+            height: 30vh;
+        }
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+
+@media only screen and (max-width: 1500px) {
+
+    .posts-container {
+
+        .wrapper {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .events-image {
+            height: 30vh;
         }
     }
 }

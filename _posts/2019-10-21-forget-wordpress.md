@@ -65,4 +65,4 @@ Minimum Viable Product (MVP) is the absolutly neccesary for your website to run.
 
 ---
 
-Wanna be our next costumer? [Contact us](/callme/) or even better, fill out [this form](/website-form/) to let us know a little bit about you and your website needs.
+Wanna be our next costumer? [Contact us](/contact/) or even better, fill out [this form](/form/) to let us know a little bit about you and your website needs.
