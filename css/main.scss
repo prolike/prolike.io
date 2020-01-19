@@ -12,9 +12,11 @@
 @import "components/navigation.scss";
 @import "components/footer.scss";
 @import "components/signup.scss";
+@import "components/related.scss";
 
 // Pages: All of our styling for our individual pages
 
+@import "pages/anything-post.scss";
 @import "pages/anything.scss";
 @import "pages/bootcamp.scss";
 @import "pages/connect.scss";

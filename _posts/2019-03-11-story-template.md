@@ -16,4 +16,3 @@ Don't start with a title, start with a paragraph introducing your story.
 Paragraphs
 
 Picture example:
-
