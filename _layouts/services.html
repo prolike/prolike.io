@@ -39,14 +39,26 @@ layout: page
         <div class="service-info col-lg-8 col-11">
             <div id="{{ service.title }}" class="idk"></div>
             <div class="row justify-content-center">
+
                 <div class="col-12">
                     <h2>{{ service.title }}</h2>
                 </div>
+
                 <div class="col-12">
                     {{ service.content | markdownify }}
                 </div>
+
+                <div class="col-12">
+                    {% if service.title == "website" %}
+                    <div id="popup">
+                        <iframe id="popupFrame" src="https://jekyllthemes.io/" frameBorder="0"></iframe>
+                    </div>
+                    {% endif %}
+                </div>
+
                 <div class="col-12">
                     <div class="row justify-content-center">
+
                         <div class="col-lg-3 col-md-3 col-6">
                             {% if service.change == true %}
                             <a href="{{ service.internal-link }}" class="btn call btn-light btn-xl">
@@ -58,8 +70,10 @@ layout: page
                             </a>
                             {% endif %}
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
         {% endif %}
