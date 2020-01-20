@@ -58,7 +58,7 @@ collections:
     permalink: partners/:title/
   services:
     output: true
-    permalink: services/:title/
+    permalink: /services/:title/
 
 
 defaults:

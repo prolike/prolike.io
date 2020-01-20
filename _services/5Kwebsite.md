@@ -1,5 +1,5 @@
 ---
-title: websites
+title: website
 icon: far fa-file-code
 button: Get a website
 operational: true
@@ -7,4 +7,14 @@ form: https://docs.google.com/forms/d/e/1FAIpQLSeF7TVK_AC1eqKwHEieoPgVGhOTeu8Qrm
 form-height: 3000
 ---
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+From small to big, we create it all. Do you need a place to post your cooking recipes or sell your product?
+We focus on making your website **fast** and **secure** while allowing you to see the progress anytime you want.
+We also optimze your site for **SEO** and **Google Analytics** so you can see where people are headed on your new site.
+
+To get started we simple ask for you to do two simple steps
+
+1. Choose your desired template [Here](https://jekyllthemes.io/){: target="_blank"}
+2. Fill out our form by clicking the "get a website" button down below
+
+And that is all you need to get started! Once the website is done and you're happy we'll release it into the world.
+

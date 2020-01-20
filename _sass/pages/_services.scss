@@ -72,6 +72,24 @@
             text-transform: uppercase;
             font-weight: bold;
         }
+
+        a {
+            font-weight: 700;
+            color: #000000;
+
+            &:hover {
+                text-decoration: none;
+                color: $prolikeyellow;
+            }
+        }
+
+        .btn {
+            color: white;
+
+            &:hover {
+                color: $prolikeblue;
+            }
+        }
     }
 
     .service-info:last-of-type {
