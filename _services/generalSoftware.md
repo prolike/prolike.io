@@ -10,5 +10,5 @@ internal-link: /contact/
 ---
 
 Need a booking software? or to upload _gdpr_ safe files?
-Wanna learn more? Read our post about software [here](https://www.prolike.io/anything/software/){: target"_blank"} at Prolike. <br>
+Wanna learn more? Read our post about software [here](https://www.prolike.io/anything/software/){: target"_blank"} <br>
 Contact us and let us know what you need.
