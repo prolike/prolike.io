@@ -13,9 +13,9 @@ From small to big, we create it all. Do you need a place to post your cooking re
 We focus on making your website **fast** and **secure** while allowing you to see the progress anytime you want.
 We also optimze your site for **SEO** and **Google Analytics** so you can see where people are headed on your new site.
 
-To get started we simple ask for you to do two simple steps
+To get started all we need is for you to do two simple steps
 
-1. Choose your desired template [Here](https://jekyllthemes.io/){: target="_blank"}
+1. Choose your desired template [here](https://jekyllthemes.io/){: target="_blank"}
 2. Fill out our form by clicking the "get a website" button down below
 
 And that is all you need to get started! Once the website is done and you're happy we'll release it into the world.
