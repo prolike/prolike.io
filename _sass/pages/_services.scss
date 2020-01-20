@@ -33,7 +33,7 @@
             background-color: $prolikeblue;
             padding: 15px;
             margin: 30px;
-            height: 20vh;
+            height: 25vh;
             width: 25vh;
             border-radius: 10px;
 
@@ -126,15 +126,19 @@
     .service {
         padding: 10vh 5vh;
 
+        .pop {
+            padding: 0;
+        }
+
         #popup {
-            height: 90vh;
+            height: 80vh;
           }
 
         .service-boxes {
 
             .service-box {
                 width: 100%;
-                height: 100%;
+                height: 20vh;
                 margin: unset;
                 margin-top: 30px;
             }
@@ -148,6 +152,16 @@
         height: auto;
         width: 100%;
         text-align: center;
+
+        .service-boxes {
+
+            .service-box {
+                width: 100%;
+                height: 30vh;
+                margin: unset;
+                margin-top: 30px;
+            }
+        }
 
         .service-info {
             text-align: left;

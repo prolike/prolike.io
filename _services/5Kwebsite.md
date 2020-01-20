@@ -12,7 +12,7 @@ internal-link: /contact/
 For 4995 kr you'll get a fully kitted website with the content you desire.
 
 ##### what you will get:
-- A responive site that works on every browser, every device
+- A responive site that works in every browser, on every device
 - Google Analytics allowing you to see where people are going on your site
 - Free hosting! We'll host it for you, free of charge
 - A design of your own choice. You can choose one down below or [contact us](/contact/) and we can talk about making a custom design
