@@ -1,5 +1,40 @@
 "use strict";
-if (sessionStorage.getItem("user") == null) {
+
+$(document).ready(function () {
+  loadworkspaces();
+});
+
+function loadworkspaces() {
+
+  var getWorkspaces = new XMLHttpRequest();
+  getWorkspaces.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/workspaces?email=carolineolivia@prolike.io", true);
+  getWorkspaces.onload = function () {
+    var data = JSON.parse(this.response);
+    if (getWorkspaces.status >= 200 && getWorkspaces.status < 400) {
+      console.log(data);
+        
+   
+        var content = ""
+        data.forEach(element => {
+          content += makeTile(element);
+        });
+        // $(".workspaces").replaceWith("<p>" + JSON.stringify(data) + "</p>");
+        $(".workspaces").replaceWith(content);
+      
+      
+    }
+  };
+
+  getWorkspaces.send();
+}
+
+function makeTile(workspace) {
+  var element = '<div class="board-link"><a href="/board?cost=' + workspace.id + '">' + workspace.name + '</a></div>'
+  return element;
+}
+
+
+/* if (sessionStorage.getItem("user") == null) {
 }
 
 var token = sessionStorage.getItem("user_t");
@@ -85,3 +120,4 @@ function showBoard(repo_name) {
   window.location.replace("/boards/" + name.toLowerCase() + "/");
 }
 
+ */
