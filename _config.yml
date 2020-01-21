@@ -44,9 +44,6 @@ collections:
   posts:
     output: true
     permalink: /anything/:title/
-  customers:
-    output: true
-    permalink: /boards/:title/
   stories:
     output: true
     permalink: /stories/:title/
@@ -77,11 +74,6 @@ defaults:
       type: posts
     values:
       layout: anything-post
-  -
-    scope:
-      type: customers
-    values:
-      layout: customer
   -
     scope:
       type: stories
@@ -206,11 +198,6 @@ prose:
     - .pli
 
   metadata:
-    _customers:
-      - name: "title"
-        field:
-          element: "text"
-          label: "title"
     _partners:
       - name: "title"
         field:
