@@ -1,7 +1,7 @@
 ---
 title: ProPay
 icon: fas fa-money-bill-alt
-button: placeholder
+button: Contact Us
 operational: false
 form:
 form-height:
@@ -9,4 +9,13 @@ change: false
 internal-link: /contact/
 ---
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+Are you a customer at Reepay or looking at implementing subscriptions on your website?
+
+##### Introducing ProPay
+A new way for your users to manage subscriptions with ease of implemtation either done by us or on your own.
+
+##### Become a ProVoice customer
+ProPay is still in development and there for we need your help to make this the best it can get.
+As a ProVoice costumer you'll get a voice and opitunity to define which features Propay aswell as their prioirty.
+
+Read more about ProPay and ProVoice [here](/anything/propay)
