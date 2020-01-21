@@ -1,4 +1,4 @@
-.service {
+.services {
     padding: 15vh 20vh;
     height: auto;
     width: auto;
@@ -117,11 +117,6 @@
 
 }
 
-.idk {
-    position: absolute;
-    top: -10vh;
-}
-
 @media only screen and (max-width: 1024px) {
     .service {
         padding: 10vh 5vh;
@@ -167,4 +162,32 @@
             text-align: left;
         }
     }
+}
+
+.service {
+    padding-top: 15vh;
+
+    .btn {
+        align-items: center;
+        text-align: center;
+    }
+    
+    h2 {
+        font-weight: bolder;
+    }
+
+
+    a {
+        font-weight: 700;
+        color: #000000;
+
+        &:hover {
+            text-decoration: none;
+            color: $prolikeyellow;
+        }
+    }
+}
+
+.service-form {
+    padding-bottom: 5vh;
 }
