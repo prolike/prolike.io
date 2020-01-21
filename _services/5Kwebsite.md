@@ -22,7 +22,7 @@ Read more indepth about what you will get on our [post](/anything/forget-wordpre
 
 To get started all we need is for you to do two simple things
 
-1. Choose your desired design below.
+1. Choose your desired design below
 2. Fill out our form by clicking the "get a website" button down below
 
 And that is all you need to get started! Once the website is done and you're happy, we'll release it into the world.
