@@ -21,21 +21,28 @@ layout: page
         {% for service in site.services %}
         {% if service.operational == true %}
         <div class="col-lg-3 col-md-4 col-12">
-            <div class="service-box">
-                <div class="box">
-                    <a class="post-link" href="#{{ service.title }}">
-                        <i class="{{ service.icon }} service-icon"></i>
-                        <h4>{{ service.title }}</h4>
-                    </a>
+            {% if service.change == true%}
+            <a href="{{ service.internal-link }}">
+                <div class="service-box">
+                    <i class="{{ service.icon }} service-icon"></i>
+                    <h4>{{ service.title }}</h4>
                 </div>
-            </div>
+            </a>
+            {% else %}
+            <a href="{{ service.url }}">
+                <div class="service-box">
+                    <i class="{{ service.icon }} service-icon"></i>
+                    <h4>{{ service.title }}</h4>
+                </div>
+            </a>
+            {% endif %}
         </div>
         {% endif %}
         {% endfor %}
 
     </div>
 
-    <div class="row justify-content-center" style="position: relative;">
+    <!-- <div class="row justify-content-center" style="position: relative;">
         {% for service in site.services %}
         {% if service.operational == true %}
         <div class="service-info col-lg-8 col-11">
@@ -80,7 +87,7 @@ layout: page
         </div>
         {% endif %}
         {% endfor %}
-    </div>
+    </div> -->
 
     <div class="row">
         <div class="col-12">

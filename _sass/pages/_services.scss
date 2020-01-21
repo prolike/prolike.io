@@ -1,5 +1,5 @@
 .service {
-    padding: 20vh 20vh;
+    padding: 15vh 20vh;
     height: auto;
     width: auto;
     align-items: center;
@@ -25,6 +25,10 @@
         padding: 50px;
         align-items: center;
 
+        a {
+            text-decoration: none;
+        }
+
 
         .service-box {
             color: white;
@@ -32,27 +36,18 @@
             text-align: center;
             background-color: $prolikeblue;
             padding: 15px;
-            margin: 30px;
-            height: 250px;
+            margin-top: 30px;
+            height: 200px;
             width: 100%;
             border-radius: 10px;
 
             .box {
-                margin-top: 30px;;
+                margin-top: 15px;;
             }
-
-            .post-link,
-            .post-link:hover {
-                color: white;
-                text-decoration: none;
-                height: 100%;
-                width: 100%;
-                justify-content: center;
-                align-items: center;
 
                 .service-icon {
                     font-size: 60px;
-                    margin: 20px 25px;
+                    margin: 20px 0;
                     color: $prolikeyellow;
                 }
 
@@ -63,7 +58,7 @@
                     color: white;
                 }
 
-            }
+            
 
 
 

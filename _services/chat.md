@@ -5,7 +5,7 @@ button: Contact us
 operational: true
 form:
 height:
-change: false
+change: true
 internal-link: /contact/
 ---
 
