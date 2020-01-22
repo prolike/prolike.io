@@ -4,11 +4,31 @@ $(document).ready(function () {
 });
 
 function loadBoard() {
+
   var token = sessionStorage.getItem("user_t");
   var url = new URL(window.location.href);
 
   var workspace_id = url.searchParams.get("wp");
   var user = sessionStorage.getItem("user");
+
+  var getPipelines = new XMLHttpRequest();
+  getPipelines.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/workspaces/" + "?email=" + user, true);
+  getPipelines.onload = function () {
+    var data = JSON.parse(this.response);
+    data.forEach(workspace => {
+      console.log(workspace.id)
+      console.log(workspace_id)
+      if (workspace.id == workspace_id) {
+        $(".board-title").replaceWith("<h1>" + workspace.name + "</h1>");
+        console.log(workspace.name)
+      }
+    })
+  };
+
+  getPipelines.send();
+
+
+  
 
   var getPipelines = new XMLHttpRequest();
   getPipelines.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/pipelines/" + workspace_id + "?email=" + user, true);
