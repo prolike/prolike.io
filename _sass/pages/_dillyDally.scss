@@ -1,0 +1,34 @@
+.dillyDally {
+    padding: 20vh;
+
+    p {
+        color: #777777
+    }
+
+    input {
+        margin-bottom: 2vh;
+    }
+
+    input[type=date], [type=time] {
+        width: 100%;
+        height: 50px;
+        border-radius: 2px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        color: #555;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+      }
+
+    .btn {
+        width: 100%;
+    }
+    span {
+        color: crimson;
+        font-size: 20px;
+    }
+}
