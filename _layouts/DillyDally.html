@@ -32,16 +32,21 @@ layout: page
         
                 <div class="col-8">
                     <h4>Related to a GitHub issue <span>*</span></h4>
-                    <input type="radio" name="issue" value="yes" checked required> Yes <br>
-                    <input type="radio" name="issue" value="no"> no <br>
+                    <input type="radio" name="issue" id="issue_yes" value="yes" checked required> Yes <br>
+                    <input type="radio" name="issue" id="issue_no" value="no"> no <br>
                 </div>
 
-                <div class="col-8">
-                    <button class="btn">Next</button>
+                <div class="col-8" id="btn">
+                    <button class="btn" onclick="githubIssue();">Next</button>
                 </div>
-                
+
+                <div id="response" class="col-8">
+
+                </div>
+
             </div>
         </from>
 
     </div>
 </div>
+<script src="/js/dillyDally.js"></script>
