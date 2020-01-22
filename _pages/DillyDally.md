@@ -1,6 +1,6 @@
 ---
 title: Dilly Dally
-layout: DillyDally
+layout: dillyDally
 navigation: true
 order: 6
 ---

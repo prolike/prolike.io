@@ -9,44 +9,94 @@ layout: page
             <h1>Dilly Dally Time logging</h1>
         </div>
 
-        <from class="col-12">
+        <form class="col-12">
             <div class="row justify-content-center">
-                
+
                 <div class="col-lg-8 col-12">
                     <h4>Day of Work <span>*</span></h4>
                     <p>Date</p>
                     <input type="date" name="dayOfWork" required>
                 </div>
-        
+
                 <div class="col-lg-8 col-12">
                     <h4>Start time <span>*</span></h4>
                     <p>HH:MM</p>
                     <input type="time" name="starTime" required>
                 </div>
-        
+
                 <div class="col-lg-8 col-12">
                     <h4>Work Duration <span>*</span></h4>
                     <p>HH:MM</p>
-                    <input type="time" name="workDuration" required>
+                    <input type="time" name="workDuration">
                 </div>
-        
+
                 <div class="col-lg-8 col-12">
                     <h4>Related to a GitHub issue <span>*</span></h4>
-                    <input type="radio" name="issue" id="issue_yes" value="yes" checked required> Yes <br>
-                    <input type="radio" name="issue" id="issue_no" value="no"> no <br>
+                    <input type="radio" name="issue" id="issue_yes" checked value="yes"> Yes <br>
+                    <input type="radio" name="issue" id="issue_no" value="no"> No <br>
                 </div>
 
-                <div class="col-lg-8 col-12" id="btn">
-                    <button class="btn" onclick="githubIssue();">Continue</button>
+                <div class="col-lg-8 col-12" id="relatedToGithubIssue">
+
+                    <div class="col-lg-8 col-12">
+                        <h4>Github Repo</h4>
+                        <p>Choose the repository from the list, or type it manually in the format "user/repo"</p>
+                        <input type="radio" name="repo" value="prolike/copenhagencoaching.dk"> CCC <br><input
+                            type="radio" name="repo" value="prolike/ccc-moodle"> CCC <br><input type="radio" name="repo"
+                            value="prolike/ccc-support"> CCC <br><input type="radio" name="repo"
+                            value="prolike/cyklingudenalder.dk"> cyklingudenalder.dk <br><input type="radio" name="repo"
+                            value="itmorten/itsystemdesign"> IT System Design <br><input type="radio" name="repo"
+                            value="prolike/dillydally"> Dilly Dally <br><input type="radio" name="repo"
+                            value="republicdomain/republicdomain.dk"> RePublicDomain <br><input type="radio" name="repo"
+                            value="prolike/wteam.dk"> wteam.dk <br><input type="radio" name="repo"
+                            value="prolike/prolike.io"> Prolike <br><input type="radio" name="repo"
+                            value="prolike/champagnekaelderen"> champagnekaelderen <br><input type="radio" name="repo"
+                            value=""> other <input type="text> <br></div> <div class=" col-12">
+                        <h4>Issue number <span>*</span></h4>
+                        <input type="text" required>
+                    </div>
+
+                    <div class="col-lg-8 col-12">
+                        <h4>Fixed price</h4>
+                        <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue. You only
+                            need
+                            to
+                            use this optional field if you want to override that default (e.g. to indicate that it
+                            is
+                            free
+                            of charge)</p>
+                        <input type="time" name="fixedPrice">
+                    </div>
+
                 </div>
 
-                <div id="response" class="col-lg-8 col-12">
+                <div class="col-lg-8 col-12" id="notRelatedToGithubIssue">
+
+                    <div class="col-lg-8 col-12">
+                        <h4>Category <span>*</span></h4>
+                        <select class="dropdown" name="category">
+                            <option value="discussingCustomerAffairs">Discussing customer affairs</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="accountManagement">Account management</option>
+                            <option value="recruitment/Retention">Recruitment/retention</option>
+                            <option value="sales">Sales</option>
+                            <option value="fridaysCodeCafe">Fridays code cafe</option>
+                            <option value="event">Attended an event</option>
+                            <option value="meeting">Meeting</option>
+                            <option value="bookKeeping">Book keeping</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-8 col-12">
+                        <h4>Describe the issue <span>*</span></h4>
+                        <input type="text">
+                    </div>
 
                 </div>
 
+                <div class="col-lg-8 col-12"><button class="btn">Submit</button></div>
             </div>
-        </from>
-
+        </form>
     </div>
 </div>
 <script src="/js/dillyDally.js"></script>
