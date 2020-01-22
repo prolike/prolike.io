@@ -1,13 +1,14 @@
 "use strict";
 
 $(document).ready(function () {
-  loadworkspaces();
+  loadBoard();
 });
 
-function loadworkspaces() {
+function loadBoard() {
 
+  var user = sessionStorage.getItem("user");
   var getWorkspaces = new XMLHttpRequest();
-  getWorkspaces.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/workspaces?email=carolineolivia@prolike.io", true);
+  getWorkspaces.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/workspaces?email=" + user, true);
   getWorkspaces.onload = function () {
     var data = JSON.parse(this.response);
     if (getWorkspaces.status >= 200 && getWorkspaces.status < 400) {
@@ -18,6 +19,7 @@ function loadworkspaces() {
         data.forEach(element => {
           content += makeTile(element, element.repositories[0]);
         });
+        
         $(".workspaces").replaceWith(content);
       
       

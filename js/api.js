@@ -26,14 +26,15 @@ if (ghCode == null) {
 
   var data;
   var requestToken = new XMLHttpRequest();
-  requestToken.open('GET','https://europe-west1-prohub-6f0e8.cloudfunctions.net/github/oauth/access_token/' + ghCode);
-  requestToken.setRequestHeader("Accept", "application/json");  
-  
-  requestToken.onload = function() {
+  requestToken.open('GET', 'https://europe-west1-prohub-6f0e8.cloudfunctions.net/github/oauth/access_token/' + ghCode);
+  requestToken.setRequestHeader("Accept", "application/json");
+
+  requestToken.onload = function () {
     console.log(this.response);
     var data = JSON.parse(this.response);
     if (requestToken.status >= 200 && requestToken.status < 400) {
       cb(data.access_token);
+      console.log(data)
     } else {
       window.location.replace("/");
     }
@@ -42,37 +43,27 @@ if (ghCode == null) {
   requestToken.send();
 }
 
-var cb = function(access_token){
+var cb = function (access_token) {
   token = access_token;
+  var user = "";
+  var getUser = new XMLHttpRequest();
+  getUser.open("GET", proxyurl + "https://api.github.com/user", false);
+  getUser.setRequestHeader("Authorization", " token " + token);
+  getUser.onload = function () {
 
-  var getOrg = new XMLHttpRequest();
-  getOrg.open("GET", proxyurl + "https://api.github.com/user/orgs", false);
-  getOrg.setRequestHeader("Authorization", " token " + token);
-  var org_array = [];
-  getOrg.onload = function() {
-    if (getOrg.status == 429) {
-      alert("Too many requests!");
-    }
     var data = JSON.parse(this.response);
-  
-    data.forEach(org => {
-      org_array.push(org.login);
-    });
+    console.log(data);
+    user = data.login;
+
   };
-  
-  getOrg.send();
-  
-  // if (org_array.indexOf("Prolike-io") !== -1) {
-  
+
+  getUser.send();
+
   if (token == null) {
     window.location.replace("/");
   } else {
     sessionStorage.setItem("user_t", token);
-    sessionStorage.setItem("user", "user");
+    sessionStorage.setItem("user", user);
     window.location.replace("/boards/");
   }
-  // } else {
-  //   window.location.replace("/noaccess/");
-  // }
 }
-

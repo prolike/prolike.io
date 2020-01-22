@@ -1,4 +1,74 @@
 
+$(document).ready(function () {
+  loadBoard();
+});
+
+function loadBoard() {
+  var token = sessionStorage.getItem("user_t");
+  var url = new URL(window.location.href);
+
+  var workspace_id = url.searchParams.get("wp");
+  var user = sessionStorage.getItem("user");
+
+  var getPipelines = new XMLHttpRequest();
+  getPipelines.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/pipelines/" + workspace_id + "?email=" + user, true);
+  getPipelines.onload = function () {
+    var data = JSON.parse(this.response);
+    if (getPipelines.status >= 200 && getPipelines.status < 400) {
+
+
+      var estimates = [];
+      console.log(data)
+        data.forEach(workspace => {
+
+          workspace.forEach(pipeline => {
+            
+            var pipeline_name = pipeline.name.toLowerCase();
+            console.log(pipeline_name)
+            if (pipeline_name == "to do" || pipeline_name == "up next") {
+
+              estimates.push(pipeline.estimate)
+
+
+              
+
+            }
+          });
+
+        });
+
+      console.log(estimates)
+      var content = ""
+      var summedEstimates = sum(estimates);
+      content += makeTile(summedEstimates);
+      $(".tiles").replaceWith(content);
+      
+    }
+  };
+
+  getPipelines.send();
+
+
+
+}
+
+function makeTile(sum) {
+  var element = '<div class="summed-tile"><h2>' + sum + '<h2><h3>story points left</h3><h4>in To Do & Up Next</h4></div>'
+  return element;
+}
+
+function sum(obj) {
+  var sum = 0;
+  for (var el in obj) {
+    if (obj.hasOwnProperty(el)) {
+      sum += parseFloat(obj[el]);
+    }
+  }
+  return sum;
+}
+
+
+/*
 
 // Check if there is a user logged in
 
@@ -77,11 +147,11 @@ var allEpics = [];
 
 
 all_issues.forEach(issue => {
-  /* console.log(issue) */
+
 
   if (issue.labels.length == 0) {
     allNonStatusIssues.push(issue)
-    
+
   }
 
   issue.labels.forEach(label => {
@@ -144,7 +214,7 @@ for (var i = 0; i < statusIssues.length; i++) {
 
   var card_body = document.createElement("DIV");
   card_body.setAttribute("class", "card-body");
-  
+
   card_body.innerHTML = statusIssues[i].body.replace(/\n/g, '<br>');
 
   collapse.appendChild(card_body);
@@ -163,16 +233,16 @@ if (allNonStatusIssues != 0) {
   document.querySelector(".ni-number").innerHTML += allNonStatusIssues[0].number;
   document.querySelector(".ni-title").innerHTML = allNonStatusIssues[0].title;
   newissueDate = allNonStatusIssues[0].created_at;
-  
+
   document.querySelector(".ni-cont").innerHTML = allNonStatusIssues[0].user.login;
   document.querySelector(".ni-link").href = allNonStatusIssues[0].html_url;
-  
+
   var dateOptions = { year: "numeric", month: "short", day: "numeric" };
-  
+
   var newdate = new Date(newissueDate);
-  
+
   var formatedNewissueDate = newdate.toLocaleDateString("en-GB", +dateOptions);
-  
+
   document.querySelector(".ni-time").innerHTML = formatedNewissueDate;
 }
 else {
@@ -228,7 +298,7 @@ getPipelines.onload = function () {
 
     allPipelines.push(pipeline);
   }
-    ) 
+    )
 }
 getPipelines.send();
 
@@ -298,7 +368,7 @@ toDoAndUpNext.forEach( pipeline => {
       issueStorypoints.push(issue.estimate.value);
     }
   } )
-  
+
 });
 
 var summedStorypoints = sum(issueStorypoints);
@@ -315,7 +385,7 @@ function sum(obj) {
 
 document.querySelector(
   ".storypoint-number"
-).innerHTML += summedStorypoints.toString();
+).innerHTML += summedStorypoints.toString(); */
 
 /*
 

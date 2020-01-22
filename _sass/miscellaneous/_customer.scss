@@ -1,4 +1,39 @@
+.board {
+    height: auto;
+    width: 100%;
+    padding: 20vh 10vh 15vh 10vh;
+    background: $prolikeblue;
+    font-family: 'Bebas Neue';
 
+
+    .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        .summed-tile {
+            display: grid;
+            background-color: whitesmoke;
+            grid-template-columns: 1fr;
+    
+            h2 {
+                font-size: 10em;
+                color: $prolikeyellow;
+                font-weight: bold;
+                line-height: 1;
+            }
+    
+            h3 {
+                font-weight: bold;
+                font-size: 2em;
+                color: $prolikeblue;
+            }
+    
+            h4 {
+                font-size: 12px;
+            }
+        }
+    }
+}
 
 /* .projects {
     background-color: whitesmoke;
