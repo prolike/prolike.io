@@ -44,6 +44,5 @@ build:
   preview_output_directory: _site
   preview_docker_image: carolineolivia94/jekyll-plus-plus
   mount_path: "//app"
-  working_dir: "."
   instant_preview_command: jekyll serve ---config _config.yml,_dev_config.yml --drafts
     --unpublished --future --port 8080 --host 0.0.0.0 -d _site --watch
