@@ -18,6 +18,7 @@ function loadBoard() {
 var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
 var isodate = firstDay.toISOString()
 var est = [];
+var lines = [];
 var getTitle = new XMLHttpRequest();
   getTitle.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/workspaces/" + "?email=" + user, true);
   getTitle.onload = function () {
@@ -27,9 +28,15 @@ var getTitle = new XMLHttpRequest();
       if (workspace.id == workspace_id) {
         workspace.repositories.forEach(repo => {
           est.push(getIssues(repo));
+
+        })
+
+        workspace.pipelines.forEach(line => {
+          lines.push(line);
+          
         })
         $(".board-title").replaceWith("<h1>" + workspace.name + "</h1>");
-        $(".est").replaceWith("<h1>" + sum(est) + "</h1>");
+        $(".sp-sofar").replaceWith(makeTile(sum(est), "story points so far"));
       }
     })
   };
@@ -45,7 +52,6 @@ var getTitle = new XMLHttpRequest();
     var data = JSON.parse(this.response);
     if (getPipelines.status >= 200 && getTitle.status < 400) {
 
-
       var estimates = [];
       
         data.forEach(workspace => {
@@ -53,15 +59,19 @@ var getTitle = new XMLHttpRequest();
           workspace.forEach(pipeline => {
             
             var pipeline_name = pipeline.name.toLowerCase();
+
+            lines.forEach(element => {
+              if (pipeline_name == element) {
+
+                estimates.push(pipeline.estimate)
+  
+  
+                
+  
+              }
+            });
             
-            if (pipeline_name == "to do" || pipeline_name == "up next") {
 
-              estimates.push(pipeline.estimate)
-
-
-              
-
-            }
           });
 
         });
@@ -69,8 +79,8 @@ var getTitle = new XMLHttpRequest();
       
       var content = ""
       var summedEstimates = sum(estimates);
-      content += makeTile(summedEstimates);
-      $(".tiles").replaceWith(content);
+      content += makeTile(summedEstimates, "story points left");
+      $(".sp-left").replaceWith(content);
       
     }
   };
@@ -81,8 +91,23 @@ var getTitle = new XMLHttpRequest();
 
 }
 
-function makeTile(sum) {
-  var element = '<div class="summed-tile"><h2>' + sum + '<h2><h3>story points left</h3><h4>in To Do & Up Next</h4></div>'
+function makeTile(sum, text) {
+  var d = new Date();
+var month = new Array();
+month[0] = "January";
+month[1] = "February";
+month[2] = "March";
+month[3] = "April";
+month[4] = "May";
+month[5] = "June";
+month[6] = "July";
+month[7] = "August";
+month[8] = "September";
+month[9] = "October";
+month[10] = "November";
+month[11] = "December";
+var n = month[d.getMonth()];
+  var element = '<div class="summed-tile"><h2>' + sum + '<h2><h3>' + text + '</h3><h4>in ' + n + '</h4></div>'
   return element;
 }
 
