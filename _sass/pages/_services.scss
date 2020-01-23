@@ -4,6 +4,10 @@
     width: auto;
     align-items: center;
 
+    ul {
+        padding-left: 30px !important;
+    }
+
     .row {
         margin-right: 0px;
         margin-left: 0px;
@@ -39,7 +43,7 @@
             margin-top: 30px;
             height: 200px;
             width: 100%;
-            border-radius: 10px;
+            border-radius: 5px;
 
             .box {
                 margin-top: 15px;;
@@ -118,8 +122,15 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .services {
+        padding: 20vh 0vh;
+    }
     .service {
         padding: 10vh 5vh;
+
+        ul {
+            padding-left: 30px !important;
+        }
 
         .pop {
             padding: 0;
@@ -141,13 +152,31 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     .service {
+        ul {
+            padding-left: 40px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .services {
         padding: 20vh 0vh;
+
+    }
+    
+    .service {
+        padding: 5vh 0vh;
         height: auto;
         width: 100%;
         text-align: center;
 
+        ul {
+            padding-left: 30px !important;
+        }
+        
         .service-boxes {
 
             .service-box {

@@ -25,7 +25,7 @@ layout: page
 
 {% if page.change == false %}
 <div class="container-fluid ourGoogleFormContainer">
-    <iframe class="ourGoogleForm" src="{{ page.form }}" width="640" frameborder="0" marginheight="0" marginwidth="0"
+    <iframe class="ourGoogleForm" src="{{ page.form }}" width="640" height="{{ page.form-height }}" frameborder="0" marginheight="0" marginwidth="0"
         scrolling="yes">Loading…</iframe>
 </div>
 {% else %}
