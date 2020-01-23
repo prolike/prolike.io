@@ -45,4 +45,5 @@ build:
   preview_docker_image: carolineolivia94/jekyll-plus-plus
   mount_path: _site
   working_dir: "."
-  instant_preview_command: "--workdir //app jekyll serve --config _config.yml,_dev_config.yml"
+  instant_preview_command: "-it  --rm  --pid=host -v /$(pwd)://app:rw --workdir //app
+    \ --publish 80:4000 carolineolivia94/jekyll-plus-plus jekyll serve --config _config.yml,_dev_config.yml"
