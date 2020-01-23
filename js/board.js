@@ -3,6 +3,8 @@ $(document).ready(function () {
   loadBoard();
 });
 
+
+
 function loadBoard() {
 
   var token = sessionStorage.getItem("user_t");
