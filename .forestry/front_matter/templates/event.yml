@@ -1,0 +1,34 @@
+---
+label: Event
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: date
+  label: date
+- type: file
+  name: image
+  label: image
+- type: text
+  name: place
+  label: place
+- type: number
+  name: event-id
+  label: event-id
+- type: textarea
+  name: description
+  label: description
+- type: datetime
+  name: time
+  label: time
+- type: text
+  name: image-position
+  label: image-position
+- type: text
+  name: lang-id
+  label: lang-id
+- type: text
+  name: lang
+  label: lang
