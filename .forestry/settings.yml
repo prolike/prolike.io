@@ -45,4 +45,4 @@ build:
   preview_docker_image: carolineolivia94/jekyll-plus-plus
   mount_path: "//app"
   working_dir: "."
-  instant_preview_command: jekyll serve --config _config.yml,_dev_config.yml --watch
+  instant_preview_command: jekyll serve --watch
