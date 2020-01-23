@@ -2,10 +2,12 @@
 title: Our workflow with you
 author: Anders Larsen
 author-github: https://github.com/sygdrome
-image: /images/infographics/flow.jpeg
-published: true
-tags: [workflow, services]
-description: Take a guided tour with us, diving into our workflow with you, from start to finish
+image: "/images/infographics/flow.jpeg"
+tags:
+- workflow
+- services
+description: Take a guided tour with us, diving into our workflow with you, from start
+  to finish.
 sections:
 - headings: Our workflow with you
   texts: Scroll down to begin
@@ -23,17 +25,21 @@ sections:
   icon: fas fa-birthday-cake
   texts:
   - Minimum Viable Product
-  - Instead of building your entire product in one go we start with the fundementals and add features in following releases
+  - Instead of building your entire product in one go we start with the fundementals
+    and add features in following releases
   - This ensures that you get up an running as quick as possible
 - headings:
   - First release
   icon: fas fa-glass-cheers
   texts:
-  - Our first release! Packed with extra features bringing your product to the next level
+  - Our first release! Packed with extra features bringing your product to the next
+    level
 - headings:
   - Second release
   icon: fas fa-infinity
   texts:
   - Our second release! Don't worry this doesnt have to be the end.
-  - After that we will continue delivering releases til we have all the freatures you want
+  - After that we will continue delivering releases til we have all the freatures
+    you want
+
 ---
