@@ -9,16 +9,22 @@ sections:
   label: Services
   create: all
   match: "**/*"
+  templates:
+  - service
 - type: directory
   path: _partners
   label: Partners
   create: all
   match: "**/*"
+  templates:
+  - partner
 - type: directory
   path: _events
   label: Events
   create: all
   match: "**/*"
+  templates:
+  - event
 - type: jekyll-posts
   label: Posts
   create: all
