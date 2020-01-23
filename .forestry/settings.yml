@@ -42,6 +42,8 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: _site
+  install_dependencies_command: docker run -it  --rm  --pid=host -v /$(pwd)://app:rw
+    --workdir //app  --publish 80:4000
   preview_docker_image: carolineolivia94/jekyll-plus-plus
   mount_path: _site
   working_dir: "."
