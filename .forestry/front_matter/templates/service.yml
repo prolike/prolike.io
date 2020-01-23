@@ -1,0 +1,28 @@
+---
+label: Service
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: icon
+  label: icon
+- type: text
+  name: button
+  label: button
+- type: boolean
+  name: operational
+  label: operational
+- type: textarea
+  name: form
+  label: form
+- type: number
+  name: form-height
+  label: form-height
+- type: boolean
+  name: change
+  label: change
+- type: text
+  name: internal-link
+  label: internal-link
