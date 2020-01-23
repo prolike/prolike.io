@@ -6,9 +6,6 @@ fields:
   name: title
   label: title
 - type: text
-  name: author
-  label: author
-- type: text
   name: author-github
   label: author-github
 - type: list
@@ -20,3 +17,25 @@ fields:
 - type: text
   name: description
   label: description
+- name: author
+  type: select
+  default: Lars Kruse
+  config:
+    required: true
+    options:
+    - Lars Kruse
+    - Caroline Olivia
+    - Louise Nielsen
+    - David Carl
+    - Anders Larsen
+    - Andreas Golles
+    - Andreas Styltsvig
+    - Tjalfe Møller
+    - Benjamin Treadwell
+    - Rasmus Hoeberg
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Author
