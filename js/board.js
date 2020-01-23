@@ -11,40 +11,47 @@ function loadBoard() {
   var workspace_id = url.searchParams.get("wp");
   var user = sessionStorage.getItem("user");
 
-  var getPipelines = new XMLHttpRequest();
-  getPipelines.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/workspaces/" + "?email=" + user, true);
-  getPipelines.onload = function () {
+
+  var date = new Date();
+var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+var isodate = firstDay.toISOString()
+var est = [];
+var getTitle = new XMLHttpRequest();
+  getTitle.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/workspaces/" + "?email=" + user, true);
+  getTitle.onload = function () {
     var data = JSON.parse(this.response);
     data.forEach(workspace => {
-      console.log(workspace.id)
-      console.log(workspace_id)
+
       if (workspace.id == workspace_id) {
+        workspace.repositories.forEach(repo => {
+          est.push(getIssues(repo));
+        })
         $(".board-title").replaceWith("<h1>" + workspace.name + "</h1>");
-        console.log(workspace.name)
+        $(".est").replaceWith("<h1>" + sum(est) + "</h1>");
       }
     })
   };
 
-  getPipelines.send();
+  getTitle.send();
 
 
-  
+
 
   var getPipelines = new XMLHttpRequest();
   getPipelines.open("GET", "https://europe-west1-prohub-6f0e8.cloudfunctions.net/zenhub/pipelines/" + workspace_id + "?email=" + user, true);
   getPipelines.onload = function () {
     var data = JSON.parse(this.response);
-    if (getPipelines.status >= 200 && getPipelines.status < 400) {
+    if (getPipelines.status >= 200 && getTitle.status < 400) {
 
 
       var estimates = [];
-      console.log(data)
+      
         data.forEach(workspace => {
 
           workspace.forEach(pipeline => {
             
             var pipeline_name = pipeline.name.toLowerCase();
-            console.log(pipeline_name)
+            
             if (pipeline_name == "to do" || pipeline_name == "up next") {
 
               estimates.push(pipeline.estimate)
@@ -57,7 +64,7 @@ function loadBoard() {
 
         });
 
-      console.log(estimates)
+      
       var content = ""
       var summedEstimates = sum(estimates);
       content += makeTile(summedEstimates);
@@ -85,6 +92,67 @@ function sum(obj) {
     }
   }
   return sum;
+}
+
+function getIssues(repo) {
+  var token = sessionStorage.getItem("user_t");
+  var date = new Date();
+  var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
+  var isodate = firstDay.toISOString()
+  var summedestimatesorallrepos = 0;
+ 
+  var allestimatesonerepo = [];
+  
+  var getClosedIssues = new XMLHttpRequest();
+  getClosedIssues.open("GET", "https://api.github.com/repositories/" + repo + "/issues?state=closed&since=" + isodate , false);
+  getClosedIssues.setRequestHeader("Authorization", " token " + token);
+  getClosedIssues.onload = function () {
+    var data = JSON.parse(this.response);
+    data.forEach(issue => {
+      allestimatesonerepo.push(getEstimates(issue.number, repo)); 
+
+      
+    })
+    summedestimatesorallrepos = sum(allestimatesonerepo);
+  };
+  getClosedIssues.send();
+
+return summedestimatesorallrepos;
+  
+}
+
+
+
+  function sum(obj) {
+    var sum = 0;
+    for (var el in obj) {
+      if (obj.hasOwnProperty(el)) {
+        sum += parseFloat(obj[el]);
+      }
+    }
+    return sum;
+  }
+
+function getEstimates(number, repo) {
+  var estimate = 0;
+  var getClosedIssuesEstimates = new XMLHttpRequest();
+  getClosedIssuesEstimates.open("GET", "https://api.zenhub.io/p1/repositories/" + repo + "/issues/" + number, false);
+  getClosedIssuesEstimates.setRequestHeader("X-Authentication-Token", "aa02c7e3618a31f77e2b94998cd87805b65258aac1542e1e97ae700a2e399b9b98ff80603b690bd7");
+  getClosedIssuesEstimates.onload = function () {
+    var data = JSON.parse(this.response);
+  if (data.estimate) {
+      estimate = data.estimate.value;
+      
+
+    } 
+      
+
+      
+    
+  };
+  getClosedIssuesEstimates.send();
+
+  return estimate;
 }
 
 
