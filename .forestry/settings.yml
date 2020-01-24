@@ -9,6 +9,8 @@ sections:
   label: stories
   create: all
   match: "**/*"
+  templates:
+  - stories
 - type: directory
   path: _services
   label: Services
