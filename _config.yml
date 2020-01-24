@@ -311,3 +311,28 @@ prose:
               value: "gb"
             - name: "Dansk"
               value: "da"
+    _services:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "icon"
+        field:
+          element: "text"
+          label: "Font Awesome icon"
+      - name: "button"
+        field:
+          element: "text"
+          label: "Navent på knappen der kommer hvis der ikke er en form"
+      - name: "form"
+        field:
+          element: "text"
+          label: "Linket til google form"
+      - name: "form-height"
+        field:
+          element: "text"
+          label: "højden på formen"
+      - name: "internal-link"
+        field:
+          element: "text"
+          label: "Bruges hvis der ikke er en form og linker til en intern side for eksempel /contact/"
