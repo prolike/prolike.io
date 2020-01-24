@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _stories
+  label: stories
+  create: all
+  match: "**/*"
+- type: directory
   path: _services
   label: Services
   create: all
