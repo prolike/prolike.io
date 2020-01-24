@@ -28,7 +28,6 @@ sections:
 - type: jekyll-posts
   label: Posts
   create: all
-  match: "**/*"
   templates:
   - posts
 upload_dir: uploads
@@ -40,6 +39,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: "//app/_site"
+  install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: carolineolivia94/jekyll-plus-plus
   mount_path: "//app"
   working_dir: "//app"
