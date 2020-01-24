@@ -2,46 +2,48 @@
 layout: page
 ---
 
-<div class="container dillyDally">
+<div class="container-fluid dillyDally">
     <div class="row justify-content-center">
 
-        <div class="col-lg-8 col-12">
+        <div class="col-lg-7 col-12">
             <h1>Dilly Dally Time logging</h1>
         </div>
 
         <div class="col-12" id="timereg_form_part1">
             <div class="row justify-content-center">
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <h4>Day of Work <span>*</span></h4>
                     <p>Date</p>
                     <input type="date" name="dayOfWork" value="" required>
                 </div>
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <h4>Start time <span>*</span></h4>
                     <p>HH:MM</p>
                     <input type="time" name="startTime" value="" required>
                 </div>
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <h4>Work Duration <span>*</span></h4>
                     <p>HH:MM</p>
                     <input type="time" name="workDuration" value="" required>
                 </div>
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12 precision">
                     <h4>Related to a GitHub issue <span>*</span></h4>
-                    <input type="radio" name="issue" id="issue_yes" value="yes"> Yes <br>
-                    <input type="radio" name="issue" id="issue_no" value="no"> No <br>
+                    <span class="radio-buttons">
+                    <input type="radio" name="issue" id="issue_yes" value="yes"><p>Yes</p>
+                    <input type="radio" name="issue" id="issue_no" value="no"><p>No</p>
+                </span>
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-8 col-12" id="timereg_form_part2a">
+        <div class="col-lg-7 col-12" id="timereg_form_part2a">
             <div id="relatedToGithubIssue">
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-12 col-12">
                     <select name="githubRepo" required>
                         <option value="">Select a Github repository</option>
                         <option value="prolike/copenhagencoaching.dk">CCC</option>
@@ -65,12 +67,13 @@ layout: page
                         Other repository: <input type="text" name="repo" value=""> <br>
                     </div> -->
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-12 col-12">
                     <h4>Issue number <span>*</span></h4>
+                    <p>Example: #123</p>
                     <input type="text" name="issueNumber" value="" required>
                 </div>
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-12 col-12">
                     <h4>Fixed price</h4>
                     <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue. You only
                         need
@@ -82,17 +85,18 @@ layout: page
                     <input type="time" name="fixedPrice" value="">
                 </div>
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
                 </div>
             </div>
         </div>
 
-        <div class="col-lg-8 col-12" id="timereg_form_part2b">
+        <div class="col-lg-7 col-12" id="timereg_form_part2b">
             <div id="notRelatedToGithubIssue">
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <h4>Category <span>*</span></h4>
+                    <p>Select from the list</p>
                     <select class="dropdown" name="category" required>
                         <option value="" selected="true" disabled>Select category</option>
                         <option value="discussingCustomerAffairs">Discussing customer affairs</option>
@@ -107,12 +111,13 @@ layout: page
                     </select>
                 </div>
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <h4>Describe the issue <span>*</span></h4>
+                    <p>Short explanation of what the issue is about</p>
                     <input type="text" name="issueDescription" value="" required>
                 </div>
 
-                <div class="col-lg-8 col-12">
+                <div class="col-lg-7 col-12">
                     <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
                 </div>
             </div>
