@@ -59,6 +59,9 @@
     .btn {
         width: 50%;
         margin-top: 5vh;
+        &:hover {
+            background: $prolikeyellow;
+        }
     }
 
     span {
