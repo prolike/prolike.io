@@ -8,115 +8,107 @@ layout: page
         <div class="col-lg-8 col-12">
             <h1>Dilly Dally Time logging</h1>
         </div>
+        <form id="timereg_form">
+            <div class="col-12" id="timereg_form_part1">
+                <div class="row justify-content-center">
 
-        <div class="col-12" id="timereg_form_part1">
-            <div class="row justify-content-center">
+                    <div class="col-lg-8 col-12">
+                        <h4>Day of Work <span>*</span></h4>
+                        <p>Date</p>
+                        <input type="date" name="dayOfWork" value="">
+                    </div>
 
-                <div class="col-lg-8 col-12">
-                    <h4>Day of Work <span>*</span></h4>
-                    <p>Date</p>
-                    <input type="date" name="dayOfWork" value="" required>
-                </div>
+                    <div class="col-lg-8 col-12">
+                        <h4>Start time <span>*</span></h4>
+                        <p>HH:MM</p>
+                        <input type="time" name="startTime" value="">
+                    </div>
 
-                <div class="col-lg-8 col-12">
-                    <h4>Start time <span>*</span></h4>
-                    <p>HH:MM</p>
-                    <input type="time" name="startTime" value="" required>
-                </div>
+                    <div class="col-lg-8 col-12">
+                        <h4>Work Duration <span>*</span></h4>
+                        <p>HH:MM</p>
+                        <input type="time" name="workDuration" value="">
+                    </div>
 
-                <div class="col-lg-8 col-12">
-                    <h4>Work Duration <span>*</span></h4>
-                    <p>HH:MM</p>
-                    <input type="time" name="workDuration" value="" required>
-                </div>
-
-                <div class="col-lg-8 col-12">
-                    <h4>Related to a GitHub issue <span>*</span></h4>
-                    <input type="radio" name="issue" id="issue_yes" value="yes"> Yes <br>
-                    <input type="radio" name="issue" id="issue_no" value="no"> No <br>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-8 col-12" id="timereg_form_part2a">
-            <div id="relatedToGithubIssue">
-
-                <div class="col-lg-8 col-12">
-                    <select name="githubRepo" required>
-                        <option value="">Select a Github repository</option>
-                        <option value="prolike/copenhagencoaching.dk">CCC</option>
-                        <option value="prolike/ccc-moodle">CCC Moodle</option>
-                        <option value="prolike/ccc-support">CCC support</option>
-                    </select>
-                </div>
-                <!-- <div class="col-lg-8 col-12">
-                        <h4>Github Repo</h4>
-                        <p>Choose the repository from the list, or type it manually in the format "user/repo"</p>
-                        <input type="radio" name="repo" value="prolike/copenhagencoaching.dk"> CCC <br>
-                        <input type="radio" name="repo" value="prolike/ccc-moodle"> CCC <br>
-                        <input type="radio" name="repo" value="prolike/ccc-support"> CCC <br>
-                        <option value="prolike/cyklingudenalder.dk"> cyklingudenalder.dk</option>
-                        <option value="itmorten/itsystemdesign"> IT System Design</option>
-                        <option value="prolike/dillydally"> Dilly Dally</option>
-                        <option value="republicdomain/republicdomain.dk"> RePublicDomain</option>
-                        <option value="prolike/wteam.dk"> Wteam.dk</option>
-                        <option value="prolike/prolike.io"> Prolike.io</option>
-                        <option value="prolike/champagnekaelderen"> Champagnekaelderen</option>
-                        Other repository: <input type="text" name="repo" value=""> <br>
-                    </div> -->
-
-                <div class="col-lg-8 col-12">
-                    <h4>Issue number <span>*</span></h4>
-                    <input type="text" name="issueNumber" value="" required>
-                </div>
-
-                <div class="col-lg-8 col-12">
-                    <h4>Fixed price</h4>
-                    <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue. You only
-                        need
-                        to
-                        use this optional field if you want to override that default (e.g. to indicate that it
-                        is
-                        free
-                        of charge)</p>
-                    <input type="time" name="fixedPrice" value="">
-                </div>
-
-                <div class="col-lg-8 col-12">
-                    <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
+                    <div class="col-lg-8 col-12">
+                        <h4>Related to a GitHub issue <span>*</span></h4>
+                        <input type="radio" name="githubIssue" id="issue_yes" value="yes"> Yes <br>
+                        <input type="radio" name="githubIssue" id="issue_no" value="no"> No <br>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="col-lg-8 col-12" id="timereg_form_part2b">
-            <div id="notRelatedToGithubIssue">
+            <div class="col-lg-8 col-12" id="timereg_form_part2a">
+                <div id="relatedToGithubIssue">
 
-                <div class="col-lg-8 col-12">
-                    <h4>Category <span>*</span></h4>
-                    <select class="dropdown" name="category" required>
-                        <option value="" selected="true" disabled>Select category</option>
-                        <option value="discussingCustomerAffairs">Discussing customer affairs</option>
-                        <option value="marketing">Marketing</option>
-                        <option value="accountManagement">Account management</option>
-                        <option value="recruitment/Retention">Recruitment/retention</option>
-                        <option value="sales">Sales</option>
-                        <option value="fridaysCodeCafe">Fridays code cafe</option>
-                        <option value="event">Attended an event</option>
-                        <option value="meeting">Meeting</option>
-                        <option value="bookKeeping">Book keeping</option>
-                    </select>
-                </div>
+                    <div class="col-lg-8 col-12">
+                        <select name="githubRepo">
+                            <option value="" hidden selected>Select Github repository</option>
+                            <option value="prolike/copenhagencoaching.dk">CCC</option>
+                            <option value="prolike/ccc-moodle">CCC Moodle</option>
+                            <option value="prolike/ccc-support">CCC support</option>
+                            <option value="prolike/cyklingudenalder.dk"> cyklingudenalder.dk</option>
+                            <option value="itmorten/itsystemdesign"> IT System Design</option>
+                            <option value="prolike/dillydally"> Dilly Dally</option>
+                            <option value="republicdomain/republicdomain.dk"> RePublicDomain</option>
+                            <option value="prolike/wteam.dk"> Wteam.dk</option>
+                            <option value="prolike/prolike.io"> Prolike.io</option>
+                            <option value="prolike/champagnekaelderen"> Champagnekaelderen</option>
+                        </select>
+                    </div>
 
-                <div class="col-lg-8 col-12">
-                    <h4>Describe the issue <span>*</span></h4>
-                    <input type="text" name="issueDescription" value="" required>
-                </div>
+                    <div class="col-lg-8 col-12">
+                        <h4>Issue number <span>*</span></h4>
+                        <input type="text" name="issueNumber" value="">
+                    </div>
 
-                <div class="col-lg-8 col-12">
-                    <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
+                    <div class="col-lg-8 col-12">
+                        <h4>Fixed price</h4>
+                        <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue. You only
+                            need to use this optional field if you want to override that default (e.g. to indicate that
+                            it is free of charge)
+                        </p>
+                        <input type="time" name="fixedPrice" value="">
+                    </div>
+
+                    <div class="col-lg-8 col-12">
+                        <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="col-lg-8 col-12" id="timereg_form_part2b">
+                <div id="notRelatedToGithubIssue">
+
+                    <div class="col-lg-8 col-12">
+                        <h4>Category <span>*</span></h4>
+                        <select class="dropdown" name="category">
+                            <option value="" hidden selected>Select category</option>
+                            <option value="discussingCustomerAffairs">Discussing customer affairs</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="accountManagement">Account management</option>
+                            <option value="recruitment/Retention">Recruitment/retention</option>
+                            <option value="sales">Sales</option>
+                            <option value="fridaysCodeCafe">Fridays code cafe</option>
+                            <option value="event">Attended an event</option>
+                            <option value="meeting">Meeting</option>
+                            <option value="bookKeeping">Book keeping</option>
+                        </select>
+                    </div>
+
+                    <div class="col-lg-8 col-12">
+                        <h4>Describe the issue <span>*</span></h4>
+                        <input type="text" name="issueDescription" value="">
+                    </div>
+
+                    <div class="col-lg-8 col-12">
+                        <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
+                    </div>
+                </div>
+            </div>
+        </form>
     </div>
 </div>
 <script src="/js/dillyDally.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.js"></script>
