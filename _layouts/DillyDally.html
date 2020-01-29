@@ -2,53 +2,43 @@
 layout: page
 ---
 
-<div class="container-fluid dillyDally">
+<div class="container-fluid justify-content-center dillyDally">
     <div class="row justify-content-center">
+        <div class="col-12">
 
-        <div class="col-lg-7 col-12">
-            <h1>Dilly Dally Time logging</h1>
-        </div>
+            <h1>Dilly Dally Time Registration</h1>
 
-        <div class="col-lg-7 col-12">
             <a href="/dd-worklog" data-proofer-ignore>Change a Dilly Dally Worklog</a>
-        </div>
 
-        <form id="timereg_form">
-            <div class="col-12" id="timereg_form_part1">
-                <div class="row justify-content-center">
+            <form id="timereg_form">
+                <div id="timereg_form_part1">
 
-                    <div class="col-lg-7 col-12">
-                        <h4>Day of Work <span>*</span></h4>
-                        <p>Date</p>
-                        <input type="date" name="dayOfWork" value="" required>
-                    </div>
+                    <h4>Day of Work <span>*</span></h4>
+                    <p>Date</p>
+                    <input type="date" name="dayOfWork" value="" required>
 
-                    <div class="col-lg-7 col-12">
-                        <h4>Start time <span>*</span></h4>
-                        <p>HH:MM</p>
-                        <input type="time" name="startTime" value="" required>
-                    </div>
+                    <h4>Start time <span>*</span></h4>
+                    <p>HH:MM</p>
+                    <input type="time" name="startTime" value="" required>
 
-                    <div class="col-lg-7 col-12">
-                        <h4>Work Duration <span>*</span></h4>
-                        <p>HH:MM</p>
-                        <input type="time" name="workDuration" value="" required>
-                    </div>
+                    <h4>End time <span>*</span></h4>
+                    <p>HH:MM</p>
+                    <input type="time" name="endTime" value="" required>
 
-                    <div class="col-lg-7 col-12" precision>
+                    <div precision>
                         <h4>Related to a GitHub issue <span>*</span></h4>
                         <span class="radio-buttons">
-                            <input type="radio" name="githubIssue" id="issue_yes" value="yes"> Yes <br>
-                            <input type="radio" name="githubIssue" id="issue_no" value="no"> No <br>
+                            <input type="radio" name="githubIssue" id="issue_yes" value="yes">
+                            <p> Yes</p> <br>
+                            <input type="radio" name="githubIssue" id="issue_no" value="no">
+                            <p> No </p><br>
                         </span>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12" id="timereg_form_part2a">
-                <div id="relatedToGithubIssue" class="row justify-content-center">
+                <div id="timereg_form_part2a">
+                    <div id="relatedToGithubIssue">
 
-                    <div class="col-lg-7 col-12">
                         <select name="githubRepo" required>
                             <option value="" hidden selected>Select Github repository</option>
                             <option value="prolike/copenhagencoaching.dk">CCC</option>
@@ -62,36 +52,25 @@ layout: page
                             <option value="prolike/prolike.io"> Prolike.io</option>
                             <option value="prolike/champagnekaelderen"> Champagnekaelderen</option>
                         </select>
-                    </div>
 
-                    <div class="col-lg-7 col-12">
                         <h4>Issue number <span>*</span></h4>
                         <p>Example: #123</p>
                         <input type="text" name="issueNumber" value="" required>
-                    </div>
 
-                    <div class="col-lg-7 col-12">
                         <h4>Fixed price</h4>
-                        <div>
-                            <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue. You only
-                                need to use this optional field if you want to override that default (e.g. to indicate
-                                that
-                                it is free of charge)
-                            </p>
-                        </div>
+                        <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue.
+                            <br>You only need to use this optional field if you want to override that default
+                            <br>(e.g. to indicate that it is free of charge)
+                        </p>
                         <input type="time" name="fixedPrice" value="">
-                    </div>
 
-                    <div class="col-lg-7 col-12">
                         <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12" id="timereg_form_part2b">
-                <div id="notRelatedToGithubIssue" class="row justify-content-center">
+                <div id="timereg_form_part2b">
+                    <div id="notRelatedToGithubIssue">
 
-                    <div class="col-lg-7 col-12">
                         <h4>Category <span>*</span></h4>
                         <p>Select from the list</p>
                         <select class="dropdown" name="category" required>
@@ -106,20 +85,16 @@ layout: page
                             <option value="meeting">Meeting</option>
                             <option value="bookKeeping">Book keeping</option>
                         </select>
-                    </div>
 
-                    <div class="col-lg-7 col-12">
                         <h4>Describe the issue <span>*</span></h4>
                         <p>Short explanation of what the issue is about</p>
                         <input type="text" name="issueDescription" value="" required>
-                    </div>
 
-                    <div class="col-lg-7 col-12">
                         <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
                     </div>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 </div>
 <script src="/js/dillyDally.js"></script>

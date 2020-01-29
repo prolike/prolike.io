@@ -1,6 +1,6 @@
 ---
 title: Dilly Dally
 layout: dd-worklog
-navigation: true
+navigation: false
 order: 6
 ---
