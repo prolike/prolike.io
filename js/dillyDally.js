@@ -46,8 +46,23 @@ function validate(element) {
 }
 
 function submitform(data) {
-    var fields = Object.assign({}, ...data.map(item => ({ [item.name]: item.value, })));
-    var workhours = '{"type": "workhours", "fields" : ' + JSON.stringify(fields) + ' }';
+    let result = {};
+    $.each(data, function () {
+        var type = document.getElementsByName(this.name)[0].type;
+        var value = document.getElementsByName(this.name)[0].value;
+
+        if (type === "number") {
+            if (value === "") {
+                result[this.name] = 0;
+            } else {
+                result[this.name] = Number(this.value) ? Number(this.value) : this.value;
+            }
+        } else {
+            result[this.name] = this.value
+        }
+    });
+
+    let workhours = '{"type": "workhours", "fields" : ' + JSON.stringify(result) + ' }';
 
     axios({
         method: 'post',

@@ -13,17 +13,13 @@ layout: page
             <form id="timereg_form">
                 <div id="timereg_form_part1">
 
-                    <h4>Day of Work <span>*</span></h4>
-                    <p>Date</p>
-                    <input type="date" name="dayOfWork" value="" required>
-
                     <h4>Start time <span>*</span></h4>
                     <p>HH:MM</p>
-                    <input type="time" name="startTime" value="" required>
+                    <input type="datetime-local" name="startTime" value="" required>
 
                     <h4>End time <span>*</span></h4>
                     <p>HH:MM</p>
-                    <input type="time" name="endTime" value="" required>
+                    <input type="datetime-local" name="endTime" value="" required>
 
                     <div precision>
                         <h4>Related to a GitHub issue <span>*</span></h4>
@@ -54,8 +50,8 @@ layout: page
                         </select>
 
                         <h4>Issue number <span>*</span></h4>
-                        <p>Example: #123</p>
-                        <input type="text" name="issueNumber" value="" required>
+                        <p>Example: 123</p>
+                        <input type="number" name="issueNumber" value="" required>
 
                         <h4>Fixed price</h4>
                         <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue.
