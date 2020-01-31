@@ -5,14 +5,15 @@ $(function () {
         if ($(this).val() == "yes") {
             $("#timereg_form_part2a").show();
             $("#timereg_form_part2b").hide();
+            $(':input:not(:button)', $("#timereg_form_part2b")).val('')
         }
         else if ($(this).val() == "no") {
-            $("#timereg_form_part2a").hide();
             $("#timereg_form_part2b").show();
+            $("#timereg_form_part2a").hide();
+            $(':input:not(:button)', $("#timereg_form_part2a")).val('')
         }
     });
 });
-
 function validatePart2a() {
     let form1 = validate("timereg_form_part1");
     let form2 = validate("timereg_form_part2a")
