@@ -1,14 +1,14 @@
 $(function () {
-    $("#notRelatedToGithubIssue").hide();
-    $("#relatedToGithubIssue").hide();
+    $("#timereg_form_part2a").hide();
+    $("#timereg_form_part2b").hide();
     $("input[type='radio'][name='githubIssue']").change(function () {
         if ($(this).val() == "yes") {
-            $("#relatedToGithubIssue").show();
-            $("#notRelatedToGithubIssue").hide();
+            $("#timereg_form_part2a").show();
+            $("#timereg_form_part2b").hide();
         }
         else if ($(this).val() == "no") {
-            $("#notRelatedToGithubIssue").show();
-            $("#relatedToGithubIssue").hide();
+            $("#timereg_form_part2a").hide();
+            $("#timereg_form_part2b").show();
         }
     });
 });
@@ -46,10 +46,6 @@ function validate(element) {
 
 function submitform(data) {
     let doc_id = document.getElementById('doc_id').value;
-    // var fields = Object.assign({}, ...data.map(item => ({ [item.name]: item.value, })));
-    // var workhours = '{"type": "workhours", "fields" : ' + JSON.stringify(fields) + ' }';
-    // console.log(doc_id);
-    // console.log(workhours);
     let result = {};
     $.each(data, function () {
         var type = document.getElementsByName(this.name)[0].type;
@@ -67,7 +63,7 @@ function submitform(data) {
     });
 
     let workhours = '{"type": "workhours", "fields" : ' + JSON.stringify(result) + ' }';
-    console.log(workhours);
+
     axios({
         method: 'put',
         url: 'https://us-central1-dillydally-stage.cloudfunctions.net/api/' + doc_id,
@@ -78,10 +74,34 @@ function submitform(data) {
         }
     })
         .then((res) => {
-            console.log(res.status + " " + res.statusText); // Todo synglig fejlhåndtering i frontend
+            if (res.status === 200) {
+                let div = document.createElement('div');
+                div.className = "success";
+                div.innerHTML = "<strong>Worklog updated!</strong>";
+                document.getElementById("success").append(div);
+                setTimeout(function () {
+                    div.style.display = 'none';
+                }, 3000);
+            } else {
+                let div = document.createElement('div');
+                div.className = "error";
+                div.innerHTML = "<strong>Ups... Worklog not updated.</strong>";
+                document.getElementById("error").append(div);
+                setTimeout(function () {
+                    div.style.display = 'none';
+                }, 3000);
+            }
         })
         .catch((error) => {
-            console.log(error.message);
+            if (error) {
+                let div = document.createElement('div');
+                div.className = "error";
+                div.innerHTML = "<strong>Ups... Worklog not added to time registration!</strong>";
+                document.getElementById("error").append(div);
+                setTimeout(function () {
+                    div.style.display = 'none';
+                }, 3000);
+            }
         });
 }
 

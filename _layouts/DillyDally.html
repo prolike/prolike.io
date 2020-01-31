@@ -33,66 +33,83 @@ layout: page
                 </div>
 
                 <div id="timereg_form_part2a">
-                    <div id="relatedToGithubIssue">
 
-                        <select name="githubRepo" required>
-                            <option value="" hidden selected>Select Github repository</option>
-                            <option value="prolike/copenhagencoaching.dk">CCC</option>
-                            <option value="prolike/ccc-moodle">CCC Moodle</option>
-                            <option value="prolike/ccc-support">CCC support</option>
-                            <option value="prolike/cyklingudenalder.dk"> cyklingudenalder.dk</option>
-                            <option value="itmorten/itsystemdesign"> IT System Design</option>
-                            <option value="prolike/dillydally"> Dilly Dally</option>
-                            <option value="republicdomain/republicdomain.dk"> RePublicDomain</option>
-                            <option value="prolike/wteam.dk"> Wteam.dk</option>
-                            <option value="prolike/prolike.io"> Prolike.io</option>
-                            <option value="prolike/champagnekaelderen"> Champagnekaelderen</option>
-                        </select>
+                    <select name="githubRepo" required>
+                        <option value="" hidden selected>Select Github repository</option>
+                        <option value="prolike/copenhagencoaching.dk">CCC</option>
+                        <option value="prolike/ccc-moodle">CCC Moodle</option>
+                        <option value="prolike/ccc-support">CCC support</option>
+                        <option value="prolike/cyklingudenalder.dk"> cyklingudenalder.dk</option>
+                        <option value="itmorten/itsystemdesign"> IT System Design</option>
+                        <option value="prolike/dillydally"> Dilly Dally</option>
+                        <option value="republicdomain/republicdomain.dk"> RePublicDomain</option>
+                        <option value="prolike/wteam.dk"> Wteam.dk</option>
+                        <option value="prolike/prolike.io"> Prolike.io</option>
+                        <option value="prolike/champagnekaelderen"> Champagnekaelderen</option>
+                    </select>
 
-                        <h4>Issue number <span>*</span></h4>
-                        <p>Example: 123</p>
-                        <input type="number" name="issueNumber" value="" required>
+                    <h4>Issue number <span>*</span></h4>
+                    <p>Example: 123</p>
+                    <input type="number" name="issueNumber" value="" required>
 
-                        <h4>Fixed price</h4>
-                        <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue.
-                            <br>You only need to use this optional field if you want to override that default
-                            <br>(e.g. to indicate that it is free of charge)
-                        </p>
-                        <input type="time" name="fixedPrice" value="">
+                    <h4>Fixed price</h4>
+                    <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue.
+                        <br>You only need to use this optional field if you want to override that default
+                        <br>(e.g. to indicate that it is free of charge)
+                    </p>
+                    <input type="time" name="fixedPrice" value="">
 
-                        <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
-                    </div>
+                    <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
                 </div>
 
                 <div id="timereg_form_part2b">
-                    <div id="notRelatedToGithubIssue">
 
-                        <h4>Category <span>*</span></h4>
-                        <p>Select from the list</p>
-                        <select class="dropdown" name="category" required>
-                            <option value="" hidden selected>Select category</option>
-                            <option value="discussingCustomerAffairs">Discussing customer affairs</option>
-                            <option value="marketing">Marketing</option>
-                            <option value="accountManagement">Account management</option>
-                            <option value="recruitment/Retention">Recruitment/retention</option>
-                            <option value="sales">Sales</option>
-                            <option value="fridaysCodeCafe">Fridays code cafe</option>
-                            <option value="event">Attended an event</option>
-                            <option value="meeting">Meeting</option>
-                            <option value="bookKeeping">Book keeping</option>
-                        </select>
+                    <h4>Category <span>*</span></h4>
+                    <p>Select from the list</p>
+                    <select class="dropdown" name="category" required>
+                        <option value="" hidden selected>Select category</option>
+                        <option value="discussingCustomerAffairs">Discussing customer affairs</option>
+                        <option value="marketing">Marketing</option>
+                        <option value="accountManagement">Account management</option>
+                        <option value="recruitment/Retention">Recruitment/retention</option>
+                        <option value="sales">Sales</option>
+                        <option value="fridaysCodeCafe">Fridays code cafe</option>
+                        <option value="event">Attended an event</option>
+                        <option value="meeting">Meeting</option>
+                        <option value="bookKeeping">Book keeping</option>
+                    </select>
 
-                        <h4>Describe the issue <span>*</span></h4>
-                        <p>Short explanation of what the issue is about</p>
-                        <input type="text" name="issueDescription" value="" required>
+                    <h4>Describe the issue <span>*</span></h4>
+                    <p>Short explanation of what the issue is about</p>
+                    <input type="text" name="issueDescription" value="" required>
 
-                        <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
-                    </div>
+                    <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
                 </div>
             </form>
+
+            <div id="error"></div>
+            <div id="success"></div>
+
         </div>
     </div>
 </div>
+<style>
+    .error {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: red;
+        background-color: #dff0d8;
+    }
+
+    .success {
+        padding: 15px;
+        border: 1px solid #d6e9c6;
+        border-radius: 4px;
+        color: #3c763d;
+        background-color: #dff0d8;
+    }
+</style>
 <script src="/js/dillyDally.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.js"></script>

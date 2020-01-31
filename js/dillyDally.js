@@ -1,14 +1,14 @@
 $(function () {
-    $("#notRelatedToGithubIssue").hide();
-    $("#relatedToGithubIssue").hide();
+    $("#timereg_form_part2a").hide();
+    $("#timereg_form_part2b").hide();
     $("input[type='radio'][name='githubIssue']").change(function () {
         if ($(this).val() == "yes") {
-            $("#relatedToGithubIssue").show();
-            $("#notRelatedToGithubIssue").hide();
+            $("#timereg_form_part2a").show();
+            $("#timereg_form_part2b").hide();
         }
         else if ($(this).val() == "no") {
-            $("#notRelatedToGithubIssue").show();
-            $("#relatedToGithubIssue").hide();
+            $("#timereg_form_part2a").hide();
+            $("#timereg_form_part2b").show();
         }
     });
 });
@@ -74,10 +74,34 @@ function submitform(data) {
         }
     })
         .then((res) => {
-            console.log(res.status + " " + res.statusText); // Todo synglig fejlhåndtering i frontend
+            if (res.status === 200) {
+                let div = document.createElement('div');
+                div.className = "success";
+                div.innerHTML = "<strong>Worklog added to time registration!</strong>";
+                document.getElementById("success").append(div);
+                setTimeout(function () {
+                    div.style.display = 'none';
+                }, 3000);
+            } else {
+                let div = document.createElement('div');
+                div.className = "error";
+                div.innerHTML = "<strong>Ups... Worklog not added to time registration.</strong>";
+                document.getElementById("error").append(div);
+                setTimeout(function () {
+                    div.style.display = 'none';
+                }, 3000);
+            }
         })
         .catch((error) => {
-            console.log(error.message);
+            if (error) {
+                let div = document.createElement('div');
+                div.className = "error";
+                div.innerHTML = "<strong>Ups... Worklog not added to time registration!</strong>";
+                document.getElementById("error").append(div);
+                setTimeout(function () {
+                    div.style.display = 'none';
+                }, 3000);
+            }
         });
 }
 
