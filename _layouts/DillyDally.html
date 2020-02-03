@@ -10,10 +10,10 @@ layout: page
 
             <a href="/dd-worklog" data-proofer-ignore>Change a Dilly Dally Worklog</a>
 
-            <form id="timereg_form">
-                <div id="timereg_form_part1">
+            <form id="timereg_form_post">
+                <div id="timereg_form1">
 
-                    <h4>Email<span>*</span></h4>
+                    <h4>Email <span>*</span></h4>
                     <p>prolike@prolike.io</p>
                     <input type="email" name="workerId" value="" required>
 
@@ -36,7 +36,7 @@ layout: page
                     </div>
                 </div>
 
-                <div id="timereg_form_part2a">
+                <div id="timereg_form2a">
 
                     <h4>Select Github repository<span>*</span></h4>
                     <select name="githubRepo" required>
@@ -64,10 +64,12 @@ layout: page
                     </p>
                     <input type="time" name="fixedPrice" value="">
 
-                    <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
+                    <input class="input btn" type="button" value="Submit"
+                        onclick="validatePostForm('timereg_form_post', 'timereg_form1', 'timereg_form2a')">
+
                 </div>
 
-                <div id="timereg_form_part2b">
+                <div id="timereg_form2b">
 
                     <h4>Category <span>*</span></h4>
                     <p>Select from the list</p>
@@ -88,7 +90,8 @@ layout: page
                     <p>Short explanation of what the issue is about</p>
                     <input type="text" name="issueDescription" value="" required>
 
-                    <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
+                    <input class="input btn" type="button" value="Submit"
+                        onclick="validatePostForm('timereg_form_post', 'timereg_form1', 'timereg_form2b')">
                 </div>
             </form>
 

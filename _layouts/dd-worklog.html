@@ -10,16 +10,16 @@ layout: page
 
             <a href="/dillyDally" data-proofer-ignore>Create Dilly Dally Worklog</a>
 
-            <h4>Worklog ID<span>*</span></h4>
+            <h4>Worklog ID <span>*</span></h4>
             <p>ID</p>
             <input type="text" id="doc_id" value="" required>
 
-            <form id="timereg_form">
-                <div id="timereg_form_part1">
+            <form id="timereg_form_put">
+                <div id="timereg_form1">
 
-                    <h4>Email<span>*</span></h4>
+                    <h4>Email <span>*</span></h4>
                     <p>prolike@prolike.io</p>
-                    <input type="email" name="worker_id" value="" required>
+                    <input type="email" name="workerId" value="" required>
 
                     <h4>Start time <span>*</span></h4>
                     <p>HH:MM</p>
@@ -40,9 +40,9 @@ layout: page
                     </div>
                 </div>
 
-                <div id="timereg_form_part2a">
+                <div id="timereg_form2a">
 
-                    <h4>Select Github repository<span>*</span></h4>
+                    <h4>Select Github repository <span>*</span></h4>
                     <select name="githubRepo" required>
                         <option value="" hidden selected>Select Github repository</option>
                         <option value="prolike/copenhagencoaching.dk">CCC</option>
@@ -68,12 +68,11 @@ layout: page
                     </p>
                     <input type="time" name="fixedPrice" value="">
 
-                    <div id="error" class="error"></div>
-
-                    <input class="input btn" type="button" value="Submit" onclick="validatePart2a()">
+                    <input class="input btn" type="button" value="Submit"
+                        onclick="validatePutForm('timereg_form_put', 'timereg_form1', 'timereg_form2a')">
                 </div>
 
-                <div id="timereg_form_part2b">
+                <div id="timereg_form2b">
 
                     <h4>Category <span>*</span></h4>
                     <p>Select from the list</p>
@@ -94,9 +93,8 @@ layout: page
                     <p>Short explanation of what the issue is about</p>
                     <input type="text" name="issueDescription" value="" required>
 
-                    <div id="error" class="error"></div>
-
-                    <input class="input btn" type="button" value="Submit" onclick="validatePart2b()">
+                    <input class="input btn" type="button" value="Submit"
+                        onclick="validatePutForm('timereg_form_put', 'timereg_form1', 'timereg_form2b')">
                 </div>
             </form>
 
@@ -109,6 +107,6 @@ layout: page
         </div>
     </div>
 </div>
-<script src="/js/dd-worklog.js"></script>
+<script src="/js/dillyDally.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.js"></script>
