@@ -48,7 +48,7 @@ function validate(element) {
     return allAreFilled;
 }
 
-function postForm(data) {
+function convertNumber(data) {
     let result = {};
     $.each(data, function () {
         var type = document.getElementsByName(this.name)[0].type;
@@ -64,13 +64,22 @@ function postForm(data) {
             result[this.name] = this.value
         }
     });
+    return result;
+}
+
+function postForm(data) {
+    let result = convertNumber(data);
 
     let workhours = '{"type": "workhours", "fields" : ' + JSON.stringify(result) + ' }';
 
+    postData(workhours);
+}
+
+function postData(data) {
     axios({
         method: 'post',
         url: 'https://us-central1-dillydally-stage.cloudfunctions.net/api',
-        data: workhours,
+        data: data,
         headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
@@ -92,28 +101,20 @@ function postForm(data) {
 
 function putForm(data) {
     let doc_id = document.getElementById('doc_id').value;
-    let result = {};
-    $.each(data, function () {
-        var type = document.getElementsByName(this.name)[0].type;
-        var value = document.getElementsByName(this.name)[0].value;
 
-        if (type === "number") {
-            if (value === "") {
-                result[this.name] = 0;
-            } else {
-                result[this.name] = Number(this.value) ? Number(this.value) : this.value;
-            }
-        } else {
-            result[this.name] = this.value
-        }
-    });
+    let result = convertNumber(data);
 
     let workhours = '{"type": "workhours", "fields" : ' + JSON.stringify(result) + ' }';
 
+    putData(doc_id, workhours);
+}
+
+
+function putData(id, data) {
     axios({
         method: 'put',
-        url: 'https://us-central1-dillydally-stage.cloudfunctions.net/api/' + doc_id,
-        data: workhours,
+        url: 'https://us-central1-dillydally-stage.cloudfunctions.net/api/' + id,
+        data: data,
         headers: {
             'Content-Type': 'application/json',
             'Access-Control-Allow-Origin': '*'
