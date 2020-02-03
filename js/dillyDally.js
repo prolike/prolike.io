@@ -15,21 +15,16 @@ $(function () {
     });
 });
 
-function validatePostForm(form, form1, form2) {
+function validateForms(method, form1, form2) {
     form1 = validate(form1)
     form2 = validate(form2)
 
     if (form1 && form2) {
-        postForm($('#' + form).serializeArray())
-    }
-}
-
-function validatePutForm(form, form1, form2) {
-    form1 = validate(form1)
-    form2 = validate(form2)
-
-    if (form1 && form2) {
-        putForm($('#' + form).serializeArray())
+        if (method === 'post') {
+            postForm($('#timereg_form_post').serializeArray())
+        } else if (method === 'put') {
+            putForm($('#timereg_form_put').serializeArray())
+        }
     }
 }
 
@@ -92,10 +87,8 @@ function postData(data) {
                 error();
             }
         })
-        .catch((error) => {
-            if (error) {
-                error();
-            }
+        .catch(() => {
+            error();
         });
 }
 
@@ -127,10 +120,8 @@ function putData(id, data) {
                 error();
             }
         })
-        .catch((error) => {
-            if (error) {
-                error();
-            }
+        .catch(() => {
+            error();
         });
 }
 
