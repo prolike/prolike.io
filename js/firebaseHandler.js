@@ -4,18 +4,16 @@ $(document).ready(function() {
 
 
 var isSet = false;
-var localUser;
 var token;
 
 function init() {
-    console.log("init")
     if (isSet === false) {
         isSet = true;
         firebase.auth().onAuthStateChanged(this.onAuthStateChanged.bind(this));
     }
 };
 
-function onAuthStateChanged(user) {
+async function onAuthStateChanged(user) {
     if (user) {
         console.log("Signing in successfully");
         var email = user.email
@@ -24,19 +22,14 @@ function onAuthStateChanged(user) {
             alert("Not a prolike account!! LOGGING OUT ")
             signOut()
         } else {
-            localUser = user;
-            console.log("setting localUser")
-            token = firebase.auth().currentUser.getIdToken().then(function(token) {
-                return token
-            })
-            setEmail(user.email)
-            if (
-                window.location.pathname === "/ddlogin/") {
+            token = await firebase.auth().currentUser.getIdToken()
+            setEmail(user.email) //Setting email for email-field document in dillyDally.js
+            if (window.location.pathname === "/ddlogin/") 
+            {
                 window.location.replace("/DillyDally");
             }
         }
     } else {
-        localUser = undefined;
         if (
             window.location.pathname === "/DillyDally/") {
             window.location.replace("/ddlogin");
@@ -59,8 +52,6 @@ function signOut() {
 };
 
 function getToken() {
-    console.log("getting token")
-    console.log(token)
     return token;
 }
 

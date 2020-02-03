@@ -16,7 +16,6 @@ $(function() {
 
 
 function setEmail(email) {
-
     $(document).ready(function() {
         // executes when HTML-Document is loaded and DOM is ready
         document.getElementById("email").value = email;
@@ -81,7 +80,6 @@ function postForm(data) {
 
 function postData(data) {
     var token = getToken()
-    console.log(token)
     axios({
             method: 'post',
             url: 'https://us-central1-dillydally-stage.cloudfunctions.net/api',
