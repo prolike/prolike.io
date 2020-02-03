@@ -29,9 +29,7 @@ function onAuthStateChanged(user) {
             token = firebase.auth().currentUser.getIdToken().then(function(token) {
                 return token
             })
-            console.log("asd" + token)
-
-            document.getElementById("email").value = user.email;
+            setEmail(user.email)
             if (
                 window.location.pathname === "/ddlogin/") {
                 window.location.replace("/DillyDally");
