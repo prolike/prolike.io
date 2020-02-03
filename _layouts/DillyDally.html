@@ -1,30 +1,24 @@
 ---
 layout: page
 ---
-
 <div class="container-fluid justify-content-center dillyDally">
     <div class="row justify-content-center">
         <div class="col-12">
-
             <h1>Dilly Dally Time Registration</h1>
-
+            <br>
             <a href="/dd-worklog" data-proofer-ignore>Change a Dilly Dally Worklog</a>
-
+            <button id="signOut" onclick="signOut()">Sign out</button>
             <form id="timereg_form_post">
                 <div id="timereg_form1">
-
                     <h4>Email <span>*</span></h4>
                     <p>prolike@prolike.io</p>
-                    <input type="email" name="workerId" value="" required>
-
+                    <input id="email" type="email" name="workerId" value="" required disabled>
                     <h4>Start time <span>*</span></h4>
                     <p>HH:MM</p>
                     <input type="datetime-local" name="startTime" value="" required>
-
                     <h4>End time <span>*</span></h4>
                     <p>HH:MM</p>
                     <input type="datetime-local" name="endTime" value="" required>
-
                     <div precision>
                         <h4>Related to a GitHub issue <span>*</span></h4>
                         <span class="radio-buttons">
@@ -35,9 +29,7 @@ layout: page
                         </span>
                     </div>
                 </div>
-
                 <div id="timereg_form2a">
-
                     <h4>Select Github repository<span>*</span></h4>
                     <select name="githubRepo" required>
                         <option value="" hidden selected>Select Github repository</option>
@@ -52,25 +44,25 @@ layout: page
                         <option value="prolike/prolike.io"> Prolike.io</option>
                         <option value="prolike/champagnekaelderen"> Champagnekaelderen</option>
                     </select>
-
                     <h4>Issue number <span>*</span></h4>
                     <p>Example: 123</p>
                     <input type="number" name="issueNumber" value="" required>
-
                     <h4>Fixed price</h4>
                     <p>(hh:MM) Default is, that the work will billed as per the estimate on the issue.
                         <br>You only need to use this optional field if you want to override that default
                         <br>(e.g. to indicate that it is free of charge)
                     </p>
                     <input type="time" name="fixedPrice" value="">
+<<<<<<< HEAD
 
                     <input class="input btn" type="button" value="Submit"
                         onclick="validateForms('post', 'timereg_form1', 'timereg_form2a')">
 
+=======
+                    <input class="input btn" type="button" value="Submit" onclick="validatePostForm('timereg_form_post', 'timereg_form1', 'timereg_form2a')">
+>>>>>>> close #489 create google login for dilly dally
                 </div>
-
                 <div id="timereg_form2b">
-
                     <h4>Category <span>*</span></h4>
                     <p>Select from the list</p>
                     <select class="dropdown" name="category" required>
@@ -85,25 +77,26 @@ layout: page
                         <option value="meeting">Meeting</option>
                         <option value="bookKeeping">Book keeping</option>
                     </select>
-
                     <h4>Describe the issue <span>*</span></h4>
                     <p>Short explanation of what the issue is about</p>
                     <input type="text" name="issueDescription" value="" required>
+<<<<<<< HEAD
 
                     <input class="input btn" type="button" value="Submit"
                         onclick="validateForms('post', 'timereg_form1', 'timereg_form2b')">
+=======
+                    <input class="input btn" type="button" value="Submit" onclick="validatePostForm('timereg_form_post', 'timereg_form1', 'timereg_form2b')">
+>>>>>>> close #489 create google login for dilly dally
                 </div>
             </form>
-
             <div id="error"></div>
             <div id="success"></div>
-
-            <a href="https://docs.google.com/spreadsheets/d/10k8uATJTUOXLzXvobd53wXwwZkza0w099NHDmdYXVH4/edit#gid=0"
-                target="_blank" data-proofer-ignore>Link til Dilly Dally Google Sheet</a>
-
+            <a href="https://docs.google.com/spreadsheets/d/10k8uATJTUOXLzXvobd53wXwwZkza0w099NHDmdYXVH4/edit#gid=0" target="_blank" data-proofer-ignore>Link til Dilly Dally Google Sheet</a>
         </div>
     </div>
 </div>
+
 <script src="/js/dillyDally.js"></script>
+<script src="/js/firebaseHandler.js"></script>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/3.0.0/fetch.js"></script>

@@ -126,3 +126,28 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </head>
+
+<script src="/js/firebaseHandler.js"></script>
+
+<!-- Firebase plugins -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+<!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+<!-- Add Firebase products that you want to use -->
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+<script>
+// TODO: Replace the following with your app's Firebase project configuration
+var firebaseConfig = {
+    "apiKey": "AIzaSyAhQJHhUI7Plc7Y_LFXeX8nrjJsFhKlHcw",
+    "projectId": "dillydally-stage",
+    "authDomain": "dillydally-stage.firebaseapp.com",
+    "apiURL": "https://europe-west1-dillydally-stage.cloudfunctions.net/api/",
+    "databaseURL": "https://dillydally-stage.firebaseio.com",
+    "databaseLocation": "eur3 (europe-west)"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+</script>
