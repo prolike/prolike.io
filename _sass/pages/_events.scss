@@ -9,25 +9,17 @@
     grid-column-gap: 5vh;
     grid-row-gap: 5vh;
 
-    .events-image {
-
+    img {
         width: 100%;
     }
-    .events-image.bottom {
-        object-position: bottom;
-    }
 
-    
-    .events-image.top {
-        object-position: top;
-    }
+
 
     h2 {
         font-size: 3.5vh;
         line-height: 5.5vh;
         color: $black;
         padding: 0 0 0vh 0;
-        text-transform: uppercase;
         font-weight: 700;
         font-family: 'Oswald', sans-serif;
         transition: .15s all ease-in-out;
