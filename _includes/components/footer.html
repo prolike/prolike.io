@@ -18,33 +18,38 @@
 {%if include.caption%}{{include.caption}}<p>{%else%}add "caption=your caption here" to the include<p>{%endif%}
     {% endcapture %}
 
-<footer>
-  <hr>
-  <div class="left">
-    <h1>Are <a class="yellow-text" href="/stories/flow/">you</a> our next aqquantince?<br>Talk to us about your <a class="yellow-text" href="mailto:hey@prolike.io?Subject=Hello%20again">next project</a> ideas,<br> or come <a class="yellow-text" href="/contact/">swing by</a> for a chat!</h1>
-    <span>
-      {% assign sorted_navi = site.pages | sort: 'order' %}
-      {% for page in sorted_navi %}
-      {% if page.navigation == true %}
-      <li><a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a></li>
-      {% endif %}
-      {% endfor %}
-      <!-- <li><a href="#" data-proofer-ignore>Partners</a></li> -->
-    </span>
-  </div>
+    <footer>
+      <hr>
+      <div class="left">
+        <h1>Are <a class="yellow-text" href="/stories/flow/">you</a> our next acquantince?<br>Talk to us about your <a
+            class="yellow-text" href="mailto:hey@prolike.io?Subject=Hello%20again">next project</a> ideas,<br> or come
+          <a class="yellow-text" href="/contact/">swing by</a> for a chat!</h1>
+        <span>
+          {% assign sorted_navi = site.pages | sort: 'order' %}
+          {% for page in sorted_navi %}
+          {% if page.navigation == true %}
+          <li><a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a></li>
+          {% endif %}
+          {% endfor %}
+          <!-- <li><a href="#" data-proofer-ignore>Partners</a></li> -->
+        </span>
+      </div>
 
-  <div class="right">
-    <a href="https://twitter.com/prolike_io" target="_blank" data-proofer-ignore><i class="fab fa-twitter"></i></a>
-    <a href="#" target="_blank" data-proofer-ignore><i class="fab fa-facebook-square"></i></a>
-    <a href="https://www.instagram.com/prolike_io/" target="_blank" data-proofer-ignore><i class="fab fa-instagram"></i></a>
-    <a href="https://github.com/prolike" target="_blank" data-proofer-ignore><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/company/prolike/" target="_blank" data-proofer-ignore><i class="fab fa-linkedin-in"></i></a>
-    <span>
-      <li><a href="https://goo.gl/maps/Esji6p1mx7x" target="_blank">Allerød Stationsvej 4, 3450 Allerød</a></li>
-      <li><a href="https://www.proff.dk/firma/prolike-ivs/aller%C3%B8d/internetdesign-og-programmering/GXD3UTI0C2C/" target="_blank">VAT NUMBER: 39464104</a></li>
-      <li><a href="mailto:hey@prolike.io?Subject=Hello%20again" target="_blank">hey@prolike.io</a></li>
-      <li><a href="tel:+45 20 872 530">20 87 25 30</a></li>
-    </span>
-    <p>© 2019 Prolike. All rights reserved.</p>
-  </div>
-</footer>
+      <div class="right">
+        <a href="https://twitter.com/prolike_io" target="_blank" data-proofer-ignore><i class="fab fa-twitter"></i></a>
+        <a href="#" target="_blank" data-proofer-ignore><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/prolike_io/" target="_blank" data-proofer-ignore><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://github.com/prolike" target="_blank" data-proofer-ignore><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/company/prolike/" target="_blank" data-proofer-ignore><i
+            class="fab fa-linkedin-in"></i></a>
+        <span>
+          <li><a href="https://goo.gl/maps/Esji6p1mx7x" target="_blank">Allerød Stationsvej 4, 3450 Allerød</a></li>
+          <li><a href="https://www.proff.dk/firma/prolike-ivs/aller%C3%B8d/internetdesign-og-programmering/GXD3UTI0C2C/"
+              target="_blank">VAT NUMBER: 39464104</a></li>
+          <li><a href="mailto:hey@prolike.io?Subject=Hello%20again" target="_blank">hey@prolike.io</a></li>
+          <li><a href="tel:+45 20 872 530">20 87 25 30</a></li>
+        </span>
+        <p>© 2019 Prolike. All rights reserved.</p>
+      </div>
+    </footer>
