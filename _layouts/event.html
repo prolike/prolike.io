@@ -46,7 +46,7 @@ layout: page
 
         <span class="event-id" style="display: none;">{{ page.event-id }}</span>
 
-        {% include components/buttons.html %}
+        
         {% if posttime > nowunix %}
 
         <h3 class="event-heading">Buy a ticket</h3>
@@ -58,6 +58,6 @@ layout: page
                 marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
         </div>
         {% endif %}
-
+        {% include components/buttons.html %}
     </div>
 </div>
