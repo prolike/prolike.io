@@ -3,11 +3,24 @@
     width: 100%;
     padding: 16.5vh 20vh 10vh 20vh;
 
+    h3.status-heading {
+        background-color: $prolikeblue;
+        display: inline-block;
+        color: white;
+        padding: 1.5vh 1.5vh 1.7vh 1.5vh;
+        margin: 0 0 2vh 0;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2vh;
+        text-transform: uppercase;
+        letter-spacing: .5vh;
+    }
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 5vh;
     grid-row-gap: 5vh;
+    margin-bottom: 5vh;
 
     img {
         width: 100%;

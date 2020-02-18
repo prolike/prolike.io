@@ -3,37 +3,83 @@ layout: page
 ---
 
 <div class="events-container">
+  <h3 class="status-heading">Upcoming events:</h3>
   <div class="wrapper">
-{% assign sorted_events = site.events | sort: "date" | reverse %}
+
+    {% assign sorted_events = site.events | sort: "date" | reverse %}
+ 
+
+    {% assign curDate = site.time | date: '%s' %}
     {% for event in sorted_events %}
-    {% if event.lang == "gb" %}
-    <a href="{{ event.url }}">
-      <div class="events-boks">
-
-        <img class="events-image {{ event.image-position }}" src="{{ event.image }}" alt="{{ event.title }}">
-        <h3 class="events-date">{{ event.date | date: "%d %B %Y" }}</h3>
-
-        <h2 class="events-heading">
-          {% capture nowunix %}
-          {{ 'now' | date: '%s' | plus: 0 }}
-          {% endcapture %}
-          {% capture posttime %}
-          {{ event.date | date: '%s' | plus: 86400 }}
-          {% endcapture %}
-          {% capture datepassed %}
-          {{ event.date | date: '%s' | plus: 172800 }}
-          {% endcapture %}
-          {% if posttime < nowunix %}
-          <span>Past:</span>
-          {% endif %}
-          {{ event.title }}
-
-        </h2>
-        <p>{{ event.description }}.</p>
-        <h3>Read more</h3>
+        {% assign postStartDate = event.date | date: '%s' %}
+        {% if postStartDate >= curDate %}
+        {% if event.lang == "gb" %}
+        <a href="{{ event.url }}">
+          <div class="events-boks">
+    
+            <img class="events-image {{ event.image-position }}" src="{{ event.image }}" alt="{{ event.title }}">
+            <h3 class="events-date">{{ event.date | date: "%d %B %Y" }}</h3>
+    
+            <h2 class="events-heading">
+              {% capture nowunix %}
+              {{ 'now' | date: '%s' | plus: 0 }}
+              {% endcapture %}
+              {% capture posttime %}
+              {{ event.date | date: '%s' | plus: 86400 }}
+              {% endcapture %}
+              {% capture datepassed %}
+              {{ event.date | date: '%s' | plus: 172800 }}
+              {% endcapture %}
+              {% if posttime < nowunix %}
+              <span>Past:</span>
+              {% endif %}
+              {{ event.title }}
+    
+            </h2>
+            <p>{{ event.description }}.</p>
+            <h3>Read more</h3>
+          </div>
+        </a>
+        {% endif %}
+        {% endif %}
+    {% endfor %}
       </div>
-    </a>
-    {% endif %}
+      <h3 class="status-heading">Past events:</h3>
+      <div class="wrapper">
+
+    {% for event in sorted_events %}
+        {% assign postStartDate = event.date | date: '%s' %}
+        {% if postStartDate >= curDate %}
+        {% else %}
+        {% if event.lang == "gb" %}
+        <a href="{{ event.url }}">
+          <div class="events-boks">
+    
+            <img class="events-image {{ event.image-position }}" src="{{ event.image }}" alt="{{ event.title }}">
+            <h3 class="events-date">{{ event.date | date: "%d %B %Y" }}</h3>
+    
+            <h2 class="events-heading">
+              {% capture nowunix %}
+              {{ 'now' | date: '%s' | plus: 0 }}
+              {% endcapture %}
+              {% capture posttime %}
+              {{ event.date | date: '%s' | plus: 86400 }}
+              {% endcapture %}
+              {% capture datepassed %}
+              {{ event.date | date: '%s' | plus: 172800 }}
+              {% endcapture %}
+              {% if posttime < nowunix %}
+              <span>Past:</span>
+              {% endif %}
+              {{ event.title }}
+    
+            </h2>
+            <p>{{ event.description }}.</p>
+            <h3>Read more</h3>
+          </div>
+        </a>
+        {% endif %}
+        {% endif %}
     {% endfor %}
   </div>
 </div>
