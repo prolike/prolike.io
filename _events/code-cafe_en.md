@@ -13,7 +13,7 @@ lang-id: '42'
 lang: gb
 ---
 
-The event is sponsored by Prolike so it’s free to attend. Light breakfast, coffee during the day and lunch included. We might even go of for ar beer or two in the evening.
+The event is sponsored by Prolike so it’s free to attend. Light breakfast, coffee during the day and lunch included. We might even go for a beer or two in the evening.
 
 ### What are we going to code?
 
