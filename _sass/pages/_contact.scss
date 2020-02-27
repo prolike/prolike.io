@@ -7,7 +7,8 @@
     h1 {
         font-size: 5vh;
         color: white;
-        font-family: 'Bebas Neue', cursive;
+        //font-family: 'Bebas Neue', cursive;
+        font-weight: bold;
         margin: 0;
         margin-bottom: 5vh;
     }
@@ -52,7 +53,8 @@
         input[type=submit] {
             background: transparent;
             width: auto;
-            font-family: 'Bebas Neue', cursive;
+            //font-family: 'Bebas Neue', cursive;
+            font-weight: bold;
             color: white;
             border: none;
             font-size: 4vh;

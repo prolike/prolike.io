@@ -9,10 +9,10 @@
         color: white;
         padding: 1.5vh 1.5vh 1.7vh 1.5vh;
         margin: 0 0 2vh 0;
-        font-family: 'Oswald', sans-serif;
+        //font-family: 'Oswald', sans-serif;
         font-size: 2vh;
-        text-transform: uppercase;
-        letter-spacing: .5vh;
+        font-weight: bold;
+        //letter-spacing: .5vh;
     }
 
 .wrapper {
@@ -42,7 +42,6 @@
         padding: 0;
         margin: 10px 0 0 0;
         color: $black;
-        text-transform: uppercase;
         font-weight: 600;
         color: $prolikeyellow;
         font-family: 'Oswald', sans-serif;

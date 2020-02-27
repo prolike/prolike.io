@@ -3,7 +3,7 @@
     width: 100%;
     padding: 20vh 10vh 15vh 10vh;
     background: $prolikeblue;
-    font-family: 'Bebas Neue';
+    //font-family: 'Bebas Neue';
         .board-link {
             display: grid;
             grid-template-columns: 1fr;
@@ -15,7 +15,6 @@
                 margin: 5vh 0;
                 place-items: center;
                 font-size: 5vh;
-                text-transform: uppercase;
                 font-weight: 600;
                 color: white;
                 text-decoration: none;

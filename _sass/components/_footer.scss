@@ -5,7 +5,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    font-family: 'Bebas Neue', cursive;
+    //font-family: 'Bebas Neue', cursive;
 
     hr {
         height: 1.5px;
@@ -17,8 +17,9 @@ footer {
 
     h1 {
         color: $white;
-        font-size: 5vh;
-        line-height: 1;
+        //font-size: 5vh;
+        //line-height: 1;
+        font-weight: bold;
         padding-bottom: 5vh;
         user-select: none;
     }
@@ -43,8 +44,9 @@ footer {
 
         a {
             color: $white;
-            font-size: 3.5vh;
+            font-size: 3vh;
             margin-right: 3.5vh;
+            font-weight: bold;
 
             &:hover {
                 text-decoration: none;
@@ -69,7 +71,7 @@ footer {
 
         span li a {
             color: $white;
-            font-size: 3vh;
+            font-size: 2.5vh;
             line-height: 1.25;
 
             &:hover {
