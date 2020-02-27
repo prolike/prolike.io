@@ -13,7 +13,7 @@
 
 // Fonts
 
-@import url(https://fonts.googleapis.com/css?family=Anton|Montserrat:300,300i,400,400i,500,700,700i|Oswald);
+// @import url(https://fonts.googleapis.com/css?family=Anton|Montserrat:300,300i,400,400i,500,700,700i|Oswald);
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap');
 
 @mixin serif-font() {
@@ -25,9 +25,9 @@
   font-weight: 300;
 }
 
-@mixin caption-font() {
-  font-family: 'Oswald', sans-serif;
-}
+// @mixin caption-font() {
+//   font-family: 'Oswald', sans-serif;
+// }
 
 @mixin title-font() {
   font-family: 'Montserrat', sans-serif;
