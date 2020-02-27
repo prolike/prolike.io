@@ -31,9 +31,3 @@ Kom og lær en helt enkel metode til at afgøre om teknolgi eller software virke
 I denne techfast er vi inviteret ind i Winning Team's intense serie af _morgenbriefs_ som afholdes i Direktionens _board room_ på Kongens Nytorv. Start dagen med en udsigt over det nyrenoverede torv, mens solen står op over Nyhavn. Det er måske Københavns smukkeste mødelokale.
 
 **Der vil være kaffe og crossainter. Der er begrænset plads, så tilmelding er nødvendig.**
-
-
-# test
-## test
-### test
-#### test

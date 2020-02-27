@@ -15,24 +15,27 @@ footer {
         margin-top: 0;
     }
 
-    h1 {
+    h3 {
         color: $white;
         //font-size: 5vh;
         //line-height: 1;
         font-weight: bold;
         padding-bottom: 5vh;
+        font-size: 3vh;
         user-select: none;
-    }
 
-    .yellow-text {
-        color: $prolikeyellow !important;
-        font-size: 5vh !important;
-        margin: 0 !important;
-
-        &:hover {
-            text-decoration: none;
+        .yellow-text {
+            color: $prolikeyellow !important;
+            margin: 0 !important;
+            font-size: 3vh !important;
+    
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
+
+    
 
     .left {
         padding-top: 10vh;
@@ -121,7 +124,7 @@ footer {
 
             a {
                 color: $white;
-                font-size: 5vh;
+                
             }
         }
 

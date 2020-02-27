@@ -19,7 +19,7 @@
         grid-row-gap: 0.5vh;
 
         .event-banner-img {
-            min-height: 65vh;
+           
 
             svg {
                 border-radius: 50%;
@@ -33,14 +33,18 @@
 
 
         }
+        .event-image-outer {
+            height: 600px;
+            margin-bottom: 5vh;
 
-        .event-image {
-            object-fit: cover;
-            width: 100%;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            .event-image {
+                object-fit: cover;
+                height: 100%;
+                width: 100%;
+            }
         }
+
+        
 
         .event-image.bottom {
             object-position: bottom;
@@ -184,6 +188,10 @@
 
         height: 390px !important;
         width: 100%;
+    }
+
+    .event-image-outer {
+        height: 250px !important;
     }
 
 }

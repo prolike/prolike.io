@@ -28,8 +28,10 @@ layout: page
                 {% endif %}
                 {% endif%}
                 {% endfor %}
+                <div class="event-image-outer">
 
                 <img class="event-image {{ page.image-position }}" src="{{ page.image }}" alt="{{ page.title }}">
+            </div>
             </div>
 
             <h3 class="edate"><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h3>
@@ -53,7 +55,7 @@ layout: page
 
         {% endif %}
        
-        <h3 class="event-heading">{{ ticket_mes }}</h3>
+        <h3>{{ ticket_mes }}</h3>
         
       
         {% if posttime > nowunix %}
