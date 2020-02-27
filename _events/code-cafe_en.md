@@ -11,6 +11,7 @@ time: '09:00 - 16:00'
 image-position: top
 lang-id: '42'
 lang: gb
+show-on-list: true
 ---
 
 The event is sponsored by Prolike so it’s free to attend. Light breakfast, coffee during the day and lunch included. We might even go for a beer or two in the evening.

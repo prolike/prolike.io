@@ -10,6 +10,7 @@ description: >-
 time: '08:00 - 10:00'
 image-position: top
 lang: dk
+show-on-list: true
 ---
 
 Tech til morgenmaden - Skal vi virkelig alle _digital transformere?_ - Virker det uoverskueligt? Kom og få en ny vinkel, måske skal vi bare forstå og omfavne de muligheder som verden tilbyder, altså _digital accellerere_

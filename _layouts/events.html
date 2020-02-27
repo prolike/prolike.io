@@ -13,7 +13,8 @@ layout: page
     {% for event in sorted_events %}
         {% assign postStartDate = event.date | date: '%s' %}
         {% if postStartDate >= curDate %}
-        {% if event.lang == "gb" %}
+        {% if event.show-on-list %}
+       
         <a href="{{ event.url }}">
           <div class="events-boks">
     
@@ -40,7 +41,7 @@ layout: page
             <h3>Read more</h3>
           </div>
         </a>
-        {% endif %}
+       {% endif %}
         {% endif %}
     {% endfor %}
       </div>
@@ -49,9 +50,10 @@ layout: page
 
     {% for event in sorted_events %}
         {% assign postStartDate = event.date | date: '%s' %}
+        {% if event.show-on-list %}
         {% if postStartDate >= curDate %}
+        
         {% else %}
-        {% if event.lang == "gb" %}
         <a href="{{ event.url }}">
           <div class="events-boks">
     
@@ -78,6 +80,7 @@ layout: page
             <h3>Read more</h3>
           </div>
         </a>
+
         {% endif %}
         {% endif %}
     {% endfor %}
