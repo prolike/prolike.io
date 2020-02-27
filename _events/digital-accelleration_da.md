@@ -16,7 +16,7 @@ show-on-list: true
 Tech til morgenmaden - Skal vi virkelig alle _digital transformere?_ - Virker det uoverskueligt? Kom og få en ny vinkel, måske skal vi bare forstå og omfavne de muligheder som verden tilbyder, altså _digital accellerere_
 {: .kicker}
 
-> *__"Software is Eating the World"__*
+> Software is Eating the World
 
 _[Artikel](https://a16z.com/2011/08/20/why-software-is-eating-the-world/){: target="_blank"} af investor Marc Andreessen, i The Wall Street Journal, August 2011_
 {: .quote_reference}

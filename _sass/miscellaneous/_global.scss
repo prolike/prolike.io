@@ -17,6 +17,50 @@ body {
   }
 }
 
+
+
+blockquote {
+  padding:0;
+  margin:0;
+  quotes: "“" "”";
+  color: #646464;
+  line-height: normal;
+  margin-bottom: -2vh;
+  margin-top: -3vh;
+}
+
+blockquote:before {
+  content: open-quote;
+  font-size: 2em;
+  vertical-align: -0.4em;
+  padding-bottom: 1vh;
+  
+}
+
+blockquote:after {
+  content: open-quote;
+  display: inline-block;
+  font-size: 2em;
+  padding-top: 1vh;
+  transform: rotate(180deg);
+}
+blockquote p {
+  display: inline;
+  font-style: italic;
+  font-weight: bold;
+  padding:0;
+  margin: 0;
+}
+
+.quote_reference {
+  font-size: 1.5vh;
+}
+
+.quote_reference {
+  content: "-";
+  
+}
+
 .section-heading {
   margin-top: 0;
 }
