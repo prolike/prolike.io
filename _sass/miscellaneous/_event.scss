@@ -20,77 +20,77 @@
 
         .event-banner-img {
             min-height: 65vh;
-            //margin-bottom: 40px;
 
             svg {
                 border-radius: 50%;
             }
         }
 
+        .resp-iframe {
 
-    
-    .resp-iframe {
-
-        height: 340px;
-        width: 100%;
-
-       
-    }
-
-    .event-image {
-        object-fit: cover;
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-    }
-
-    .event-image.bottom {
-        object-position: bottom;
-    }
-
-    .event-image.top {
-        object-position: top;
-    }
-
-    h2 {
-        font-size: 4vh;
-        line-height: 5.5vh;
-        color: $black;
-        padding: 0 0 .5vh 0;
-        font-weight: 700;
-        font-family: 'Oswald', sans-serif;
-        transition: .15s all ease-in-out;
-    }
-
-    h3 {
-        font-size: 2.9vh;
-        padding: 0;
-        margin: 1.5vh 0 0 0;
-        font-weight: 600;
-        color: $prolikeyellow;
-        font-family: 'Oswald', sans-serif;
-        transition: .15s all ease-in-out;
-    }
+            height: 340px;
+            width: 100%;
 
 
+        }
 
-        h4 {
-            font-size: 2vh;
-            opacity: 0.5;
-            padding: 0;
-            margin: 1.5vh 0 1.5vh 0;
-            font-weight: 600;
-            font-family: 'Oswald', sans-serif;
+        .event-image {
+            object-fit: cover;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .event-image.bottom {
+            object-position: bottom;
+        }
+
+        .event-image.top {
+            object-position: top;
+        }
+
+        h1, h2, h3, h4 {
+            font-weight: bold;
+        }
+
+        h2 {
+            //font-size: 4vh;
+            // color: $black;
+            //font-family: 'Oswald', sans-serif;
             transition: .15s all ease-in-out;
         }
 
+        h3 {
+            // font-size: 2.9vh;
+            // color: $prolikeyellow;
+            //font-family: 'Oswald', sans-serif;
+            transition: .15s all ease-in-out;
+        }
 
+        .edate {
+            color: $prolikeyellow;
+            font-size: 2.2vh;
+            margin-top: 1.5vh;
+        }
 
+        h4 {
+            // font-size: 2vh;
+            // font-family: 'Oswald', sans-serif;
+            transition: .15s all ease-in-out;
+        }
+
+        .timloc {
+            font-size: 2vh;
+            opacity: 0.5;
+
+            // font-family: 'Oswald', 'sans-serif';
+        }
 
         a {
             color: black;
             font-weight: 500;
+            opacity: 0.5;
         }
 
         a:hover {
@@ -156,7 +156,7 @@
 
     }
 
-   
+
 
 
 }
@@ -164,15 +164,15 @@
 @media only screen and (max-width: 1200px) {
 
     .event-container {
-      
+
         .wrapper {
-         width: 100%;
+            width: 100%;
 
         }
 
     }
 
-   
+
 
 
 }
@@ -182,7 +182,7 @@
 @media only screen and (max-width: 650px) {
     .resp-iframe {
 
-        height:390px !important;
+        height: 390px !important;
         width: 100%;
     }
 
@@ -191,4 +191,3 @@
 .js-d-track-event-links {
     background-color: white;
 }
-

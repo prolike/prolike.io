@@ -32,11 +32,11 @@ layout: page
                 <img class="event-image {{ page.image-position }}" src="{{ page.image }}" alt="{{ page.title }}">
             </div>
 
-            <h3><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h3>
-            <h4><i class="far fa-clock"></i> {{ page.time }} <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h4>
+            <h3 class="edate"><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h3>
+            <h4 class="timloc"><i class="far fa-clock"></i> {{ page.time }} <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h4>
 
 
-            <h2 class="event-heading">{% if posttime < nowunix %}Past: {% endif %}{{ page.title }}</h2>
+            <h1 class="event-heading">{% if posttime < nowunix %}Past: {% endif %}{{ page.title }}</h1>
 
             {{ page.content }}
 
