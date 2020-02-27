@@ -22,18 +22,6 @@ layout: page
             <h3 class="events-date">{{ event.date | date: "%d %B %Y" }}</h3>
     
             <h2 class="events-heading">
-              {% capture nowunix %}
-              {{ 'now' | date: '%s' | plus: 0 }}
-              {% endcapture %}
-              {% capture posttime %}
-              {{ event.date | date: '%s' | plus: 86400 }}
-              {% endcapture %}
-              {% capture datepassed %}
-              {{ event.date | date: '%s' | plus: 172800 }}
-              {% endcapture %}
-              {% if posttime < nowunix %}
-              <span>Past:</span>
-              {% endif %}
               {{ event.title }}
     
             </h2>
@@ -61,18 +49,6 @@ layout: page
             <h3 class="events-date">{{ event.date | date: "%d %B %Y" }}</h3>
     
             <h2 class="events-heading">
-              {% capture nowunix %}
-              {{ 'now' | date: '%s' | plus: 0 }}
-              {% endcapture %}
-              {% capture posttime %}
-              {{ event.date | date: '%s' | plus: 86400 }}
-              {% endcapture %}
-              {% capture datepassed %}
-              {{ event.date | date: '%s' | plus: 172800 }}
-              {% endcapture %}
-              {% if posttime < nowunix %}
-              <span>Past:</span>
-              {% endif %}
               {{ event.title }}
     
             </h2>

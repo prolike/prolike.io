@@ -46,10 +46,19 @@ layout: page
 
         <span class="event-id" style="display: none;">{{ page.event-id }}</span>
 
+        {% if page.lang == "dk" %}
+        {% assign ticket_mes = "Få en billet" %}
+        {% else %}
+        {% assign ticket_mes = "Get a ticket" %}
+
+        {% endif %}
+       
+        <h3 class="event-heading">{{ ticket_mes }}</h3>
         
+      
         {% if posttime > nowunix %}
 
-        <h3 class="event-heading">Get a ticket</h3>
+        
 
 
         <div class="resp-container">
@@ -57,6 +66,18 @@ layout: page
                 src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
                 marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
         </div>
+        {% else %}
+
+        {% if page.lang == "dk" %}
+        {% assign no_event_mes = "Der er ingen billetter, da eventet har været afholdt" %}
+        {% else %}
+        {% assign no_event_mes = "There is no tickets, because the event already has been executed" %}
+
+        {% endif %}
+        <div class="no-event">
+            <p>{{ no_event_mes }}.</p>
+        </div>
+       
         {% endif %}
         {% include components/buttons.html %}
     </div>
