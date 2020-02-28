@@ -28,25 +28,21 @@
             color: #a3b4cc;
         }
 
-        h5 {
-            font-size: 3vh;
+        h2 {
             line-height: 5.5vh;
             color: $white;
             font-weight: 700;
-            // font-family: 'Oswald', sans-serif;
             transition: .15s all ease-in-out;
         }
 
         .tags {
             color: $prolikeyellow;
             font-size: 15px;
-            // font-family: 'Oswald', sans-serif;
             text-decoration: none;
             margin-right: 1vh;
         }
 
         p {
-            font-size: 1.7vh;
             color: $white;
             line-height: 1.5;
         }
@@ -63,10 +59,8 @@
     padding: 5vh 0 7.5vh 0;
 
     h1 {
-        // font-size: 4vh;
         font-weight: bold;
         color: white;
-        //font-family: 'Bebas Neue', cursive;
         margin: 0;
         margin-bottom: 2.5vh;
     }
@@ -95,15 +89,21 @@
     }
 }
 
+// @media only screen and (max-width: 1024px) {
+//     .posts-container {
+//         padding: 5vh 2vh 5vh 5vh;
+//     }
+// }
+
 /* Small devices (phones, 768px and down) */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
 
     .posts-container {
-        padding: 15vh 2vh 10vh 2vh;
+        padding: 10vh 2vh 10vh 2vh;
 
         .anything-overview h1 {
-            font-size: 35px;
+            // font-size: 35px;
         }
 
         .wrapper {
@@ -117,18 +117,17 @@
         .card-body {
             padding: 10px 0;
 
-            h5 {
-                font-size: 25px;
+            h2 {
                 line-height: 35px;
                 padding: 5px 0;
             }
 
             p {
-                font-size: 14px;
+                font-size: 2em;
             }
 
             .tags {
-                font-size: 15px;
+                // font-size: 15px;
 
                 p {
                     max-width: 100%;
@@ -146,9 +145,9 @@
     .posts-container {
         padding: 15vh 2vh 10vh 2vh;
 
-        .anything-overview h1 {
-            font-size: 35px;
-        }
+        // .anything-overview h1 {
+        //     font-size: 35px;
+        // }
 
         .wrapper {
             grid-template-columns: 1fr;
@@ -162,7 +161,6 @@
             padding: 10px 0;
 
             h5 {
-                font-size: 25px;
                 line-height: 35px;
                 padding: 5px 0;
             }

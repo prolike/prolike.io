@@ -11,6 +11,12 @@
   padding: 0 20vh;
 }
 
+@media only screen and (max-width: 1024px) {
+  @mixin page-side-padding() {
+    padding: 0 5vh;
+  }
+}
+
 // Fonts
 
 // @import url(https://fonts.googleapis.com/css?family=Anton|Montserrat:300,300i,400,400i,500,700,700i|Oswald);
