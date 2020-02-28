@@ -36,7 +36,7 @@
         // font-family: 'Oswald', sans-serif;
         transition: .15s all ease-in-out;
     }
-    h3 {
+    h4 {
         // font-size: 2vh;
         padding: 0;
         margin: 10px 0 0 0;
@@ -85,7 +85,7 @@
         padding: 15vh 2vh 10vh 2vh;
 
         .wrapper {
-            grid-template-columns: 1fr;
+            grid-template-columns: 1fr 1fr;
         }
 
         .events-image {
@@ -97,3 +97,17 @@
 
    
 }
+
+@media only screen and (max-width: 600px) {
+    .events-container {
+
+        .wrapper {
+            grid-template-columns: 1fr;
+        }
+
+       
+
+
+    }
+ }
+
