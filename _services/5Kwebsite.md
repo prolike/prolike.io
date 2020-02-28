@@ -11,7 +11,7 @@ internal-link: /contact/
 
 For 4995 kr you'll get a fully kitted website with the content you desire.
 
-##### what you'll get:
+### what you'll get:
  - A responive site that works in every browser, on every device
  - Free hosting! We'll host it for you, free of charge
  - A design of your own choice. You can choose one down below or [contact us](/contact/) and we can talk about making a custom design
@@ -26,7 +26,7 @@ To get started all we need is for you to do two simple things
 
 And that is all you need to get started! Once the website is done and you're happy, we'll release it into the world.
 
-##### We recomend these templates
+### We recomend these templates
 
  - [Forty](https://andrewbanchich.gitlab.io/forty-jekyll-theme/){: target="_blank"}
 

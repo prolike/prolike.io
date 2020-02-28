@@ -6,6 +6,10 @@
 
     ul {
         padding-left: 30px !important;
+
+        li {
+            font-size: 2em;
+        }
     }
 
     .row {
@@ -121,13 +125,14 @@
 
 @media only screen and (max-width: 1024px) {
     .services {
-        padding: 20vh 0vh;
+        padding: 10vh 0vh;
     }
     .service {
-        padding: 10vh 5vh;
+        padding: 5vh 0vh;
 
         ul {
             padding-left: 30px !important;
+            font-size: 1.5em;
         }
 
         .pop {
