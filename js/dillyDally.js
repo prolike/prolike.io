@@ -157,11 +157,3 @@ function error() {
     }, 3000);
 }
 
-/// Required radio button
-// if (element.type === "radio") {
-//     let radioValueCheck = false;
-//     document.getElementById("timereg_form_part2b").querySelectorAll(`[name=${element.name}]`).forEach(function (radio) {
-//         if (radio.checked) radioValueCheck = true;
-//     })
-//     allAreFilled = radioValueCheck;
-// }

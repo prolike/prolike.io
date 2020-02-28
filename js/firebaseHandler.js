@@ -47,7 +47,6 @@ function signIn() {
 function signOut() {
     console.log("signing out")
     firebase.auth().signOut();
-    // clear the __session cookie
     document.cookie = '__session=';
 };
 
@@ -56,41 +55,3 @@ function getToken() {
 }
 
 
-
-
-// // Does an authenticated request to a Firebase Functions endpoint using an Authorization header.
-// Demo.prototype.startFunctionsRequest = function() {
-//   firebase.auth().currentUser.getIdToken().then(function(token) {
-//     console.log('Sending request to', this.helloUserUrl, 'with ID token in Authorization header.');
-//     var req = new XMLHttpRequest();
-//     req.onload = function() {
-//       this.responseContainer.innerText = req.responseText;
-//     }.bind(this);
-//     req.onerror = function() {
-//       this.responseContainer.innerText = 'There was an error';
-//     }.bind(this);
-//     req.open('GET', this.helloUserUrl, true);
-//     req.setRequestHeader('Authorization', 'Bearer ' + token);
-//     req.send();
-//   }.bind(this));
-// };
-
-// // Does an authenticated request to a Firebase Functions endpoint using a __session cookie.
-// Demo.prototype.startFunctionsCookieRequest = function() {
-//   // Set the __session cookie.
-//   firebase.auth().currentUser.getIdToken(true).then(function(token) {
-//     // set the __session cookie
-//     document.cookie = '__session=' + token + ';max-age=3600';
-
-//     console.log('Sending request to', this.helloUserUrl, 'with ID token in __session cookie.');
-//     var req = new XMLHttpRequest();
-//     req.onload = function() {
-//       this.responseContainerCookie.innerText = req.responseText;
-//     }.bind(this);
-//     req.onerror = function() {
-//       this.responseContainerCookie.innerText = 'There was an error';
-//     }.bind(this);
-//     req.open('GET', this.helloUserUrl, true);
-//     req.send();
-//   }.bind(this));
-// };

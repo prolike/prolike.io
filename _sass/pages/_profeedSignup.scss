@@ -23,7 +23,6 @@
         list-style-type: none;
 
         label {
-          //  display: inline;
             padding-left: 15px;
             text-indent: -15px;
           }
@@ -103,8 +102,6 @@
     .submit {
         grid-area: submit;
         justify-content: center;
-
-        // font-family: 'Oswald', sans-serif;
         transition: .15s all ease-in-out;
     }
 

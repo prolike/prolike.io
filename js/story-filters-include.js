@@ -6,7 +6,6 @@ var staticUrl = window.location.hash;
 var hashWithoutHash = staticUrl.replace("#", "");
 var noHashes = hashWithoutHash.replace(/[#]/g, ", ");
 var noDashes = noHashes.replace(/[-]/g, " ");
-// let targetElement = ".page-stories-index p";
 // a simple function that sets up the data that is used to make the filter work as intended
 $(document).ready(function() {
   posts = document.getElementsByClassName("singlePost");
@@ -106,12 +105,7 @@ function updateUrl(filterVar) {
 function restoreDefault() {
   window.location.replace("/stories/");
 }
-/* scrolls to a element that is defined as a let targetElement
-function scrollToElement(destination){
-  var body = $("html, body");
-  var scrollTo = $(destination).offset().top;
-  body.stop().animate({scrollTop: scrollTo }, '200', 'swing');
-} */
+
 
 // removes all posts before adding the posts which reflect users filter choice
 function readyPostArea() {

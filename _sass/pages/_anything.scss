@@ -89,11 +89,7 @@
     }
 }
 
-// @media only screen and (max-width: 1024px) {
-//     .posts-container {
-//         padding: 5vh 2vh 5vh 5vh;
-//     }
-// }
+
 
 /* Small devices (phones, 768px and down) */
 
@@ -102,9 +98,7 @@
     .posts-container {
         padding: 10vh 2vh 10vh 2vh;
 
-        .anything-overview h1 {
-            // font-size: 35px;
-        }
+
 
         .wrapper {
             grid-template-columns: 1fr 1fr;
@@ -127,7 +121,6 @@
             }
 
             .tags {
-                // font-size: 15px;
 
                 p {
                     max-width: 100%;
@@ -144,10 +137,6 @@
 
     .posts-container {
         padding: 15vh 2vh 10vh 2vh;
-
-        // .anything-overview h1 {
-        //     font-size: 35px;
-        // }
 
         .wrapper {
             grid-template-columns: 1fr;
