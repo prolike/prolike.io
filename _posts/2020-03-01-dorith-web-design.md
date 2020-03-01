@@ -99,3 +99,14 @@ Now simply add the link to the stylesheets - like this.
 ```html
 <link href="/css/rouge/syntax.monokai.css" rel="stylesheet" >
 ```
+
+
+To browse sass
+
+```bash
+docker run -it  --rm  --pid=host -v /$(pwd)://app:rw --workdir //app  --publish 80:4000 carolineolivia94/jekyll-plus-plus jekyll serve --config _config.yml,_dev_config.yml,_dev_sass_config.yml
+```
+
+```bash
+sass -I _sass --watch css/prolike/main.scss:_site/css/prolike/main.css --poll
+```
