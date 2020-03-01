@@ -1,0 +1,2 @@
+exclude: [css/prolike, _sass, .sass-cache]
+force_polling: false

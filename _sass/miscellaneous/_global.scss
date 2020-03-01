@@ -7,6 +7,7 @@ html {
 
 body {
   @include serif-font;
+  font-size: normal;
 }
 
 .front {
@@ -43,16 +44,13 @@ h5 {
   font-size: 2vh !important;
 }
 
-
-
 blockquote {
   padding: 0;
   margin: 0;
   quotes: "“""”";
   color: #646464;
   line-height: normal;
-  margin-bottom: -2vh;
-  margin-top: -3vh;
+  font-size: larger;
 }
 
 blockquote:before {
@@ -79,16 +77,19 @@ blockquote p {
   margin: 0;
 }
 
-
+.kicker{
+  font-weight: bold;
+}
 
 .quote_reference {
-  font-size: 1.5vh;
+  font-size: smaller;
 }
 
 .quote_reference {
   content: "-";
 
 }
+
 
 .section-heading {
   margin-top: 0;
