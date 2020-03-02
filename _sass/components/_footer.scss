@@ -18,13 +18,11 @@ footer {
         color: $white;
         font-weight: bold;
         padding-bottom: 5vh;
-        font-size: 3vh;
         user-select: none;
 
         .yellow-text {
             color: $prolikeyellow !important;
             margin: 0 !important;
-            font-size: 3vh !important;
     
             &:hover {
                 text-decoration: none;
@@ -44,7 +42,6 @@ footer {
 
         a {
             color: $white;
-            font-size: 3vh;
             margin-right: 3.5vh;
             font-weight: bold;
 
@@ -60,7 +57,6 @@ footer {
 
         .fab {
             color: $white;
-            font-size: 2.5vh;
             margin-left: 2.5vh;
             padding-bottom: 2.6vh;
         }
@@ -71,7 +67,6 @@ footer {
 
         span li a {
             color: $white;
-            font-size: 2.5vh;
             line-height: 1.25;
 
             &:hover {
@@ -80,7 +75,6 @@ footer {
         }
 
         p {
-            font-size: 2.5vh;
             margin: 0;
             padding: 0;
             padding-top: 2.6vh;
@@ -109,7 +103,6 @@ footer {
         }
 
         h1, .yellow-text{
-            font-size: 4.5vh !important;
             width: 90%;
         }
 
