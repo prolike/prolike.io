@@ -56,6 +56,9 @@ collections:
   services:
     output: true
     permalink: services/:title/
+  gigs:
+    output: true
+    permalink: gigs/:title/
 
 
 defaults:
@@ -99,6 +102,11 @@ defaults:
       type: services
     values:
       layout: services-post
+  -
+    scope:
+      type: gigs
+    values:
+      layout: list
 
 
 
@@ -336,3 +344,12 @@ prose:
         field:
           element: "text"
           label: "Bruges hvis der ikke er en form og linker til en intern side for eksempel /contact/"
+    _gigs:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - status: "status"
+        field:
+          element: "text"
+          label: "status"
