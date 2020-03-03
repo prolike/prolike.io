@@ -24,18 +24,27 @@ body {
     padding: 0 5vh;
   }
 
+  
+
+}
+
+
+@include for-tablet {
+
   h4 {
+    font-size: 1.5em;
+  }
+  h5 {
     font-size: 1.2em;
   }
 }
-
 
 .row {
   margin: 0 -15px;
 }
 
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   @include sans-serif-font;
 }
 
