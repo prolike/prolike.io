@@ -2,3 +2,14 @@
 subpage: list
 layout: page
 ---
+
+<div class="wrapper list-detail">
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <h1>{{ page.title }}</h1>
+            <hr>
+            {{ page.content }}
+        </div>
+    </div>
+    {% include components/buttons.html %}
+</div>
