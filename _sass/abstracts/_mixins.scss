@@ -20,10 +20,18 @@
   }
 }
 
+
+
+
+
+//////////
+
 @mixin no-pad-no-mag() {
   padding: 0;
   margin:0;
 }
+
+
 
 @mixin horizontal-h-list() {
   display: inline;
@@ -47,6 +55,7 @@
   a:hover {
     text-decoration: none;
     color: $prolikeyellow;
+    opacity: 1;
   }
 }
 
@@ -73,15 +82,22 @@
 // paddings
 
 @mixin page-side-padding() {
-  padding: 5vh 20vh;
+  padding: 95px 20vh 50px;
 
 
   @include for-ipad-pro {
-    padding: 5vh 1vh;
+    padding: 95px 2vh 50px;
   }
 }
 
+@mixin small-padding() {
+  padding: 20px 20vh;
 
+
+  @include for-ipad-pro {
+    padding: 20px 2vh;
+  }
+}
 
 
 

@@ -1,3 +1,11 @@
+
+.anything {
+    @include dark-background;
+
+   
+}
+
+
 .posts-container {
     height: auto;
     width: 100%;
@@ -75,97 +83,3 @@
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 
-@media only screen and (max-width: 1500px) {
-
-    .posts-container {
-
-        .wrapper {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-
-        .events-image {
-            height: 30vh;
-        }
-    }
-}
-
-
-
-/* Small devices (phones, 768px and down) */
-
-@media only screen and (max-width: 1024px) {
-
-    .posts-container {
-        padding: 10vh 2vh 10vh 2vh;
-
-
-
-        .wrapper {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        .card-img-top {
-            height: 35vh;
-        }
-
-        .card-body {
-            padding: 10px 0;
-
-            h2 {
-                line-height: 35px;
-                padding: 5px 0;
-            }
-
-            p {
-                font-size: 2em;
-            }
-
-            .tags {
-
-                p {
-                    max-width: 100%;
-                }
-
-            }
-        }
-    }
-}
-
-/* Small devices (phones, 768px and down) */
-
-@media only screen and (max-width: 468px) {
-
-    .posts-container {
-        padding: 15vh 2vh 10vh 2vh;
-
-        .wrapper {
-            grid-template-columns: 1fr;
-        }
-
-        .card-img-top {
-            height: 35vh;
-        }
-
-        .card-body {
-            padding: 10px 0;
-
-            h5 {
-                line-height: 35px;
-                padding: 5px 0;
-            }
-
-            p {
-                font-size: 14px;
-            }
-
-            .tags {
-                font-size: 15px;
-
-                p {
-                    max-width: 100%;
-                }
-
-            }
-        }
-    }
-}
