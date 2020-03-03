@@ -1,0 +1,39 @@
+.list {
+    min-height: 100vh;
+    @include page-side-padding;
+    padding-top: 16.5vh;
+
+
+    .item {
+        margin-top: 1vh;
+        color: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    .todo {
+        background-color: $prolikeblue;
+        box-shadow: 8px 11px 16px -9px rgba(0, 0, 0, 0.8);
+    }
+
+    .doing {
+        background: rgb(26, 34, 54);
+        background: linear-gradient(290deg, $prolikeyellow 49%, $prolikeblue 50%);
+        text-shadow: 0px 0px 5px $prolikeblue;
+        box-shadow: 8px 11px 16px -9px rgba(0, 0, 0, 0.8);
+    }
+
+    .done {
+        background-color: $prolikeyellow;
+        text-shadow: 0px 0px 5px $prolikeblue;
+        box-shadow: 8px 11px 16px -9px rgba(0, 0, 0, 0.8);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .list {
+        min-height: 100vh;
+        @include page-side-padding;
+        padding: 16.5vh 2vh;
+    }
+}

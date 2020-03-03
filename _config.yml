@@ -107,6 +107,11 @@ defaults:
       type: gigs
     values:
       layout: list
+  -
+    scope:
+      type: gigs
+    values:
+      layout: list-detail
 
 
 

@@ -1,7 +1,6 @@
 ---
 title: gig title
-status: todo
-published: false
+status: doing
 ---
 
 this is content
