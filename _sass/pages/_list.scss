@@ -1,7 +1,7 @@
 .list {
     min-height: 100vh;
     @include page-side-padding;
-    padding-top: 16.5vh;
+    padding-top: 100px;
     background-image: url(../images/backgrounds/hand.jpg);
     background-size: cover;
     background-position: center center;
@@ -15,7 +15,7 @@
     .item {
         margin-top: 1vh;
         color: white;
-        padding: 20px;
+        padding: 20px 0;
         border-radius: 10px;
     }
 
@@ -45,13 +45,19 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
     .list {
         min-height: 100vh;
         @include page-side-padding;
-        padding: 16.5vh 2vh;
+        padding: 100px 2vh;
         background-image: url(../images/backgrounds/mb-2.jpg);
         background-size: cover;
         background-position: center center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .section + .section {
+        margin-top: 5vh;
     }
 }

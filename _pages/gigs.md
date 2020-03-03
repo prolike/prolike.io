@@ -2,5 +2,5 @@
 title: Gigs
 layout: list
 navigation: true
-order: 4
+order: 2
 ---
