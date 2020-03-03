@@ -1,5 +1,57 @@
 // Mixins
 
+// Media querries
+
+@mixin for-phone-only() {
+  @media (max-width: 550px) {
+    @content;
+  }
+}
+
+@mixin for-tablet() {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-ipad-pro() {
+  @media ( max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin no-pad-no-mag() {
+  padding: 0;
+  margin:0;
+}
+
+@mixin horizontal-h-list() {
+  display: inline;
+  padding-right: 10px;
+
+  @include for-ipad-pro {
+    font-size: 1em;
+  }
+}
+
+
+@mixin no-dots() {
+  list-style-type: none;
+}
+
+@mixin align-right() {
+  text-align: right;
+}
+
+@mixin no-decoration() {
+  a:hover {
+    text-decoration: none;
+    color: $prolikeyellow;
+  }
+}
+
+// Backgrounds
+
 @mixin background-cover() {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -7,15 +59,32 @@
   background-size: cover;
 }
 
-@mixin page-side-padding() {
-  padding: 0 20vh;
+@mixin dark-background() {
+  background-color: $prolikeblue;
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  @include no-decoration;
 }
 
-@media only screen and (max-width: 1024px) {
-  @mixin page-side-padding() {
-    padding: 0 5vh;
+// paddings
+
+@mixin page-side-padding() {
+  padding: 5vh 20vh;
+
+
+  @include for-ipad-pro {
+    padding: 5vh 1vh;
   }
 }
+
+
+
+
+
 
 // Fonts
 
@@ -27,7 +96,7 @@
 
 @mixin sans-serif-font() {
   font-family: 'Montserrat', sans-serif;
-  font-weight: 300;
+  font-weight: 600;
 }
 
 @mixin title-font() {

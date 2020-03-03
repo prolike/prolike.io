@@ -1,131 +1,57 @@
 footer {
-    padding: 0vh 20vh 10vh 20vh;
-    background: $prolikeblue;
-    color: $white;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    @include page-side-padding;
+    @include dark-background;
+    text-align: left;
 
-    hr {
-        height: 1.5px;
-        background: rgba(107, 125, 153, .15);
-        width: 81%;
-        position: absolute;
-        margin-top: 0;
+    h4 {
+        margin-bottom: 5vh;
     }
 
-    h3 {
-        color: $white;
-        font-weight: bold;
-        padding-bottom: 5vh;
-        user-select: none;
+    .footer-nav-link {
+        @include no-pad-no-mag;
+        @include horizontal-h-list;
+        
+    }
 
-        .yellow-text {
-            color: $prolikeyellow !important;
-            margin: 0 !important;
-    
-            &:hover {
-                text-decoration: none;
-            }
-        }
+    li {
+        @include no-dots;
     }
 
     
-
-    .left {
-        padding-top: 10vh;
-
-        span {
-            display: flex;
-            list-style-type: none;
-        }
-
-        a {
-            color: $white;
-            margin-right: 3.5vh;
-            font-weight: bold;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-    }
-
     .right {
-        text-align: right;
-        padding-top: 10vh;
-
-        .fab {
-            color: $white;
-            margin-left: 2.5vh;
-            padding-bottom: 2.6vh;
-        }
-
-        span {
-            list-style-type: none;
-        }
-
-        span li a {
-            color: $white;
-            line-height: 1.25;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-        p {
-            margin: 0;
-            padding: 0;
-            padding-top: 2.6vh;
-            user-select: none;
-        }
+        @include align-right;
     }
-}
 
-/* Small devices (phones, 768px and down) */
+    .some {
+        letter-spacing: 10px;
+    }
 
-@media (max-width: 1024px) {
-    footer {
-        padding: 0vh 2vh;
-        flex-direction: column;
-
-        br {
-            display: none;
+    @include for-ipad-pro {
+        .footer-nav {
+            @include no-pad-no-mag;
+            
+            
         }
-
-        hr {
-            height: 1.5px;
-            background: rgba(107, 125, 153, .15);
-            width: 60%;
-            position: absolute;
-            margin-top: 0;
-        }
-
-        h1, .yellow-text{
-            width: 90%;
-        }
-
-        .left {
-
-            span {
-                flex-direction: column;
-            }
-
-            a {
-                color: $white;
-                
-            }
-        }
-
+      
+    }
+    
+    @include for-tablet {
+        text-align: center;
         .right {
-            text-align: left;
-            padding: 5vh 0vh 10vh 0vh;
-
-            .fab {
-                margin-right: 2.5vh;
-                margin-left: 0 !important;
-            }
+            text-align: center;
         }
-    }
+        .footer-nav {
+            margin: 0 0 25px 0;
+            
+            
+        }
+        
+      
+      }
+    
+    @include for-phone-only {
+       
+       
+      }
 }
+
