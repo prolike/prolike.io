@@ -2,6 +2,10 @@
     min-height: 100vh;
     @include page-side-padding;
     padding-top: 16.5vh;
+    background-image: url(../images/backgrounds/hand.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 
 
     .item {
@@ -9,6 +13,13 @@
         color: white;
         padding: 20px;
         border-radius: 10px;
+    }
+
+
+    a {
+        width: 100%;
+        color: white;
+        text-decoration: none;
     }
 
     .todo {
@@ -35,5 +46,8 @@
         min-height: 100vh;
         @include page-side-padding;
         padding: 16.5vh 2vh;
+        background-image: url(../images/backgrounds/mb-2.jpg);
+        background-size: cover;
+        background-position: center center;
     }
 }

@@ -16,9 +16,11 @@ layout: page
                         {% for gig in site.gigs %}
                         {% if gig.status == "todo" %}
                         <div class="col-xl-6 col-lg-12">
-                            <div class="col-12 col-offset-1 item todo align-middle">
-                                <h3 class="text-center">{{ gig.title }}</h3>
-                            </div>
+                            <a href="#">
+                                <div class="col-12 col-offset-1 item todo align-middle">
+                                    <h3 class="text-center">{{ gig.title }}</h3>
+                                </div>
+                            </a>
                         </div>
                         {% endif %}
                         {% endfor%}
@@ -36,9 +38,11 @@ layout: page
                     {% for gig in site.gigs %}
                     {% if gig.status == "doing" %}
                     <div class="col-xl-6 col-lg-12">
-                        <div class="col-12 item doing align-middle">
-                            <h3 class="text-center">{{ gig.title }}</h3>
-                        </div>
+                        <a href="#">
+                            <div class="col-12 item doing align-middle">
+                                <h3 class="text-center">{{ gig.title }}</h3>
+                            </div>
+                        </a>
                     </div>
                     {% endif %}
                     {% endfor%}
@@ -54,9 +58,11 @@ layout: page
                     {% for gig in site.gigs %}
                     {% if gig.status == "done" %}
                     <div class="col-xl-6 col-lg-12">
-                        <div class="col-12 item done align-middle">
-                            <h3 class="text-center">{{ gig.title }}</h3>
-                        </div>
+                        <a href="">
+                            <div class="col-12 item done align-middle">
+                                <h3 class="text-center">{{ gig.title }}</h3>
+                            </div>
+                        </a>
                     </div>
                     {% endif %}
                     {% endfor%}
