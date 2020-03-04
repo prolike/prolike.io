@@ -87,12 +87,6 @@ defaults:
       type: events
     values:
       layout: event
-  -
-    scope:
-      type: partners
-    values:
-      layout: partner
-  -
     scope:
       type: services
     values:
@@ -112,6 +106,16 @@ defaults:
       type: gigs
     values:
       layout: list-detail
+  -
+    scope:
+      type: partners
+    values:
+      layout: partners
+  -
+    scope:
+      type: partners
+    values:
+      layout: partner
 
 
 
@@ -358,3 +362,12 @@ prose:
         field:
           element: "text"
           label: "status"
+    _partners:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - logo: "image"
+        field:
+          element: "text"
+          label: "image"

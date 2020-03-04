@@ -79,6 +79,16 @@
   @include no-decoration;
 }
 
+@mixin bg-image {
+  background-image: url(../images/backgrounds/tileable.jpg);
+  background-position: center center;
+
+  @include for-tablet() {
+    background-image: url(../images/backgrounds/mb-2-tileable.jpg);
+    background-position: center center;
+  }
+}
+
 // paddings
 
 @mixin page-side-padding() {
