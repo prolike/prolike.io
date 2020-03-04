@@ -9,6 +9,8 @@ sections:
   label: Gigs
   create: all
   match: "**/*"
+  templates:
+  - gigs
 - type: directory
   path: _stories
   label: stories
