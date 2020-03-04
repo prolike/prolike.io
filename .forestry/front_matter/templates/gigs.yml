@@ -1,0 +1,25 @@
+---
+label: Gigs
+hide_body: false
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+  description: title
+- name: status
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - todo
+    - doing
+    - done
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: status

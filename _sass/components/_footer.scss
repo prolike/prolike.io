@@ -1,6 +1,8 @@
 footer {
-    @include small-padding;
+    @include page-side-padding;
     @include dark-background;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: left;
 
     h4 {
@@ -28,7 +30,7 @@ footer {
 
     @include for-ipad-pro {
         .footer-nav {
-            @include no-pad-no-mag;
+            margin:0;
             
             
         }

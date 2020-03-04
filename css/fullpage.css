@@ -151,6 +151,8 @@
      height: 100%;
      cursor: pointer;
      text-decoration: none;
+     color: #1A2236;
+
  }
  #fp-nav ul li a.active span,
  .fp-slidesNav ul li a.active span,
@@ -160,6 +162,7 @@
      width: 12px;
      margin: -6px 0 0 -6px;
      border-radius: 100%;
+     background-color: #FFC400;
   }
  #fp-nav ul li a span,
  .fp-slidesNav ul li a span {

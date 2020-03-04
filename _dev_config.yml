@@ -38,9 +38,9 @@ incremental: false
 strict_front_matter: true
 
 # How much to render? These all default to false
-show_drafts: false
+show_drafts: true
 
-unpublished: false
+unpublished: true
 
 # Make the machine talk to you
 verbose: false

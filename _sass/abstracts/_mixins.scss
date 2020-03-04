@@ -21,7 +21,11 @@
 }
 
 
-
+@mixin for-laptop() {
+  @media ( max-width: 1300px) {
+    @content;
+  }
+}
 
 
 //////////
@@ -43,6 +47,8 @@
 }
 
 
+
+
 @mixin no-dots() {
   list-style-type: none;
 }
@@ -51,7 +57,7 @@
   text-align: right;
 }
 
-@mixin no-decoration() {
+@mixin yellow-hover() {
   a:hover {
     text-decoration: none;
     color: $prolikeyellow;
@@ -74,30 +80,50 @@
 
   a {
     color: white;
+    opacity: 1;
+    &:hover {
+      color: white;
+    }
   }
 
-  @include no-decoration;
+}
+
+@mixin bg-image {
+  background-image: url(../images/backgrounds/tileable.jpg);
+  background-position: center center;
+
+  @include for-tablet() {
+    background-image: url(../images/backgrounds/mb-2-tileable.jpg);
+    background-position: center center;
+  }
 }
 
 // paddings
 
 @mixin page-side-padding() {
-  padding: 95px 20vh 50px;
+  padding-left: 20vh;
+  padding-right: 20vh;
 
 
-  @include for-ipad-pro {
-    padding: 95px 2vh 50px;
+  
+
+  @include for-laptop {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  @include for-tablet {
+    padding-left: 2vh;
+    padding-right: 2vh;
   }
 }
 
-@mixin small-padding() {
-  padding: 20px 20vh;
-
-
-  @include for-ipad-pro {
-    padding: 20px 2vh;
-  }
+@mixin page-top-bottom-padding() {
+  padding-top: 95px;
+  padding-bottom: 50px;
 }
+
+
 
 
 

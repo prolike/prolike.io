@@ -12,8 +12,10 @@
 @import "components/navigation.scss";
 @import "components/footer.scss";
 @import "components/signup.scss";
-@import "components/related.scss";
 @import "components/boxes.scss";
+@import "components/bootstrap.scss";
+@import "components/article.scss";
+@import "components/iframe.scss";
 
 // Pages: All of our styling for our individual pages
 
@@ -28,6 +30,8 @@
 @import "pages/dillyDally.scss";
 @import "pages/list.scss";
 @import "pages/list-detail.scss";
+@import "pages/partners.scss";
+@import "pages/partner.scss";
 
 // Miscellaneous: All the stuff we can't define just yet
 
@@ -36,5 +40,4 @@
 @import "miscellaneous/forms.scss";
 @import "miscellaneous/customer.scss";
 @import "miscellaneous/boards.scss";
-@import "miscellaneous/event.scss";
 @import "miscellaneous/flags.scss"

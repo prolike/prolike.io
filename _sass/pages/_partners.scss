@@ -1,0 +1,22 @@
+.partners {
+    @include bg-image;
+
+    min-height: 80vh;
+
+    hr {
+        background-color: $prolikeblue;
+    }
+
+    h2 {
+        color: $prolikeblue;
+    }
+
+    .partner {
+        margin-top: 5vh
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

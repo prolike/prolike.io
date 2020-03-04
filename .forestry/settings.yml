@@ -5,6 +5,13 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _gigs
+  label: Gigs
+  create: all
+  match: "**/*"
+  templates:
+  - gigs
+- type: directory
   path: _stories
   label: stories
   create: all
@@ -46,6 +53,7 @@ build:
   preview_env:
   - JEKYLL_ENV=staging
   preview_output_directory: "//app/_site"
+  install_dependencies_command: bundle install --path vendor/bundle
   preview_docker_image: carolineolivia94/jekyll-plus-plus
   mount_path: "//app"
   working_dir: "//app"

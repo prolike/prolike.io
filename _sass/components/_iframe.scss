@@ -1,0 +1,13 @@
+
+    iframe {
+
+        height: 340px;
+        width: 100%;
+
+        @include for-phone-only {
+
+            height: 390px !important;
+            width: 100%;
+
+        }
+    }
