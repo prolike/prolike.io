@@ -1,11 +1,11 @@
 ---
-title: CoDe Café March
+title: CoDe Café
 date: 17. marts 2020
 image: /images/events/code-cafe-march.jpg
 place: 'København, Gastronomisk Innovation, Frederiksborggade 1B'
 event-id: 95217294491
 published: false
-description: Come and code with us!
+description: We will do it again! We are going to repeat the success! So come join us for a day of CoDe. 
 time: '08:00 - 10:00'
 image-position: top
 lang-id: "11"
@@ -13,11 +13,15 @@ lang: gb
 show-on-list: true
 ---
 
+We will do it again! We are going to repeat the success! So come join us for a day of CoDe. 
+
 The event is sponsored by Prolike so it’s free to attend. Light breakfast, coffee during the day and lunch included. We might even go for a beer or two in the evening.
 
-### What are we going to code?
+### Come with a topic
 
-Good question! We have made a [Github repo](https://github.com/code-cafes/code-cafe-mar20/issues){: target="_blank"} containing the issues we are goin to look at. It's Open Source - You can suggest your own topic!
+The theme is Jam-stack. Read more about [here](/anything/we-re-jammin)
+
+Once again we have made a [Github repo](https://github.com/code-cafes/code-cafe-mar20/issues){: target="_blank"} containing the issues we are goin to look at. It's Open Source - You can suggest your own topic!
 
 The more you contribute to the planning: suggest topics, comment topics, indicate your interests… The better we’ll be prepared.
 

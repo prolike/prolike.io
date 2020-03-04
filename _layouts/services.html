@@ -2,40 +2,28 @@
 layout: page
 ---
 
-<div class="services">
+<div class="boxes">
+    <h1>{{ page.title }}</h1>
+    <p>{{page.text}}</p>
 
-    <div class="row">
-        <div class="col-lg-6 col-12">
-            <h1 class="service-heading">{{ page.title }}</h1>
-        </div>
-    </div>
+    <div class="row justify-content-center">
+        <div class="col-8">
+            <div class="row justify-content-center">
 
-    <div class="row">
-        <div class="col-lg-10 col-12 info">
-            <p>{{ page.text }}</p>
-        </div>
-    </div>
-
-    <div class="service-boxes row justify-content-center">
-
-        {% for service in site.services %}
-        {% if service.operational == true %}
-        <div class="col-lg-3 col-md-4 col-12">
-            <a href="{{ service.url }}">
-                <div class="service-box">
-                    <i class="{{ service.icon }} service-icon"></i>
-                    <h4>{{ service.title }}</h4>
+                {% for service in site.services %}
+                {% if service.operational == true %}
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <a href="{{ service.url }}">
+                        <div class="service-box">
+                            <i class="{{ service.icon }} service-icon"></i>
+                            <h4>{{ service.title }}</h4>
+                        </div>
+                    </a>
                 </div>
-            </a>
-        </div>
-        {% endif %}
-        {% endfor %}
-
-    </div>
-
-    <div class="row">
-        <div class="col-12">
-            {% include components/buttons.html %}
+                {% endif %}
+                {% endfor %}
+            </div>
         </div>
     </div>
+    {% include components/buttons.html %}
 </div>

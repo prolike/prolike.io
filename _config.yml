@@ -87,6 +87,7 @@ defaults:
       type: events
     values:
       layout: event
+  -
     scope:
       type: services
     values:

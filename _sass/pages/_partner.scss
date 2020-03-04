@@ -1,37 +1,5 @@
-.partner-detail {
-    @include bg-image;
-    min-height: 80vh;
 
-    img {
-        width: 80%;
-        height: auto;
-        margin-bottom: 5vh;
-        align-content: center;
-    }
-
-    hr {
-        background-color: $prolikeblue;
-    }
-
-    h2 {
-        color: $prolikeblue;
-    }
-
-    .content {
-        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 5%, rgb(255, 255, 255) 95%, rgba(0, 0, 0, 0) 100%);
-    }
-
-    @media only screen and (max-width: 768px) {
-        img {
-            width: 100%;
-            margin-left: auto;
-            margin-right: auto;
-        }        
-    }
-
-    @media only screen and (max-width: 480px) {
-        .partner-detail {
-            background: none;
-        }
-    }
+.partner-image {
+    max-height: 100px;
+    
 }

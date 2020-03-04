@@ -2,6 +2,8 @@
     padding-right: 40vh;
     padding-left: 40vh;
     @include page-top-bottom-padding;
+    min-height: 79.1vh;
+    @include bg-image;
 
     @include for-laptop {
         padding-right: 2vh;
@@ -9,6 +11,7 @@
     }
     img {
         margin-bottom: 20px;
+        width: 100%;
     }
 
     .header-image {
