@@ -14,9 +14,9 @@ layout: page
 
 <div class="article">
 
-        <div class="event-boks event-brite">
-
-            <div class="event-banner-img">
+       
+ 
+            
                 {% assign switchlang = page.lang-id %}
                 {% for event in site.events %}
                 {% if page.title != event.title %}
@@ -31,17 +31,17 @@ layout: page
 
                 <img src="{{ page.image }}" alt="{{ page.title }}">
             </div>
-            </div>
+          
 
-            <h5 class="edate"><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h5>
-            <h5 class="timloc"><i class="far fa-clock"></i> {{ page.time }} <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h5>
+            <h5 class="yellow-text"><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h5>
+            <h5><i class="far fa-clock"></i> {{ page.time }} <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h5>
 
 
-            <h1 class="event-heading">{% if posttime < nowunix %}Past: {% endif %}{{ page.title }}</h1>
+            <h1>{{ page.title }}</h1>
 
             {{ page.content }}
 
-        </div>
+    
 
 
 
@@ -54,7 +54,7 @@ layout: page
 
         {% endif %}
        
-        <h3>{{ ticket_mes }}</h3>
+        <h5>{{ ticket_mes }}</h5>
         
       
         {% if posttime > nowunix %}
@@ -62,11 +62,11 @@ layout: page
         
 
 
-        <div class="resp-iframe-container">
-            <iframe class="ebframe resp-iframe event-frame"
+      
+            <iframe
                 src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
                 marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
-        </div>
+   
         {% else %}
 
         {% if page.lang == "dk" %}

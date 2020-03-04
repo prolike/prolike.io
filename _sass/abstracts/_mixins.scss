@@ -80,6 +80,10 @@
 
   a {
     color: white;
+    opacity: 1;
+    &:hover {
+      color: white;
+    }
   }
 
 }
@@ -101,7 +105,14 @@
   padding-right: 20vh;
 
 
+  
+
   @include for-laptop {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+
+  @include for-tablet {
     padding-left: 2vh;
     padding-right: 2vh;
   }
