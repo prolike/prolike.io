@@ -154,6 +154,7 @@ nav {
 
 @media only screen and (max-width: 1024px) {
   nav {
+    @include ul-padding;
     padding: 0;
 
     .logo img {
@@ -175,10 +176,6 @@ nav {
 
   .menu-wrap .menu>div {
     width: 2500vw;
-  }
-
-  ul {
-    padding: 0;
   }
 
   .menu-wrap .menu>div {

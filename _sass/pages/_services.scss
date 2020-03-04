@@ -4,15 +4,6 @@
     width: auto;
     align-items: center;
     
-
-    ul {
-        padding-left: 30px !important;
-
-        li {
-            font-size: 2em;
-        }
-    }
-
     .row {
         margin-right: 0px;
         margin-left: 0px;
@@ -129,11 +120,6 @@
     .service {
         padding: 5vh 0vh;
 
-        ul {
-            padding-left: 30px !important;
-            font-size: 1.5em;
-        }
-
         .pop {
             padding: 0;
         }
@@ -154,13 +140,6 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .service {
-        ul {
-            padding-left: 40px !important;
-        }
-    }
-}
 
 @media only screen and (max-width: 480px) {
 
@@ -175,9 +154,6 @@
         width: 100%;
         text-align: center;
 
-        ul {
-            padding-left: 30px !important;
-        }
         
         .service-boxes {
 
