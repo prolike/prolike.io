@@ -1,5 +1,5 @@
 ---
-title: Techfast March
+title: Techfast
 date: 17. marts 2020
 image: /images/events/tech-fast-march.png
 place: 'København, Gastronomisk Innovation, Frederiksborggade 1B'

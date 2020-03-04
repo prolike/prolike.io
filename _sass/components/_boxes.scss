@@ -1,7 +1,14 @@
 .boxes {
+    @include bg-image;
     @include page-side-padding;
     @include page-top-bottom-padding;
     @include yellow-hover;
+    background-image: url("/images/backgrounds/tileable.jpg");
+    min-height: 79.1vh;
+
+    @include for-phone-only {
+        background-image: url("/images/backgrounds/mb-2-tileable.jpg");
+    }
 
     a {
         color: black;

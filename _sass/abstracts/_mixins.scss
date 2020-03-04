@@ -83,6 +83,7 @@
 @mixin dark-background() {
   background-color: $prolikeblue;
   color: white;
+  background-image: none;
 
   a {
     color: white;
@@ -94,12 +95,16 @@
 
 }
 
-@mixin bg-image {
-  background-image: url(../images/backgrounds/tileable.jpg);
+@mixin bg-gradient() {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 5%, rgb(255, 255, 255) 95%, rgba(0, 0, 0, 0) 100%);
+}
+
+@mixin bg-image() {
+  background-image: url("/images/backgrounds/tileable.jpg");
   background-position: center center;
 
-  @include for-tablet() {
-    background-image: url(../images/backgrounds/mb-2-tileable.jpg);
+  @include for-tablet {
+    background-image: url("/images/backgrounds/mb-2-tileable.jpg");
     background-position: center center;
   }
 }
@@ -109,9 +114,6 @@
 @mixin page-side-padding() {
   padding-left: 20vh;
   padding-right: 20vh;
-
-
-  
 
   @include for-laptop {
     padding-left: 5vh;

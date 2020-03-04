@@ -3,40 +3,20 @@ subpage: services
 layout: page
 ---
 
-<div class="container service">
+<div class="article">
+    <h1>{{ page.title }}</h1>
+    <hr>
     <div class="row">
-    </div>
-    <div class="row justify-content-center">
-
-        <div class="service-info col-lg-8 col-11">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <h2>{{ page.title }}</h2>
-                </div>
-
-                <div class="col-12" data-proofer-ignore>
-                    {{ page.content | markdownify }}
-                </div>
-
-            </div>
+        <div class="col-12">
+            
+            {{ page.content | markdownify }}
         </div>
-    </div>
-</div>
 
-{% if page.change == false %}
-<div class="container-fluid ourGoogleFormContainer">
-    <iframe class="ourGoogleForm" src="{{ page.form }}" width="640" height="{{ page.form-height }}" frameborder="0" marginheight="0" marginwidth="0"
-        scrolling="yes">Loading…</iframe>
-</div>
-{% else %}
-<div class="col-12 service-form">
-    <div class="row justify-content-center">
-        <div class="col-lg-2 col-md-3 col-6">
+      
             <a href="/contact/" class="btn call btn-light btn-xl">
                 contact us
             </a>
-        </div>
+       
     </div>
 </div>
 
-{% endif%}

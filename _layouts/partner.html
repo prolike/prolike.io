@@ -3,20 +3,20 @@ subpage: Partners
 layout: page
 ---
 
-<div class="boxes partner-detail">
+<div class="article">
     <div class="row justify-content-center">
-        <div class="col-xl-11 col-md-10 col-12">
+        <div class="col-12">
             <div class="row content justify-content-center">
-                <div class="col-xl-4 col-8">
+                <div class="col-sm-6 col-12 align-self-end">
                     <h2>{{ page.title }}</h2>
-                    <hr>
+                    
                 </div>
 
-                <div class="col-xl-4 col-8 text-center">
-                    <img src="{{ page.image }}" alt="{{ page.title }} logo">
+                <div class="col-sm-6 col-12 text-right">
+                    <img class="partner-image" src="{{ page.image }}" alt="{{ page.title }} logo">
                 </div>
-
-                <div class="col-xl-8 col-12">
+                <hr>
+                <div class="col-12">
                     {{ page.content }}
                 </div>
             </div>
