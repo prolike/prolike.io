@@ -1,6 +1,7 @@
 // All bostrap scss
-
+@import "../bootstrap/bootstrap.scss";
 // Core variables and mixins
+@import "../bootstrap/functions";
 @import "../bootstrap/variables";
 @import "../bootstrap/mixins";
 
@@ -24,7 +25,6 @@
 @import "../bootstrap/close";
 @import "../bootstrap/custom-forms";
 @import "../bootstrap/dropdown";
-@import "../bootstrap/functions";
 @import "../bootstrap/images";
 @import "../bootstrap/input-group";
 @import "../bootstrap/jumbotron";
@@ -50,4 +50,3 @@
 @import "../bootstrap/utilities";
 @import "../bootstrap/bootstrap-grid.scss";
 @import "../bootstrap/bootstrap-reboot.scss";
-@import "../bootstrap/bootstrap.scss";

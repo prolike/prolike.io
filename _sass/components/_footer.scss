@@ -28,7 +28,7 @@ footer {
 
     @include for-ipad-pro {
         .footer-nav {
-            @include no-pad-no-mag;
+            margin:0;
             
             
         }
