@@ -1,6 +1,8 @@
 footer {
-    @include small-padding;
+    @include page-side-padding;
     @include dark-background;
+    padding-top: 50px;
+    padding-bottom: 50px;
     text-align: left;
 
     h4 {

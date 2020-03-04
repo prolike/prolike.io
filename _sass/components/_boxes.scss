@@ -1,6 +1,7 @@
 .boxes {
     @include page-side-padding;
-    @include no-decoration;
+    @include page-top-bottom-padding;
+    @include yellow-hover;
 
     a {
         color: black;

@@ -12,8 +12,7 @@ layout: page
 {{ page.date | date: '%s' | plus: 172800 }}
 {% endcapture %}
 
-<div class="event-container">
-    <div class="wrapper">
+<div class="article">
 
         <div class="event-boks event-brite">
 
@@ -28,9 +27,9 @@ layout: page
                 {% endif %}
                 {% endif%}
                 {% endfor %}
-                <div class="event-image-outer">
+                <div class="header-image">
 
-                <img class="event-image {{ page.image-position }}" src="{{ page.image }}" alt="{{ page.title }}">
+                <img src="{{ page.image }}" alt="{{ page.title }}">
             </div>
             </div>
 
@@ -63,7 +62,7 @@ layout: page
         
 
 
-        <div class="resp-container">
+        <div class="resp-iframe-container">
             <iframe class="ebframe resp-iframe event-frame"
                 src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
                 marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
@@ -81,6 +80,6 @@ layout: page
         </div>
        
         {% endif %}
-    </div>
+   
     {% include components/buttons.html %}
 </div>
