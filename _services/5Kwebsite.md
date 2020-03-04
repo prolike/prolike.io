@@ -34,13 +34,9 @@ And that is all you need to get started! Once the website is done and you're hap
 
  - [Ubuild](https://forestryio.github.io/ubuild-jekyll/){: target="_blank"}
 
- - [Grayscale](http://jeromelachaud.com/grayscale-theme/){: target="_blank"}
-
  - [Mediator](https://blog.base68.com/){: target="_blank"}
 
  - [Agency](https://y7kim.github.io/agency-jekyll-theme/){: target="_blank"}
-
- - [Landing Page](http://shaneweng.com/landing-page-theme/){: target="_blank"}
 
  - [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/){: target="_blank"}
 
