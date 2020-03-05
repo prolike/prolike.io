@@ -1,194 +1,60 @@
 nav {
-  height: 65px;
+  height: 50px;
   width: 100%;
-  background: $prolikeblue;
+  @include dark-background;
+  @include page-side-padding;
   box-sizing: border-box;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
   position: fixed;
-  z-index: 1;
-}
+  z-index: 1000;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
-.logo {
-  height: 65px;
-  width: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.logo img {
-  height: 24px;
-  position: absolute;
-  z-index: 5;
-  left: 20vh;
-}
-
-.menu-wrap {
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.menu-wrap .toggler {
-  position: absolute;
-  top: 10px;
-  right: 20vh;
-  z-index: 2;
-  cursor: pointer;
-  width: 45px;
-  height: 45px;
-  opacity: 0;
-}
-
-.menu-wrap .hamburger {
-  position: absolute;
-  top: 10px;
-  right: 20vh;
-  z-index: 1;
-  width: 45px;
-  height: 45px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.menu-wrap .hamburger>div {
-  position: relative;
-  width: 50%;
-  height: 3px;
-  background-color: $white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-.menu-wrap .hamburger>div:before,
-.menu-wrap .hamburger>div:after {
-  content: '';
-  position: absolute;
-  top: -7.5px;
-  width: 100%;
-  height: 3px;
-  background: inherit;
-}
-
-.menu-wrap .hamburger>div:after {
-  top: 7.5px;
-}
-
-.menu-wrap .toggler:checked+.hamburger>div {
-  transform: rotate(135deg);
-}
-
-.menu-wrap .toggler:checked+.hamburger>div:before,
-.menu-wrap .toggler:checked+.hamburger>div:after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.menu-wrap .toggler:checked~.menu {
-  visibility: visible;
-}
-
-.menu-wrap .toggler:checked~.menu>div {
-  transform: scale(1);
-  transition-duration: .5s;
-}
-
-.menu-wrap .toggler:checked~.menu>div>div {
-  opacity: 1;
-  transition: opacity 0.4s ease;
-}
-
-.menu-wrap .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
+.row {
   height: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.menu-wrap .menu>div {
-  background: $prolikeblue;
-  width: 250vw;
-  height: 250vw;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0);
-  transform-origin: top;
-  transition: all .5s ease;
-}
+  img {
+    height: 30px;
+  }
 
-.menu-wrap .menu>div>div {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 90vh;
-  opacity: 0;
-  transition: opacity 4s ease;
-}
-
-.menu-wrap .menu>div>div>ul>li {
-  list-style: none;
-  color: $white;
-  font-size: 50px;
-  padding: 0;
-  font-weight: 700;
-}
-
-.menu-wrap .menu>div>div>ul>li>a {
-  color: inherit;
-  text-decoration: none;
-}
-
-.menu-wrap .menu>div>div>ul>li:hover {
-  color: $prolikeyellow;
-}
-
-@media only screen and (max-width: 1024px) {
-  nav {
-    @include ul-padding;
-    padding: 0;
-
-    .logo img {
-      left: 2.5vh;
+  .toggler {
+    float: right;
+    i {
+      font-size: 2em;
     }
   }
 
-  .menu-wrap .toggler {
-    right: 1vh;
+  .active {
+    margin-top: 50px;
+    -webkit-transform: translateY(100vh);
+    -moz-transform: translateY(100vh);
+    -o-transform: translateY(100vh);
+    -ms-transform: translateY(100vh);
+    transform: translateY(100vh);
+   }
+ 
+
+  .menu {
+    overflow: hidden;
+    position: fixed;
+    top: -100vh;
+    @include dark-background;
+    text-align: center;
+    height: 100vh;
+    -webkit-transition: -webkit-transform 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
+    width: 100%;
+    z-index: 1;
+    left: 0;
+  
+    @include ul-padding;
+
+    ul {
+      @include no-dots;
+    }
+
+
   }
-
-  .menu-wrap .hamburger {
-    right: 1vh;
-  }
-
-  .menu-wrap .menu>div>div>ul>li {
-    font-size: 30px;
-  }
-
-  .menu-wrap .menu>div {
-    width: 2500vw;
-  }
-
-  .menu-wrap .menu>div {
-    transition: 0s;
-  }
-
-
-  .menu-wrap .toggler:checked~.menu>div {
-    transition-duration: 0s;
-  }
-
-  .menu-wrap .toggler:checked~.menu>div>div {
-    transition: opacity .5s;
-  }
-
 }
+

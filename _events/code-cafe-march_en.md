@@ -4,7 +4,7 @@ date: 17. marts 2020
 image: /images/events/code-cafe-march.jpg
 place: 'København, Gastronomisk Innovation, Frederiksborggade 1B'
 event-id: 95217294491
-published: false
+published: true
 description: We will do it again! We are going to repeat the success! So come join us for a day of CoDe. 
 time: '08:00 - 10:00'
 image-position: top
@@ -13,17 +13,16 @@ lang: gb
 show-on-list: true
 ---
 
-We will do it again! We are going to repeat the success! So come join us for a day of CoDe. 
-
-The event is sponsored by Prolike so it’s free to attend. Light breakfast, coffee during the day and lunch included. We might even go for a beer or two in the evening.
+We will do it again! We are going to repeat the success! Last time, we learned a lot, and we made a bunch of new friends. This time around we urge you to suggest some interesting and challenging issues to collaborate on. So regardless if you are a front or back ender bring your issues and let us solve them together.
+{: .kicker}
 
 ### Come with a topic
-
-The theme is Jam-stack. Read more about [here](/anything/we-re-jammin)
 
 Once again we have made a [Github repo](https://github.com/code-cafes/code-cafe-mar20/issues){: target="_blank"} containing the issues we are goin to look at. It's Open Source - You can suggest your own topic!
 
 The more you contribute to the planning: suggest topics, comment topics, indicate your interests… The better we’ll be prepared.
+
+The event is sponsored by Prolike so it’s free to attend. Light breakfast, coffee during the day and lunch included. We might even go for a beer or two in the evening.
 
 ### So, what is a CoDe Café?
 
@@ -35,7 +34,7 @@ The name CoDe Café is deliberately spelled in CamelCase: with a capital C and a
 
 ### Hacke-di-hack-commit-present-repeat
 
-We will devide the day 2 hour sessions, one before lunch, and one after. After each session we will meet and present our hacking and results to each other in the café.
+We will devide the day in 2 hour sessions, one before lunch, and one after. After each session we will meet and present our hacking and results to each other in the café.
 
 Everything will be stored in git, so you will all have access to the snippets, results and examples we produce together.
 
