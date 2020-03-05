@@ -19,6 +19,18 @@ body {
   }
 }
 
+.row {
+ margin-left: 0;
+ margin-right: 0;
+  @include for-tablet {
+
+    div {
+
+
+    }
+}
+}
+
 h1 {
   margin-top: 10px;
 }
@@ -58,9 +70,6 @@ h1 {
   padding: 0 !important;
 }
 
-.row {
-  margin: 0 -14px;
-}
 
 .no-event {
   width: 100%;

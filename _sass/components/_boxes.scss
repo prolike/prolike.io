@@ -3,12 +3,9 @@
     @include page-side-padding;
     @include page-top-bottom-padding;
     @include yellow-hover;
-    background-image: url("/images/backgrounds/tileable.jpg");
     min-height: 79.1vh;
 
-    @include for-phone-only {
-        background-image: url("/images/backgrounds/mb-2-tileable.jpg");
-    }
+  
 
     a {
         color: black;
@@ -29,7 +26,7 @@
         margin-bottom: 10px;
         img {
             width: 100%;
-            object-position: left;
+            object-position: top left;
             height: 100%;
             object-fit: cover;
             margin-bottom: 10px;

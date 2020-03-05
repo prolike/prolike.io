@@ -1,7 +1,7 @@
 ---
 title: The future is here - and it's serverless
 date: 15. January 2020
-image: /images/events/ForgetWordpress.jpg
+image: /images/events/fw.png
 place: 'Copenhagen, Gastronomisk Innovation, Frederiksborggade 1B'
 event-id: 88667925151
 published: true
@@ -15,9 +15,9 @@ lang: gb
 show-on-list: true
 ---
 
-### Join our techfast - tech for breakfast - and get a glimpse into the future trends of website and application development
+Join our techfast - tech for breakfast - and get a glimpse into the future trends of website and application development.
+{: .kicker}
 
-<br/>
 The established web development platforms today are typically called Wordpress, Drupal, Joomla Umbraco, SiteCore etc. but, the underlying technologies of these platforms were developed several years ago!
 Back then, the Internet was slow, the servers were expensive, but despite it being these specific challenges that they were developed to overcome, the platforms have not evolved at the same pace as the general technological advances. Today these technologies are considered slow, expensive, hard to  maintain, unsafe and yes basically obsolete! Alternatives are needed.
 
