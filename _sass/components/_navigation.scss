@@ -8,7 +8,12 @@ nav {
   position: fixed;
   z-index: 1000;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 10px;  
+
+  .menu-btn {
+    z-index: 1000;
+    position: absolute;
+  }
 
 .row {
   height: 100%;
@@ -23,6 +28,9 @@ nav {
     i {
       font-size: 2em;
     }
+
+    z-index: 1000;
+    position: relative;
   }
 
   .active {
@@ -42,8 +50,7 @@ nav {
     @include dark-background;
     text-align: center;
     height: 100vh;
-    -webkit-transition: -webkit-transform 250ms ease-in-out;
-    transition: transform 250ms ease-in-out;
+    min-height: 100%;
     width: 100%;
     z-index: 1;
     left: 0;

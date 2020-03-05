@@ -1,6 +1,6 @@
 ---
 title: Partners
 layout: partners
-navigation: true
+navigation: false
 order: 4
 ---

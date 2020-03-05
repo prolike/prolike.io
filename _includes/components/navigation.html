@@ -1,31 +1,33 @@
 <nav>
-  <a href="/"><img src="/images/logos/prolike-logo.png" alt="Prolike website logo"></a>
+  <a class="menu-btn" href="/"><img src="/images/logos/prolike-logo.png" alt="Prolike website logo"></a>
 
   <div class="toggler mr-auto"><i class="fas fa-bars"></i></div>
-    <div class="menu">
-<div class="row justify-content-center align-content-center">
-          <ul>
-            <li><a class="navigation-link" href="/#home" data-proofer-ignore><h1>Home</h1></a></li>
-            {% assign sorted_navi = site.pages | sort: 'order' %}
-            {% for page in sorted_navi %}
-            {% if page.navigation == true %}
-            <li><h1><a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a></h1></li>
-            {% endif %}
-            {% endfor %}
-          </ul>
-        </div>
+  <div class="menu">
+    <div class="row justify-content-center align-content-center" style="z-index: 10;">
+      <ul>
+        <li><a class="navigation-link" href="/" data-proofer-ignore>
+            <h1>Home</h1>
+          </a></li>
+        {% assign sorted_navi = site.pages | sort: 'order' %}
+        {% for page in sorted_navi %}
+        {% if page.navigation == true %}
+        <li>
+          <h1><a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a></h1>
+        </li>
+        {% endif %}
+        {% endfor %}
+      </ul>
     </div>
-  
+  </div>
+
 </nav>
 
 <script>
-  $(function() {
-  var box = $('.menu');
-  var button = $('.toggler');
-  button.on('click', function(){
-    box.toggleClass('active');
+  $(function () {
+    var box = $('.menu');
+    var button = $('.toggler');
+    button.on('click', function () {
+      box.toggleClass('active');
+    });
   });
-});
-
-
 </script>

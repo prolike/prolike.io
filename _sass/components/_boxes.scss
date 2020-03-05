@@ -18,6 +18,7 @@
         @include for-phone-only {
             margin-bottom: 25px;
         }
+        @include bg-shadow;
     }
     .row:last-of-type {
         margin-bottom: 0;

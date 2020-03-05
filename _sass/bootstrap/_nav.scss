@@ -9,6 +9,7 @@
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
+
 }
 
 .nav-link {
@@ -24,6 +25,12 @@
     color: $nav-link-disabled-color;
     pointer-events: none;
     cursor: default;
+  }
+}
+
+nav {
+  .row {
+    margin-top: -40px;
   }
 }
 

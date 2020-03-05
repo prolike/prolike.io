@@ -6,7 +6,7 @@ place: 'København, Gastronomisk Innovation, Frederiksborggade 1B'
 event-id: 95217294491
 published: true
 description: We will do it again! We are going to repeat the success! So come join us for a day of CoDe. 
-time: '08:00 - 10:00'
+time: '10:00 - 15:00'
 image-position: top
 lang-id: "11"
 lang: gb
