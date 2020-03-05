@@ -7,7 +7,6 @@
     color: white;
 
     h1 {
-        // font-size: 5vh;
         color: white;
         font-weight: bold;
         margin: 0;
@@ -29,7 +28,6 @@
             margin-bottom: 50px;
             margin-right: 40px;
             color: white;
-            // font-size: 2vh;
         }
 
         :focus {
@@ -40,14 +38,12 @@
 
         input[type=text] {
             color: white;
-            // font-size: 2vh;
         }
 
         ::placeholder {
             color: white;
             opacity: .5;
             padding-left: 0;
-            // font-size: 2vh;
         }
 
         input[type=submit] {
