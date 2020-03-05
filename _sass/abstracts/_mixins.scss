@@ -15,14 +15,14 @@
 }
 
 @mixin for-ipad-pro() {
-  @media ( max-width: 1024px) {
+  @media (max-width: 1024px) {
     @content;
   }
 }
 
 
 @mixin for-laptop() {
-  @media ( max-width: 1300px) {
+  @media (max-width: 1300px) {
     @content;
   }
 }
@@ -32,7 +32,7 @@
 
 @mixin no-pad-no-mag() {
   padding: 0;
-  margin:0;
+  margin: 0;
 }
 
 
@@ -88,6 +88,7 @@
   a {
     color: white;
     opacity: 1;
+
     &:hover {
       color: white;
     }
@@ -97,6 +98,18 @@
 
 @mixin bg-gradient() {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 5%, rgb(255, 255, 255) 95%, rgba(0, 0, 0, 0) 100%);
+}
+
+@mixin bg-shadow() {
+  -webkit-box-shadow: 0px 0px 9px 6px rgba(255,255,255,1);
+  -moz-box-shadow: 0px 0px 9px 6px rgba(255,255,255,1);
+  box-shadow: 0px 0px 9px 6px rgba(255,255,255,1);
+
+  // -webkit-box-shadow: 0px 0px 9px 12px rgba(0, 0, 0, 1);
+  // -moz-box-shadow: 0px 0px 9px 12px rgba(0, 0, 0, 1);
+  // box-shadow: 0px 0px 9px 12px rgba(0, 0, 0, 1);
+
+  background-color: white;
 }
 
 @mixin bg-image() {

@@ -13,24 +13,27 @@ layout: page
 {% endcapture %}
 
 <div class="article">
+    <div class="row">
+        <div class="col-12">
 
-                {% assign switchlang = page.lang-id %}
-                {% for event in site.events %}
-                {% if page.title != event.title %}
-                {% if event.lang-id == switchlang %}
-                <a href="{{ event.url }}" style="float: right">
-                    <span class="flag-icon flag-icon-{{ event.lang }} flag-icon-squared"></span>
-                </a>
-                {% endif %}
-                {% endif%}
-                {% endfor %}
-                <div class="header-image">
+            {% assign switchlang = page.lang-id %}
+            {% for event in site.events %}
+            {% if page.title != event.title %}
+            {% if event.lang-id == switchlang %}
+            <a href="{{ event.url }}" style="float: right">
+                <span class="flag-icon flag-icon-{{ event.lang }} flag-icon-squared"></span>
+            </a>
+            {% endif %}
+            {% endif%}
+            {% endfor %}
+            <div class="header-image">
 
                 <img src="{{ page.image }}" alt="{{ page.title }}">
             </div>
-          
 
-            <h5 class="yellow-text"><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}</h5>
+
+            <h5 class="yellow-text"><i class="far fa-calendar-alt event-icon"></i> {{ page.date  | date: '%d %B %Y' }}
+            </h5>
             <h5><i class="far fa-clock"></i> {{ page.time }} <i class="fas fa-map-marker-alt"></i> {{ page.place }}</h5>
 
 
@@ -38,45 +41,46 @@ layout: page
 
             {{ page.content }}
 
-    
 
 
 
-        <span class="event-id" style="display: none;">{{ page.event-id }}</span>
 
-        {% if page.lang == "dk" %}
-        {% assign ticket_mes = "Få en billet" %}
-        {% else %}
-        {% assign ticket_mes = "Get a ticket" %}
+            <span class="event-id" style="display: none;">{{ page.event-id }}</span>
 
-        {% endif %}
-       
-        <h5>{{ ticket_mes }}</h5>
-        
-      
-        {% if posttime > nowunix %}
+            {% if page.lang == "dk" %}
+            {% assign ticket_mes = "Få en billet" %}
+            {% else %}
+            {% assign ticket_mes = "Get a ticket" %}
 
-        
+            {% endif %}
+
+            <h5>{{ ticket_mes }}</h5>
 
 
-      
-            <iframe
-                src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt" frameborder="0"
-                marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
-   
-        {% else %}
+            {% if posttime > nowunix %}
 
-        {% if page.lang == "dk" %}
-        {% assign no_event_mes = "Der er ingen billetter, da eventet har været afholdt" %}
-        {% else %}
-        {% assign no_event_mes = "There is no tickets, because the event already has been executed" %}
 
-        {% endif %}
-        <div class="no-event">
-            <p>{{ no_event_mes }}.</p>
+
+
+
+            <iframe src="https://www.eventbrite.co.uk/tickets-external?eid={{ page.event-id }}&ref=etckt"
+                frameborder="0" marginheight="0" marginwidth="0" scrolling="yes" allowtransparency="true"></iframe>
+
+            {% else %}
+
+            {% if page.lang == "dk" %}
+            {% assign no_event_mes = "Der er ingen billetter, da eventet har været afholdt" %}
+            {% else %}
+            {% assign no_event_mes = "There is no tickets, because the event already has been executed" %}
+
+            {% endif %}
+            <div class="no-event">
+                <p>{{ no_event_mes }}.</p>
+            </div>
+
+            {% endif %}
+
+            {% include components/buttons.html %}
         </div>
-       
-        {% endif %}
-   
-    {% include components/buttons.html %}
+    </div>
 </div>
