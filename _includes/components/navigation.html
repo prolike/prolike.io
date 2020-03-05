@@ -1,24 +1,31 @@
 <nav>
-  <a class="logo" href="/"><img src="/images/logos/prolike-logo.png" alt="Prolike website logo"></a>
-  <div class="menu-wrap">
-    <input type="checkbox" class="toggler" name="toggler">
-    <div class="hamburger">
-      <div></div>
-    </div>
+  <a href="/"><img src="/images/logos/prolike-logo.png" alt="Prolike website logo"></a>
+
+  <div class="toggler mr-auto"><i class="fas fa-bars"></i></div>
     <div class="menu">
-      <div>
-        <div>
+<div class="row justify-content-center align-content-center">
           <ul>
-            <li><a class="navigation-link" href="/#home" data-proofer-ignore>Home</a></li>
+            <li><a class="navigation-link" href="/#home" data-proofer-ignore><h1>Home</h1></a></li>
             {% assign sorted_navi = site.pages | sort: 'order' %}
             {% for page in sorted_navi %}
             {% if page.navigation == true %}
-            <li><a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a></li>
+            <li><h1><a href="{{ page.url }}" data-proofer-ignore>{{ page.title }}</a></h1></li>
             {% endif %}
             {% endfor %}
           </ul>
         </div>
-      </div>
     </div>
-  </div>
+  
 </nav>
+
+<script>
+  $(function() {
+  var box = $('.menu');
+  var button = $('.toggler');
+  button.on('click', function(){
+    box.toggleClass('active');
+  });
+});
+
+
+</script>

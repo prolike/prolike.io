@@ -2,15 +2,14 @@
 layout: page
 ---
 
-<div class="boxes">
-    <div class="row">
-
-        <h2>Partners</h2>
-        <hr>
+<div class="boxes partners">
+    <h1>Partners</h1>
+    <hr>
+    <div class="row justify-content-center">
 
         {% for partner in site.partners %}
-        <div class="col-xl-3 col-md-4 col-6 partner">
-            <div class="row">
+        <div class="col-xl-3 col-md-4 col-sm-6 col-12 partner">
+            <div class="row justify-content-center">
                 <div class="col-12">
                     <a href="{{ partner.url }}">
                         <img src="{{ partner.image }}" alt="{{ partner.title }}">

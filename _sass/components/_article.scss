@@ -1,17 +1,23 @@
 .article {
-    padding-right: 40vh;
-    padding-left: 40vh;
+    margin: auto;
+    width: 900px;
     @include page-top-bottom-padding;
     min-height: 79.1vh;
     @include bg-image;
 
+  
+
     @include for-laptop {
-        padding-right: 2vh;
-        padding-left: 2vh;
+        @include page-side-padding;
+        width: 100%;
     }
     img {
         margin-bottom: 20px;
         width: 100%;
+    }
+
+    .row:first-child {
+        @include bg-shadow;
     }
 
     .header-image {
