@@ -3,7 +3,7 @@ title: CoDe Café
 date: 17. marts 2020
 image: /images/events/code-cafe-march.jpg
 place: 'København, Gastronomisk Innovation, Frederiksborggade 1B'
-event-id: 95217294491
+event-id: 98177657015
 published: true
 description: We will do it again! We are going to repeat the success! So come join us for a day of CoDe. 
 time: '10:00 - 15:00'
