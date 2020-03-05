@@ -5,7 +5,7 @@
     <div class="menu">
 <div class="row justify-content-center align-content-center">
           <ul>
-            <li><a class="navigation-link" href="/#home" data-proofer-ignore><h1>Home</h1></a></li>
+            <li><a class="navigation-link" href="/" data-proofer-ignore><h1>Home</h1></a></li>
             {% assign sorted_navi = site.pages | sort: 'order' %}
             {% for page in sorted_navi %}
             {% if page.navigation == true %}
