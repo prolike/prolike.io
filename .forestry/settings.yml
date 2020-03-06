@@ -5,19 +5,19 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: _infographics
+  label: Infographics
+  create: all
+  match: "**/*"
+  templates:
+  - stories
+- type: directory
   path: _gigs
   label: Gigs
   create: all
   match: "**/*"
   templates:
   - gigs
-- type: directory
-  path: _stories
-  label: stories
-  create: all
-  match: "**/*"
-  templates:
-  - stories
 - type: directory
   path: _services
   label: Services
