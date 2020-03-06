@@ -6,6 +6,8 @@ tags: [internship, multimedia, blog]
 image: /images/anything/intern.jpeg
 published: true
 description: One designer among a pack of software engineers... Yikes!
+redirect_from:
+  - /anything/full-throttle-intern/
 ---
 
 Interning at any company can sound like a dauting thing. But going out there, trying it first hand, can prove to be some of the most fun one could had ever dreamt of.

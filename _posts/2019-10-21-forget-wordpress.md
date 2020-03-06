@@ -11,6 +11,8 @@ image: /images/anything/website.jpg
 published: true
 description: The future is now, old man; the future of websites, and boy, is it looking good
 service: Websites
+redirect_from:
+  - /anything/forget-wordpress/
 ---
 
 ### Welcome to the future of websites!

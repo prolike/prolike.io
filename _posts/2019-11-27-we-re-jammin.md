@@ -9,6 +9,8 @@ tags:
   - workflow
 description: Let's talk about why your website should run on JAM rather than LAMP
 published: true
+redirect_from:
+  - /anything/we-re-jammin/
 ---
 
 ### Let's get technical

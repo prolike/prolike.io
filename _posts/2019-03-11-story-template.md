@@ -5,6 +5,8 @@ tags: [git, docker, agile]
 image: /images/anything/intern.jpeg
 published: false
 description: A short, one line description of your story.
+redirect_from:
+  - /anything/story-template/
 ---
 
 Don't start with a title, start with a paragraph introducing your story.

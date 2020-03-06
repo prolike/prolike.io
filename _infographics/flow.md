@@ -39,7 +39,6 @@ sections:
   icon: fas fa-infinity
   texts:
   - Our second release! Don't worry this doesnt have to be the end.
-  - After that we will continue delivering releases til we have all the freatures
+  - After this we will continue delivering releases til we have all the features
     you want
-
 ---

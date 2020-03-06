@@ -1,8 +1,6 @@
 ---
 title: Stories
 layout: stories
-navigation: false
-order: 3
+navigation: true
+order: 4
 ---
-
-Here you can read all of our stories about Prolike

@@ -35,6 +35,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 
 collections:
@@ -43,10 +44,10 @@ collections:
     permalink: /:title/
   posts:
     output: true
-    permalink: /anything/:title/
-  stories:
-    output: true
     permalink: /stories/:title/
+  infographics:
+    output: true
+    permalink: /infographics/:title/
   events:
     output: true
     permalink: /events/:title/
@@ -76,12 +77,12 @@ defaults:
     scope:
       type: posts
     values:
-      layout: anything-post
+      layout: stories-post
   -
     scope:
-      type: stories
+      type: infographics
     values:
-      layout: story
+      layout: infographics
   -
     scope:
       type: events
