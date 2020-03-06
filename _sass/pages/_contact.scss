@@ -1,33 +1,16 @@
 .contact {
-    background: $prolikeblue;
-    width: 100%;
-    min-height: 80%;
-    @include page-top-bottom-padding;
-    @include page-side-padding;
-    color: white;
-
-    h1 {
-        color: white;
-        font-weight: bold;
-        margin: 0;
-        margin-bottom: 5vh;
-    }
-
-    p {
-        // font-size: 2vh;
-        margin-bottom: 7.5vh;
-    }
 
     form {
-
+        margin-left: -15px;
+        margin-top: 20px;
         input {
             background: transparent;
             border: none;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-            width: 27.5%;
-            margin-bottom: 50px;
+            border-bottom: 1px solid $gray-700;
+            margin-bottom: 20px;
+            width: 100%;
             margin-right: 40px;
-            color: white;
+           
         }
 
         :focus {
@@ -35,14 +18,8 @@
             border-bottom: 2px solid #ffc400;
             outline: none;
         }
-
-        input[type=text] {
-            color: white;
-        }
-
         ::placeholder {
-            color: white;
-            opacity: .5;
+            opacity: .9;
             padding-left: 0;
         }
 
@@ -50,7 +27,6 @@
             background: transparent;
             width: auto;
             font-weight: bold;
-            color: white;
             border: none;
             font-size: 1.8em;
             margin: 0;
@@ -59,29 +35,12 @@
         .form-group {
             display: flex;
             flex-direction: row;
-        }
-    }
-}
-
-/* Small devices (phones, 768px and down) */
-
-@media only screen and (max-width: 768px) {
-
-    .contact {
-
-        p {
-            width: 100%;
-        }
-
-        form {
-
-            input {
-                width: 95%;
-            }
-
-            .form-group {
+            @include for-phone-only {
                 flex-direction: column;
+                margin-bottom: 0;
             }
         }
+
+
     }
 }

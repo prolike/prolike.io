@@ -110,7 +110,7 @@ defaults:
     scope:
       type: gigs
     values:
-      layout: list-detail
+      layout: gig
   -
     scope:
       type: partners

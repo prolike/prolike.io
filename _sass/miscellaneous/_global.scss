@@ -13,6 +13,10 @@ body {
   @include serif-font;
 }
 
+.bg {
+  @include bg-image;
+}
+
 // row
 
 .row {
@@ -57,9 +61,9 @@ h1 {
   padding: 0 !important;
 }
 
-.bg {
-  @include bg-image;
-}
+
+
+// anchor tag
 
 a {
   color: $gray-600;

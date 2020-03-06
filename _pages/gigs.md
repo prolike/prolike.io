@@ -1,6 +1,6 @@
 ---
 title: Gigs
-layout: list
+layout: gigs
 navigation: false
 order: 2
 ---

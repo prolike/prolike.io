@@ -1,27 +1,4 @@
-.front {
-  height: 100vh;
-  background-image: url(../images/backgrounds/hand.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
 
-  h2 {
-    color: $prolikeblue !important;
-    font-size: 2.5em;
-    margin-bottom: .5em;
-  }
-
-  p {
-    color: inherit;
-    font-size: 1.5em;
-  }
-
-}
-
-.front:nth-child(2),
-.front:nth-child(4) {
-  background-image: url(../images/backgrounds/brain_background.jpg);
-}
 
 .bg-primary {
   display: flex;

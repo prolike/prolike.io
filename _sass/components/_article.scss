@@ -2,8 +2,7 @@
     margin: auto;
     width: 900px;
     @include page-top-bottom-padding;
-    min-height: 79.1vh;
-
+    min-height: 80vh;
     @include for-laptop {
         @include page-side-padding;
         width: 100%;

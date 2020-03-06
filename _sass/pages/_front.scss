@@ -3,16 +3,51 @@
 .front {
     @include page-side-padding;
     display: flex;
-  
-    h2 {
-      font-weight: 700;
-    }
+    height: 100vh;
+    background-image: url("/images/backgrounds/hand.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
     @include for-ipad-pro {
       padding: 0 5vh;
     }
 
+    .btn {
+      margin-top: 0;
+    }
+
     .row {
         align-self: center;
+        @include bg-shadow;
     }
   
+  }
+
+  .front:nth-child(2),
+  .front:nth-child(4) {
+    background-image: url("/images/backgrounds/brain_background.jpg");
+  }
+
+  @include for-phone-only {
+
+    .front:nth-child(2) {
+      background-image: url("/images/backgrounds/mb-2.jpg");
+    }
+  
+    .front:nth-child(3) {
+      background-image: url("/images/backgrounds/mb-3.jpg");
+    }
+  
+    .front:nth-child(4) {
+      background-image: url("/images/backgrounds/mb-1.jpg");
+    }
+  
+    .front:nth-child(5) {
+      background-image: none;
+    }
+  
+    #fp-nav ul, .fp-slidesNav ul {
+      display: none;
+    }
   }
