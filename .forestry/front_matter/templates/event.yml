@@ -26,9 +26,14 @@ fields:
 - type: text
   name: image-position
   label: image-position
+  description: top, right, bottom, right eller center
 - type: text
   name: lang-id
   label: lang-id
+  description: Brugbar til når du har et event på flere sprog. Brug et tal som stemmer
+    overens med det andet sprog
 - type: text
   name: lang
   label: lang
+  description: 'Dette field bliver brugt til knappen der ændre sprog. Du kan finde
+    listen her: https://flagicons.lipis.dev/'
