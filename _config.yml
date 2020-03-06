@@ -5,7 +5,7 @@ paginate: 24
 paginate_path: "/stories/page:num/"
 stage_site: https://stage.prolike.io
 prod_site: https://www.prolike.io
-url: "https://prolike.io"
+url: "https://www.prolike.io"
 future: true
 
 logo: /images/logos/seo_img.png
