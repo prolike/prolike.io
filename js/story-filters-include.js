@@ -83,7 +83,7 @@ function updateHeading(headerTitle) {
 function updateUrl(filterVar) {
   let urlVariable = "#" + filterVar;
   var dynamicUrl = "";
-  var path = "/stories/all/";
+  var path = "/infographics/all/";
   console.log(path);
   if (!staticUrl.includes(urlVariable)) {
     staticUrl = staticUrl + urlVariable;
