@@ -32,4 +32,4 @@ docker run \
 - Create the posts, one for each language.
 - In the metadata/yml of the posts make a field called ```lang-id``` and as value, write a uniq ID (can be letters, numbers or both)
 - Give this to all the posts, all the same ID.
-- Then give each event a language. ```Lang: value``` And of course the value is the language, like ```dk``` for danish and ```  eng``` for english and so on. To find a specific countries specific value visit [www.flag-icon-css.lip.is](http://flag-icon-css.lip.is/)
+- Then give each event a language. ```Lang: value``` And of course the value is the language, like ```dk``` for danish and ```  gb``` for english and so on. To find a specific countries specific value visit [www.flag-icon-css.lip.is](http://flag-icon-css.lip.is/)
