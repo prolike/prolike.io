@@ -3,7 +3,6 @@
     width: 900px;
     @include page-top-bottom-padding;
     min-height: 79.1vh;
-    @include bg-image;
 
   
 
@@ -26,7 +25,7 @@
         width: 100%;
     }
 
-    .row:first-child {
+    .row {
         @include bg-shadow;
     }
 
