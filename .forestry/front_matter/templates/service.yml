@@ -9,7 +9,7 @@ fields:
 - type: text
   name: icon
   label: icon
-  description: Font awesome icon
+  description: Font awesome icon https://fontawesome.com/
 - type: text
   name: button
   label: button
