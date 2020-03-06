@@ -1,0 +1,18 @@
+// Frontpage
+
+.front {
+    @include page-side-padding;
+    display: flex;
+  
+    h2 {
+      font-weight: 700;
+    }
+    @include for-ipad-pro {
+      padding: 0 5vh;
+    }
+
+    .row {
+        align-self: center;
+    }
+  
+  }

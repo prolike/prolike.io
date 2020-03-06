@@ -60,6 +60,9 @@ collections:
   gigs:
     output: true
     permalink: gigs/:title/
+  texts:
+    output: false
+
 
 
 defaults:

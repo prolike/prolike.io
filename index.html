@@ -1,77 +1,39 @@
 ---
 title: Prolike
+layout: default
 ---
+
+{% include components/navigation.html %}
 
 <div id="fullpage">
 
   <!-- Home section -->
+{% for text in site.texts %}
+{% if text.page == "front-page" %}
 
-  <div class="section front">
-    {% include components/primary.html
-    btn_href="#why"
-    btn_txt="But why?"
-    btn_id="ga-why"
-    btn_href-call="/anything/"
-    btn_txt-call="Read our posts"
-    btn_id_call="ga-call-home"
-    title="Home Of The Yipees"
-    caption="Where Young Independent Professionals
-    collaborate to deliver quality
-    software features and implementations<br />
-    <b>Featuring</b>: Lean software development, Serverless, Programmable and Immutable"
-    %}
-  </div>
+  <div class="section front" id="home">
 
-  <!-- Why section -->
+    <div class="row">
+      <div class="col-md-10 col-lg-8 col-xl-6 col-12">
+        <h2>{{ text.header }}</h2>
+        {{ text.content }}
+        <a class="btn btn-light btn-xl js-scroll-trigger btn_i" href="{{ text.btn-one-link }}" data-proofer-ignore>{{ text.btn-one-text }}</a>
+        <a class="btn call btn-light btn-xl js-scroll-trigger btn_i" href="{{ text.btn-two-link }}" data-proofer-ignore>{{ text.btn-two-text }}</a>
+      </div>
+      </div>
 
-  <div class="section front">
-    {% include components/primary.html
-    btn_href="#how"
-    btn_txt="But how?"
-    btn_id="ga-how"
-    btn_id_call="ga-call-why"
-    btn_href-call="/anything/learn-how-we-work/"
-    btn_txt-call="How we work"
-    title="We're reinventing the master and apprentice relationship"
-    caption="Offering a practicum to the Yipees, we run a frank and transparent business, teaching the
-    Yipees the ins and outs of being a professional consultant,
-    freelancer, innovator or entrepreneur"
-    %}
-  </div>
+    </div>
 
-  <!-- How section -->
+    {% endif %}
+    {% endfor %}
 
-  <div class="section front">
-    {% include components/primary.html
-    btn_id="ga-what"
-    btn_id_call="ga-call-how"
-    btn_href="#what"
-    btn_txt="But what?"
-    btn_href-call="/events/"
-    btn_txt-call="See our events"
-    title="Striving to make software simple and easy"
-    caption="The digital transformation is real: Our deliveries are serverless, programmable
-    and immutable. We provide a collaborative technology stack and
-    work through a simple Kanban approach. Elders are constantly backing and mentoring the Yipees. We only invoice when
-    we create value - we call it <em>lean</em>"
-    %}
-  </div>
+    <!-- Why section -->
 
-  <!-- What section -->
+  
 
-  <div class="section front">
-    {% include components/primary.html
-    btn_id="ga-showme"
-    btn_id_call="ga-call-what"
-    btn_href="/contact/"
-    btn_txt="Contact us"
-    btn_href-call="/services/"
-    btn_txt-call="Our services"
-    title="Custom solutions for everyone, one release at a time"
-    caption="Most of our work is done on serveless JAM stacks. We impersonate the <em>gig economy</em>. All our
-    projects are described as gigs. Are you a
-    Yipee waiting to join or a customer waiting to come
-    clean? Go and be inspired. Join our tribe!"
-    %}
-  </div>
 </div>
+    <!-- How section -->
+
+
+
+    <!-- What section -->

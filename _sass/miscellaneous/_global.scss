@@ -13,20 +13,6 @@ body {
   @include serif-font;
 }
 
-// Frontpage
-
-.front {
-  @include page-side-padding;
-
-  h2 {
-    font-weight: 700;
-  }
-  @include for-ipad-pro {
-    padding: 0 5vh;
-  }
-
-}
-
 // row
 
 .row {
