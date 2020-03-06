@@ -1,3 +1,5 @@
+// Body
+
 body,
 html {
   width: 100%;
@@ -11,24 +13,31 @@ body {
   @include serif-font;
 }
 
+// Frontpage
+
 .front {
   @include page-side-padding;
 
   h2 {
     font-weight: 700;
   }
+  @include for-ipad-pro {
+    padding: 0 5vh;
+  }
+
 }
+
+// row
 
 .row {
  margin-left: 0;
  margin-right: 0;
-  @include for-tablet {
-
-    div {
-
-
-    }
 }
+
+// headings
+
+h1, h2, h3, h4, h5 {
+  @include sans-serif-font;
 }
 
 h1 {
@@ -36,9 +45,6 @@ h1 {
 }
 
 @include for-ipad-pro {
-  .front {
-    padding: 0 5vh;
-  }
   h1 {
     font-size: 2.1em;
   }
@@ -59,12 +65,7 @@ h1 {
 
 }
 
-
-@include for-tablet {
-
-
- 
-}
+// padding
 
 .no-padding {
   padding: 0 !important;
@@ -74,27 +75,16 @@ h1 {
   @include bg-image;
 }
 
-
-.no-event {
-  width: 100%;
-  text-align: center;
-  background-color: #e2e2e2;
-  padding: 13vh 10vh 10vh 10vh;
-}
-
-h1, h2, h3, h4, h5 {
-  @include sans-serif-font;
-}
-
 a {
-  color: $black;
+  color: $gray-600;
   &:hover {
     opacity: 1;
     text-decoration: none;
-    color: $black;
+    color: $prolikeyellow;
   }
 }
 
+// hr
 
 hr {
   width: 100%;
@@ -103,6 +93,7 @@ hr {
   margin: 0 0 20px 0;
  }
 
+ // text deco's
 
 .yellow-text {
   color: $prolikeyellow;
@@ -113,12 +104,26 @@ hr {
 }
 
 
+/////// components
+
+// no event. When past the event date, this box will show instead of ticketsale
+
+.no-event {
+  width: 100%;
+  text-align: center;
+  background-color: #e2e2e2;
+  padding: 13vh 10vh 10vh 10vh;
+}
+
+// Kicker. First paragraph in our articles
+
 .kicker {
   font-weight: 500;
   color: #292929;
   font-size: 1.1em;
 }
 
+// block quote and quote reference
 
 blockquote {
   padding: 0;
@@ -154,8 +159,6 @@ blockquote p {
   margin: 0;
 }
 
-
-
 .quote_reference {
   font-size: .8em;
 }
@@ -168,6 +171,8 @@ blockquote p {
 .section-heading {
   margin-top: 0;
 }
+
+// Buttons
 
 .btn {
   background: $prolikeyellow;
@@ -182,6 +187,11 @@ blockquote p {
   transition: 800ms ease all;
   outline: none;
   padding: 10px;
+
+  @include for-phone-only {
+    font-size: 14px !important;
+    margin-top: 0;
+  }
 }
 
 .btn:hover {
@@ -220,6 +230,9 @@ blockquote p {
   border-radius: 0em;
   margin-top: .5em;
   margin-left: 10px;
+  @include for-phone-only {
+    margin-left: 0;
+  }
 }
 
 .call:hover {
@@ -251,28 +264,10 @@ blockquote p {
   transition: 800ms ease all;
 }
 
+// Container fluid?????
+
 .container-fluid {
   padding-left: 0;
   padding-right: 0;
-}
-
-/* Small devices (phones, 768px and down) */
-
-@media (max-width: 768px) {
-
-  .btn {
-    font-size: 14px !important;
-    margin-top: 0;
-  }
-
-  .call {
-    margin-left: 0;
-  }
-
-  .container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
 }
 

@@ -4,20 +4,13 @@
     @include page-top-bottom-padding;
     min-height: 79.1vh;
 
-  
-
     @include for-laptop {
         @include page-side-padding;
         width: 100%;
     }
 
-    a {
-        font-weight: bold;
-    }
-
     a:hover {
         color: $prolikeyellow;
-
     }
     
     img {
@@ -33,7 +26,6 @@
         height: 50vh;
         width: 100%;
         margin-bottom: 20px;
-
         img {
             height: 100%;
             width: 100%;
