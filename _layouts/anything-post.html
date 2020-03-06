@@ -10,16 +10,15 @@ layout: page
 
 
 <div class="article">
-<div class="row">
-  <div class="col-12">
-    <span>
-      <p>{{ page.date | date: "%d. %B, %Y" }}</p>
-      <h1>{{page.title}}</h2>
-      <p>By <a href="{{ page.author-github }}">{{ page.author }}</a></p>
-    </span>
-    <div class="header-image"><img src="{{ page.image }}" alt="{{ page.title }}"></div>
-    {{ page.content }}
+  <div class="row">
+    <div class="col-12">
+      <span>
+        <p>{{ page.date | date: "%d. %B, %Y" }}</p>
+        <h1>{{page.title}}</h2>
+          <p>By <a href="{{ page.author-github }}">{{ page.author }}</a></p>
+      </span>
+      <div class="header-image"><img src="{{ page.image }}" alt="{{ page.title }}"></div>
+      {{ page.content }}
+    </div>
   </div>
-  </div>
-  </div>
-
+</div>

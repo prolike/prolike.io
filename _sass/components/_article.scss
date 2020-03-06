@@ -11,6 +11,16 @@
         @include page-side-padding;
         width: 100%;
     }
+
+    a {
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: $prolikeyellow;
+
+    }
+    
     img {
         margin-bottom: 20px;
         width: 100%;
