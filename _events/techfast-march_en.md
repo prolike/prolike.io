@@ -27,5 +27,3 @@ _“hmmmm - ja, nej - måske!”_
 Kom og lær en helt enkel metode til at afgøre om teknologi eller software virkelig er løsningen på et givet problem. Og få et indblik i hvordan du kan håndtere det hvis det er tilfældet - uden at din virksomhed eller arbejdsplads skal igennem omvæltende _tranformationer_. Få et indblik i hvordan vi kan imødegå den annoncerede mangel på softwareudviklere i fremtiden. Lær at tæmme software-monsteret - så det spiser af hånden!
 
 **Der vil være kaffe og croissanter. Der er begrænset plads, så tilmelding er nødvendig.**
-
-##### Få en billet
