@@ -8,9 +8,8 @@ description: Tech for breakfast, come and join us!
 time: 08:00 - 10:00
 image-position: top
 lang-id: "22"
-lang: gb
+lang: dk
 show-on-list: true
-published: false
 
 ---
 Digital Acceleration
