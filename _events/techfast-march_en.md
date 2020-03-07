@@ -4,7 +4,8 @@ date: 17. marts 2020
 image: "/uploads/Gourmet3-kopi-1600x900.jpg"
 place: København, Gastronomisk Innovation, Frederiksborggade 1B
 event-id: 98182373121
-description: Tech for breakfast, come and join us!
+description: Tech til morgenmad! Er software løsningen på alle nutidens problemer?
+  Kom og find ud af det.
 time: 08:00 - 10:00
 image-position: top
 lang-id: "22"
@@ -12,9 +13,7 @@ lang: dk
 show-on-list: true
 
 ---
-Digital Acceleration
-
-Tech til morgenmaden - Skal vi virkelig alle _digital transformere?_ - Virker det uoverskueligt? Kom og få en ny vinkel, måske skal vi bare forstå og omfavne de muligheder som verden tilbyder, altså _digital accellerere_
+Tech til morgenmaden - Skal vi virkelig alle _digital transformere?_ - Virker det uoverskueligt? Kom og få en ny vinkel, måske skal vi bare forstå og omfavne de muligheder som verden tilbyder, altså _digital accellerere_{: .kicker}
 
 > **_Software is Eating the World_**
 
