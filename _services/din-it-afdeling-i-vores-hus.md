@@ -26,7 +26,7 @@ Samlet set dækker de - foreløbigt - 9 Yipees i Prolike et godt samarbejdet tea
 
 IT er fremtiden. IT er vigtigt, spændende og i mange tilfælde uundgåeligt for forretningsdrivende, men det er omkostningsfuldt at etablere en intern IT afdeling. Udviklere er i høj kurs og det kan derfor være et stort finansielt sats for en virksomhed at ansætte et helt hold, givet at man overhovedet kan rekruttere et hold med de fornødne egenskaber.
 
-Vi har samlet et hold med en bred vifte af kompetencer, vi holder os ajour med nye trends, teknologi og træning, så som du kun betaler når du skal bruger os.
+Vi har samlet et hold med en bred vifte af kompetencer, vi holder os ajour med nye trends og teknologier, så du kun betaler når du skal bruger os.
 
 ### Eksempler på IT understøttelse og softwareudvikling
 
