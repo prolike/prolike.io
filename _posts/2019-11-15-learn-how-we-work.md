@@ -16,11 +16,9 @@ redirect_from:
 
 This quote describes how Prolike offers to deliver services such as software, front-end, automation and infrastructure based on the principles of Continuous Delivery, Serveless, Programmable & Immutable, through offering the work of Young Independent Professionals - we call them Yipees.
 
----
 
 Prolike works by a Master-Apprentice like work relationship. Your primary contact and communication will be with the Yippee, who will maintain the duties of:
 
----
 
 - Development and implementation
 - Project Management
@@ -48,7 +46,6 @@ Unless otherwise agreed upon, we will utilize both the Prolike Stack and Prolike
 
 Continuous Delivery is a work process that constantly seeks to optimize the workflow to become - well a flow - as opposed to a stop-go process with lots of handovers. Typically work is delivered - and if possible deployed to production - as soon as it’s ready, and not on arbitrary deadlines.    
 
----
 
 Prolike works by the concept of Continuous Delivery. It implies that software developers have access to   production-like environments, to enable them to automatically test and verify all parts of the application or implementation before they sign off and deliver.
 
@@ -56,15 +53,12 @@ Prolike works by the concept of Continuous Delivery. It implies that software de
 
 An approach in Continuous Delivery is to turn anything into code. Through utilization of modern versions control, configurations rather than implementations where it’s feasible, and immutable environments and tests that ensures that we’re not chasing a moving target.
 
----  
 
 We will prioritize some time on optimizing the flow - to build quality in, as opposed to glue it on - and it will show up on the bill too.
 
----
 
 Qualify manifests itself in:
 
----
 
 - Code version control in Git on Github
 - Establishment of pipelines
