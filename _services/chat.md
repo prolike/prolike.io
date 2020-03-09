@@ -1,5 +1,5 @@
 ---
-title: Chat system
+title: Chat System
 icon: fab fa-rocketchat
 button: Contact us
 operational: true

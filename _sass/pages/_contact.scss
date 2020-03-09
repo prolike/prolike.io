@@ -3,7 +3,7 @@
     form {
         margin-left: -15px;
         margin-top: 20px;
-        input {
+        input[type=text], input[type="email"] {
             background: transparent;
             border: none;
             border-bottom: 1px solid $gray-700;
@@ -21,15 +21,6 @@
         ::placeholder {
             opacity: .9;
             padding-left: 0;
-        }
-
-        input[type=submit] {
-            background: transparent;
-            width: auto;
-            font-weight: bold;
-            border: none;
-            font-size: 1.8em;
-            margin: 0;
         }
 
         .form-group {

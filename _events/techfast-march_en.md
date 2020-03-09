@@ -1,7 +1,7 @@
 ---
 title: Techfast
 date: 17. marts 2020
-image: "/uploads/Gourmet3-kopi-1600x900.jpg"
+image: "/images/events/tech-fast-march2.jpg"
 place: København, Gastronomisk Innovation, Frederiksborggade 1B
 event-id: 98182373121
 description: Tech til morgenmad! Er software løsningen på alle nutidens problemer?

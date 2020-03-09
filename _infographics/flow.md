@@ -1,8 +1,8 @@
 ---
-title: Our workflow with you
+title: Our Workflow With You
 author: Anders Larsen
 author-github: https://github.com/sygdrome
-image: "/images/infographics/flow.jpeg"
+image: "/images/anything/workflow.jpg"
 tags:
 - workflow
 - services
