@@ -5,7 +5,7 @@ author-github: https://github.com/LouBNielsen
 tags:
 - Code
 - Code Cafe
-image: "/uploads/adult-books-business-coffee-374016.jpg"
+image: "/uploads/IMG_20200221_113906.jpg"
 description: Are you attending our Code Café? Here is some ‘good to know’ information.
 
 ---
