@@ -20,9 +20,6 @@ fields:
 - type: textarea
   name: description
   label: description
-- type: datetime
-  name: time
-  label: time
 - type: text
   name: image-position
   label: image-position
@@ -37,3 +34,8 @@ fields:
   label: lang
   description: 'Dette field bliver brugt til knappen der ændre sprog. Du kan finde
     listen her: https://flagicons.lipis.dev/'
+- name: time
+  type: text
+  config:
+    required: false
+  label: Time
