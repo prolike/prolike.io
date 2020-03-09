@@ -3,6 +3,7 @@ author: Louise Nielsen
 title: CoDe Café - Good to Know
 author-github: https://github.com/LouBNielsen
 tags:
+- cafe
 - Code
 - Code Cafe
 image: "/uploads/IMG_20200221_113906-1.jpg"
