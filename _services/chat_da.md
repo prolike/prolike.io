@@ -2,11 +2,13 @@
 title: Chat System
 icon: fab fa-rocketchat
 button: Contact us
-operational: true
+show: true
 form:
 height:
 change: true
 internal-link: /contact/
+lang-id: '2'
+lang: dk
 ---
 
 Emails are slow, old fanshioned and while they work great for reaching people you don't have daily correspondence with the future is here.

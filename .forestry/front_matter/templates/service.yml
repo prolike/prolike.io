@@ -15,9 +15,9 @@ fields:
   label: button
   description: Navnet på den button der kommer hvis der ikke er en google form
 - type: boolean
-  name: operational
-  label: operational
-  description: Toggle for om services er klar til at gå live
+  name: show
+  label: show
+  description: Toggle for om denne service skal visses eller ej
 - type: textarea
   name: form
   label: form
@@ -36,5 +36,13 @@ fields:
   label: internal-link
   description: Det interne link der bruges til knappen hvis der ikke er en google
     form
+- type: text
+  name: lang-id
+  label: sprog id
+  description: Dette felt er til at forbinde de to services som har forkelige sprog. Dette tal skal stemme overens med den anden service og være unikt. Brug '' rund om talet
+- type: text
+  name: lang
+  label: sprog
+  description: Bruges til at vægle hviklet sprog der er på din service. Brug gb for engelsk og dk for dansk. Se mere here https://flagicons.lipis.dev/
 pages:
 - _services/din-it-afdeling-i-vores-hus.md

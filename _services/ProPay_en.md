@@ -2,11 +2,13 @@
 title: ProPay
 icon: fas fa-money-bill-alt
 button: Contact Us
-operational: false
+show: false
 form:
 form-height:
 change: true
 internal-link: /contact/
+lang-id: '7'
+lang: gb
 ---
 
 Are you a customer at Reepay or looking at implementing subscriptions on your website?

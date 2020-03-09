@@ -2,13 +2,14 @@
 title: 'Din IT-afdeling i vores hus '
 icon: ''
 button: ''
-operational: false
+show: false
 form: ''
 form-height: 
 change: false
 internal-link: ''
 published: false
-
+lang-id: '4'
+lang: gb
 ---
 ### **Din IT-afdeling i vores hus**
 
