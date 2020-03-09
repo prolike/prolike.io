@@ -36,3 +36,5 @@ fields:
   label: internal-link
   description: Det interne link der bruges til knappen hvis der ikke er en google
     form
+pages:
+- _services/din-it-afdeling-i-vores-hus.md
