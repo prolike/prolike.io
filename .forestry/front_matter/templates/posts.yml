@@ -39,3 +39,5 @@ fields:
       file: 
       path: 
   label: Author
+pages:
+- _posts/we-re-yipees.md
