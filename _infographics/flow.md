@@ -2,7 +2,7 @@
 title: Our Workflow With You
 author: Anders Larsen
 author-github: https://github.com/sygdrome
-image: "/images/anything/workflow.jpg"
+image: "/uploads/11.jpg"
 tags:
 - workflow
 - services
@@ -39,6 +39,7 @@ sections:
   icon: fas fa-infinity
   texts:
   - Our second release! Don't worry this doesnt have to be the end.
-  - After this we will continue delivering releases til we have all the features
-    you want
+  - After this we will continue delivering releases til we have all the features you
+    want
+
 ---
