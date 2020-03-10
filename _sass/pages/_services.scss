@@ -4,6 +4,7 @@
     height: 200px;
     text-align: center;
     margin-top: 20px;
+    border-radius: 5px;
 
     @include for-ipad-pro {
         margin-bottom: 30px;
