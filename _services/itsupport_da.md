@@ -1,6 +1,6 @@
 ---
 title: IT Support
-icon: far fa-file-code
+icon: fas fa-headset
 button: Contact us
 show: true
 form: ''
@@ -11,13 +11,15 @@ lang-id: "7"
 lang: dk
 
 ---
-### **Din IT-afdeling i vores hus**
+## **Din IT-afdeling i vores hus**
+
+<br>
 
 ### Er du ved at digitalisere eller skalere din virksomhed med software?
 
 Som din IT afdeling kan vi tilbyde vores ressourcer, netop når du skal bruge dem. Det vil sige at du ikke køber en fast konsulent, men i stedet får adgang til hele vores team. På den måde har du en ‘on demand’ IT afdeling.
 
-### Køb en Yipee - få et team.
+### Køb en Yipee - få et team
 
 Prolike er et IT konsulenthus, som er befolket af unge IT talenter. Udover at levere de hårde fag-kompetencer til IT understøttelse og softwareudvikling, så er det også et mål for de unge Yipees (_Young Independent Professionals_) at levere en professionel forretningsførelse med løbende forventningsafstemning direkte med kunden.
 
@@ -61,4 +63,6 @@ Ved indgåelse af aftaler om faste månedlige _burn-rates_ med høj volumen, giv
 
 Møder, emails og telefonkorrespondancer er inkluderet.
 
-### Lad os tage en snak!
+<br><br>
+
+#### Lad os tage en snak!
