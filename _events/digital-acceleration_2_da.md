@@ -1,22 +1,22 @@
 ---
-title: Techfast - Digital Accelation
+title: Techfast - Digital Acceleration
 date: 17. marts 2020
 image: "/images/events/tech-fast-march2.jpg"
 place: København, Atelier 1B, Frederiksborggade 1B
 event-id: 98182373121
-description: Tech til morgenmad! Få et indblik i Lean Startup Method og hvad den kan gør for din digitale acceleration.
+description: Tech til morgenmad! Få et indblik i "Lean Startup Method" og hvad den kan gøre for den digitale acceleration i din hverdag.
 time: 08:00 - 10:00
 image-position: top
 lang-id: "22"
 lang: dk
 show-on-list: true
 redirect_from: /events/techfast-march_en/
-
-
 ---
-Tech til morgenmaden - Skal vi virkelig alle _digital transformere?_ Er software notorisk disruptiv? Virker det uoverskueligt? Kom og få en ny vinkel, måske skal vi bare forstå og omfavne de muligheder som verden tilbyder, altså _digital accellerere_{: .kicker}
 
-> **_Software is Eating the World_**
+Tech til morgenmaden - Skal vi virkelig alle _digital transformere?_ Er software notorisk disruptiv? Virker det uoverskueligt? Kom og få en ny vinkel, måske skal vi bare forstå og omfavne de muligheder som verden tilbyder, altså _digital accellerere_
+{: .kicker}
+
+> **_"Software is Eating the World"_**
 
 [**_Artikel_**](https://a16z.com/2011/08/20/why-software-is-eating-the-world/) _af investor Marc Andreessen, i The Wall Street Journal, August 2011_
 
@@ -36,4 +36,4 @@ Vi slutter inden 10:00, så alle kan komme videre med deres gøremål.
 
 Eventet afholdes hos Atelier 1B ved Kultorvet i København, i deres ny-renoverede lokaler. En oplevelse værd i sig selv!
 
-Oplægget og diskussionen er på dansk
+Oplægget og diskussionen er på dansk.
