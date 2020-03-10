@@ -1,5 +1,5 @@
 ---
-title: 4995 kr. hjemmeside
+title: 4995 kr. webside
 icon: far fa-file-code
 button: Get your website
 show: true
@@ -11,35 +11,31 @@ lang-id: "1"
 lang: dk
 
 ---
-For 4995 kr you'll get a fully kitted website with the content you desire.
+For kun 4995 kr. kan du få et fuldt udstyret websted med det indhold, du ønsker.
 
-### what you'll get:
- - A responsive site that works in every browser, on every device
- - Free hosting! We'll host it for you, free of charge
- - A design of your own choice. You can choose one down below or [contact us](/contact/) and we can talk about making a custom design
- - indepth view of our progress, you'll be able to see everything we are working on and how much is left
+### Du får:
 
-Read more indepth about what you will get on our [post](/anything/forget-wordpress/)
+* En responsiv webside, der fungerer i enhver browser, på alle enheder
+* Gratis hosting! Vi hoster din webside for dig, gratis
+* Et design efter eget valg. Du kan vælge et af de design som ses herunder eller du kan kontakte os, så vi kan finde ud af at lave et tilpasset design
+* Indblik i udviklingen og du kan du se alt hvad vi arbejder på, og hvor langt vi er i processen
 
-To get started all we need is for you to do two simple things
+Du kan finde flere detaljer om hvad du får i vores [post](/anything/forget-wordpress/).
 
- 1. Choose your desired design below
- 2. Fill out our form
+For at komme i gang er alt, hvad vi har brug for, at du gør to enkle ting:
 
-And that is all you need to get started! Once the website is done and you're happy, we'll release it into the world.
+1. Vælg dit ønskede design herunder
+2. Udfyld ‘Contact us’ formen
 
-### We recomend these templates
+Og det er alt hvad du behøver for at komme i gang! Når webstedet er færdig, og du er glad, udgiver vi det for dig.
 
- - [Forty](https://andrewbanchich.gitlab.io/forty-jekyll-theme/){: target="_blank"}
+### Vi anbefaler disse designskabeloner:
 
- - [Airspace](https://jekyllthemes.io/theme/airspace-jekyll){: target="_blank"}
+* [Forty](https://andrewbanchich.gitlab.io/forty-jekyll-theme/){: target="_blank"}
+* [Airspace](https://jekyllthemes.io/theme/airspace-jekyll){: target="_blank"}
+* [Ubuild](https://forestryio.github.io/ubuild-jekyll/){: target="_blank"}
+* [Mediator](https://blog.base68.com/){: target="_blank"}
+* [Agency](https://y7kim.github.io/agency-jekyll-theme/){: target="_blank"}
+* [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/){: target="_blank"}
 
- - [Ubuild](https://forestryio.github.io/ubuild-jekyll/){: target="_blank"}
-
- - [Mediator](https://blog.base68.com/){: target="_blank"}
-
- - [Agency](https://y7kim.github.io/agency-jekyll-theme/){: target="_blank"}
-
- - [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/){: target="_blank"}
-
-If you find none of these to your liking you can also visit [Jekyll themes](https://jekyllthemes.io/){: target="_blank"}
+Hvis disse designs ikke lige er noget for dig, kan du også besøge [Jekyll themes](https://jekyllthemes.io/){: target="_blank"}
