@@ -7,8 +7,8 @@ form:
 form-height:
 change: true
 internal-link: /contact/
-lang-id: '7'
-lang: da
+lang-id: '9'
+lang: dk
 ---
 
 Are you a customer at Reepay or looking at implementing subscriptions on your website?

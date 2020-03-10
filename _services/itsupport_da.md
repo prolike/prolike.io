@@ -7,8 +7,8 @@ form: https://docs.google.com/forms/d/e/1FAIpQLSdXySSmkNWSWzi_pvVkBqt1Cb6T0QkBdP
 form-height: 2000
 change: true
 internal-link: /contact/
-lang-id: '4'
-lang: da
+lang-id: '7'
+lang: dk
 ---
 
 content
