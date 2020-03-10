@@ -10,6 +10,8 @@ image-position: top
 lang-id: "22"
 lang: dk
 show-on-list: true
+redirect_from: /events/techfast-march_en/
+
 
 ---
 Tech til morgenmaden - Skal vi virkelig alle _digital transformere?_ Er software notorisk disruptiv? Virker det uoverskueligt? Kom og få en ny vinkel, måske skal vi bare forstå og omfavne de muligheder som verden tilbyder, altså _digital accellerere_{: .kicker}
