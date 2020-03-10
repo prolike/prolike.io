@@ -7,7 +7,8 @@ tags:
 - Code Cafe
 image: "/uploads/IMG_20200221_113906-1.jpg"
 description: Are you attending our Code Café? Here is some ‘good to know’ information.
-
+redirect_from:
+  - /stories/code-café-good-to-know/
 ---
 **Create a Github account**
 
