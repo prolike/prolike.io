@@ -18,7 +18,7 @@ The event is sponsored by Prolike so it’s free to attend. Light breakfast, cof
 
 ### What are we going to code?
 
-Good question! We have made a [Github repo](https://github.com/prolike/code-cafe-feb20/issues){: target="_blank"} containing the issues we are goin to look at. It's Open Source - You can suggest your own topic!
+Good question! We have made a [Github repo](https://github.com/code-cafes/cph/issues){: target="_blank"} containing the issues we are goin to look at. It's Open Source - You can suggest your own topic!
 
 The more you contribute to the planning: suggest topics, comment topics, indicate your interests… The better we’ll be prepared.
 

@@ -18,7 +18,7 @@ We will do it again! We are going to repeat the success! Last time, we learned a
 
 ### Come with a topic
 
-Once again we have made a [Github repo](https://github.com/code-cafes/code-cafe-mar20/issues){: target="_blank"} containing the issues we are goin to look at. It's Open Source - You can suggest your own topic!
+Once again we have made a [Github repo](https://github.com/code-cafes/cph/issues){: target="_blank"} containing the issues we are goin to look at. It's Open Source - You can suggest your own topic!
 
 The more you contribute to the planning: suggest topics, comment topics, indicate your interests… The better we’ll be prepared.
 
