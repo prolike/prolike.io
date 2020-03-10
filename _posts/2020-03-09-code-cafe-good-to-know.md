@@ -8,7 +8,8 @@ tags:
 image: "/uploads/IMG_20200221_113906-1.jpg"
 description: Are you attending our Code Café? Here is some ‘good to know’ information.
 redirect_from:
-  - /stories/code-café-good-to-know/
+- "/stories/code-café-good-to-know/"
+
 ---
 **Create a Github account**
 
@@ -16,15 +17,16 @@ redirect_from:
 
 Therefore, you should create an account, so that you can participate.
 
+Go to [github.com](https://github.com/) and sign up.   
+Choose the Free plan, and then verify your account. 
+
 **Welcome**
 
-Prolike has created a Code Café Github account. Click here [https://github.com/code-cafes](https://github.com/code-cafes "https://github.com/code-cafes") and find this month's Code Café repository.
-
-Go to ‘Issues’ and find issue #1 Welcome. If you like, you can write something about yourself here. Name, education, where you come from and why you are participating.
+Prolike has created a Code Café Github account. Click [here](https://github.com/code-cafes/cph/issues) and  and find issue #Welcome - <this month's code cafe>. Write something about yourself here like name, education, where you come from and why you are participating.
 
 **Assign yourself to issues**
 
-In the repository, you can find the issues that the other attendees have proposed for this month’s Code Café. Assign yourself to the issues you would like to participate in.
+In the repository, you can find the issues that the other attendees have proposed for this month’s Code Café and for the previous Code Cafés. Assign yourself to the issues you would like to participate in.
 
 **Git and Docker**
 
@@ -33,5 +35,3 @@ It makes sense to have worked a bit with both Git and Docker - if not, then you 
 **And last**
 
 … remember to bring your computer.
-
-If you are interested in being up to date on upcoming events, go signup to our newsletter, Profeed.
