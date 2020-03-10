@@ -1,16 +1,16 @@
 ---
-title: 4995 Kr. Hjemmeside
+title: 4995 kr. hjemmeside
 icon: far fa-file-code
 button: Get your website
 show: true
 form: https://docs.google.com/forms/d/e/1FAIpQLSdXySSmkNWSWzi_pvVkBqt1Cb6T0QkBdPydnXNbNI_4biQLyg/viewform?embedded=true
 form-height: 2000
 change: false
-internal-link: /contact/
-lang-id: '1'
+internal-link: "/contact/"
+lang-id: "1"
 lang: dk
----
 
+---
 For 4995 kr you'll get a fully kitted website with the content you desire.
 
 ### what you'll get:
@@ -43,4 +43,3 @@ And that is all you need to get started! Once the website is done and you're hap
  - [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/){: target="_blank"}
 
 If you find none of these to your liking you can also visit [Jekyll themes](https://jekyllthemes.io/){: target="_blank"}
-
