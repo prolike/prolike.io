@@ -7,8 +7,6 @@ lang-id: "2"
 lang: dk
 
 ---
-## Chat systemer || Instant Messaging
-
 ### Instant Messaging
 
 Teknologisk udvikling og digitalisering har givet virksomheder et hav af nye muligheder for at vokse, udvikle og optimere deres drift. En af dem som mange virksomheder allerede bruger er _instant messaging_. _Instant messaging_ (IM) er udveksling af alt fra tekstmeddelelser, fildeling til videokonferencer i et live format. Dette kan bruges som live chat med kunder direkte fra en hjemmeside eller som intern kommunikation i virksomheder af alle størrelser.
