@@ -12,7 +12,11 @@ description: "“A Yipee? What is that?” you might think. I know I was thinkin
 ---
 ##### “A Yipee? What is that?” you might think. I know I was thinking the same thing the first time I heard it.
 
+<br>
+
 ###### A Yipee stands for a **Young Independent Professional**.
+
+<br>
 
 “Why **Y**oung? Can’t you be older?” - hm.. narh, then you are referring to the Elders. An Elder is a real professional with decades of industry experience and vouches for technical excellence. They have a lot of experience in all sorts of different areas. When we face larger and more complex technical or business issues, we seek their advice and they coach us and help us make the right turn. They delegate knowledge in areas that deal with customer contact, how to code right and how to run a business.
 
