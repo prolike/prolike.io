@@ -2,11 +2,8 @@
 title: Chat System
 icon: fab fa-rocketchat
 button: Contact us
-show: false
-form:
-height:
-change: true
-internal-link: /contact/
+published: false
+show-on-list: false
 lang-id: '2'
 lang: gb
 ---

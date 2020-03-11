@@ -11,8 +11,8 @@ image-position: top
 lang-id: "11"
 lang: gb
 show-on-list: true
-
 ---
+
 We will do it again! We are going to repeat the success! Last time, we learned a lot, and we made a bunch of new friends. This time around we urge you to suggest some interesting and challenging issues to collaborate on. So regardless if you are a front or back ender bring your issues and let us solve them together.
 {: .kicker}
 

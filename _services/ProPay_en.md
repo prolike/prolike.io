@@ -2,11 +2,8 @@
 title: ProPay
 icon: fas fa-money-bill-alt
 button: Contact Us
-show: false
-form:
-form-height:
-change: true
-internal-link: /contact/
+published: false
+show-on-list: false
 lang-id: '9'
 lang: gb
 ---

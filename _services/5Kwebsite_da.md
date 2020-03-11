@@ -2,11 +2,8 @@
 title: 4995 kr. webside
 icon: far fa-file-code
 button: Kontakt os
-show: true
-form: ''
-form-height: ''
-change: false
-internal-link: "/contact/"
+show-on-list: true
+published: true
 lang-id: "1"
 lang: dk
 

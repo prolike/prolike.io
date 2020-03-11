@@ -11,7 +11,8 @@ layout: page
             <div class="row justify-content-center">
 
                 {% for service in site.services %}
-                {% if service.show == true %}
+                {% if service.show-on-list == true %}
+              
                 <div class="col-lg-4 col-md-6 col-sm-12">
                     <a href="{{ service.url }}">
                         <div class="service-box">
@@ -20,7 +21,7 @@ layout: page
                         </div>
                     </a>
                 </div>
-                {% endif %}
+       {% endif %}
                 {% endfor %}
             </div>
         </div>

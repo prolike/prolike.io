@@ -2,11 +2,8 @@
 title: Din IT afdeling
 icon: fas fa-headset
 button: Contact us
-show: true
-form: ''
-form-height: ''
-change: true
-internal-link: "/contact/"
+published: true
+show-on-list: true
 lang-id: "7"
 lang: dk
 
