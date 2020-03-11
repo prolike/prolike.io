@@ -1,5 +1,5 @@
 ---
-title: IT Support
+title: Din IT afdeling
 icon: fas fa-headset
 button: Contact us
 show: true
@@ -13,11 +13,9 @@ lang: dk
 ---
 ## **Din IT-afdeling i vores hus**
 
-<br>
-
 ### Er du ved at digitalisere eller skalere din virksomhed med software?
 
-Som din IT afdeling kan vi tilbyde vores ressourcer, netop når du skal bruge dem. Det vil sige at du ikke køber en fast konsulent, men i stedet får adgang til hele vores team. På den måde har du en ‘on demand’ IT afdeling.
+Som din IT afdeling kan vi tilbyde vores ressourcer, netop når du skal bruge dem. Det vil sige at du ikke køber en fast konsulent, men i stedet får adgang til hele vores team. På den måde har du en _on demand_ IT afdeling.
 
 ### Køb en Yipee - få et team
 
@@ -51,18 +49,8 @@ Prolike tilbyder sig som en _one-stop-shop_ for alle jeres IT relaterede behov. 
 
 Vores timepris er 650 kr./timen.
 
-Ved indgåelse af aftaler om faste månedlige _burn-rates_ med høj volumen, giver vi en fast rabat:
+Ved indgåelse af faste aftaler yder vi op til 25% rabat - svarende til en timepris på under 500 kr./timen.
 
-**>20 timer/måned = 5%** **617/time**
+Opstartsmøder, e-mails og telefonkorrespondancer er inkluderet.
 
-**>50 timer/måned = 10%** **585/time**
-
-**>100 timer/måned = 20%** **352/time**
-
-**>120 timer/måned = 25%** **330/time**
-
-Møder, emails og telefonkorrespondancer er inkluderet.
-
-<br><br>
-
-#### Lad os tage en snak!
+##### Kontakt os og fortæl os om vi skal være din IT afdeling.
