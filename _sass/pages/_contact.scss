@@ -3,7 +3,7 @@
     form {
         margin-left: -15px;
         margin-top: 20px;
-        input[type=text], input[type="email"] {
+        input[type=text], input[type="email"], .textarea {
             background: transparent;
             border: none;
             border-bottom: 1px solid $gray-700;
@@ -29,6 +29,10 @@
             @include for-phone-only {
                 flex-direction: column;
                 margin-bottom: 0;
+            }
+
+            .textarea {
+                width: 100% !important;
             }
         }
 
