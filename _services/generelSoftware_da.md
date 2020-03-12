@@ -2,7 +2,7 @@
 title: Software as a Service
 icon: fas fa-mobile-alt
 button: Kontact os
-show-on-list: true
+show-on-list: false
 lang-id: "6"
 lang: dk
 
