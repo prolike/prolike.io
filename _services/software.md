@@ -1,7 +1,7 @@
 ---
 title: Software as a Service
 icon: fas fa-mobile-alt
-button: Kontact os
+button: Kontakt os
 show-on-list: true
 lang-id: "6"
 lang: dk
