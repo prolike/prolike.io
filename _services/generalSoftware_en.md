@@ -1,11 +1,11 @@
 ---
-title: Software
+title: Software as a Service
 icon: fas fa-mobile-alt
 button: Contact us
-published: true
 show-on-list: true
-lang-id: '6'
+lang-id: "6"
 lang: gb
+
 ---
 Haven't found what you're looking for? Whether it's software for booking, elegant self-hosted file transfer & sharing solutions, implementing subscription services or something entirely different we wanna hear about your idea.
 
