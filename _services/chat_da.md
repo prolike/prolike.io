@@ -1,7 +1,7 @@
 ---
 title: Chatsystem
 icon: fab fa-rocketchat
-button: Contact us
+button: Kontakt os
 show-on-list: true
 lang-id: "2"
 lang: dk

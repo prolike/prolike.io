@@ -1,7 +1,7 @@
 ---
 title: Din IT afdeling
 icon: fas fa-headset
-button: Contact us
+button: Kontakt os
 published: true
 show-on-list: true
 lang-id: "7"
