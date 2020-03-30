@@ -26,7 +26,8 @@ fields:
   fields:
   - type: text
     name: icon
-    description: Ikonet der bliver vist over teksten
+    description: Ikonet der bliver vist over teksten. https://fontawesome.com/icons
+    label: icon
   - type: text
     name: headings
     label: headings
