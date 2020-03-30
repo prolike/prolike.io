@@ -22,15 +22,13 @@ layout: page
         <h1>{{ page.title }}</h1>
         <hr>
         <div class="col-12">
-            
+
             {{ page.content | markdownify }}
         </div>
 
-      
-            <a href="/contact/" class="btn call btn-light btn-xl">
-                {{page.button}}
-            </a>
-       
+
+        <a href="/contact/" class="btn call btn-light btn-xl">
+            {{ page.button }}
+        </a>
     </div>
 </div>
-

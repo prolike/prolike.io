@@ -25,8 +25,13 @@ fields:
   label: sections
   fields:
   - type: text
+    name: icon
+    description: Ikonet der bliver vist over teksten
+  - type: text
     name: headings
     label: headings
+    description: Titlen per sektion
   - type: text
     name: texts
     label: texts
+    description: Brødtekst
