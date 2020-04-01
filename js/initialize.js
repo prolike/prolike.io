@@ -1,5 +1,6 @@
 $(document).ready(function() {
   $("#fullpage").fullpage({
+    licenseKey: '13C63801-E81E4DE0-A9E067C5-0545BBE7',
     navigation: true,
     fadingEffect: true,
     responsive: true,
@@ -23,6 +24,7 @@ for (var i = 0; i < slides.length; i++) {
 
 $(document).ready(function() {
   $("#storyfullpage").fullpage({
+    licenseKey: '13C63801-E81E4DE0-A9E067C5-0545BBE7',
     navigation: true,
     fadingEffect: true,
     responsive: true,
