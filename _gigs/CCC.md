@@ -1,6 +1,7 @@
 ---
 title: CCC
-published: false
+published: true
+status: doing
 ---
 
 Hello
