@@ -1,6 +1,6 @@
 ---
 title: Gigs
 layout: gigs
-navigation: false
+navigation: true
 order: 2
 ---
