@@ -1,7 +1,7 @@
 .list {
     min-height: 100vh;
     @include page-side-padding;
-    padding-top: 100px;
+    @include page-top-bottom-padding;
     background-image: url(../images/backgrounds/tileable.jpg);
     // background-size: cover;
     background-position: center center;

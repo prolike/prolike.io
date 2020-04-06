@@ -72,5 +72,23 @@ nav {
 
 
   }
+
+  .contact-bar {
+    position: fixed;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @include page-side-padding;
+    background-color: whitesmoke;
+    right: 0;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px 0px;
+    text-align: right;
+    top: 50px;
+    a {
+      color: #2e2e2e;
+      padding-left: 20px;
+      font-size: 0.9rem;
+    }
+  }
 }
 
