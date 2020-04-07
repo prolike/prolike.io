@@ -2,6 +2,7 @@
 title: Copenhagen Coaching Center
 published: true
 status: doing
+image: /images/gigs/ccc.png
 used:
     - Jekyll
     - Github Pages

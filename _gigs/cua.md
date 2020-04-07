@@ -4,6 +4,7 @@ used:
     - Firebase
     - Vue.js
 status: doing
+image: /images/gigs/cua.jpg
 ---
 
 ## Continuous delivery
