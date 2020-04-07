@@ -1,6 +1,6 @@
 .service-box {
     @include dark-background;
-    padding: 20px 20px 0 20px;
+    padding: 10px 20px 0 20px;
     height: 200px;
     text-align: center;
     margin-top: 20px;
@@ -18,12 +18,14 @@
 
     h4 {
         font-weight: bold;
-        word-wrap: break-word;
         color: white;
+        padding-bottom: 10px;
     }
 
+}
 
-
-
-
+@media only screen and (max-width: 576px) {
+    .service-box {
+        padding: 20px 20px 0 20px;
+    }
 }
