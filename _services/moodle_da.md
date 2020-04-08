@@ -3,6 +3,7 @@ title: Moodle
 icon: fas fa-graduation-cap
 button: Kontakt os
 image: /images/services/moodleSoMe2.jpg
+description: Få din helt egen lærningsplatform
 published: true
 show-on-list: true
 lang-id: '8'
