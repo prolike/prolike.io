@@ -6,7 +6,9 @@ $(document).ready(function() {
     responsive: true,
     resize: true,
     menu: "#menu",
-    anchors: ["home", "why", "how", "what", "footer"]
+    anchors: ["home", "why", "how", "what", "footer"],
+    scrollingSpeed: 700,
+    autoScrolling: true
   });
 });
 
@@ -30,7 +32,9 @@ $(document).ready(function() {
     responsive: true,
     resize: true,
     menu: "#menu",
-    anchors: [...slideHeadings]
+    anchors: [...slideHeadings],
+    scrollingSpeed: 700,
+    autoScrolling: true
   });
 });
 // Allows for the use to go back to the site from whence they came when pressing on the back button, instead of going back and forth between our front page slides.

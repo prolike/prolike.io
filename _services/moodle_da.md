@@ -2,6 +2,7 @@
 title: Moodle
 icon: fas fa-graduation-cap
 button: Kontakt os
+image: /images/services/moodleSoMe2.jpg
 published: true
 show-on-list: true
 lang-id: '8'
