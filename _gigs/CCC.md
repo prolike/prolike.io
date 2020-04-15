@@ -19,7 +19,7 @@ We’re helping them, managing their own IT infrastructure, with guides and live
 
 ## They started jammin’
 
-CCC was stuck on a expensive WordPress site, the images and text were flying all over the screen and the structure of the website was complicated and unorganized. We developed a new JAM-stack (link til we’re jammin’) website, hosted on Github, reducing their website monthly cost to zero! They got a new smooth design, reflecting their image and a new, much more user-friendly showcase of their courses and services.
+CCC was stuck on a expensive WordPress site, the images and text were flying all over the screen and the structure of the website was complicated and unorganized. We developed a new [JAM-stack](/stories/we-re-jammin/) website, hosted on Github, reducing their website monthly cost to zero! They got a new smooth design, reflecting their image and a new, much more user-friendly showcase of their courses and services.
 
 
 ## A much needed Moodle
